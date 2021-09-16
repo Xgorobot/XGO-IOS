@@ -1,0 +1,48 @@
+PODS:
+  - AEAlertView (2.2.3)
+  - Differentiator (5.0.0)
+  - DownPicker (0.1.34)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - AEAlertView
+  - DownPicker (~> 0.1.34)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - AEAlertView
+    - Differentiator
+    - DownPicker
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  AEAlertView: 2ac369948406e6e9f08b87690f85f9600ddb23a5
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  DownPicker: c00ea63f08ae82116cc93d0eba74e86bf3d4c68e
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: c7f91c3f771589c664c8200293762375f4e65903
+
+COCOAPODS: 1.10.1

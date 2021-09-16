@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomepageVC" customModule="xgo" customModuleProvider="target">
+            <connections>
+                <outlet property="_btn_ble" destination="MI4-pm-UhN" id="Zfk-mR-gLx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="b14-kB-Ghc">
+                    <rect key="frame" x="25" y="20" width="844" height="373"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRC-6W-2bf">
+                    <rect key="frame" x="0.0" y="0.0" width="896" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI4-pm-UhN">
+                            <rect key="frame" x="52" y="8.5" width="37" height="37"/>
+                            <state key="normal" image="lanya"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Ln-2Hb">
+                            <rect key="frame" x="807" y="8.5" width="37" height="37"/>
+                            <state key="normal" image="guanyu"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9m-7am">
+                            <rect key="frame" x="746" y="8.5" width="37" height="37"/>
+                            <state key="normal" image="shezhi"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MI4-pm-UhN" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="96f-NW-fj6"/>
+                        <constraint firstItem="XlU-Ln-2Hb" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="CLg-ZJ-ZOO"/>
+                        <constraint firstAttribute="trailing" secondItem="XlU-Ln-2Hb" secondAttribute="trailing" constant="52" id="Xvd-yE-MmV"/>
+                        <constraint firstItem="dkd-9m-7am" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="cRC-xu-c7X"/>
+                        <constraint firstAttribute="height" constant="54" id="gcB-OI-Aes"/>
+                        <constraint firstItem="MI4-pm-UhN" firstAttribute="leading" secondItem="TRC-6W-2bf" secondAttribute="leading" constant="52" id="qLD-YJ-HOb"/>
+                        <constraint firstItem="XlU-Ln-2Hb" firstAttribute="leading" secondItem="dkd-9m-7am" secondAttribute="trailing" constant="24" id="s2n-t8-vcv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.1182795539" green="0.1173076257" blue="0.14242902399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TRC-6W-2bf" secondAttribute="trailing" id="05O-vU-eBm"/>
+                <constraint firstItem="b14-kB-Ghc" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="-27" id="8Q1-RT-gAb"/>
+                <constraint firstItem="TRC-6W-2bf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Kb-RP-6pF"/>
+                <constraint firstItem="b14-kB-Ghc" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-21" id="CTr-r3-GA6"/>
+                <constraint firstItem="TRC-6W-2bf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F0t-4F-72k"/>
+                <constraint firstItem="b14-kB-Ghc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="GPV-qU-CKo"/>
+                <constraint firstItem="b14-kB-Ghc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Ra5-nk-68F"/>
+            </constraints>
+            <point key="canvasLocation" x="137.94642857142856" y="128.98550724637681"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="667" height="375"/>
+        <image name="guanyu" width="37" height="37"/>
+        <image name="lanya" width="37" height="37"/>
+        <image name="shezhi" width="37" height="37"/>
+    </resources>
+</document>
