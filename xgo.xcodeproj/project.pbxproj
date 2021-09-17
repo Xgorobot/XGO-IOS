@@ -11,6 +11,10 @@
 		C709BC4726D64E3A00518E69 /* FindBleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4626D64E3A00518E69 /* FindBleHelper.swift */; };
 		C709BC4A26D779BF00518E69 /* FindControlUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4926D779BF00518E69 /* FindControlUtils.swift */; };
 		C70A584126D9D271008328BA /* XgoBleMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A584026D9D271008328BA /* XgoBleMessageEntity.swift */; };
+		C70C49D626F4719900DCE202 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49D526F4719900DCE202 /* DateExtension.swift */; };
+		C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49D826F471CF00DCE202 /* UInt8Extension.swift */; };
+		C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DB26F471E600DCE202 /* UIColorExtension.swift */; };
+		C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DE26F4721100DCE202 /* UIImageExtension.swift */; };
 		C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163926A7C5D40063E17A /* ShowModeVC.swift */; };
 		C77C163C26A7C5D40063E17A /* ShowModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C163A26A7C5D40063E17A /* ShowModeVC.xib */; };
 		C77C164026A7C5EA0063E17A /* ShowModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */; };
@@ -29,10 +33,7 @@
 		C77C166C26A7C8810063E17A /* SingleLegService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C166A26A7C8810063E17A /* SingleLegService.swift */; };
 		C77FF84D26A2B66B00431230 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84626A2B66B00431230 /* Model.swift */; };
 		C77FF84E26A2B66B00431230 /* QuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84826A2B66B00431230 /* QuickAlert.swift */; };
-		C77FF84F26A2B66B00431230 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84926A2B66B00431230 /* TableViewCell.swift */; };
-		C77FF85026A2B66B00431230 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77FF84A26A2B66B00431230 /* TableViewCell.xib */; };
 		C77FF85126A2B66B00431230 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84B26A2B66B00431230 /* Utils.swift */; };
-		C77FF85226A2B66B00431230 /* BasicTbvVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84C26A2B66B00431230 /* BasicTbvVC.swift */; };
 		C78599D626DE596E0056F551 /* BleConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599D426DE596E0056F551 /* BleConnectViewController.swift */; };
 		C78599D726DE596E0056F551 /* BleConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78599D526DE596E0056F551 /* BleConnectViewController.xib */; };
 		C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599D926DE59A30056F551 /* UIDeviceExtension.swift */; };
@@ -85,6 +86,10 @@
 		C709BC4626D64E3A00518E69 /* FindBleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBleHelper.swift; sourceTree = "<group>"; };
 		C709BC4926D779BF00518E69 /* FindControlUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindControlUtils.swift; sourceTree = "<group>"; };
 		C70A584026D9D271008328BA /* XgoBleMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XgoBleMessageEntity.swift; sourceTree = "<group>"; };
+		C70C49D526F4719900DCE202 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C70C49D826F471CF00DCE202 /* UInt8Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt8Extension.swift; sourceTree = "<group>"; };
+		C70C49DB26F471E600DCE202 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C70C49DE26F4721100DCE202 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C77C163926A7C5D40063E17A /* ShowModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVC.swift; sourceTree = "<group>"; };
 		C77C163A26A7C5D40063E17A /* ShowModeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowModeVC.xib; sourceTree = "<group>"; };
 		C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVM.swift; sourceTree = "<group>"; };
@@ -103,10 +108,7 @@
 		C77C166A26A7C8810063E17A /* SingleLegService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLegService.swift; sourceTree = "<group>"; };
 		C77FF84626A2B66B00431230 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C77FF84826A2B66B00431230 /* QuickAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickAlert.swift; sourceTree = "<group>"; };
-		C77FF84926A2B66B00431230 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		C77FF84A26A2B66B00431230 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		C77FF84B26A2B66B00431230 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		C77FF84C26A2B66B00431230 /* BasicTbvVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTbvVC.swift; sourceTree = "<group>"; };
 		C78599D426DE596E0056F551 /* BleConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleConnectViewController.swift; sourceTree = "<group>"; };
 		C78599D526DE596E0056F551 /* BleConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BleConnectViewController.xib; sourceTree = "<group>"; };
 		C78599D926DE59A30056F551 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
@@ -232,27 +234,14 @@
 		C77FF84526A2B66B00431230 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				C77FF84826A2B66B00431230 /* QuickAlert.swift */,
 				C7B6C5D126C7CD37004661AF /* DelayUtils.swift */,
 				C77FF84626A2B66B00431230 /* Model.swift */,
 				C7B6C5D726C7CDAA004661AF /* StringUtils.swift */,
-				C78599D926DE59A30056F551 /* UIDeviceExtension.swift */,
-				C77FF84726A2B66B00431230 /* QuickAlert */,
-				C77FF84926A2B66B00431230 /* TableViewCell.swift */,
-				C77FF84A26A2B66B00431230 /* TableViewCell.xib */,
-				C7B6C5CE26C7CD21004661AF /* DataExtension.swift */,
 				C77FF84B26A2B66B00431230 /* Utils.swift */,
 				C7B6C5F526C7D222004661AF /* CBToast.swift */,
-				C77FF84C26A2B66B00431230 /* BasicTbvVC.swift */,
 			);
 			path = utils;
-			sourceTree = "<group>";
-		};
-		C77FF84726A2B66B00431230 /* QuickAlert */ = {
-			isa = PBXGroup;
-			children = (
-				C77FF84826A2B66B00431230 /* QuickAlert.swift */,
-			);
-			path = QuickAlert;
 			sourceTree = "<group>";
 		};
 		C7ACF48E26940BA000D303FD = {
@@ -377,7 +366,13 @@
 		C7F5506726F2DE1C00474075 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				C78599D926DE59A30056F551 /* UIDeviceExtension.swift */,
+				C7B6C5CE26C7CD21004661AF /* DataExtension.swift */,
 				C7F5506826F2E1E800474075 /* IntExtension.swift */,
+				C70C49D526F4719900DCE202 /* DateExtension.swift */,
+				C70C49D826F471CF00DCE202 /* UInt8Extension.swift */,
+				C70C49DB26F471E600DCE202 /* UIColorExtension.swift */,
+				C70C49DE26F4721100DCE202 /* UIImageExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -471,7 +466,6 @@
 			files = (
 				C7ACF4A726940BA100D303FD /* LaunchScreen.storyboard in Resources */,
 				C77C163C26A7C5D40063E17A /* ShowModeVC.xib in Resources */,
-				C77FF85026A2B66B00431230 /* TableViewCell.xib in Resources */,
 				C77C164B26A7C7200063E17A /* IntegralModeVC.xib in Resources */,
 				C77C165D26A7C7CB0063E17A /* ServoVC.xib in Resources */,
 				C7B6C5E926C7CE76004661AF /* DeviceScanViewController.xib in Resources */,
@@ -543,20 +537,22 @@
 				C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */,
 				C7EBE19D26A2D19E008280BB /* HomepageService.swift in Sources */,
 				C709BC4426D63E7F00518E69 /* BleMessageAttributes.swift in Sources */,
-				C77FF85226A2B66B00431230 /* BasicTbvVC.swift in Sources */,
 				C7FBED2726BBC3EA008028FE /* BaseViewController.swift in Sources */,
 				C78599E926E07A1E0056F551 /* NormalService.swift in Sources */,
 				C7FBED1C26BBBBA7008028FE /* NormalVC.swift in Sources */,
+				C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */,
 				C7B6C5C026C7B2DB004661AF /* RockerBarsView.swift in Sources */,
 				C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */,
+				C70C49D626F4719900DCE202 /* DateExtension.swift in Sources */,
 				C7B6C5E826C7CE76004661AF /* DeviceScanViewController.swift in Sources */,
 				C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */,
 				C7B6C5BF26C7B2DB004661AF /* RockerBars.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
-				C77FF84F26A2B66B00431230 /* TableViewCell.swift in Sources */,
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
+				C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */,
 				C77C164A26A7C7200063E17A /* IntegralModeVC.swift in Sources */,
+				C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */,
 				C7EBE18326A2CFC9008280BB /* HomepageVC.swift in Sources */,
 				C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */,
 				C77FF85126A2B66B00431230 /* Utils.swift in Sources */,
