@@ -52,24 +52,24 @@ class ServoVC: UIViewController,UITabBarDelegate {
     @IBAction func onXValueChanged(_ sender: UISlider, forEvent event: UIEvent) {//[-31°,+31°]
         let showValue = Int(sender.value.rounded())
         let value = Int(((sender.value+31)/62*255).rounded())
-        XLabel2.text = "\(showValue) mm"
-        XLabel.text = "X:\(showValue)mm"
+        XLabel2.text = "\(showValue)  °"
+        XLabel.text = "X:\(showValue) °"
         FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "x", speed: value.hw_toByte())
         
     }
     @IBAction func onYValueChanged(_ sender: UISlider) {//[-66°, +93°]
         let showValue = Int(sender.value.rounded())
         let value = Int(((sender.value+66)/159*255).rounded())
-        YLabel2.text = "\(showValue) mm"
-        YLabel.text = "Y:\(showValue)mm"
+        YLabel2.text = "\(showValue)  °"
+        YLabel.text = "Y:\(showValue) °"
         FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "y", speed: value.hw_toByte())
     }
     
     @IBAction func onZValueChanged(_ sender: UISlider) {//[-65°,+73°]
         let showValue = Int(sender.value.rounded())
         let value = Int(((sender.value+65)/138*255).rounded())
-        ZLabel2.text = "\(showValue) mm"
-        ZLabel.text = "Z:\(showValue)mm"
+        ZLabel2.text = "\(showValue)  °"
+        ZLabel.text = "Z:\(showValue) °"
         FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
     }
     
