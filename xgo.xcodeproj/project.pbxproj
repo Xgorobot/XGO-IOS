@@ -15,6 +15,7 @@
 		C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49D826F471CF00DCE202 /* UInt8Extension.swift */; };
 		C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DB26F471E600DCE202 /* UIColorExtension.swift */; };
 		C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DE26F4721100DCE202 /* UIImageExtension.swift */; };
+		C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */; };
 		C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163926A7C5D40063E17A /* ShowModeVC.swift */; };
 		C77C163C26A7C5D40063E17A /* ShowModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C163A26A7C5D40063E17A /* ShowModeVC.xib */; };
 		C77C164026A7C5EA0063E17A /* ShowModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */; };
@@ -90,6 +91,7 @@
 		C70C49D826F471CF00DCE202 /* UInt8Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt8Extension.swift; sourceTree = "<group>"; };
 		C70C49DB26F471E600DCE202 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C70C49DE26F4721100DCE202 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralTopBarItem.swift; sourceTree = "<group>"; };
 		C77C163926A7C5D40063E17A /* ShowModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVC.swift; sourceTree = "<group>"; };
 		C77C163A26A7C5D40063E17A /* ShowModeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowModeVC.xib; sourceTree = "<group>"; };
 		C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVM.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				C7B6C5BE26C7B2DB004661AF /* RockerBarsView.swift */,
 				C7FDFEF226F0C71E001A472E /* ControlBarsView.swift */,
 				C7FDFEF626F19840001A472E /* ControlLRBarsView.swift */,
+				C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				C7B6C5E826C7CE76004661AF /* DeviceScanViewController.swift in Sources */,
 				C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */,
 				C7B6C5BF26C7B2DB004661AF /* RockerBars.swift in Sources */,
+				C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
@@ -652,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -707,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -723,17 +727,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 224A4DARGK;
 				INFOPLIST_FILE = xgo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wulianedu.xgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -743,17 +750,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 224A4DARGK;
 				INFOPLIST_FILE = xgo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wulianedu.xgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

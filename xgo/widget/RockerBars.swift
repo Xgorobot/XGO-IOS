@@ -20,10 +20,12 @@ typealias bDirection = (_ dir:OperationOrder , _ x:CGFloat ,_ y:CGFloat ,_ r:CGF
 
 class RockerBars: UIView {
     
+    var time:TimeInterval?
+    
     var tw: CGFloat = 0.0
     var th: CGFloat = 0.0
     
-    var bDirection:bDirection!
+    var bDirection:bDirection?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -96,9 +98,13 @@ class RockerBars: UIView {
             {
                 if(Int(touchPoint.x) > Int((self.superview?.frame.size.width)! / 2))
                 {
-                    bDirection(OperationOrder.ORight,resultX,resultY,resultR)
+                    if debounce(){
+                        bDirection?(OperationOrder.ORight,resultX,resultY,resultR)
+                    }
                 }else{
-                    bDirection(OperationOrder.OLeft,resultX,resultY,resultR)
+                    if debounce() {
+                        bDirection?(OperationOrder.OLeft,resultX,resultY,resultR)
+                    }
                 }
             }
             
@@ -106,9 +112,13 @@ class RockerBars: UIView {
             {
                 if(Int(touchPoint.y) > Int((self.superview?.frame.size.height)! / 2))
                 {
-                    bDirection(OperationOrder.ODown,resultX,resultY,resultR)
+                    if debounce() {
+                        bDirection?(OperationOrder.ODown,resultX,resultY,resultR)
+                    }
                 }else{
-                    bDirection(OperationOrder.OUp,resultX,resultY,resultR)
+                    if debounce() {
+                        bDirection?(OperationOrder.OUp,resultX,resultY,resultR)
+                    }
                 }
             }
             
@@ -122,7 +132,17 @@ class RockerBars: UIView {
     func onRelease(_ touches: Set<UITouch>, with event: UIEvent?) {
         center = CGPoint(x: (self.superview?.frame.size.width)! / 2,
                          y: (self.superview?.frame.size.height)! / 2)
-        bDirection(OperationOrder.OStop,0,0,0)
+        bDirection?(OperationOrder.OStop,0,0,0)
    }
+    
+    
+    func debounce() -> Bool {
+        let now = Date().timeIntervalSince1970
+        if now - ( time ?? 0 ) > 0.1 {
+            time = now
+            return true
+        }
+        return false
+    }
     
 }

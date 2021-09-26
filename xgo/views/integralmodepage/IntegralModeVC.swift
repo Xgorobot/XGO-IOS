@@ -13,6 +13,10 @@ import RxDataSources
 class IntegralModeVC: UIViewController,UITabBarDelegate {
     
     let _bag: DisposeBag = DisposeBag()
+    @IBOutlet weak var btn0: UIButton!
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
     
     var _vm: IntegralModeVM!
     
@@ -22,55 +26,59 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
     let _pryVC = RockerVC()
     
     @IBOutlet weak var _childView: UIView!
-    @IBOutlet weak var _topBar: UITabBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _topBar.delegate = self
-    
         add(_normalVC, frame: _childView.frame)
         _normalVC.didMove(toParent: self)
+        btn0.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
+        btn0.isSelected = true
+        btn1.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
+        btn2.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
+        btn3.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
     }
-
+    
     @IBAction func onClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
+    
+    @IBAction func onItemSelect(_ sender: UIButton) {
         removeAll()
-        switch item.title {
-        case "基础":
+        sender.isSelected = true
+        switch sender.tag {
+        case 0:
             add(_normalVC, frame: _childView.frame)
             _normalVC.didMove(toParent: self)
-        case "高级":
+            break
+        case 1:
             add(_seniorVC, frame: _childView.frame)
+            _seniorVC.initCtrl()
             _seniorVC.didMove(toParent: self)
-        case "XYZ":
+            break
+        case 2:
             add(_xyzVC, frame: _childView.frame)
+            _xyzVC.initXYZ()
             _xyzVC.didMove(toParent: self)
-        case "PRY":
+            break
+        case 3:
             add(_pryVC, frame: _childView.frame)
+            _pryVC.initRPY()
             _pryVC.didMove(toParent: self)
-        
+            break
         default:
             break
         }
     }
+    
     
     func removeAll() -> Void {
         _normalVC.remove()
         _seniorVC.remove()
         _xyzVC.remove()
         _pryVC.remove()
+        btn0.isSelected = false
+        btn1.isSelected = false
+        btn2.isSelected = false
+        btn3.isSelected = false
     }
 }

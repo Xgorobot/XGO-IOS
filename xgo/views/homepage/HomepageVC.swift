@@ -77,6 +77,27 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
             print("onDisposed")
         }.disposed(by: _bag)
         // Do any additional setup after loading the view.
+//        test()
+    }
+    
+    var time:TimeInterval?
+    
+    func test() -> Void {
+        print("---------测试----------")
+        time = Date().timeIntervalSince1970
+//        let time2 = Date(timeIntervalSince1970: 0)
+        print("\(time)")
+        // 初始化timer
+        let timer = Timer(timeInterval: 2, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+//        timer.invalidate()
+        RunLoop.current.add(timer, forMode: .default)
+
+    }
+    // 执行的Action
+    @objc private func timerAction() {
+            // 需要执行的操作
+        let time2 = Date().timeIntervalSince1970
+        print("时间戳:\(time)   时间戳2:\(time2)  时间戳3:\(time2 - time!)")
     }
     
     var firstAppear = true

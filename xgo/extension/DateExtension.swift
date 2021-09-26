@@ -17,9 +17,8 @@ extension Date {
     }
 
     /// 获取当前 毫秒级 时间戳 - 13位
-    var milliStamp : String {
+    var milliStamp : Double {
         let timeInterval: TimeInterval = self.timeIntervalSince1970
-        let millisecond = CLongLong(round(timeInterval*1000))
-        return "\(millisecond)"
+        return round(timeInterval*1000)
     }
 }

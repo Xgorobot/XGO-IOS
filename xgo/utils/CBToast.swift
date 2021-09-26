@@ -170,7 +170,7 @@ extension CBToast {
             toastView?.layer.cornerRadius = 5.0
             toastView?.alpha = 0
             
-            let indicatorView = UIActivityIndicatorView.init(style: .large)
+            let indicatorView = UIActivityIndicatorView.init(style: .whiteLarge)
             indicatorView.tag = 10
             indicatorView.hidesWhenStopped = true
             indicatorView.color = UIColor.white
@@ -209,7 +209,7 @@ extension CBToast {
             toastViewLabel?.layer.cornerRadius = 5.0
             toastViewLabel?.alpha = 0
             
-            let indicatorView = UIActivityIndicatorView.init(style: .large)
+            let indicatorView = UIActivityIndicatorView.init(style: .whiteLarge)
             indicatorView.tag = 10
             indicatorView.hidesWhenStopped = true
             indicatorView.color = UIColor.white

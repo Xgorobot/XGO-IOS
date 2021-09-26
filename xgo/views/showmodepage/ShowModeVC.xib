@@ -34,20 +34,21 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuw-Mk-9kB" userLabel="TitleVIew">
                     <rect key="frame" x="44" y="0.0" width="852" height="48"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabdi1" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-zc-xbI">
+                            <rect key="frame" x="0.0" y="0.0" width="852" height="48"/>
+                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nn-hN-VPK" userLabel="BackBtn">
                             <rect key="frame" x="0.0" y="8" width="48" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="48" id="zMN-mb-jlD"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" image="chevron.backward" catalog="system"/>
+                            <state key="normal" image="back"/>
                             <connections>
                                 <action selector="onClick:" destination="-1" eventType="touchUpInside" id="FVX-ho-To7"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabdi1" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-zc-xbI">
-                            <rect key="frame" x="0.0" y="0.0" width="852" height="48"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演示模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNE-20-F2U">
                             <rect key="frame" x="391.5" y="14" width="69.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -132,7 +133,7 @@
         </view>
     </objects>
     <resources>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="back" width="24" height="24"/>
         <image name="reset" width="75" height="75"/>
         <image name="tabdi1" width="667" height="44"/>
         <systemColor name="systemGray3Color">

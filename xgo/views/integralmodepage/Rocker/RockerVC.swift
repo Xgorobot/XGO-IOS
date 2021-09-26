@@ -15,13 +15,11 @@ class RockerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initXYZ()
         // Do any additional setup after loading the view.
     }
 
     
     func initCtrl(){
-        rightRockerView.isHidden = true
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((x+1)/2*255).rounded())
@@ -37,6 +35,7 @@ class RockerVC: UIViewController {
     }
     
     func initXYZ(){
+        rightRockerView.isHidden = true
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((x+1)/2*255).rounded())
@@ -45,7 +44,6 @@ class RockerVC: UIViewController {
             FindControlUtil.trunkMoveY(position: yValue.hw_toByte())
         }
     }
-    
     
     func initRPY(){
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
@@ -70,5 +68,4 @@ class RockerVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
