@@ -21,7 +21,7 @@ class NormalVC: UIViewController {
     @IBOutlet weak var rightRockerView: RockerBarsView!
     
     @IBOutlet weak var leftCtlBar: ControlBarsView!
-    @IBOutlet weak var rightCtlBar: ControlBarsView!
+    @IBOutlet weak var rightCtlBar: ControlLRBarsView!
     
     var speedX = 0.0
     var speedY = 0.0
@@ -37,45 +37,42 @@ class NormalVC: UIViewController {
         initCtrl()
     }
     
-    func initXYZ(){
-        leftCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
-            FindControlUtil.trunkMoveX(position: xValue.hw_toByte())
-            let yValue = Int(((y+1)/2*255).rounded())
-            FindControlUtil.trunkMoveY(position: yValue.hw_toByte())
-        }
-    }
-    
     func initCtrl(){
         leftCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
 
+            print("左侧点击:\(dir)")
             switch dir {
             case .OUp:
-                FindControlUtil.moveX(speed: 0xFF)
+                FindControlUtil.moveX(speed: 0xDA)
             case .ODown:
                 FindControlUtil.moveX(speed: 0x25)
             case .OLeft:
-                FindControlUtil.moveY(speed: 0x25)
-            case .ORight:
                 FindControlUtil.moveY(speed: 0xDA)
+            case .ORight:
+                FindControlUtil.moveY(speed: 0x25)
             case .OStop:
                 FindControlUtil.moveX(speed: 0x80)
                 FindControlUtil.moveY(speed: 0x80)
+            }
+        }
+        rightCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            switch dir {
+            case .OLeft:
+                FindControlUtil.turnClockwise(speed: 0xDA)
+                break
+            case .ORight:
+                FindControlUtil.turnClockwise(speed: 0x25)
+                break
+            case .OStop:
+                FindControlUtil.turnClockwise(speed: 0x80)
+                break
             default:
                 break
             }
         }
-        rightCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
-            FindControlUtil.turnClockwise(speed: xValue.hw_toByte())
-        }
     }
+
     
-    func initRPY(){
-        
-    }
     override func viewDidLayoutSubviews() {
         rightCtlBar.setNeedsDisplay()
     }

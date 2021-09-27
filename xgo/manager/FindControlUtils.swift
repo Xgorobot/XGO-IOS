@@ -68,7 +68,7 @@ final class FindControlUtil {
         addWriteMsg(data: result)
     }
     
-    class func moveY(speed:UInt8) {//向左 0x00 - 向右0xff  默认 0x80
+    class func moveY(speed:UInt8) {//向右 0x00 - 向左0xff  默认 0x80
         let result:[UInt8] = [0x31,speed];
         addWriteMsg(data: result)
     }
@@ -83,7 +83,7 @@ final class FindControlUtil {
         addWriteMsg(data: result)
     }
     
-    class func turnClockwise(speed:UInt8) {//顺时针旋转 def:0x80
+    class func turnClockwise(speed:UInt8) {//顺时针旋转 def:0x80 Z轴由下向上
         let result:[UInt8] = [0x32,speed];
         addWriteMsg(data: result)
     }

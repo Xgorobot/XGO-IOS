@@ -138,7 +138,7 @@ class RockerBars: UIView {
     
     func debounce() -> Bool {
         let now = Date().timeIntervalSince1970
-        if now - ( time ?? 0 ) > 0.1 {
+        if now - ( time ?? 0 ) > 0.2 {
             time = now
             return true
         }

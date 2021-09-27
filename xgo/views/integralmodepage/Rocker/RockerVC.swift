@@ -22,10 +22,10 @@ class RockerVC: UIViewController {
     func initCtrl(){
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
+            let xValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.moveX(speed: xValue.hw_toByte())
-            let yValue = Int(((y+1)/2*255).rounded())
-            FindControlUtil.moveX(speed: yValue.hw_toByte())
+            let yValue = Int(((x+1)/2*255).rounded())
+            FindControlUtil.moveY(speed: yValue.hw_toByte())
         }
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
@@ -38,20 +38,23 @@ class RockerVC: UIViewController {
         rightRockerView.isHidden = true
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
-            FindControlUtil.trunkMoveX(position: xValue.hw_toByte())
             let yValue = Int(((y+1)/2*255).rounded())
-            FindControlUtil.trunkMoveY(position: yValue.hw_toByte())
+            FindControlUtil.trunkMoveX(position: yValue.hw_toByte())
+            let xValue = Int(((x+1)/2*255).rounded())
+            FindControlUtil.trunkMoveY(position: xValue.hw_toByte())
         }
     }
     
     func initRPY(){
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
+            let xValue = Int(((-x+1)/2*255).rounded())
             FindControlUtil.trunByX(angle: xValue.hw_toByte())
+            
+            
             let yValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.trunByY(angle: yValue.hw_toByte())
+            print("pry  x:\(x) y:\(y)   输出X:\(yValue)  输出Y:\(xValue)")
+
         }
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")

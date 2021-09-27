@@ -15,16 +15,16 @@ class ControlBarsView: UIView {
     var bDirection:bDirection!
     
     var updownEnable: Bool = true
-
+    
     required init?(coder: NSCoder) {
-           super.init(coder: coder)
-           setUp()
-       }
+        super.init(coder: coder)
+        setUp()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
-       
+        
     }
     
     override func layoutSubviews() {
@@ -41,14 +41,6 @@ class ControlBarsView: UIView {
         let nimage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         backgroundColor = UIColor(patternImage: nimage!)
-
-//        actionBar = RockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 8,
-//                                                  y: frame.size.height / 2 - frame.size.width / 8,
-//                                                  width: frame.size.width / 4,
-//                                                  height: frame.size.height / 4))
-//        actionBar?.layer.cornerRadius = (actionBar?.frame.width)! / 2
-//        actionBar?.clipsToBounds = true;
-//        addSubview(actionBar!)
     }
     
     override func draw(_ rect: CGRect) {
@@ -60,7 +52,7 @@ class ControlBarsView: UIView {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        onTouch(touches)
+//        onTouch(touches)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -74,7 +66,7 @@ class ControlBarsView: UIView {
         th = (self.frame.size.height) / 2
         if(touch != nil){
             let lastTouch = touch!.location(in: self.superview)
-
+            
             let touchPoint = CGPoint(x: lastTouch.x, y: lastTouch.y)
             
             let radius = sqrt(pow(lastTouch.x - self.center.x, 2) + pow(lastTouch.y - self.center.y, 2))
@@ -82,7 +74,7 @@ class ControlBarsView: UIView {
             
             var angle = angleJudge(cpoint: CGPoint(x: touchPoint.x, y: touchPoint.y))
             
-            print("触点x :\(Int(touchPoint.x)) 触点y :\(Int(touchPoint.y))  中间点:   \( Int( self.center.x)) \( Int(self.center.y )) 角度: \(Int(angle * 180 / .pi))  半径:\(Int(radius))  界面半径 \(frameRadius)"  )
+//            print("触点x :\(Int(touchPoint.x)) 触点y :\(Int(touchPoint.y))  中间点:   \( Int( self.center.x)) \( Int(self.center.y )) 角度: \(Int(angle * 180 / .pi))  半径:\(Int(radius))  界面半径 \(frameRadius)"  )
             
             if radius < frameRadius/3 {
                 return
@@ -139,30 +131,30 @@ class ControlBarsView: UIView {
                     }
                 }
             }
-//
-//            UIView.animate(withDuration: 0.09999, animations: {
-//                self.center = touchPoint
-//            })
+            //
+            //            UIView.animate(withDuration: 0.09999, animations: {
+            //                self.center = touchPoint
+            //            })
             self.setNeedsDisplay();
         }
     }
     
     func onRelease() -> Void {
         
-            if updownEnable {
-                setImage(image: #imageLiteral(resourceName: "weianxia"))
-            }else{
-                setImage(image: #imageLiteral(resourceName: "zuoyou"))
-            }
-        bDirection(OperationOrder.OUp,0,0,0)
+        if updownEnable {
+            setImage(image: #imageLiteral(resourceName: "weianxia"))
+        }else{
+            setImage(image: #imageLiteral(resourceName: "zuoyou"))
+        }
+        bDirection(OperationOrder.OStop,0,0,0)
     }
     
     func setImage(image:UIImage){
-            UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
-            image.draw(in:bounds)
-            let nimage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            backgroundColor = UIColor(patternImage: nimage!)
+        UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
+        image.draw(in:bounds)
+        let nimage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        backgroundColor = UIColor(patternImage: nimage!)
     }
     
     
