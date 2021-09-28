@@ -198,13 +198,13 @@ class DeviceScanViewController: UIViewController,CBCentralManagerDelegate,UITabl
         //传递数据到控件
         cell.nameLabel.text? = "\(name)  "
         cell.rssiLabel.text? = "\(rssi)dB"
-        if rssi.int32Value > -55 {
+        if rssi.int32Value > -75 {
             cell.rssiImg.image = #imageLiteral(resourceName: "ble_level5")
-        }else if rssi.int32Value > -65{
-            cell.rssiImg.image = #imageLiteral(resourceName: "ble_level4")
-        }else if rssi.int32Value > -75{
-            cell.rssiImg.image = #imageLiteral(resourceName: "ble_level3")
         }else if rssi.int32Value > -85{
+            cell.rssiImg.image = #imageLiteral(resourceName: "ble_level4")
+        }else if rssi.int32Value > -95{
+            cell.rssiImg.image = #imageLiteral(resourceName: "ble_level3")
+        }else if rssi.int32Value > -105{
             cell.rssiImg.image = #imageLiteral(resourceName: "ble_level2")
         }else{
             cell.rssiImg.image = #imageLiteral(resourceName: "ble_level1")

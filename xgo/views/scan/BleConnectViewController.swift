@@ -130,10 +130,10 @@ class BleConnectViewController: UIViewController,CBCentralManagerDelegate,UIText
     //蓝牙搜索回调
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
 
-        if(peripheral.name?.isEmpty == false && peripheral.name!.hasPrefix("Fin")){
+        if(peripheral.name?.isEmpty == false && peripheral.name!.hasPrefix("XGO")){
             print("peripheral:\(peripheral)")
             print("rssi:\(RSSI)")
-            if Int(RSSI) > -60{
+            if Int(RSSI) > -80{
                 myPeripherals.add(peripheral)
             }
         }
