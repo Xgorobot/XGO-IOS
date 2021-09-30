@@ -15,7 +15,9 @@ class LeftRightItem: UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
         
-        itemSize = CGSize(width: 250, height: 250)
+        let iconSize = collectionView!.frame.size.height * 0.8
+        
+        itemSize = CGSize(width: iconSize, height: iconSize)
         scrollDirection = .horizontal
         //设置内边距
         let insert : CGFloat = (collectionView!.frame.size.width - itemSize.width) / 2 
