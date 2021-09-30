@@ -27,17 +27,15 @@
                             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fw0-ls-9MU" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
+                                    <rect key="frame" x="25.666666666666671" y="25.666666666666657" width="204.66666666666663" height="204.66666666666666"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="IiB-RT-ycx"/>
-                                        <constraint firstAttribute="height" constant="120" id="ZOx-4q-DTm"/>
-                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="height" secondItem="hZJ-FR-hnV" secondAttribute="height" multiplier="0.8" id="Osk-y8-1FD"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerY" secondItem="hZJ-FR-hnV" secondAttribute="centerY" id="ZZH-sC-8K4"/>
+                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="width" secondItem="hZJ-FR-hnV" secondAttribute="width" multiplier="0.8" id="hlp-3A-sJ1"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerX" secondItem="hZJ-FR-hnV" secondAttribute="centerX" id="vcS-Ks-gQk"/>
                             </constraints>
                         </view>
@@ -96,15 +94,11 @@
                             <rect key="frame" x="512" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-hg-Z2l" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
+                                    <rect key="frame" x="25.666666666666629" y="25.666666666666657" width="204.66666666666666" height="204.66666666666666"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="3Up-mn-VVT"/>
-                                        <constraint firstAttribute="height" constant="120" id="D8v-FO-GwD"/>
-                                    </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-f7-40U" userLabel="ResetBtn">
-                                    <rect key="frame" x="0.0" y="210" width="72" height="31"/>
+                                    <rect key="frame" x="0.0" y="220.33333333333331" width="72" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="72" id="Xqe-nd-J2w"/>
                                     </constraints>
@@ -115,11 +109,12 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="5jF-f7-40U" firstAttribute="top" secondItem="O7t-hg-Z2l" secondAttribute="bottom" constant="22" id="EOs-Nz-R2f"/>
+                                <constraint firstItem="5jF-f7-40U" firstAttribute="top" secondItem="O7t-hg-Z2l" secondAttribute="bottom" constant="-10" id="EOs-Nz-R2f"/>
+                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="height" secondItem="P7C-Cy-tM8" secondAttribute="height" multiplier="0.8" id="LDX-uU-b5m"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerY" secondItem="P7C-Cy-tM8" secondAttribute="centerY" id="WCf-Fi-udR"/>
                                 <constraint firstItem="5jF-f7-40U" firstAttribute="leading" secondItem="P7C-Cy-tM8" secondAttribute="leading" id="XvA-qM-zcy"/>
-                                <constraint firstAttribute="bottom" secondItem="5jF-f7-40U" secondAttribute="bottom" constant="15" id="d1U-cz-Te3"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerX" secondItem="P7C-Cy-tM8" secondAttribute="centerX" id="eOU-SD-Q0C"/>
+                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="width" secondItem="P7C-Cy-tM8" secondAttribute="width" multiplier="0.8" id="n4z-CX-RTb"/>
                             </constraints>
                         </view>
                     </subviews>
