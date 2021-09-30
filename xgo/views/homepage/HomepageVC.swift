@@ -44,8 +44,9 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
             show: _btn_ble.rx.tap.asObservable()
         ))
         
-        collectionView = UICollectionView(frame: CGRect(x: 0, y: SCREEN_HEIGHT/2-50, width: SCREEN_WIDTH, height: 200), collectionViewLayout: flowLayout)
+        collectionView = UICollectionView(frame: CGRect(x: 0, y: SCREEN_HEIGHT/4, width: SCREEN_WIDTH, height: SCREEN_HEIGHT*2/3), collectionViewLayout: flowLayout)
         collectionView.backgroundColor = UIColor.clear
+        collectionView.showsHorizontalScrollIndicator = false
         self.view.addSubview(collectionView)
         
         let dataSouce = RxCollectionViewSectionedReloadDataSource<SectionModel<String,DataElement>>(
@@ -54,6 +55,8 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
                 let cell = tv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomePageCollectionViewCell
 //                cell.title_homepage_title.text = element.itemTitle
                 cell.icon_item_homepage.image = element.itemImage
+//                cell.icon_item_homepage.backgroundColor = UIColor.red
+//                cell.backgroundColor = UIColor.green
                 return cell
             }
         )
@@ -85,11 +88,7 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
     func test() -> Void {
         print("---------测试----------")
         time = Date().timeIntervalSince1970
-//        let time2 = Date(timeIntervalSince1970: 0)
-        print("\(time)")
-        // 初始化timer
         let timer = Timer(timeInterval: 2, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-//        timer.invalidate()
         RunLoop.current.add(timer, forMode: .default)
 
     }

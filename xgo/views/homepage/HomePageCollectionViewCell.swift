@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomePageCollectionViewCell: UICollectionViewCell {
 
@@ -17,7 +18,14 @@ class HomePageCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        bg_item_homepage.backgroundColor = UIColor.lightGray
+//        bg_item_homepage.backgroundColor = UIColor.darkGray
+//        icon_item_homepage.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.snp.top)
+//            make.bottom.equalTo(self.snp.top)
+//            make.left.equalTo(self.snp.left)
+//            make.right.equalTo(self.snp_right)
+//        }
+//        icon_item_homepage.backgroundColor = UIColor.black
     }
 
 }
