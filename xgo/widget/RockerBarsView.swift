@@ -11,28 +11,31 @@ import UIKit
 class RockerBarsView: UIView {
 
     var actionBar:RockerBars?
+    var backgroundImage:UIImageView?
     required init?(coder: NSCoder) {
            super.init(coder: coder)
-           setUp()
        }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUp()
        
     }
     
     override func layoutSubviews() {
-        
+        setUp()
     }
     
     func setUp() {
-        let image = #imageLiteral(resourceName: "quan")
-        UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
-        image.draw(in:bounds)
-        let nimage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        backgroundColor = UIColor(patternImage: nimage!)
+        
+        backgroundImage = UIImageView.init(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+//        let image = #imageLiteral(resourceName: "quan")
+        backgroundImage?.image = #imageLiteral(resourceName: "quan")
+        self.addSubview(backgroundImage!)
+//        UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
+//        image.draw(in:bounds)
+//        let nimage = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//        backgroundColor = UIColor(patternImage: nimage!)
 
         actionBar = RockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 8,
                                                   y: frame.size.height / 2 - frame.size.width / 8,
