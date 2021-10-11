@@ -23,11 +23,11 @@ class ShowModeService {
             return Disposables.create()
         }
     }
-    static func setType(position:Int) -> Observable<String>{
-        let bytes = (position+1).hw_toByte()
+    static func setType(position:IndexPath) -> Observable<IndexPath>{
+        let bytes = (position.row+1).hw_toByte()
         FindControlUtil.actionType(type: bytes)
         return Observable.create { (anyObserver) -> Disposable in
-            anyObserver.onNext("蓝牙消息发送完成")
+            anyObserver.onNext(position)
             anyObserver.onCompleted()
             return Disposables.create()
         }

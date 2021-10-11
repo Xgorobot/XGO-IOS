@@ -18,17 +18,15 @@ class ControlBarsView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setUp()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUp()
         
     }
     
     override func layoutSubviews() {
-        
+        setUp()
     }
     
     func setUp() {

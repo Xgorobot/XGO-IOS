@@ -36,7 +36,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="width" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="4Cx-wv-eK3"/>
-                                <constraint firstItem="DVm-gV-jIB" firstAttribute="height" secondItem="O1Z-RH-PfS" secondAttribute="height" multiplier="0.8" id="9kg-8y-shH"/>
+                                <constraint firstItem="DVm-gV-jIB" firstAttribute="height" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="9kg-8y-shH"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="centerX" secondItem="O1Z-RH-PfS" secondAttribute="centerX" id="ecO-gQ-76r"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="centerY" secondItem="O1Z-RH-PfS" secondAttribute="centerY" id="kER-dE-xUs"/>
                             </constraints>
@@ -112,7 +112,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="height" secondItem="H7a-aW-QkI" secondAttribute="height" multiplier="0.8" id="51y-P7-72B"/>
+                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="height" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="51y-P7-72B"/>
                                 <constraint firstItem="5MD-2y-0Rj" firstAttribute="leading" secondItem="H7a-aW-QkI" secondAttribute="leading" id="Jfx-kG-wrh"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="width" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="dBv-m5-8dL"/>
                                 <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="-10" id="uW4-wN-ZST"/>

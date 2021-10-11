@@ -20,6 +20,7 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
     let dataItem = ["趴下","站起","匍匐前进","转圈","原地踏步","蹲起","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
     
     var _vm:ShowModeVM!
+    var selectItem:IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +31,12 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
         ))
         
         _vm.output.back.subscribe { (string) in
-                self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }.disposed(by: _bag)
-        _vm.output.itemSelectResult.subscribe { (string) in
-            print("表演模式命令发送完成")
+        _vm.output.itemSelectResult.subscribe { (indexPat) in
+            self.selectItem = indexPat
         }.disposed(by: _bag)
+//        _vm.output.itemSelectResult.su
         
         let items = Observable.just([SectionModel(model: "", items: dataItem)])
         let flowLayout = UICollectionViewFlowLayout()
@@ -58,6 +60,9 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
 
     @IBAction func onResetClick(_ sender: UIButton) {
         FindControlUtil.actionType(type: 0x00)
+        if (self.selectItem != nil) {
+            showBtnsCollectionView.deselectItem(at: selectItem!, animated: false)
+        }
     }
     @IBAction func onClick(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -67,7 +72,7 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
 extension ShowModeVC: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.frame.size.width-20)/3, height: 50)
+        return CGSize(width: (collectionView.frame.size.width-20)/3, height: 60)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

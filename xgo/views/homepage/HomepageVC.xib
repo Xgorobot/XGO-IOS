@@ -41,11 +41,11 @@
                             <rect key="frame" x="52" y="8.5" width="37" height="37"/>
                             <state key="normal" image="lanya"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Ln-2Hb">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Ln-2Hb">
                             <rect key="frame" x="807" y="8.5" width="37" height="37"/>
                             <state key="normal" image="guanyu"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9m-7am">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9m-7am">
                             <rect key="frame" x="746" y="8.5" width="37" height="37"/>
                             <state key="normal" image="shezhi"/>
                         </button>

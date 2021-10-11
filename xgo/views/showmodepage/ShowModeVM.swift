@@ -16,7 +16,7 @@ class ShowModeVM {
     }
     struct Output {
         var back: Observable<String>!
-        var itemSelectResult: Observable<String>!
+        var itemSelectResult: Observable<IndexPath>!
     }
     
     var output: Output
@@ -32,8 +32,8 @@ class ShowModeVM {
 //            ShowModeService.setType(position: position)
 //        }
         output.itemSelectResult = input.itemSelect
-            .flatMapLatest({ (indexPath) -> Observable<String> in
-                return ShowModeService.setType(position: indexPath.row)
+            .flatMapLatest({ (indexPath) -> Observable<IndexPath> in
+                return ShowModeService.setType(position: indexPath)
             })
        
     }
