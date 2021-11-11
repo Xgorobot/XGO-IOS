@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="leftRockerView" destination="Fw0-ls-9MU" id="aTt-DB-bfu"/>
                 <outlet property="rightRockerView" destination="O7t-hg-Z2l" id="Dpt-SP-LTL"/>
+                <outlet property="slider" destination="fFh-69-tea" id="ifj-vO-Bcv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -70,10 +71,13 @@
                                     <rect key="frame" x="0.0" y="192" width="256" height="64"/>
                                     <subviews>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-69-tea">
-                                            <rect key="frame" x="30" y="16" width="196" height="33"/>
+                                            <rect key="frame" x="30" y="15" width="196" height="33"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="agX-NP-q4M"/>
                                             </constraints>
+                                            <connections>
+                                                <action selector="setheight:" destination="-1" eventType="valueChanged" id="hu3-Cm-B6K"/>
+                                            </connections>
                                         </slider>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,6 +115,9 @@
                                     <state key="normal" title="重置高度" backgroundImage="kuang">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="reset:" destination="-1" eventType="touchUpInside" id="cYk-3C-Gfd"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
