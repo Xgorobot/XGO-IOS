@@ -363,5 +363,10 @@ final class FindControlUtil {
         addWriteMsg(data: result)
     }
     
+    class func enableIMU(enable:Bool) {//设置当前舵机位置为默认位置
+        let result:[UInt8] = [0x61,enable ? 0x00:0x01];
+        addWriteMsg(data: result)
+    }
+    
 }
 

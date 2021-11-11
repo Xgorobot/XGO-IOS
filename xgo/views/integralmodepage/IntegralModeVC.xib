@@ -56,7 +56,7 @@
                                 <constraint firstAttribute="height" constant="48" id="BbI-hs-cFa"/>
                                 <constraint firstAttribute="width" constant="48" id="yvY-94-s9j"/>
                             </constraints>
-                            <state key="normal" image="gearshape" catalog="system"/>
+                            <state key="normal" image="settingIcon"/>
                             <connections>
                                 <action selector="onSettingClick:" destination="-1" eventType="touchUpInside" id="hPF-1k-7v1"/>
                             </connections>
@@ -228,8 +228,11 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98O-Jo-RKs">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="98O-Jo-RKs">
                                             <rect key="frame" x="180" y="1" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="xyzEnable:" destination="-1" eventType="valueChanged" id="8rr-CA-Yol"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,7 +352,7 @@
     <resources>
         <image name="background" width="667" height="375"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="settingIcon" width="21" height="21"/>
         <image name="tabdi1" width="667" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

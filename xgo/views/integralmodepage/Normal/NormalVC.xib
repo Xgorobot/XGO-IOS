@@ -109,12 +109,12 @@
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MD-2y-0Rj" userLabel="ResetBtn">
-                                    <rect key="frame" x="0.0" y="200" width="120" height="32"/>
+                                    <rect key="frame" x="0.0" y="210" width="120" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="Fy5-Cn-P5l"/>
                                         <constraint firstAttribute="width" constant="120" id="kQi-qI-seG"/>
                                     </constraints>
-                                    <state key="normal" title="恢复初始状态" backgroundImage="kuang">
+                                    <state key="normal" title="重置高度" backgroundImage="kuang">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -125,7 +125,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="5MD-2y-0Rj" firstAttribute="leading" secondItem="H7a-aW-QkI" secondAttribute="leading" id="Jfx-kG-wrh"/>
-                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="12" id="uW4-wN-ZST"/>
+                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="22" id="uW4-wN-ZST"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerY" secondItem="H7a-aW-QkI" secondAttribute="centerY" id="wWM-K0-Syg"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerX" secondItem="H7a-aW-QkI" secondAttribute="centerX" id="znt-H5-32p"/>
                             </constraints>
