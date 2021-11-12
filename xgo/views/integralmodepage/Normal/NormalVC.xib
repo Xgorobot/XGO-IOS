@@ -12,8 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NormalVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="leftCtlBar" destination="DVm-gV-jIB" id="NEo-7A-jkr"/>
+                <outlet property="powerImg" destination="UKo-ag-hRf" id="zgn-KB-yoh"/>
                 <outlet property="rightCtlBar" destination="Mmi-Dr-Xel" id="CLF-l5-tAw"/>
                 <outlet property="slider" destination="S2t-uh-SmG" id="ZLQ-68-iZp"/>
+                <outlet property="speedImg" destination="koG-b0-ygO" id="aBl-4M-Fg0"/>
                 <outlet property="view" destination="0ke-cQ-TlP" id="ibj-N9-WqM"/>
             </connections>
         </placeholder>
@@ -50,10 +52,10 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-Zz-zTP">
                                     <rect key="frame" x="0.0" y="0.0" width="209" height="64"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianliang" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-ag-hRf">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianliang0" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-ag-hRf">
                                             <rect key="frame" x="0.0" y="0.0" width="104.5" height="64"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sudu" translatesAutoresizingMaskIntoConstraints="NO" id="koG-b0-ygO">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sudu0" translatesAutoresizingMaskIntoConstraints="NO" id="koG-b0-ygO">
                                             <rect key="frame" x="104.5" y="0.0" width="104.5" height="64"/>
                                         </imageView>
                                     </subviews>
@@ -188,9 +190,9 @@
         </view>
     </objects>
     <resources>
-        <image name="dianliang" width="59" height="59"/>
+        <image name="dianliang0" width="59" height="59"/>
         <image name="kuang" width="150" height="60"/>
-        <image name="sudu" width="82" height="82"/>
+        <image name="sudu0" width="82" height="82"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
