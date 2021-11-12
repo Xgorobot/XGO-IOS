@@ -43,8 +43,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>APP needs your consent to access Bluetooth,Bluetooth is only used to connect the supporting hardware to send data.</string>
+	<string>是否允许此App使用蓝牙</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>APP needs your consent to access Bluetooth,Bluetooth is only used to connect the supporting hardware to send data.</string>
+	<string>是否允许此App使用蓝牙</string>
 </dict>
 </plist>
