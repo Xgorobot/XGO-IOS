@@ -154,7 +154,7 @@ class ControlBarsView: UIView {
             }else{
                 setImage(image: #imageLiteral(resourceName: "zuoyou"))
             }
-        bDirection(OperationOrder.OUp,0,0,0)
+        bDirection(OperationOrder.OStop,0,0,0)
     }
     
     func setImage(image:UIImage){

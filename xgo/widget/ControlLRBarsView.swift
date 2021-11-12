@@ -86,7 +86,6 @@ class ControlLRBarsView: UIView {
             
             angle = angle * 180 / .pi
             
-            
             if (angle >= -45 && angle <= 45)
             {
                 if(Int(touchPoint.x) > Int(self.center.x))
@@ -96,14 +95,14 @@ class ControlLRBarsView: UIView {
                     }else{
                         setImage(image: #imageLiteral(resourceName: "you"))
                     }
-//                    bDirection(OperationOrder.ORight)
+                    bDirection(OperationOrder.ORight,0,0,0)
                 }else{
                     if updownEnable {
                         setImage(image: #imageLiteral(resourceName: "z"))
                     }else{
                         setImage(image: #imageLiteral(resourceName: "zuo"))
                     }
-//                    bDirection(OperationOrder.OLeft)
+                    bDirection(OperationOrder.OLeft,0,0,0)
                 }
             }
             
@@ -136,6 +135,8 @@ class ControlLRBarsView: UIView {
             }else{
                 setImage(image: #imageLiteral(resourceName: "zuoyou"))
             }
+        bDirection(OperationOrder.OStop,0,0,0)
+
     }
     
     func setImage(image:UIImage){
