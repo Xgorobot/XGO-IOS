@@ -354,7 +354,7 @@ final class FindControlUtil {
     }
     
     class func servoSpeedSet(speed:UInt8) {//设置舵机速度
-        let result:[UInt8] = [0x4B,speed];
+        let result:[UInt8] = [0x5C,speed];
         addWriteMsg(data: result)
     }
     

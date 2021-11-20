@@ -126,14 +126,9 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
         func startGyroUpdates() {
             //判断设备支持情况
             guard motionManager.isGyroAvailable else {
-//                self.textView.text = "\n当前设备不支持陀螺仪\n"
                 return
             }
-             
-            //设置刷新时间间隔
             self.motionManager.gyroUpdateInterval = self.timeInterval
-             
-            //开始实时获取数据
             let queue = OperationQueue.current
             self.motionManager.startGyroUpdates(to: queue!, withHandler: { (gyroData, error) in
                 guard error == nil else {
@@ -166,16 +161,18 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
             lowSpeed.backgroundColor = blueColor;
             mediumSpeed.backgroundColor = UIColor.black;
             highSpeed.backgroundColor = UIColor.black;
-
+            FindControlUtil.setSpeed(type: 0x01)
         case 1:
             lowSpeed.backgroundColor = UIColor.black;
             mediumSpeed.backgroundColor = blueColor;
             highSpeed.backgroundColor = UIColor.black;
+            FindControlUtil.setSpeed(type: 0x00)
             
         case 2:
             lowSpeed.backgroundColor = UIColor.black;
             mediumSpeed.backgroundColor = UIColor.black;
             highSpeed.backgroundColor = blueColor;
+            FindControlUtil.setSpeed(type: 0x02)
             
             
         default:
