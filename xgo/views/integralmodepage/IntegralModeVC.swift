@@ -43,8 +43,7 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
     @IBOutlet weak var settingView: UIView!
      override func viewDidLoad() {
         super.viewDidLoad()
-        add(_normalVC, frame: _childView.frame)
-        _normalVC.didMove(toParent: self)
+        
         btn0.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
         btn0.isSelected = true
         btn1.setBackgroundImage(#imageLiteral(resourceName: "yaokongTitleBg"), for: .selected)
@@ -74,6 +73,11 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
             self!.settingView.isHidden = self!.showSettingView
 
         }).disposed(by: _bag)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        add(_normalVC, frame: _childView.frame)
+        _normalVC.didMove(toParent: self)
     }
     
     @IBAction func onClick(_ sender: Any) {

@@ -70,6 +70,7 @@ class NormalVC: UIViewController {
                 self.speedImg.image = getSpeedImage(speed: 60)
             case .OLeft:
                 FindControlUtil.moveY(speed: 0xDA)
+                self.speedImg.image = getSpeedImage(speed: 60)
             case .ORight:
                 FindControlUtil.moveY(speed: 0x25)
                 self.speedImg.image = getSpeedImage(speed: 60)

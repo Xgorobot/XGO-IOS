@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,17 +31,15 @@
                             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fw0-ls-9MU" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
+                                    <rect key="frame" x="25.666666666666671" y="25.666666666666657" width="204.66666666666663" height="204.66666666666666"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="IiB-RT-ycx"/>
-                                        <constraint firstAttribute="height" constant="120" id="ZOx-4q-DTm"/>
-                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerY" secondItem="hZJ-FR-hnV" secondAttribute="centerY" id="ZZH-sC-8K4"/>
+                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="width" secondItem="hZJ-FR-hnV" secondAttribute="width" multiplier="0.8" id="dMw-V9-qeq"/>
+                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="height" secondItem="hZJ-FR-hnV" secondAttribute="width" multiplier="0.8" id="hWD-8E-MCo"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerX" secondItem="hZJ-FR-hnV" secondAttribute="centerX" id="vcS-Ks-gQk"/>
                             </constraints>
                         </view>
@@ -142,15 +140,11 @@
                             <rect key="frame" x="512" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-hg-Z2l" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
+                                    <rect key="frame" x="25.666666666666629" y="-45.666666666666671" width="204.66666666666666" height="204.66666666666669"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="3Up-mn-VVT"/>
-                                        <constraint firstAttribute="height" constant="120" id="D8v-FO-GwD"/>
-                                    </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-f7-40U" userLabel="ResetBtn">
-                                    <rect key="frame" x="15" y="210" width="120" height="31"/>
+                                    <rect key="frame" x="15" y="181" width="120" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="120" id="Xqe-nd-J2w"/>
                                     </constraints>
@@ -167,8 +161,10 @@
                                 <constraint firstItem="5jF-f7-40U" firstAttribute="top" secondItem="O7t-hg-Z2l" secondAttribute="bottom" constant="22" id="EOs-Nz-R2f"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerY" secondItem="P7C-Cy-tM8" secondAttribute="centerY" id="WCf-Fi-udR"/>
                                 <constraint firstItem="5jF-f7-40U" firstAttribute="leading" secondItem="P7C-Cy-tM8" secondAttribute="leading" constant="15" id="XvA-qM-zcy"/>
+                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="width" secondItem="P7C-Cy-tM8" secondAttribute="width" multiplier="0.8" id="YUY-W8-rtM"/>
                                 <constraint firstAttribute="bottom" secondItem="5jF-f7-40U" secondAttribute="bottom" constant="15" id="d1U-cz-Te3"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerX" secondItem="P7C-Cy-tM8" secondAttribute="centerX" id="eOU-SD-Q0C"/>
+                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="height" secondItem="P7C-Cy-tM8" secondAttribute="width" multiplier="0.8" id="nQ6-fV-aPT"/>
                             </constraints>
                         </view>
                     </subviews>
