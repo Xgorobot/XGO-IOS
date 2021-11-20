@@ -87,7 +87,7 @@ class SingleLegVC: UIViewController,UITabBarDelegate {
         YLabel.text = "0 nmm"
         ZLabel2.text = "105 mm"
         ZLabel.text = "Z:105 mm"
-        FindControlUtil.actionType(type: 0x00)
+        FindControlUtil.actionType(type: 0xFF)
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

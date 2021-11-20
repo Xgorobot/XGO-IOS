@@ -87,7 +87,7 @@ class ServoVC: UIViewController,UITabBarDelegate {
         YLabel.text = "43 °"
         ZLabel2.text = "20 °"
         ZLabel.text = "Z:20 °"
-        FindControlUtil.actionType(type: 0x00)
+        FindControlUtil.actionType(type: 0xFF)
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
