@@ -122,36 +122,6 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
         btn3.isSelected = false
     }
     
-    // 开始获取陀螺仪数据
-        func startGyroUpdates() {
-            //判断设备支持情况
-            guard motionManager.isGyroAvailable else {
-                return
-            }
-            self.motionManager.gyroUpdateInterval = self.timeInterval
-            let queue = OperationQueue.current
-            self.motionManager.startGyroUpdates(to: queue!, withHandler: { (gyroData, error) in
-                guard error == nil else {
-                    print(error!)
-                    return
-                }
-                // 有更新
-                if self.motionManager.isGyroActive {
-                    if let rotationRate = gyroData?.rotationRate {
-                        var text = "---当前陀螺仪数据---\n"
-                        text += "x: \(rotationRate.x)\n"
-                        text += "y: \(rotationRate.y)\n"
-                        text += "z: \(rotationRate.z)\n"
-//                        self.textView.text = text
-                        print(text)
-                    }
-                }
-            })
-        }
-    
-    func stopGyroUpdates() {
-        self.motionManager.stopGyroUpdates()
-    }
     let blueColor = UIColor.init(red: 110/255, green: 230/255, blue: 228/255, alpha: 1)
     
     @IBAction func onSpeedSelect(_ sender: UIButton) {
@@ -188,5 +158,12 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
         settingView.isHidden = showSettingView
     }
     
-
+    @IBAction func xyzEnable(_ sender: UISwitch) {
+        if sender.isOn {
+            FindControlUtil.enableIMU(enable: true)
+        }else{
+            FindControlUtil.enableIMU(enable: false)
+        }
+    }
+    
 }

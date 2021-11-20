@@ -29,14 +29,16 @@
                             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-gV-jIB" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="25.5" y="25.5" width="205" height="205"/>
+                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="fVi-zL-TrM"/>
+                                        <constraint firstAttribute="width" constant="120" id="g2c-HY-cgs"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="DVm-gV-jIB" firstAttribute="width" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="4Cx-wv-eK3"/>
-                                <constraint firstItem="DVm-gV-jIB" firstAttribute="height" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="9kg-8y-shH"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="centerX" secondItem="O1Z-RH-PfS" secondAttribute="centerX" id="ecO-gQ-76r"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="centerY" secondItem="O1Z-RH-PfS" secondAttribute="centerY" id="kER-dE-xUs"/>
                             </constraints>
@@ -99,16 +101,20 @@
                             <rect key="frame" x="512" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-Dr-Xel" customClass="ControlLRBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="25.5" y="25.5" width="205" height="205"/>
+                                    <rect key="frame" x="68" y="68" width="120" height="120"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="611-G2-EE4"/>
+                                        <constraint firstAttribute="height" constant="120" id="euh-89-Ju1"/>
+                                    </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MD-2y-0Rj" userLabel="ResetBtn">
-                                    <rect key="frame" x="0.0" y="220.5" width="120" height="32"/>
+                                    <rect key="frame" x="0.0" y="210" width="120" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="Fy5-Cn-P5l"/>
                                         <constraint firstAttribute="width" constant="120" id="kQi-qI-seG"/>
                                     </constraints>
-                                    <state key="normal" title="恢复初始状态" backgroundImage="kuang">
+                                    <state key="normal" title="重置高度" backgroundImage="kuang">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -118,10 +124,8 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="height" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="51y-P7-72B"/>
                                 <constraint firstItem="5MD-2y-0Rj" firstAttribute="leading" secondItem="H7a-aW-QkI" secondAttribute="leading" id="Jfx-kG-wrh"/>
-                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="width" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="dBv-m5-8dL"/>
-                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="-10" id="uW4-wN-ZST"/>
+                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="22" id="uW4-wN-ZST"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerY" secondItem="H7a-aW-QkI" secondAttribute="centerY" id="wWM-K0-Syg"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerX" secondItem="H7a-aW-QkI" secondAttribute="centerX" id="znt-H5-32p"/>
                             </constraints>
