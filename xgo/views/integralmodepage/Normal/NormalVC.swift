@@ -32,8 +32,8 @@ class NormalVC: UIViewController {
     var _vm: NormalVM!
     override func viewDidLoad() {
         super.viewDidLoad()
-        _vm = NormalVM.init(input: NormalVM.Input(
-                                setHeight: slider.rx.value.asObservable()))
+//        _vm = NormalVM.init(input: NormalVM.Input(
+//                                setHeight: slider.rx.value.asObservable()))
         initCtrl()
     }
     
@@ -80,6 +80,16 @@ class NormalVC: UIViewController {
 
     func updateSpeed() -> Void {
         speedShow = sqrt(speedX*speedX+speedY*speedY+speedYar*speedYar)
+    }
+    
+    @IBAction func setheight(_ sender: UISlider) {
+        let value = Int((sender.value*255).rounded())
+        FindControlUtil.heightSet(height: value.hw_toByte())
+//            FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
+    }
+    @IBAction func reset(_ sender: UIButton) {
+        slider.value = 0.5
+        FindControlUtil.heightSet(height:0x80)
     }
     
 }

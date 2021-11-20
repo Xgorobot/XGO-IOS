@@ -12,6 +12,7 @@ class RockerVC: UIViewController {
     
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var rightRockerView: RockerBarsView!
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,4 +72,15 @@ class RockerVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func setheight(_ sender: UISlider) {
+        let value = Int((sender.value*255).rounded())
+        FindControlUtil.heightSet(height: value.hw_toByte())
+//            FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
+    }
+    @IBAction func reset(_ sender: UIButton) {
+        slider.value = 0.5
+        FindControlUtil.heightSet(height:0x80)
+    }
+    
 }
