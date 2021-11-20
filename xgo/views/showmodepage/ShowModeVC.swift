@@ -57,7 +57,10 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
             .disposed(by: _bag)
         showBtnsCollectionView.rx.setDelegate(self).disposed(by: _bag)
     }
-
+    @IBAction func turnShow(_ sender: UISwitch) {
+        FindControlUtil.showMode(needRepeat: sender.isOn)
+    }
+    
     @IBAction func onResetClick(_ sender: UIButton) {
         FindControlUtil.actionType(type: 0x00)
         if (self.selectItem != nil) {
