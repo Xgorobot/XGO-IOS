@@ -57,6 +57,7 @@
 		C7B6C5F226C7D0EA004661AF /* AppValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F126C7D0EA004661AF /* AppValues.swift */; };
 		C7B6C5F626C7D222004661AF /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F526C7D222004661AF /* CBToast.swift */; };
 		C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A0273D303100686FC8 /* XGOSlider.swift */; };
+		C7BD52A3273E4A0200686FC8 /* ControlImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */; };
 		C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24126AFD60400943B9E /* LeftRightItem.swift */; };
 		C7EAB24B26B0F16600943B9E /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */; };
 		C7EAB24C26B0F16600943B9E /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */; };
@@ -136,6 +137,7 @@
 		C7B6C5F126C7D0EA004661AF /* AppValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppValues.swift; sourceTree = "<group>"; };
 		C7B6C5F526C7D222004661AF /* CBToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
 		C7BD52A0273D303100686FC8 /* XGOSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGOSlider.swift; sourceTree = "<group>"; };
+		C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageUtil.swift; sourceTree = "<group>"; };
 		C7EAB24126AFD60400943B9E /* LeftRightItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftRightItem.swift; sourceTree = "<group>"; };
 		C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				C7B6C5D726C7CDAA004661AF /* StringUtils.swift */,
 				C77FF84B26A2B66B00431230 /* Utils.swift */,
 				C7B6C5F526C7D222004661AF /* CBToast.swift */,
+				C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				C7B6C5D226C7CD37004661AF /* DelayUtils.swift in Sources */,
 				C7EAB27626B2DAB100943B9E /* ShowModeCollectionViewCell.swift in Sources */,
 				C7EAB24B26B0F16600943B9E /* HomePageCollectionViewCell.swift in Sources */,
+				C7BD52A3273E4A0200686FC8 /* ControlImageUtil.swift in Sources */,
 				C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */,
 				C7EBE19D26A2D19E008280BB /* HomepageService.swift in Sources */,
 				C709BC4426D63E7F00518E69 /* BleMessageAttributes.swift in Sources */,

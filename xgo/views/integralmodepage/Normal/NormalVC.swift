@@ -29,12 +29,32 @@ class NormalVC: UIViewController {
     var speedShow = 0.0
     
     
+    @IBOutlet weak var powerImg: UIImageView!
+    @IBOutlet weak var speedImg: UIImageView!
+    var timer: Timer?
     var _vm: NormalVM!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        _vm = NormalVM.init(input: NormalVM.Input(
 //                                setHeight: slider.rx.value.asObservable()))
         initCtrl()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        startCheckPower()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        stopCheckPower()
+    }
+    func initXYZ(){
+        leftCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            let xValue = Int(((x+1)/2*255).rounded())
+            FindControlUtil.trunkMoveX(position: xValue.hw_toByte())
+            let yValue = Int(((y+1)/2*255).rounded())
+            FindControlUtil.trunkMoveY(position: yValue.hw_toByte())
+            self.speedImg.image = getSpeedImage(speed: max(Int(abs(x) * 100), Int(abs(y) * 100)))
+        }
     }
     
     func initCtrl(){
@@ -44,13 +64,17 @@ class NormalVC: UIViewController {
             switch dir {
             case .OUp:
                 FindControlUtil.moveX(speed: 0xDA)
+                self.speedImg.image = getSpeedImage(speed: 60)
             case .ODown:
                 FindControlUtil.moveX(speed: 0x25)
+                self.speedImg.image = getSpeedImage(speed: 60)
             case .OLeft:
                 FindControlUtil.moveY(speed: 0xDA)
             case .ORight:
                 FindControlUtil.moveY(speed: 0x25)
+                self.speedImg.image = getSpeedImage(speed: 60)
             case .OStop:
+                self.speedImg.image = getSpeedImage(speed: 0)
                 FindControlUtil.moveX(speed: 0x80)
                 FindControlUtil.moveY(speed: 0x80)
             }
@@ -69,6 +93,10 @@ class NormalVC: UIViewController {
             default:
                 break
             }
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            let xValue = Int(((x+1)/2*255).rounded())
+            self.speedImg.image = getSpeedImage(speed: Int(abs(x) * 100))
+            FindControlUtil.turnClockwise(speed: xValue.hw_toByte())
         }
     }
 
@@ -92,4 +120,21 @@ class NormalVC: UIViewController {
         FindControlUtil.heightSet(height:0x80)
     }
     
+    func startCheckPower()  {
+
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+
+            FindControlUtil.readPower { power in
+                self.powerImg.image = getPowerImage(power: power[0].integerValue())
+                
+                print("结果1：\(0*14/255)")
+                print("结果2：\(100*14/255)")
+                print("结果3：\(255*14/255)")
+            }
+        })
+    }
+    func stopCheckPower() {
+        timer?.invalidate()
+        timer = nil
+    }
 }
