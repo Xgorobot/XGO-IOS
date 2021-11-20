@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -70,11 +71,12 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWU-Dr-c3t">
                                     <rect key="frame" x="0.0" y="192" width="256" height="64"/>
                                     <subviews>
-                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-69-tea">
-                                            <rect key="frame" x="30" y="15" width="196" height="33"/>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-69-tea" customClass="XGOSlider" customModule="xgo" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="16" width="196" height="33"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="agX-NP-q4M"/>
                                             </constraints>
+                                            <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                             <connections>
                                                 <action selector="setheight:" destination="-1" eventType="valueChanged" id="hu3-Cm-B6K"/>
                                             </connections>
@@ -108,9 +110,9 @@
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-f7-40U" userLabel="ResetBtn">
-                                    <rect key="frame" x="0.0" y="210" width="72" height="31"/>
+                                    <rect key="frame" x="0.0" y="210" width="120" height="31"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="72" id="Xqe-nd-J2w"/>
+                                        <constraint firstAttribute="width" constant="120" id="Xqe-nd-J2w"/>
                                     </constraints>
                                     <state key="normal" title="重置高度" backgroundImage="kuang">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -150,5 +152,8 @@
         <image name="dianliang" width="59" height="59"/>
         <image name="kuang" width="150" height="60"/>
         <image name="sudu" width="82" height="82"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

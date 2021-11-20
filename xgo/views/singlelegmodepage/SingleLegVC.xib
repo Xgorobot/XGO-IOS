@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="landscape" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -134,11 +135,11 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpf-ve-Mub">
                                                     <rect key="frame" x="80" y="0.0" width="263" height="81.5"/>
                                                     <subviews>
-                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-31" maxValue="31" id="ca7-kg-NcG">
+                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-31" maxValue="31" id="ca7-kg-NcG" customClass="XGOSlider" customModule="xgo" customModuleProvider="target">
                                                             <rect key="frame" x="65" y="24" width="179" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="tintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="thumbTintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                             <connections>
                                                                 <action selector="onXValueChanged:forEvent:" destination="-1" eventType="valueChanged" id="aPV-R1-mVC"/>
                                                             </connections>
@@ -184,11 +185,10 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-La-Mie">
                                                     <rect key="frame" x="80" y="0.0" width="263" height="82"/>
                                                     <subviews>
-                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-18" maxValue="18" id="IBf-yt-lm7">
+                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-18" maxValue="18" id="IBf-yt-lm7" customClass="XGOSlider" customModule="xgo" customModuleProvider="target">
                                                             <rect key="frame" x="65" y="26" width="179" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="tintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="thumbTintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                             <connections>
                                                                 <action selector="onYValueChanged:" destination="-1" eventType="valueChanged" id="5rK-7S-5pI"/>
                                                             </connections>
@@ -234,11 +234,10 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh9-Xg-WgP">
                                                     <rect key="frame" x="80" y="0.0" width="263" height="81.5"/>
                                                     <subviews>
-                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="105" minValue="75" maxValue="115" id="2ja-nv-xO2">
+                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="105" minValue="75" maxValue="115" id="2ja-nv-xO2" customClass="XGOSlider" customModule="xgo" customModuleProvider="target">
                                                             <rect key="frame" x="69" y="26" width="173" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="tintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="thumbTintColor" red="0.001070740749" green="0.87273299689999995" blue="0.98009878399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="thumbTintColor" systemColor="systemYellowColor"/>
                                                             <connections>
                                                                 <action selector="onZValueChanged:" destination="-1" eventType="valueChanged" id="CLt-I1-lWA"/>
                                                             </connections>
@@ -366,5 +365,8 @@
         <image name="tabdi1" width="667" height="44"/>
         <image name="weixuan" width="15" height="15"/>
         <image name="xuanzhong" width="15" height="15"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

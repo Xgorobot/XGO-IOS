@@ -56,6 +56,7 @@
 		C7B6C5EE26C7CE7F004661AF /* ScanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5EC26C7CE7F004661AF /* ScanTableCell.swift */; };
 		C7B6C5F226C7D0EA004661AF /* AppValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F126C7D0EA004661AF /* AppValues.swift */; };
 		C7B6C5F626C7D222004661AF /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F526C7D222004661AF /* CBToast.swift */; };
+		C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A0273D303100686FC8 /* XGOSlider.swift */; };
 		C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24126AFD60400943B9E /* LeftRightItem.swift */; };
 		C7EAB24B26B0F16600943B9E /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */; };
 		C7EAB24C26B0F16600943B9E /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */; };
@@ -134,6 +135,7 @@
 		C7B6C5EC26C7CE7F004661AF /* ScanTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanTableCell.swift; sourceTree = "<group>"; };
 		C7B6C5F126C7D0EA004661AF /* AppValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppValues.swift; sourceTree = "<group>"; };
 		C7B6C5F526C7D222004661AF /* CBToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
+		C7BD52A0273D303100686FC8 /* XGOSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGOSlider.swift; sourceTree = "<group>"; };
 		C7EAB24126AFD60400943B9E /* LeftRightItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftRightItem.swift; sourceTree = "<group>"; };
 		C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				C7FDFEF226F0C71E001A472E /* ControlBarsView.swift */,
 				C7FDFEF626F19840001A472E /* ControlLRBarsView.swift */,
 				C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */,
+				C7BD52A0273D303100686FC8 /* XGOSlider.swift */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
 				C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */,
 				C77C164A26A7C7200063E17A /* IntegralModeVC.swift in Sources */,
+				C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */,
 				C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */,
 				C7EBE18326A2CFC9008280BB /* HomepageVC.swift in Sources */,
 				C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */,
