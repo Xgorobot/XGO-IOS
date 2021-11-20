@@ -39,7 +39,7 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
         self.navigationController?.navigationBar.isHidden = true
         let items = Observable.just([SectionModel(model: "",
                                                   items: dataItem)])
-        
+        self.view.layer.contents = UIImage(named: "background")?.cgImage
         _vm = HomepageVM(input: HomepageVM.Input(
             show: _btn_ble.rx.tap.asObservable()
         ))
