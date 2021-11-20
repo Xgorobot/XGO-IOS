@@ -97,6 +97,20 @@ class NormalVC: UIViewController {
             let xValue = Int(((x+1)/2*255).rounded())
             self.speedImg.image = getSpeedImage(speed: Int(abs(x) * 100))
             FindControlUtil.turnClockwise(speed: xValue.hw_toByte())
+            
+            switch dir {
+            case .OLeft:
+                FindControlUtil.turnClockwise(speed: 0x25)
+                self.speedImg.image = getSpeedImage(speed: 60)
+            case .ORight:
+                FindControlUtil.turnClockwise(speed: 0xDA)
+                self.speedImg.image = getSpeedImage(speed: 60)
+            case .OStop:
+                self.speedImg.image = getSpeedImage(speed: 0)
+                FindControlUtil.turnClockwise(speed: 0x80)
+            default:
+                break
+            }
         }
     }
 

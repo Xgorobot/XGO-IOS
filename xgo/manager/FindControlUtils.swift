@@ -66,6 +66,7 @@ final class FindControlUtil {
     class func moveX(speed:UInt8) {//向后 0x00 - 向前0xff  默认 0x80
         let result:[UInt8] = [0x30,speed];
         addWriteMsg(data: result)
+        print("运动X 前后\(speed)")
     }
     
     class func moveY(speed:UInt8) {//向右 0x00 - 向左0xff  默认 0x80
