@@ -53,6 +53,7 @@
 		C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A0273D303100686FC8 /* XGOSlider.swift */; };
 		C7BD52A3273E4A0200686FC8 /* ControlImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */; };
 		C7D1B58B2749FB00003F3C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7D1B58D2749FB00003F3C2D /* Localizable.strings */; };
+		C7D1B651274A0B88003F3C2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7D1B653274A0B88003F3C2D /* InfoPlist.strings */; };
 		C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975D32749E2FD006F31D5 /* DeviceScanViewController.xib */; };
 		C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975DA2749E328006F31D5 /* BleConnectViewController.xib */; };
 		C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975E12749E366006F31D5 /* HomepageVC.xib */; };
@@ -135,6 +136,8 @@
 		C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageUtil.swift; sourceTree = "<group>"; };
 		C7D1B58C2749FB00003F3C2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7D1B58E2749FB02003F3C2D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C7D1B652274A0B88003F3C2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7D1B654274A0B89003F3C2D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		C7E975D02749E296006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		C7E975D22749E2FD006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DeviceScanViewController.xib; sourceTree = "<group>"; };
 		C7E975D52749E301006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DeviceScanViewController.strings; sourceTree = "<group>"; };
@@ -361,6 +364,7 @@
 				C7ACF4A526940BA100D303FD /* LaunchScreen.storyboard */,
 				C7B6C5F126C7D0EA004661AF /* AppValues.swift */,
 				C7D1B58D2749FB00003F3C2D /* Localizable.strings */,
+				C7D1B653274A0B88003F3C2D /* InfoPlist.strings */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -502,6 +506,7 @@
 				C7E9760F2749E952006F31D5 /* ShowModeVC.xib in Resources */,
 				C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */,
 				C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */,
+				C7D1B651274A0B88003F3C2D /* InfoPlist.strings in Resources */,
 				C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */,
 				C7B6C5ED26C7CE7F004661AF /* ScanTableCell.xib in Resources */,
 				C7E975FB2749E531006F31D5 /* SingleLegVC.xib in Resources */,
@@ -643,6 +648,15 @@
 				C7D1B58E2749FB02003F3C2D /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C7D1B653274A0B88003F3C2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7D1B652274A0B88003F3C2D /* en */,
+				C7D1B654274A0B89003F3C2D /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		C7E975D32749E2FD006F31D5 /* DeviceScanViewController.xib */ = {
