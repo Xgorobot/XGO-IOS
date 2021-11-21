@@ -25,15 +25,15 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-Mt-7UV">
-                                <rect key="frame" x="84" y="0.0" width="22" height="105.5"/>
+                                <rect key="frame" x="84" y="0.0" width="22" height="97"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="lXq-KT-nrD"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="整机控制" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-Kk-jBG">
-                                <rect key="frame" x="20" y="105.5" width="150" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="20" y="97" width="150" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.39607840779999998" green="0.86274516580000005" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,7 +42,7 @@
                         <constraints>
                             <constraint firstItem="wk5-Mt-7UV" firstAttribute="centerX" secondItem="RL7-XI-4Zv" secondAttribute="centerX" id="4gl-uN-gNf"/>
                             <constraint firstItem="gcD-0k-veZ" firstAttribute="top" secondItem="RL7-XI-4Zv" secondAttribute="top" id="BGo-c5-kqn"/>
-                            <constraint firstItem="wk5-Mt-7UV" firstAttribute="height" secondItem="RL7-XI-4Zv" secondAttribute="height" multiplier="0.65" id="CCK-GI-qZ8"/>
+                            <constraint firstItem="wk5-Mt-7UV" firstAttribute="height" secondItem="RL7-XI-4Zv" secondAttribute="height" multiplier="0.6" id="CCK-GI-qZ8"/>
                             <constraint firstAttribute="trailing" secondItem="gcD-0k-veZ" secondAttribute="trailing" id="HbY-qW-JtS"/>
                             <constraint firstItem="dJR-Kk-jBG" firstAttribute="leading" secondItem="RL7-XI-4Zv" secondAttribute="leading" constant="20" id="J7y-5e-hnv"/>
                             <constraint firstItem="wk5-Mt-7UV" firstAttribute="top" secondItem="RL7-XI-4Zv" secondAttribute="top" id="gTJ-D2-m83"/>
