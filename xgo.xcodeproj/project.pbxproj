@@ -17,15 +17,11 @@
 		C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DE26F4721100DCE202 /* UIImageExtension.swift */; };
 		C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */; };
 		C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163926A7C5D40063E17A /* ShowModeVC.swift */; };
-		C77C163C26A7C5D40063E17A /* ShowModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C163A26A7C5D40063E17A /* ShowModeVC.xib */; };
 		C77C164026A7C5EA0063E17A /* ShowModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */; };
 		C77C164326A7C5F80063E17A /* ShowModeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C164226A7C5F80063E17A /* ShowModeService.swift */; };
 		C77C164A26A7C7200063E17A /* IntegralModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C164826A7C7200063E17A /* IntegralModeVC.swift */; };
-		C77C164B26A7C7200063E17A /* IntegralModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C164926A7C7200063E17A /* IntegralModeVC.xib */; };
 		C77C165026A7C7330063E17A /* SingleLegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C164E26A7C7330063E17A /* SingleLegVC.swift */; };
-		C77C165126A7C7330063E17A /* SingleLegVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C164F26A7C7330063E17A /* SingleLegVC.xib */; };
 		C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C165A26A7C7CB0063E17A /* ServoVC.swift */; };
-		C77C165D26A7C7CB0063E17A /* ServoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77C165B26A7C7CB0063E17A /* ServoVC.xib */; };
 		C77C166126A7C8610063E17A /* ServoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C165F26A7C8610063E17A /* ServoService.swift */; };
 		C77C166226A7C8610063E17A /* ServoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C166026A7C8610063E17A /* ServoVM.swift */; };
 		C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C166426A7C86A0063E17A /* IntegralModeVM.swift */; };
@@ -36,7 +32,6 @@
 		C77FF84E26A2B66B00431230 /* QuickAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84826A2B66B00431230 /* QuickAlert.swift */; };
 		C77FF85126A2B66B00431230 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FF84B26A2B66B00431230 /* Utils.swift */; };
 		C78599D626DE596E0056F551 /* BleConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599D426DE596E0056F551 /* BleConnectViewController.swift */; };
-		C78599D726DE596E0056F551 /* BleConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78599D526DE596E0056F551 /* BleConnectViewController.xib */; };
 		C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599D926DE59A30056F551 /* UIDeviceExtension.swift */; };
 		C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599E526E07A0F0056F551 /* NormalVM.swift */; };
 		C78599E926E07A1E0056F551 /* NormalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599E826E07A1E0056F551 /* NormalService.swift */; };
@@ -51,27 +46,33 @@
 		C7B6C5D226C7CD37004661AF /* DelayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5D126C7CD37004661AF /* DelayUtils.swift */; };
 		C7B6C5D826C7CDAA004661AF /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5D726C7CDAA004661AF /* StringUtils.swift */; };
 		C7B6C5E826C7CE76004661AF /* DeviceScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5E626C7CE76004661AF /* DeviceScanViewController.swift */; };
-		C7B6C5E926C7CE76004661AF /* DeviceScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B6C5E726C7CE76004661AF /* DeviceScanViewController.xib */; };
 		C7B6C5ED26C7CE7F004661AF /* ScanTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B6C5EB26C7CE7F004661AF /* ScanTableCell.xib */; };
 		C7B6C5EE26C7CE7F004661AF /* ScanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5EC26C7CE7F004661AF /* ScanTableCell.swift */; };
 		C7B6C5F226C7D0EA004661AF /* AppValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F126C7D0EA004661AF /* AppValues.swift */; };
 		C7B6C5F626C7D222004661AF /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6C5F526C7D222004661AF /* CBToast.swift */; };
 		C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A0273D303100686FC8 /* XGOSlider.swift */; };
 		C7BD52A3273E4A0200686FC8 /* ControlImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */; };
+		C7D1B58B2749FB00003F3C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7D1B58D2749FB00003F3C2D /* Localizable.strings */; };
+		C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975D32749E2FD006F31D5 /* DeviceScanViewController.xib */; };
+		C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975DA2749E328006F31D5 /* BleConnectViewController.xib */; };
+		C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975E12749E366006F31D5 /* HomepageVC.xib */; };
+		C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975E82749E3FE006F31D5 /* RockerVC.xib */; };
+		C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975EF2749E415006F31D5 /* NormalVC.xib */; };
+		C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975F62749E494006F31D5 /* IntegralModeVC.xib */; };
+		C7E975FB2749E531006F31D5 /* SingleLegVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E975FD2749E531006F31D5 /* SingleLegVC.xib */; };
+		C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E976042749E5FE006F31D5 /* ServoVC.xib */; };
+		C7E9760F2749E952006F31D5 /* ShowModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E976112749E952006F31D5 /* ShowModeVC.xib */; };
 		C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24126AFD60400943B9E /* LeftRightItem.swift */; };
 		C7EAB24B26B0F16600943B9E /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */; };
 		C7EAB24C26B0F16600943B9E /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */; };
 		C7EAB27626B2DAB100943B9E /* ShowModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAB27426B2DAB100943B9E /* ShowModeCollectionViewCell.swift */; };
 		C7EAB27726B2DAB100943B9E /* ShowModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EAB27526B2DAB100943B9E /* ShowModeCollectionViewCell.xib */; };
 		C7EBE18326A2CFC9008280BB /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBE18126A2CFC9008280BB /* HomepageVC.swift */; };
-		C7EBE18426A2CFC9008280BB /* HomepageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EBE18226A2CFC9008280BB /* HomepageVC.xib */; };
 		C7EBE19A26A2D194008280BB /* HomepageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBE19926A2D194008280BB /* HomepageVM.swift */; };
 		C7EBE19D26A2D19E008280BB /* HomepageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EBE19C26A2D19E008280BB /* HomepageService.swift */; };
 		C7F5506926F2E1E800474075 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5506826F2E1E800474075 /* IntExtension.swift */; };
 		C7FBED1C26BBBBA7008028FE /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBED1A26BBBBA7008028FE /* NormalVC.swift */; };
-		C7FBED1D26BBBBA7008028FE /* NormalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FBED1B26BBBBA7008028FE /* NormalVC.xib */; };
 		C7FBED2226BBBBB9008028FE /* RockerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBED2026BBBBB9008028FE /* RockerVC.swift */; };
-		C7FBED2326BBBBB9008028FE /* RockerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FBED2126BBBBB9008028FE /* RockerVC.xib */; };
 		C7FBED2726BBC3EA008028FE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBED2626BBC3EA008028FE /* BaseViewController.swift */; };
 		C7FBED4026BC0AC8008028FE /* TopTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBED3E26BC0AC8008028FE /* TopTabbarController.swift */; };
 		C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FBED3F26BC0AC8008028FE /* TopTabbarController.xib */; };
@@ -95,15 +96,11 @@
 		C70C49DE26F4721100DCE202 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralTopBarItem.swift; sourceTree = "<group>"; };
 		C77C163926A7C5D40063E17A /* ShowModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVC.swift; sourceTree = "<group>"; };
-		C77C163A26A7C5D40063E17A /* ShowModeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowModeVC.xib; sourceTree = "<group>"; };
 		C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVM.swift; sourceTree = "<group>"; };
 		C77C164226A7C5F80063E17A /* ShowModeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeService.swift; sourceTree = "<group>"; };
 		C77C164826A7C7200063E17A /* IntegralModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralModeVC.swift; sourceTree = "<group>"; };
-		C77C164926A7C7200063E17A /* IntegralModeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntegralModeVC.xib; sourceTree = "<group>"; };
 		C77C164E26A7C7330063E17A /* SingleLegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLegVC.swift; sourceTree = "<group>"; };
-		C77C164F26A7C7330063E17A /* SingleLegVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLegVC.xib; sourceTree = "<group>"; };
 		C77C165A26A7C7CB0063E17A /* ServoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServoVC.swift; sourceTree = "<group>"; };
-		C77C165B26A7C7CB0063E17A /* ServoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServoVC.xib; sourceTree = "<group>"; };
 		C77C165F26A7C8610063E17A /* ServoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServoService.swift; sourceTree = "<group>"; };
 		C77C166026A7C8610063E17A /* ServoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServoVM.swift; sourceTree = "<group>"; };
 		C77C166426A7C86A0063E17A /* IntegralModeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegralModeVM.swift; sourceTree = "<group>"; };
@@ -114,7 +111,6 @@
 		C77FF84826A2B66B00431230 /* QuickAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickAlert.swift; sourceTree = "<group>"; };
 		C77FF84B26A2B66B00431230 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C78599D426DE596E0056F551 /* BleConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleConnectViewController.swift; sourceTree = "<group>"; };
-		C78599D526DE596E0056F551 /* BleConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BleConnectViewController.xib; sourceTree = "<group>"; };
 		C78599D926DE59A30056F551 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		C78599E526E07A0F0056F551 /* NormalVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVM.swift; sourceTree = "<group>"; };
 		C78599E826E07A1E0056F551 /* NormalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalService.swift; sourceTree = "<group>"; };
@@ -131,27 +127,53 @@
 		C7B6C5D126C7CD37004661AF /* DelayUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayUtils.swift; sourceTree = "<group>"; };
 		C7B6C5D726C7CDAA004661AF /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		C7B6C5E626C7CE76004661AF /* DeviceScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceScanViewController.swift; sourceTree = "<group>"; };
-		C7B6C5E726C7CE76004661AF /* DeviceScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceScanViewController.xib; sourceTree = "<group>"; };
 		C7B6C5EB26C7CE7F004661AF /* ScanTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanTableCell.xib; sourceTree = "<group>"; };
 		C7B6C5EC26C7CE7F004661AF /* ScanTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanTableCell.swift; sourceTree = "<group>"; };
 		C7B6C5F126C7D0EA004661AF /* AppValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppValues.swift; sourceTree = "<group>"; };
 		C7B6C5F526C7D222004661AF /* CBToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
 		C7BD52A0273D303100686FC8 /* XGOSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGOSlider.swift; sourceTree = "<group>"; };
 		C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageUtil.swift; sourceTree = "<group>"; };
+		C7D1B58C2749FB00003F3C2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7D1B58E2749FB02003F3C2D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C7E975D02749E296006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C7E975D22749E2FD006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DeviceScanViewController.xib; sourceTree = "<group>"; };
+		C7E975D52749E301006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DeviceScanViewController.strings; sourceTree = "<group>"; };
+		C7E975D72749E302006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DeviceScanViewController.strings"; sourceTree = "<group>"; };
+		C7E975D92749E328006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BleConnectViewController.xib; sourceTree = "<group>"; };
+		C7E975DC2749E32B006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BleConnectViewController.strings; sourceTree = "<group>"; };
+		C7E975DE2749E32C006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BleConnectViewController.strings"; sourceTree = "<group>"; };
+		C7E975E02749E366006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomepageVC.xib; sourceTree = "<group>"; };
+		C7E975E32749E36A006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HomepageVC.strings; sourceTree = "<group>"; };
+		C7E975E52749E36A006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HomepageVC.strings"; sourceTree = "<group>"; };
+		C7E975E72749E3FE006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RockerVC.xib; sourceTree = "<group>"; };
+		C7E975EA2749E402006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RockerVC.strings; sourceTree = "<group>"; };
+		C7E975EC2749E403006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RockerVC.strings"; sourceTree = "<group>"; };
+		C7E975EE2749E415006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NormalVC.xib; sourceTree = "<group>"; };
+		C7E975F12749E418006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NormalVC.strings; sourceTree = "<group>"; };
+		C7E975F32749E419006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NormalVC.strings"; sourceTree = "<group>"; };
+		C7E975F52749E494006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntegralModeVC.xib; sourceTree = "<group>"; };
+		C7E975F82749E499006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/IntegralModeVC.strings; sourceTree = "<group>"; };
+		C7E975FA2749E499006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/IntegralModeVC.strings"; sourceTree = "<group>"; };
+		C7E975FC2749E531006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SingleLegVC.xib; sourceTree = "<group>"; };
+		C7E975FF2749E535006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SingleLegVC.strings; sourceTree = "<group>"; };
+		C7E976012749E536006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SingleLegVC.strings"; sourceTree = "<group>"; };
+		C7E976032749E5FE006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ServoVC.xib; sourceTree = "<group>"; };
+		C7E976062749E602006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServoVC.strings; sourceTree = "<group>"; };
+		C7E976082749E603006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ServoVC.strings"; sourceTree = "<group>"; };
+		C7E976102749E952006F31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShowModeVC.xib; sourceTree = "<group>"; };
+		C7E976132749E958006F31D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShowModeVC.strings; sourceTree = "<group>"; };
+		C7E976152749E959006F31D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ShowModeVC.strings"; sourceTree = "<group>"; };
 		C7EAB24126AFD60400943B9E /* LeftRightItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftRightItem.swift; sourceTree = "<group>"; };
 		C7EAB24926B0F16600943B9E /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7EAB24A26B0F16600943B9E /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
 		C7EAB27426B2DAB100943B9E /* ShowModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7EAB27526B2DAB100943B9E /* ShowModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowModeCollectionViewCell.xib; sourceTree = "<group>"; };
 		C7EBE18126A2CFC9008280BB /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
-		C7EBE18226A2CFC9008280BB /* HomepageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomepageVC.xib; sourceTree = "<group>"; };
 		C7EBE19926A2D194008280BB /* HomepageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVM.swift; sourceTree = "<group>"; };
 		C7EBE19C26A2D19E008280BB /* HomepageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageService.swift; sourceTree = "<group>"; };
 		C7F5506826F2E1E800474075 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		C7FBED1A26BBBBA7008028FE /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
-		C7FBED1B26BBBBA7008028FE /* NormalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalVC.xib; sourceTree = "<group>"; };
 		C7FBED2026BBBBB9008028FE /* RockerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockerVC.swift; sourceTree = "<group>"; };
-		C7FBED2126BBBBB9008028FE /* RockerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RockerVC.xib; sourceTree = "<group>"; };
 		C7FBED2626BBC3EA008028FE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C7FBED3E26BC0AC8008028FE /* TopTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabbarController.swift; sourceTree = "<group>"; };
 		C7FBED3F26BC0AC8008028FE /* TopTabbarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabbarController.xib; sourceTree = "<group>"; };
@@ -193,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C77C163926A7C5D40063E17A /* ShowModeVC.swift */,
-				C77C163A26A7C5D40063E17A /* ShowModeVC.xib */,
+				C7E976112749E952006F31D5 /* ShowModeVC.xib */,
 				C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */,
 				C77C164226A7C5F80063E17A /* ShowModeService.swift */,
 				C7EAB27426B2DAB100943B9E /* ShowModeCollectionViewCell.swift */,
@@ -206,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				C77C164E26A7C7330063E17A /* SingleLegVC.swift */,
-				C77C164F26A7C7330063E17A /* SingleLegVC.xib */,
+				C7E975FD2749E531006F31D5 /* SingleLegVC.xib */,
 				C77C166A26A7C8810063E17A /* SingleLegService.swift */,
 				C77C166926A7C8810063E17A /* SingleLegVM.swift */,
 			);
@@ -219,7 +241,7 @@
 				C7FBED1926BBBB5E008028FE /* Rocker */,
 				C7FBED1826BBBB45008028FE /* Normal */,
 				C77C164826A7C7200063E17A /* IntegralModeVC.swift */,
-				C77C164926A7C7200063E17A /* IntegralModeVC.xib */,
+				C7E975F62749E494006F31D5 /* IntegralModeVC.xib */,
 				C77C166526A7C86A0063E17A /* IntegralModeService.swift */,
 				C77C166426A7C86A0063E17A /* IntegralModeVM.swift */,
 			);
@@ -230,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				C77C165A26A7C7CB0063E17A /* ServoVC.swift */,
-				C77C165B26A7C7CB0063E17A /* ServoVC.xib */,
+				C7E976042749E5FE006F31D5 /* ServoVC.xib */,
 				C77C165F26A7C8610063E17A /* ServoService.swift */,
 				C77C166026A7C8610063E17A /* ServoVM.swift */,
 			);
@@ -322,11 +344,11 @@
 			isa = PBXGroup;
 			children = (
 				C7B6C5E626C7CE76004661AF /* DeviceScanViewController.swift */,
-				C7B6C5E726C7CE76004661AF /* DeviceScanViewController.xib */,
+				C7E975D32749E2FD006F31D5 /* DeviceScanViewController.xib */,
 				C7B6C5EC26C7CE7F004661AF /* ScanTableCell.swift */,
 				C7B6C5EB26C7CE7F004661AF /* ScanTableCell.xib */,
 				C78599D426DE596E0056F551 /* BleConnectViewController.swift */,
-				C78599D526DE596E0056F551 /* BleConnectViewController.xib */,
+				C7E975DA2749E328006F31D5 /* BleConnectViewController.xib */,
 			);
 			path = scan;
 			sourceTree = "<group>";
@@ -338,6 +360,7 @@
 				C7ACF4A326940BA100D303FD /* Assets.xcassets */,
 				C7ACF4A526940BA100D303FD /* LaunchScreen.storyboard */,
 				C7B6C5F126C7D0EA004661AF /* AppValues.swift */,
+				C7D1B58D2749FB00003F3C2D /* Localizable.strings */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -362,7 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EBE18126A2CFC9008280BB /* HomepageVC.swift */,
-				C7EBE18226A2CFC9008280BB /* HomepageVC.xib */,
+				C7E975E12749E366006F31D5 /* HomepageVC.xib */,
 				C7EBE19926A2D194008280BB /* HomepageVM.swift */,
 				C7EBE19C26A2D19E008280BB /* HomepageService.swift */,
 				C7EAB24126AFD60400943B9E /* LeftRightItem.swift */,
@@ -390,7 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FBED1A26BBBBA7008028FE /* NormalVC.swift */,
-				C7FBED1B26BBBBA7008028FE /* NormalVC.xib */,
+				C7E975EF2749E415006F31D5 /* NormalVC.xib */,
 				C78599E526E07A0F0056F551 /* NormalVM.swift */,
 				C78599E826E07A1E0056F551 /* NormalService.swift */,
 			);
@@ -401,7 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FBED2026BBBBB9008028FE /* RockerVC.swift */,
-				C7FBED2126BBBBB9008028FE /* RockerVC.xib */,
+				C7E975E82749E3FE006F31D5 /* RockerVC.xib */,
 			);
 			path = Rocker;
 			sourceTree = "<group>";
@@ -457,6 +480,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = C7ACF48E26940BA000D303FD;
 			productRefGroup = C7ACF49826940BA000D303FD /* Products */;
@@ -473,18 +497,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D1B58B2749FB00003F3C2D /* Localizable.strings in Resources */,
 				C7ACF4A726940BA100D303FD /* LaunchScreen.storyboard in Resources */,
-				C77C163C26A7C5D40063E17A /* ShowModeVC.xib in Resources */,
-				C77C164B26A7C7200063E17A /* IntegralModeVC.xib in Resources */,
-				C77C165D26A7C7CB0063E17A /* ServoVC.xib in Resources */,
-				C7B6C5E926C7CE76004661AF /* DeviceScanViewController.xib in Resources */,
+				C7E9760F2749E952006F31D5 /* ShowModeVC.xib in Resources */,
+				C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */,
+				C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */,
+				C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */,
 				C7B6C5ED26C7CE7F004661AF /* ScanTableCell.xib in Resources */,
-				C77C165126A7C7330063E17A /* SingleLegVC.xib in Resources */,
+				C7E975FB2749E531006F31D5 /* SingleLegVC.xib in Resources */,
 				C7EAB24C26B0F16600943B9E /* HomePageCollectionViewCell.xib in Resources */,
-				C78599D726DE596E0056F551 /* BleConnectViewController.xib in Resources */,
-				C7EBE18426A2CFC9008280BB /* HomepageVC.xib in Resources */,
-				C7FBED2326BBBBB9008028FE /* RockerVC.xib in Resources */,
-				C7FBED1D26BBBBA7008028FE /* NormalVC.xib in Resources */,
+				C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */,
+				C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */,
+				C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */,
+				C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */,
 				C7EAB27726B2DAB100943B9E /* ShowModeCollectionViewCell.xib in Resources */,
 				C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */,
 				C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */,
@@ -606,8 +631,108 @@
 			isa = PBXVariantGroup;
 			children = (
 				C7ACF4A626940BA100D303FD /* Base */,
+				C7E975D02749E296006F31D5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C7D1B58D2749FB00003F3C2D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7D1B58C2749FB00003F3C2D /* en */,
+				C7D1B58E2749FB02003F3C2D /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C7E975D32749E2FD006F31D5 /* DeviceScanViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975D22749E2FD006F31D5 /* Base */,
+				C7E975D52749E301006F31D5 /* en */,
+				C7E975D72749E302006F31D5 /* zh-Hans */,
+			);
+			name = DeviceScanViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E975DA2749E328006F31D5 /* BleConnectViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975D92749E328006F31D5 /* Base */,
+				C7E975DC2749E32B006F31D5 /* en */,
+				C7E975DE2749E32C006F31D5 /* zh-Hans */,
+			);
+			name = BleConnectViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E975E12749E366006F31D5 /* HomepageVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975E02749E366006F31D5 /* Base */,
+				C7E975E32749E36A006F31D5 /* en */,
+				C7E975E52749E36A006F31D5 /* zh-Hans */,
+			);
+			name = HomepageVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E975E82749E3FE006F31D5 /* RockerVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975E72749E3FE006F31D5 /* Base */,
+				C7E975EA2749E402006F31D5 /* en */,
+				C7E975EC2749E403006F31D5 /* zh-Hans */,
+			);
+			name = RockerVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E975EF2749E415006F31D5 /* NormalVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975EE2749E415006F31D5 /* Base */,
+				C7E975F12749E418006F31D5 /* en */,
+				C7E975F32749E419006F31D5 /* zh-Hans */,
+			);
+			name = NormalVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E975F62749E494006F31D5 /* IntegralModeVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975F52749E494006F31D5 /* Base */,
+				C7E975F82749E499006F31D5 /* en */,
+				C7E975FA2749E499006F31D5 /* zh-Hans */,
+			);
+			name = IntegralModeVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E975FD2749E531006F31D5 /* SingleLegVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E975FC2749E531006F31D5 /* Base */,
+				C7E975FF2749E535006F31D5 /* en */,
+				C7E976012749E536006F31D5 /* zh-Hans */,
+			);
+			name = SingleLegVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E976042749E5FE006F31D5 /* ServoVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E976032749E5FE006F31D5 /* Base */,
+				C7E976062749E602006F31D5 /* en */,
+				C7E976082749E603006F31D5 /* zh-Hans */,
+			);
+			name = ServoVC.xib;
+			sourceTree = "<group>";
+		};
+		C7E976112749E952006F31D5 /* ShowModeVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E976102749E952006F31D5 /* Base */,
+				C7E976132749E958006F31D5 /* en */,
+				C7E976152749E959006F31D5 /* zh-Hans */,
+			);
+			name = ShowModeVC.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -617,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -678,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

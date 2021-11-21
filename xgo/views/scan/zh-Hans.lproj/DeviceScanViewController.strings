@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "返回"; ObjectID = "7G8-t5-EuM"; */
+"7G8-t5-EuM.normalTitle" = "返回";
+
+/* Class = "UILabel"; text = "loading"; ObjectID = "Xpg-71-ZWH"; */
+"Xpg-71-ZWH.text" = "loading";
+
+/* Class = "UILabel"; text = "请选择要连接的设备"; ObjectID = "yxM-DQ-UrK"; */
+"yxM-DQ-UrK.text" = "请选择要连接的设备";

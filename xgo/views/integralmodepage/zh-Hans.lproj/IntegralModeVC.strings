@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "陀螺仪"; ObjectID = "2rK-v9-Jd1"; */
+"2rK-v9-Jd1.text" = "陀螺仪";
+
+/* Class = "UILabel"; text = "更多功能"; ObjectID = "K7i-fI-UlV"; */
+"K7i-fI-UlV.text" = "更多功能";
+
+/* Class = "UIButton"; normalTitle = "普通"; ObjectID = "L52-Cb-F0I"; */
+"L52-Cb-F0I.normalTitle" = "普通";
+
+/* Class = "UIButton"; normalTitle = "PRY"; ObjectID = "OR1-zx-I0L"; */
+"OR1-zx-I0L.normalTitle" = "PRY";
+
+/* Class = "UIButton"; normalTitle = "基础"; ObjectID = "Sny-2u-i2E"; */
+"Sny-2u-i2E.normalTitle" = "基础";
+
+/* Class = "UIButton"; normalTitle = "XYZ"; ObjectID = "d1n-Hm-uPs"; */
+"d1n-Hm-uPs.normalTitle" = "XYZ";
+
+/* Class = "UIButton"; normalTitle = "低速"; ObjectID = "dUb-jP-o7g"; */
+"dUb-jP-o7g.normalTitle" = "低速";
+
+/* Class = "UILabel"; text = "整机速度"; ObjectID = "hYY-ut-KI8"; */
+"hYY-ut-KI8.text" = "整机速度";
+
+/* Class = "UIButton"; normalTitle = "高速"; ObjectID = "ndO-Ce-PcC"; */
+"ndO-Ce-PcC.normalTitle" = "高速";
+
+/* Class = "UIButton"; normalTitle = "高级"; ObjectID = "wRQ-ly-aKi"; */
+"wRQ-ly-aKi.normalTitle" = "高级";

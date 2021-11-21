@@ -22,10 +22,10 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
     
     var _vm: HomepageVM!
     
-    let dataItem = [DataElement(itemTitle: "表演模式", vc: ShowModeVC(), itemImage: #imageLiteral(resourceName: "biaoyan")),
-                    DataElement(itemTitle: "整机控制", vc: IntegralModeVC(), itemImage: #imageLiteral(resourceName: "yaokong")),
-                    DataElement(itemTitle: "单脚控制", vc: SingleLegVC(), itemImage: #imageLiteral(resourceName: "dantui")),
-                    DataElement(itemTitle: "舵机控制", vc: ServoVC(), itemImage: #imageLiteral(resourceName: "guanjie"))]
+    let dataItem = [DataElement(itemTitle: NSLocalizedString("表演模式", comment: "表演模式"), vc: ShowModeVC(), itemImage: #imageLiteral(resourceName: "biaoyan-1")),
+                    DataElement(itemTitle: NSLocalizedString("整机控制", comment: "整机控制"), vc: IntegralModeVC(), itemImage: #imageLiteral(resourceName: "yaokong-1")),
+                    DataElement(itemTitle: NSLocalizedString("单脚控制", comment: "单脚控制"), vc: SingleLegVC(), itemImage: #imageLiteral(resourceName: "biaoyan-1")),
+                    DataElement(itemTitle: NSLocalizedString("舵机控制", comment: "舵机控制"), vc: ServoVC(), itemImage: #imageLiteral(resourceName: "guanjie-1"))]
     
     struct DataElement {
         let itemTitle:String!
@@ -53,7 +53,7 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
             configureCell:{
                 (dataSouece, tv, indexPath, element) -> HomePageCollectionViewCell in
                 let cell = tv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomePageCollectionViewCell
-//                cell.title_homepage_title.text = element.itemTitle
+                cell.title_homepage_title.text = element.itemTitle
                 cell.icon_item_homepage.image = element.itemImage
 //                cell.icon_item_homepage.backgroundColor = UIColor.red
 //                cell.backgroundColor = UIColor.green

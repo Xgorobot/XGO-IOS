@@ -1,0 +1,31 @@
+/*
+  File.strings
+  xgo
+
+  Created by 袁文麟 on 2021/11/21.
+  
+*/
+
+"表演模式" = "Performance Mode";
+"整机控制" = "Radio-Controlled Mode";
+"单脚控制" = "Motor Coordination Mode";
+"舵机控制" = "Servo Control Mode";
+"趴下" = "lie down";
+"站起" = "stand up";
+"匍匐前进" = "crawl";
+"转圈" = "turn around";
+"原地踏步" = "mark time";
+"蹲起" = "squat";
+"转动ROLL" = "turn roll";
+"转动PITCH" = "turn pitch";
+"转动YAW" = "turn yaw";
+"三轴联动" = "3 axis";
+"撒尿" = "pee";
+"坐下" = "sit down";
+"招手" = "stretch";
+"伸懒腰" = "wave(hand)";
+"波浪" = "wave(body)";
+"摇摆" = "swing";
+"求食" = "pray";
+"找食物" = "seek";
+"握手" = "handshake";

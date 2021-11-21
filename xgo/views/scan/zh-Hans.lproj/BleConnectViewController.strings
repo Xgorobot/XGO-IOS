@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "已成功连接"; ObjectID = "1WC-lk-24c"; */
+"1WC-lk-24c.text" = "已成功连接";
+
+/* Class = "UILabel"; text = "摇一摇,蓝牙自动连接"; ObjectID = "QFr-ma-k87"; */
+"QFr-ma-k87.text" = "摇一摇,蓝牙自动连接";
+
+/* Class = "UIButton"; normalTitle = "重新命名"; ObjectID = "jPm-Am-H3D"; */
+"jPm-Am-H3D.normalTitle" = "重新命名";
+
+/* Class = "UIButton"; normalTitle = "断开连接"; ObjectID = "lbP-er-wHW"; */
+"lbP-er-wHW.normalTitle" = "断开连接";

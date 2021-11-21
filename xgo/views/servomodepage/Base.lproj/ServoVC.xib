@@ -123,16 +123,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-PI-b3l">
-                                                    <rect key="frame" x="40" y="32.666666666666657" width="40" height="20.333333333333329"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="X8g-PD-Evd"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="40" y="32.666666666666657" width="17.333333333333329" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-NI-uSj">
-                                                    <rect key="frame" x="80" y="0.0" width="281" height="85.333333333333329"/>
+                                                    <rect key="frame" x="57.333333333333314" y="0.0" width="303.66666666666669" height="85.333333333333329"/>
                                                     <subviews>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-31" maxValue="31" id="AWG-hj-lsR">
                                                             <rect key="frame" x="65" y="24" width="179" height="30"/>
@@ -173,16 +170,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaT-q4-O7p">
-                                                    <rect key="frame" x="40" y="32.666666666666657" width="40" height="20.333333333333329"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="IhI-YR-yDs"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="40" y="32.666666666666657" width="17.333333333333329" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bre-uq-kOf">
-                                                    <rect key="frame" x="80" y="0.0" width="281" height="85.333333333333329"/>
+                                                    <rect key="frame" x="57.333333333333314" y="0.0" width="303.66666666666669" height="85.333333333333329"/>
                                                     <subviews>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="42.5" minValue="-66" maxValue="93" id="qVe-EX-4LV">
                                                             <rect key="frame" x="65" y="26" width="179" height="30"/>
@@ -223,16 +217,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxi-JJ-FUi">
-                                                    <rect key="frame" x="40" y="32.666666666666629" width="40" height="20.333333333333329"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="ys3-Dj-Y8K"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="40" y="32.666666666666629" width="17.333333333333329" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-Hj-LMZ">
-                                                    <rect key="frame" x="80" y="0.0" width="281" height="85.333333333333329"/>
+                                                    <rect key="frame" x="57.333333333333314" y="0.0" width="303.66666666666669" height="85.333333333333329"/>
                                                     <subviews>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="-65" maxValue="73" id="cCq-Xt-E1F">
                                                             <rect key="frame" x="65" y="27" width="183" height="30"/>

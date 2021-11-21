@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "高"; ObjectID = "0Mo-ej-du1"; */
+"0Mo-ej-du1.text" = "高";
+
+/* Class = "UIButton"; normalTitle = "重置高度"; ObjectID = "5MD-2y-0Rj"; */
+"5MD-2y-0Rj.normalTitle" = "重置高度";
+
+/* Class = "UILabel"; text = "低"; ObjectID = "Agv-V5-Kkp"; */
+"Agv-V5-Kkp.text" = "低";
+
+/* Class = "UILabel"; text = "电量"; ObjectID = "Q7b-v4-gH4"; */
+"Q7b-v4-gH4.text" = "电量";
+
+/* Class = "UILabel"; text = "速度"; ObjectID = "ffm-xj-zZq"; */
+"ffm-xj-zZq.text" = "速度";

@@ -1,0 +1,45 @@
+
+/* Class = "UITabBarItem"; title = "右前腿"; ObjectID = "2n2-t8-dK0"; */
+"2n2-t8-dK0.title" = "right front";
+
+/* Class = "UITabBarItem"; title = "右后腿"; ObjectID = "7no-bg-Mhv"; */
+"7no-bg-Mhv.title" = "right rear";
+
+/* Class = "UILabel"; text = "0 °"; ObjectID = "LRc-FJ-mvR"; */
+"LRc-FJ-mvR.text" = "0 °";
+
+/* Class = "UILabel"; text = "Y:0mm"; ObjectID = "NX7-fz-3CQ"; */
+"NX7-fz-3CQ.text" = "Y:0mm";
+
+/* Class = "UILabel"; text = "单腿控制"; ObjectID = "TFe-gt-JPf"; */
+"TFe-gt-JPf.text" = "Motor Coordination Mode";
+
+/* Class = "UILabel"; text = "中"; ObjectID = "WaT-q4-O7p"; */
+"WaT-q4-O7p.text" = "Middle";
+
+/* Class = "UILabel"; text = "43°"; ObjectID = "ZdX-Lc-21g"; */
+"ZdX-Lc-21g.text" = "43°";
+
+/* Class = "UILabel"; text = "Z:0mm"; ObjectID = "bz7-7E-ghX"; */
+"bz7-7E-ghX.text" = "Z:0mm";
+
+/* Class = "UITabBarItem"; title = "左后腿"; ObjectID = "cVJ-DX-LGW"; */
+"cVJ-DX-LGW.title" = "left rear";
+
+/* Class = "UILabel"; text = "下"; ObjectID = "gxi-JJ-FUi"; */
+"gxi-JJ-FUi.text" = "Down";
+
+/* Class = "UILabel"; text = "X:0mm "; ObjectID = "h3A-yM-VB6"; */
+"h3A-yM-VB6.text" = "X:0mm ";
+
+/* Class = "UIButton"; normalTitle = "恢复初始状态"; ObjectID = "qwr-N3-6Zf"; */
+"qwr-N3-6Zf.normalTitle" = "reset";
+
+/* Class = "UITabBarItem"; title = "左前腿"; ObjectID = "uE5-jM-k16"; */
+"uE5-jM-k16.title" = "left front";
+
+/* Class = "UILabel"; text = "20 °"; ObjectID = "vqt-af-RQy"; */
+"vqt-af-RQy.text" = "20 °";
+
+/* Class = "UILabel"; text = "上"; ObjectID = "yRJ-PI-b3l"; */
+"yRJ-PI-b3l.text" = "Upper";

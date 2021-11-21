@@ -48,7 +48,7 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
 
         let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String,String>> { (dataSource, cv, indexPath, item) -> UICollectionViewCell in
             let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ShowModeCollectionViewCell
-            cell.lb_title.text = item
+            cell.lb_title.text = self.getString(str: item)
 //            cell.contentView.addSubview(T##view: UIView##UIView)
             return cell
         }
@@ -69,6 +69,10 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
     }
     @IBAction func onClick(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func getString(str:String) -> String {
+        return NSLocalizedString(str, comment: str)
     }
 }
 
