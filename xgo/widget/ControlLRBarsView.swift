@@ -29,6 +29,11 @@ class ControlLRBarsView: UIView {
     
     override func layoutSubviews() {
         
+            if updownEnable {
+                setImage(image: #imageLiteral(resourceName: "weianxia"))
+            }else{
+                setImage(image: #imageLiteral(resourceName: "zuoyou"))
+            }
     }
     
     func setUp() {
