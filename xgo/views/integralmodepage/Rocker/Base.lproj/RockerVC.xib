@@ -25,19 +25,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-ix-ngh">
-                    <rect key="frame" x="64" y="117" width="768" height="256"/>
+                    <rect key="frame" x="64" y="107" width="768" height="256"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZJ-FR-hnV">
                             <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fw0-ls-9MU" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="25.666666666666671" y="25.666666666666657" width="204.66666666666663" height="204.66666666666666"/>
+                                    <rect key="frame" x="25.666666666666671" y="10.666666666666671" width="204.66666666666663" height="204.66666666666663"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerY" secondItem="hZJ-FR-hnV" secondAttribute="centerY" id="ZZH-sC-8K4"/>
+                                <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerY" secondItem="hZJ-FR-hnV" secondAttribute="centerY" constant="-15" id="ZZH-sC-8K4"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="width" secondItem="hZJ-FR-hnV" secondAttribute="width" multiplier="0.8" id="dMw-V9-qeq"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="height" secondItem="hZJ-FR-hnV" secondAttribute="width" multiplier="0.8" id="hWD-8E-MCo"/>
                                 <constraint firstItem="Fw0-ls-9MU" firstAttribute="centerX" secondItem="hZJ-FR-hnV" secondAttribute="centerX" id="vcS-Ks-gQk"/>
@@ -140,13 +140,14 @@
                             <rect key="frame" x="512" y="0.0" width="256" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-hg-Z2l" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="25.666666666666629" y="-45.666666666666671" width="204.66666666666666" height="204.66666666666669"/>
+                                    <rect key="frame" x="25.666666666666629" y="10.666666666666671" width="204.66666666666666" height="204.66666666666663"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-f7-40U" userLabel="ResetBtn">
-                                    <rect key="frame" x="15" y="181" width="120" height="60"/>
+                                    <rect key="frame" x="15" y="227.33333333333331" width="120" height="32"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="Xqe-nd-J2w"/>
+                                        <constraint firstAttribute="width" constant="120" id="EmN-eX-2B6"/>
+                                        <constraint firstAttribute="height" constant="32" id="HGV-e6-8C9"/>
                                     </constraints>
                                     <state key="normal" title="重置高度" backgroundImage="kuang">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -158,13 +159,12 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="5jF-f7-40U" firstAttribute="top" secondItem="O7t-hg-Z2l" secondAttribute="bottom" constant="22" id="EOs-Nz-R2f"/>
-                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerY" secondItem="P7C-Cy-tM8" secondAttribute="centerY" id="WCf-Fi-udR"/>
-                                <constraint firstItem="5jF-f7-40U" firstAttribute="leading" secondItem="P7C-Cy-tM8" secondAttribute="leading" constant="15" id="XvA-qM-zcy"/>
+                                <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerY" secondItem="P7C-Cy-tM8" secondAttribute="centerY" constant="-15" id="WCf-Fi-udR"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="width" secondItem="P7C-Cy-tM8" secondAttribute="width" multiplier="0.8" id="YUY-W8-rtM"/>
-                                <constraint firstAttribute="bottom" secondItem="5jF-f7-40U" secondAttribute="bottom" constant="15" id="d1U-cz-Te3"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="centerX" secondItem="P7C-Cy-tM8" secondAttribute="centerX" id="eOU-SD-Q0C"/>
+                                <constraint firstItem="5jF-f7-40U" firstAttribute="leading" secondItem="P7C-Cy-tM8" secondAttribute="leading" constant="15" id="jRL-bH-gy5"/>
                                 <constraint firstItem="O7t-hg-Z2l" firstAttribute="height" secondItem="P7C-Cy-tM8" secondAttribute="width" multiplier="0.8" id="nQ6-fV-aPT"/>
+                                <constraint firstItem="5jF-f7-40U" firstAttribute="top" secondItem="O7t-hg-Z2l" secondAttribute="bottom" constant="12" id="urs-QM-beq"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -177,7 +177,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FdQ-ix-ngh" secondAttribute="bottom" constant="20" id="65L-h5-UXm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FdQ-ix-ngh" secondAttribute="bottom" constant="30" id="65L-h5-UXm"/>
                 <constraint firstItem="FdQ-ix-ngh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AX7-LS-b6s"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FdQ-ix-ngh" secondAttribute="trailing" constant="20" id="fSd-JZ-shi"/>
             </constraints>

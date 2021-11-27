@@ -26,13 +26,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdh-fq-DNR">
-                    <rect key="frame" x="20" y="99" width="627" height="256"/>
+                    <rect key="frame" x="20" y="89" width="627" height="256"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1Z-RH-PfS">
                             <rect key="frame" x="0.0" y="0.0" width="209" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-gV-jIB" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="21" y="44.5" width="167" height="167"/>
+                                    <rect key="frame" x="21" y="29.5" width="167" height="167"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </subviews>
@@ -41,7 +41,7 @@
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="height" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="Aob-Sn-bX6"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="centerX" secondItem="O1Z-RH-PfS" secondAttribute="centerX" id="ecO-gQ-76r"/>
                                 <constraint firstItem="DVm-gV-jIB" firstAttribute="width" secondItem="O1Z-RH-PfS" secondAttribute="width" multiplier="0.8" id="jyF-56-Tqg"/>
-                                <constraint firstItem="DVm-gV-jIB" firstAttribute="centerY" secondItem="O1Z-RH-PfS" secondAttribute="centerY" id="kER-dE-xUs"/>
+                                <constraint firstItem="DVm-gV-jIB" firstAttribute="centerY" secondItem="O1Z-RH-PfS" secondAttribute="centerY" constant="-15" id="kER-dE-xUs"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oph-f0-JxC">
@@ -141,11 +141,11 @@
                             <rect key="frame" x="418" y="0.0" width="209" height="256"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-Dr-Xel" customClass="ControlLRBarsView" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="21" y="44.5" width="167" height="167"/>
+                                    <rect key="frame" x="21" y="29.5" width="167" height="167"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MD-2y-0Rj" userLabel="ResetBtn">
-                                    <rect key="frame" x="15" y="233.5" width="120" height="32"/>
+                                    <rect key="frame" x="15" y="208.5" width="120" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="Fy5-Cn-P5l"/>
                                         <constraint firstAttribute="width" constant="120" id="kQi-qI-seG"/>
@@ -163,8 +163,8 @@
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="width" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="3u0-Sx-riE"/>
                                 <constraint firstItem="5MD-2y-0Rj" firstAttribute="leading" secondItem="H7a-aW-QkI" secondAttribute="leading" constant="15" id="Jfx-kG-wrh"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="height" secondItem="H7a-aW-QkI" secondAttribute="width" multiplier="0.8" id="XEz-nA-2R6"/>
-                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="22" id="uW4-wN-ZST"/>
-                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerY" secondItem="H7a-aW-QkI" secondAttribute="centerY" id="wWM-K0-Syg"/>
+                                <constraint firstItem="5MD-2y-0Rj" firstAttribute="top" secondItem="Mmi-Dr-Xel" secondAttribute="bottom" constant="12" id="uW4-wN-ZST"/>
+                                <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerY" secondItem="H7a-aW-QkI" secondAttribute="centerY" constant="-15" id="wWM-K0-Syg"/>
                                 <constraint firstItem="Mmi-Dr-Xel" firstAttribute="centerX" secondItem="H7a-aW-QkI" secondAttribute="centerX" id="znt-H5-32p"/>
                             </constraints>
                         </view>
@@ -180,7 +180,7 @@
             <constraints>
                 <constraint firstItem="Wpy-Hs-6Bb" firstAttribute="trailing" secondItem="Kdh-fq-DNR" secondAttribute="trailing" constant="20" id="QcG-oV-Y1m"/>
                 <constraint firstItem="Kdh-fq-DNR" firstAttribute="leading" secondItem="Wpy-Hs-6Bb" secondAttribute="leading" constant="20" id="gcI-UM-qXZ"/>
-                <constraint firstItem="Wpy-Hs-6Bb" firstAttribute="bottom" secondItem="Kdh-fq-DNR" secondAttribute="bottom" constant="20" id="gfr-9G-qnY"/>
+                <constraint firstItem="Wpy-Hs-6Bb" firstAttribute="bottom" secondItem="Kdh-fq-DNR" secondAttribute="bottom" constant="30" id="gfr-9G-qnY"/>
             </constraints>
             <point key="canvasLocation" x="137.94642857142856" y="111.59420289855073"/>
         </view>

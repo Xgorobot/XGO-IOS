@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="整机控制" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-Kk-jBG">
-                                <rect key="frame" x="20" y="97" width="150" height="23"/>
+                                <rect key="frame" x="20" y="97" width="150" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.39607840779999998" green="0.86274516580000005" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -45,6 +45,7 @@
                             <constraint firstItem="wk5-Mt-7UV" firstAttribute="height" secondItem="RL7-XI-4Zv" secondAttribute="height" multiplier="0.6" id="CCK-GI-qZ8"/>
                             <constraint firstAttribute="trailing" secondItem="gcD-0k-veZ" secondAttribute="trailing" id="HbY-qW-JtS"/>
                             <constraint firstItem="dJR-Kk-jBG" firstAttribute="leading" secondItem="RL7-XI-4Zv" secondAttribute="leading" constant="20" id="J7y-5e-hnv"/>
+                            <constraint firstAttribute="bottom" secondItem="dJR-Kk-jBG" secondAttribute="bottom" constant="8" id="RvE-FA-eJ1"/>
                             <constraint firstItem="wk5-Mt-7UV" firstAttribute="top" secondItem="RL7-XI-4Zv" secondAttribute="top" id="gTJ-D2-m83"/>
                             <constraint firstAttribute="bottom" secondItem="gcD-0k-veZ" secondAttribute="bottom" id="mFr-FA-LQP"/>
                             <constraint firstAttribute="trailing" secondItem="dJR-Kk-jBG" secondAttribute="trailing" constant="20" id="oWt-Jr-NRf"/>
