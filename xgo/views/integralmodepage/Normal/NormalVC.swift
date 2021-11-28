@@ -121,7 +121,7 @@ class NormalVC: UIViewController {
     }
     
     func startCheckPower()  {
-        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { (timer) in
             FindControlUtil.readPower { power in
                 if (power.count >= 3){
                     self.powerImg.image = getPowerImage(power: NSString(format: "%d", power[2]).integerValue)

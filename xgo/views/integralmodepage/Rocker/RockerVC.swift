@@ -61,7 +61,7 @@ class RockerVC: UIViewController {
             print("遥控:PRY + L:\(dir)  x:\(x) y:\(y)   输出X:\(yValue)  输出Y:\(xValue)")
 
         }
-        rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+        rightRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("遥控:PRY + R:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((x+1)/2*255).rounded())
             FindControlUtil.trunByZ(angle: xValue.hw_toByte())
