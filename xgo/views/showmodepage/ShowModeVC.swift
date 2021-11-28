@@ -62,9 +62,11 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
     }
     
     @IBAction func onResetClick(_ sender: UIButton) {
-        FindControlUtil.actionType(type: 0x00)
+        FindControlUtil.actionType(type: 0x02)
+        FindControlUtil.heightSet(height:0x80)
         if (self.selectItem != nil) {
             showBtnsCollectionView.deselectItem(at: selectItem!, animated: false)
+//            ShowModeService.setType(position: indexPath)
         }
     }
     @IBAction func onClick(_ sender: UIButton) {
