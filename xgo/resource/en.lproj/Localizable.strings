@@ -10,6 +10,7 @@
 "整机控制" = "Radio-Controlled Mode";
 "单脚控制" = "Motor Coordination Mode";
 "舵机控制" = "Servo Control Mode";
+"未发现设备" = "Deivce not found";
 "趴下" = "lie down";
 "站起" = "stand up";
 "匍匐前进" = "crawl";

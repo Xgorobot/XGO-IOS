@@ -87,7 +87,8 @@ class BleConnectViewController: UIViewController,CBCentralManagerDelegate,UIText
         myPeripherals.removeAllObjects()
         myCentralManager.scanForPeripherals(withServices: nil, options: nil) //不限制
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
-            self.navigationController?.popViewController(animated: true)
+//            self.navigationController?.popViewController(animated: true)
+            self.alertShaked.dismiss(animated: false, completion: nil)
             if(self.myPeripherals.count==0){
                 CBToast.showToastAction(message: NSLocalizedString("未发现设备", comment: "未发现设备") as NSString)
             }else{
@@ -169,6 +170,7 @@ class BleConnectViewController: UIViewController,CBCentralManagerDelegate,UIText
             BLEMANAGER = FindBleManager(centralManager: myCentralManager, peripheral: myPeripheralToMainView)
             BLEMANAGER?.start()
         }
+        refreshHidden()
     }
     
  
