@@ -25,8 +25,8 @@ class RockerVC: UIViewController {
             print("遥控:CTRL + L:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.moveX(speed: xValue.hw_toByte())
-            let yValue = Int(((y+1)/2*255).rounded())
-            FindControlUtil.moveX(speed: yValue.hw_toByte())
+            let yValue = Int(((x+1)/2*255).rounded())
+            FindControlUtil.moveY(speed: yValue.hw_toByte())
             self.speedImg.image = getSpeedImage(speed: max(Int(abs(x) * 100), Int(abs(y) * 100)))
         }
         rightRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
