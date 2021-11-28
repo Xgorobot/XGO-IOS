@@ -35,8 +35,8 @@ class NormalVC: UIViewController {
     var _vm: NormalVM!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        _vm = NormalVM.init(input: NormalVM.Input(
-//                                setHeight: slider.rx.value.asObservable()))
+        //        _vm = NormalVM.init(input: NormalVM.Input(
+        //                                setHeight: slider.rx.value.asObservable()))
         initCtrl()
     }
     
@@ -59,68 +59,53 @@ class NormalVC: UIViewController {
     
     func initCtrl(){
         leftCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-
+            
             print("左侧点击:\(dir)")
             switch dir {
-            case .OUp:
-                FindControlUtil.moveX(speed: 0xDA)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .ODown:
-                FindControlUtil.moveX(speed: 0x25)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .OLeft:
-                FindControlUtil.moveY(speed: 0xDA)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .ORight:
-                FindControlUtil.moveY(speed: 0x25)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .OStop:
-                self.speedImg.image = getSpeedImage(speed: 0)
-                FindControlUtil.moveX(speed: 0x80)
-                FindControlUtil.moveY(speed: 0x80)
+                case .OUp:
+                    FindControlUtil.moveX(speed: 0xDA)
+                    self.speedImg.image = getSpeedImage(speed: 60)
+                case .ODown:
+                    FindControlUtil.moveX(speed: 0x25)
+                    self.speedImg.image = getSpeedImage(speed: 60)
+                case .OLeft:
+                    FindControlUtil.moveY(speed: 0xDA)
+                    self.speedImg.image = getSpeedImage(speed: 60)
+                case .ORight:
+                    FindControlUtil.moveY(speed: 0x25)
+                    self.speedImg.image = getSpeedImage(speed: 60)
+                case .OStop:
+                    self.speedImg.image = getSpeedImage(speed: 0)
+                    FindControlUtil.moveX(speed: 0x80)
+                    FindControlUtil.moveY(speed: 0x80)
             }
         }
         rightCtlBar.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("顺时针旋转2dir:\(dir)")
             switch dir {
-            case .OLeft:
-                FindControlUtil.turnClockwise(speed: 0xDA)
-                break
-            case .ORight:
-                FindControlUtil.turnClockwise(speed: 0x25)
-                break
-            case .OStop:
-                FindControlUtil.turnClockwise(speed: 0x80)
-                break
-            default:
-                break
+                case .OLeft:
+                    FindControlUtil.turnClockwise(speed:0xDA )
+                    break
+                case .ORight:
+                    FindControlUtil.turnClockwise(speed:0x25 )
+                    break
+                case .OStop:
+                    FindControlUtil.turnClockwise(speed: 0x80)
+                    break
+                default:
+                    break
             }
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
-            let xValue = Int(((x+1)/2*255).rounded())
+            _ = Int(((x+1)/2*255).rounded())
             self.speedImg.image = getSpeedImage(speed: Int(abs(x) * 100))
-            FindControlUtil.turnClockwise(speed: xValue.hw_toByte())
-            
-            switch dir {
-            case .OLeft:
-                FindControlUtil.turnClockwise(speed: 0x25)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .ORight:
-                FindControlUtil.turnClockwise(speed: 0xDA)
-                self.speedImg.image = getSpeedImage(speed: 60)
-            case .OStop:
-                self.speedImg.image = getSpeedImage(speed: 0)
-                FindControlUtil.turnClockwise(speed: 0x80)
-            default:
-                break
-            }
         }
     }
-
+    
     
     override func viewDidLayoutSubviews() {
         rightCtlBar.setNeedsDisplay()
     }
     
-
+    
     func updateSpeed() -> Void {
         speedShow = sqrt(speedX*speedX+speedY*speedY+speedYar*speedYar)
     }
@@ -128,7 +113,7 @@ class NormalVC: UIViewController {
     @IBAction func setheight(_ sender: UISlider) {
         let value = Int((sender.value*255).rounded())
         FindControlUtil.heightSet(height: value.hw_toByte())
-//            FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
+        //            FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
     }
     @IBAction func reset(_ sender: UIButton) {
         slider.value = 0.5
@@ -136,7 +121,6 @@ class NormalVC: UIViewController {
     }
     
     func startCheckPower()  {
-
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
             FindControlUtil.readPower { power in
                 if (power.count >= 3){

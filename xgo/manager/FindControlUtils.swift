@@ -85,6 +85,7 @@ final class FindControlUtil {
     }
     
     class func turnClockwise(speed:UInt8) {//顺时针旋转 def:0x80 Z轴由下向上
+        print("顺时针旋转: speed:\(speed)")
         let result:[UInt8] = [0x32,speed];
         addWriteMsg(data: result)
     }
@@ -275,29 +276,29 @@ final class FindControlUtil {
             break
         case 0x01:
             if xyz == "x" {
-                servoLFH(angle: speed)
+                servoRFH(angle: speed)
             }else if xyz == "y"{
-                servoLFM(angle: speed)
+                servoRFM(angle: speed)
             }else if xyz == "z"{
-                servoLFL(angle: speed)
+                servoRFL(angle: speed)
             }
             break
         case 0x02:
             if xyz == "x" {
-                servoLFH(angle: speed)
+                servoRBH(angle:speed)
             }else if xyz == "y"{
-                servoLFM(angle: speed)
+                servoRBM(angle: speed)
             }else if xyz == "z"{
-                servoLFL(angle: speed)
+                servoRBL(angle: speed)
             }
             break
         case 0x03:
             if xyz == "x" {
-                servoLFH(angle:speed)
+                servoLBH(angle: speed)
             }else if xyz == "y"{
-                servoLFM(angle: speed)
+                servoLBM(angle: speed)
             }else if xyz == "z"{
-                servoLFL(angle: speed)
+                servoLBL(angle: speed)
             }
             break
         default:
