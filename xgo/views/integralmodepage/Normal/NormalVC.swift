@@ -137,14 +137,11 @@ class NormalVC: UIViewController {
     
     func startCheckPower()  {
 
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
-
+        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
             FindControlUtil.readPower { power in
-                self.powerImg.image = getPowerImage(power: power[0].integerValue())
-                
-                print("结果1：\(0*14/255)")
-                print("结果2：\(100*14/255)")
-                print("结果3：\(255*14/255)")
+                if (power.count >= 3){
+                    self.powerImg.image = getPowerImage(power: NSString(format: "%d", power[2]).integerValue)
+                }
             }
         })
     }

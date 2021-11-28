@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 func getPowerImage(power: Int) -> UIImage{
-    let position = power*14/255
+    let position = power*14/100
     return UIImage(named: "dianliang\(position)")!
 }
 func getSpeedImage(speed: Int) -> UIImage{

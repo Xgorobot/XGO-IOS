@@ -16,13 +16,13 @@ final class FindControlUtil {
     
     //MARK:写指令-通用
     class func addWriteMsg(data:[UInt8]){
-        let message = XgoBleMessageEntity(keyCode: 0, data: [BLE_ORDER_WRITE]+data, timeoutReSend: false, timeout: 10, callBack: false)
+        let message = XgoBleMessageEntity(keyCode: 0, data: [BLE_ORDER_WRITE]+data, timeoutReSend: false, timeout: 100, callBack: false)
         BLEMANAGER?.addMsg(msg: message)
     }
     
     //MARK:读指令-通用
     class func addReadMsg(data:[UInt8],delegate:@escaping CallBack){
-        let message = XgoBleMessageEntity(keyCode: 0, data: [BLE_ORDER_READ]+data, timeoutReSend: false, timeout: 10, callBack: true,delegate: delegate)
+        let message = XgoBleMessageEntity(keyCode: 0, data: [BLE_ORDER_READ]+data, timeoutReSend: false, timeout: 100, callBack: true,delegate: delegate)
         BLEMANAGER?.addMsg(msg: message)
     }
     

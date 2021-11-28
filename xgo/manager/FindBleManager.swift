@@ -46,7 +46,7 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
     var trArrayCharacteristic: [CBCharacteristic] = []//数组 用于储存全部的服务
     
     var messageList:[XgoBleMessageEntity] = []//数组 用于储存全部的消息
-    var keyCode:Int8 = 7
+    var keyCode:Int8 = 0
     
     
     let lock = NSLock.init()//线程锁
@@ -213,7 +213,8 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
             let key = String(data[2])
             let task = taskDictionary[key]
             DelayUtils.cancel(task)
-            if messageList[0].keyCode! == data[2] {
+            //注释掉的是keycode 消息指令认证,现在只发一条消息
+//            if messageList[0].keyCode! == data[2] {
                 let codeTimerKey = String(messageList[0].keyCode!)
                 print("关闭超时检查 检查key:"+codeTimerKey+"    超时时长:\(messageList[0].timeout)" )
                 nowCode = -1
@@ -224,9 +225,9 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
                 if let callBack = nowMsg.delegate{
                     callBack(data)
                 }
-            }else{
-                print("不是上一条发出指令的回复")
-            }
+//            }else{
+//                print("不是上一条发出指令的回复")
+//            }
         }
     }
     
