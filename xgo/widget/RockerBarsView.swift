@@ -11,6 +11,8 @@ import UIKit
 class RockerBarsView: UIView {
 
     var actionBar:RockerBars?
+    var bDirection:bDirection?
+
     var backgroundImage:UIImageView?
     required init?(coder: NSCoder) {
            super.init(coder: coder)
@@ -43,6 +45,7 @@ class RockerBarsView: UIView {
                                                   height: frame.size.height / 4))
         actionBar?.layer.cornerRadius = (actionBar?.frame.width)! / 2
         actionBar?.clipsToBounds = true;
+        actionBar?.bDirection = bDirection
         addSubview(actionBar!)
     }
     

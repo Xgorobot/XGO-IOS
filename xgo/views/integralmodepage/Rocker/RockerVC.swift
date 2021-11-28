@@ -21,16 +21,16 @@ class RockerVC: UIViewController {
 
     
     func initCtrl(){
-        leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        leftRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("遥控:CTRL + L:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.moveX(speed: xValue.hw_toByte())
             let yValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.moveX(speed: yValue.hw_toByte())
             self.speedImg.image = getSpeedImage(speed: max(Int(abs(x) * 100), Int(abs(y) * 100)))
         }
-        rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        rightRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("遥控:CTRL + R:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((x+1)/2*255).rounded())
             FindControlUtil.turnClockwise(speed: xValue.hw_toByte())
             self.speedImg.image = getSpeedImage(speed: Int(abs(x) * 100))
@@ -39,8 +39,8 @@ class RockerVC: UIViewController {
     
     func initXYZ(){
         rightRockerView.isHidden = true
-        leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        leftRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("遥控:XYZ:\(dir)  x:\(x) y:\(y) r:\(r)")
             let yValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.trunkMoveX(position: yValue.hw_toByte())
             let xValue = Int(((x+1)/2*255).rounded())
@@ -51,18 +51,18 @@ class RockerVC: UIViewController {
     }
     
     func initRPY(){
-        leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+        leftRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             let xValue = Int(((-x+1)/2*255).rounded())
             FindControlUtil.trunByX(angle: xValue.hw_toByte())
             
             
             let yValue = Int(((y+1)/2*255).rounded())
             FindControlUtil.trunByY(angle: yValue.hw_toByte())
-            print("pry  x:\(x) y:\(y)   输出X:\(yValue)  输出Y:\(xValue)")
+            print("遥控:PRY + L:\(dir)  x:\(x) y:\(y)   输出X:\(yValue)  输出Y:\(xValue)")
 
         }
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("遥控:PRY + R:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((x+1)/2*255).rounded())
             FindControlUtil.trunByZ(angle: xValue.hw_toByte())
         }

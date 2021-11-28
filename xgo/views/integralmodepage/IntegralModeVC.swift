@@ -94,18 +94,18 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
             break
         case 1:
             add(_seniorVC, frame: _childView.frame)
-            _seniorVC.initCtrl()
             _seniorVC.didMove(toParent: self)
+            _seniorVC.initCtrl()
             break
         case 2:
             add(_xyzVC, frame: _childView.frame)
-            _xyzVC.initXYZ()
             _xyzVC.didMove(toParent: self)
+            _xyzVC.initXYZ()
             break
         case 3:
             add(_pryVC, frame: _childView.frame)
-            _pryVC.initRPY()
             _pryVC.didMove(toParent: self)
+            _pryVC.initRPY()
             break
         default:
             break
