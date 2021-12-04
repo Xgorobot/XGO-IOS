@@ -91,21 +91,29 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
         case 0:
             add(_normalVC, frame: _childView.frame)
             _normalVC.didMove(toParent: self)
+            _normalVC.slider?.value = 0.5
+            FindControlUtil.heightSet(height:0x80)
             break
         case 1:
             add(_seniorVC, frame: _childView.frame)
             _seniorVC.didMove(toParent: self)
             _seniorVC.initCtrl()
+            _seniorVC.slider?.value = 0.5
+            FindControlUtil.heightSet(height:0x80)
             break
         case 2:
             add(_xyzVC, frame: _childView.frame)
             _xyzVC.didMove(toParent: self)
             _xyzVC.initXYZ()
+            _xyzVC.slider?.value = 0.5
+            FindControlUtil.heightSet(height:0x80)
             break
         case 3:
             add(_pryVC, frame: _childView.frame)
             _pryVC.didMove(toParent: self)
             _pryVC.initRPY()
+            _pryVC.slider?.value = 0.5
+            FindControlUtil.heightSet(height:0x80)
             break
         default:
             break
@@ -136,17 +144,32 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
             mediumSpeed.backgroundColor = UIColor.black;
             highSpeed.backgroundColor = UIColor.black;
             FindControlUtil.setSpeed(type: 0x01)
+            _normalVC.slider?.value = 0.25
+            _seniorVC.slider?.value = 0.25
+            _xyzVC.slider?.value = 0.25
+            _pryVC.slider?.value = 0.25
+            FindControlUtil.heightSet(height:0x40)
         case 1:
             lowSpeed.backgroundColor = UIColor.black;
             mediumSpeed.backgroundColor = blueColor;
             highSpeed.backgroundColor = UIColor.black;
             FindControlUtil.setSpeed(type: 0x00)
+            _normalVC.slider?.value = 0.5
+            _seniorVC.slider?.value = 0.5
+            _xyzVC.slider?.value = 0.5
+            _pryVC.slider?.value = 0.5
+            FindControlUtil.heightSet(height:0x80)
             
         case 2:
             lowSpeed.backgroundColor = UIColor.black;
             mediumSpeed.backgroundColor = UIColor.black;
             highSpeed.backgroundColor = blueColor;
             FindControlUtil.setSpeed(type: 0x02)
+            _normalVC.slider?.value = 0.75
+            _seniorVC.slider?.value = 0.75
+            _xyzVC.slider?.value = 0.75
+            _pryVC.slider?.value = 0.75
+            FindControlUtil.heightSet(height:0xB0)
             
             
         default:
