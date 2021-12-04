@@ -115,6 +115,7 @@ class NormalVC: UIViewController {
         FindControlUtil.heightSet(height: value.hw_toByte())
         //            FindControlUtil.setServo(servo: selectPosition.hw_toByte(), xyz: "z", speed: value.hw_toByte())
     }
+    
     @IBAction func reset(_ sender: UIButton) {
         slider.value = 0.5
         FindControlUtil.heightSet(height:0x80)
