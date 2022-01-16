@@ -44,8 +44,18 @@ final class FindControlUtil {
         addWriteMsg(data: result)
     }
     
-    class func setMode(delegate:@escaping CallBack) {//标定模式
+    class func setModeStart() {//标定模式
+        let result:[UInt8] = [0x04,0x01];
+        addWriteMsg(data: result)
+    }
+    
+    class func setModeSave() {//标定模式
         let result:[UInt8] = [0x04,0x00];
+        addWriteMsg(data: result)
+    }
+    
+    class func setModeClose() {//标定模式
+        let result:[UInt8] = [0x04,0x02];
         addWriteMsg(data: result)
     }
     //MARK:蓝牙信息 (暂不支持)

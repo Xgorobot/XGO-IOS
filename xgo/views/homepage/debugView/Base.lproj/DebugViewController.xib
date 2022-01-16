@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DebugViewController" customModule="xgo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWP-7Y-gRx" userLabel="TitleVIew">
+                    <rect key="frame" x="44" y="0.0" width="852" height="48"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabdi1" translatesAutoresizingMaskIntoConstraints="NO" id="ODZ-Kg-qJD">
+                            <rect key="frame" x="0.0" y="0.0" width="852" height="48"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-2k-TCI" userLabel="BackBtn">
+                            <rect key="frame" x="0.0" y="8" width="48" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="0gC-y6-ElY"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="onbackclick:" destination="-1" eventType="touchUpInside" id="Heu-88-7B9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标定模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-kt-aAT">
+                            <rect key="frame" x="391.5" y="14" width="69.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="5GJ-e8-sMw"/>
+                        <constraint firstItem="hBo-2k-TCI" firstAttribute="leading" secondItem="mWP-7Y-gRx" secondAttribute="leading" id="D8u-u6-FJs"/>
+                        <constraint firstItem="ODZ-Kg-qJD" firstAttribute="leading" secondItem="mWP-7Y-gRx" secondAttribute="leading" id="E0Q-AX-Qsd"/>
+                        <constraint firstAttribute="bottom" secondItem="hBo-2k-TCI" secondAttribute="bottom" constant="8" id="ECZ-26-0mH"/>
+                        <constraint firstItem="ODZ-Kg-qJD" firstAttribute="top" secondItem="mWP-7Y-gRx" secondAttribute="top" id="GOu-ZT-gFI"/>
+                        <constraint firstItem="hBo-2k-TCI" firstAttribute="top" secondItem="mWP-7Y-gRx" secondAttribute="top" constant="8" id="MTr-yt-vCS"/>
+                        <constraint firstAttribute="trailing" secondItem="ODZ-Kg-qJD" secondAttribute="trailing" id="Qjj-gU-h0h"/>
+                        <constraint firstItem="ODZ-Kg-qJD" firstAttribute="leading" secondItem="mWP-7Y-gRx" secondAttribute="leading" id="TFX-YB-BcE"/>
+                        <constraint firstAttribute="bottom" secondItem="ODZ-Kg-qJD" secondAttribute="bottom" id="kUd-2u-A3k"/>
+                        <constraint firstAttribute="bottom" secondItem="ODZ-Kg-qJD" secondAttribute="bottom" id="p2v-FT-oUZ"/>
+                        <constraint firstItem="ZRY-kt-aAT" firstAttribute="centerX" secondItem="mWP-7Y-gRx" secondAttribute="centerX" id="qgX-YQ-3kW"/>
+                        <constraint firstItem="ZRY-kt-aAT" firstAttribute="centerY" secondItem="mWP-7Y-gRx" secondAttribute="centerY" id="suh-Bq-zbe"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6di-Xl-SjV">
+                    <rect key="frame" x="268" y="273" width="360" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLi-Py-2qi">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="5Ui-9H-Vh1"/>
+                                <constraint firstAttribute="width" constant="120" id="kBM-kX-gBC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="进入标定模式"/>
+                            <connections>
+                                <action selector="open:" destination="-1" eventType="touchUpInside" id="cCz-Cv-wMC"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-zg-Mcd">
+                            <rect key="frame" x="120" y="0.0" width="120" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="hCi-fr-Qxt"/>
+                                <constraint firstAttribute="width" constant="120" id="iH7-9A-8hW"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvM-Zu-H8k">
+                            <rect key="frame" x="240" y="0.0" width="120" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="f2l-If-eTK"/>
+                                <constraint firstAttribute="height" constant="60" id="zIO-Y3-0L7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="关闭标定模式"/>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="9g1-KA-3kO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.1185090169" green="0.1185331717" blue="0.1434322596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mWP-7Y-gRx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2Sh-Ng-F1C"/>
+                <constraint firstItem="6di-Xl-SjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FYD-t7-SBA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6di-Xl-SjV" secondAttribute="bottom" constant="60" id="IgL-pa-Vbw"/>
+                <constraint firstAttribute="trailing" secondItem="mWP-7Y-gRx" secondAttribute="trailing" id="j88-CK-kjA"/>
+                <constraint firstItem="mWP-7Y-gRx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tDa-JA-hbM"/>
+            </constraints>
+            <point key="canvasLocation" x="-212" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="24"/>
+        <image name="tabdi1" width="667" height="44"/>
+    </resources>
+</document>

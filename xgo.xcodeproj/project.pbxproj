@@ -16,6 +16,7 @@
 		C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DB26F471E600DCE202 /* UIColorExtension.swift */; };
 		C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C49DE26F4721100DCE202 /* UIImageExtension.swift */; };
 		C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */; };
+		C732A5812789789600DC0252 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C732A57F2789789600DC0252 /* DebugViewController.swift */; };
 		C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163926A7C5D40063E17A /* ShowModeVC.swift */; };
 		C77C164026A7C5EA0063E17A /* ShowModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */; };
 		C77C164326A7C5F80063E17A /* ShowModeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77C164226A7C5F80063E17A /* ShowModeService.swift */; };
@@ -35,6 +36,9 @@
 		C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599D926DE59A30056F551 /* UIDeviceExtension.swift */; };
 		C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599E526E07A0F0056F551 /* NormalVM.swift */; };
 		C78599E926E07A1E0056F551 /* NormalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78599E826E07A1E0056F551 /* NormalService.swift */; };
+		C7A1C5B22793C5FB006BD302 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C5B02793C5FB006BD302 /* SettingViewController.swift */; };
+		C7A1C5B827942C5F006BD302 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C5BA27942C5F006BD302 /* SettingViewController.xib */; };
+		C7A1C5C127942D55006BD302 /* DebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C5C327942D55006BD302 /* DebugViewController.xib */; };
 		C7ACF49B26940BA000D303FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACF49A26940BA000D303FD /* AppDelegate.swift */; };
 		C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7ACF4A326940BA100D303FD /* Assets.xcassets */; };
 		C7ACF4A726940BA100D303FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7ACF4A526940BA100D303FD /* LaunchScreen.storyboard */; };
@@ -96,6 +100,7 @@
 		C70C49DB26F471E600DCE202 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C70C49DE26F4721100DCE202 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C71147BD26FDD9EA00313D69 /* IntegralTopBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegralTopBarItem.swift; sourceTree = "<group>"; };
+		C732A57F2789789600DC0252 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		C77C163926A7C5D40063E17A /* ShowModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVC.swift; sourceTree = "<group>"; };
 		C77C163F26A7C5EA0063E17A /* ShowModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeVM.swift; sourceTree = "<group>"; };
 		C77C164226A7C5F80063E17A /* ShowModeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModeService.swift; sourceTree = "<group>"; };
@@ -115,6 +120,13 @@
 		C78599D926DE59A30056F551 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		C78599E526E07A0F0056F551 /* NormalVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVM.swift; sourceTree = "<group>"; };
 		C78599E826E07A1E0056F551 /* NormalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalService.swift; sourceTree = "<group>"; };
+		C7A1C5B02793C5FB006BD302 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C7A1C5B927942C5F006BD302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingViewController.xib; sourceTree = "<group>"; };
+		C7A1C5BD27942C65006BD302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingViewController.strings; sourceTree = "<group>"; };
+		C7A1C5BF27942C65006BD302 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SettingViewController.strings"; sourceTree = "<group>"; };
+		C7A1C5C727942E74006BD302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DebugViewController.xib; sourceTree = "<group>"; };
+		C7A1C5CE279430BC006BD302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DebugViewController.strings; sourceTree = "<group>"; };
+		C7A1C5D0279430BD006BD302 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DebugViewController.strings"; sourceTree = "<group>"; };
 		C7ACF49726940BA000D303FD /* xgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7ACF49A26940BA000D303FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7ACF4A326940BA100D303FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +226,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C732A5842789789C00DC0252 /* debugView */ = {
+			isa = PBXGroup;
+			children = (
+				C732A57F2789789600DC0252 /* DebugViewController.swift */,
+				C7A1C5C327942D55006BD302 /* DebugViewController.xib */,
+			);
+			path = debugView;
+			sourceTree = "<group>";
+		};
 		C77C163826A7C4AD0063E17A /* showmodepage */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +295,15 @@
 				C7BD52A2273E4A0200686FC8 /* ControlImageUtil.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		C7A1C5AF2793C5DF006BD302 /* settingView */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1C5B02793C5FB006BD302 /* SettingViewController.swift */,
+				C7A1C5BA27942C5F006BD302 /* SettingViewController.xib */,
+			);
+			path = settingView;
 			sourceTree = "<group>";
 		};
 		C7ACF48E26940BA000D303FD = {
@@ -388,6 +418,8 @@
 		C7EBE17F26A2CFA9008280BB /* homepage */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1C5AF2793C5DF006BD302 /* settingView */,
+				C732A5842789789C00DC0252 /* debugView */,
 				C7EBE18126A2CFC9008280BB /* HomepageVC.swift */,
 				C7E975E12749E366006F31D5 /* HomepageVC.xib */,
 				C7EBE19926A2D194008280BB /* HomepageVM.swift */,
@@ -507,6 +539,7 @@
 				C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */,
 				C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */,
 				C7D1B651274A0B88003F3C2D /* InfoPlist.strings in Resources */,
+				C7A1C5C127942D55006BD302 /* DebugViewController.xib in Resources */,
 				C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */,
 				C7B6C5ED26C7CE7F004661AF /* ScanTableCell.xib in Resources */,
 				C7E975FB2749E531006F31D5 /* SingleLegVC.xib in Resources */,
@@ -515,6 +548,7 @@
 				C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */,
 				C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */,
 				C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */,
+				C7A1C5B827942C5F006BD302 /* SettingViewController.xib in Resources */,
 				C7EAB27726B2DAB100943B9E /* ShowModeCollectionViewCell.xib in Resources */,
 				C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */,
 				C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */,
@@ -599,6 +633,7 @@
 				C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */,
 				C77FF85126A2B66B00431230 /* Utils.swift in Sources */,
 				C7EBE19A26A2D194008280BB /* HomepageVM.swift in Sources */,
+				C7A1C5B22793C5FB006BD302 /* SettingViewController.swift in Sources */,
 				C7B6C5CC26C7CCB8004661AF /* BleMessageEntity.swift in Sources */,
 				C77C164326A7C5F80063E17A /* ShowModeService.swift in Sources */,
 				C7FDFEF726F19840001A472E /* ControlLRBarsView.swift in Sources */,
@@ -609,6 +644,7 @@
 				C77C166226A7C8610063E17A /* ServoVM.swift in Sources */,
 				C77FF84D26A2B66B00431230 /* Model.swift in Sources */,
 				C77C165026A7C7330063E17A /* SingleLegVC.swift in Sources */,
+				C732A5812789789600DC0252 /* DebugViewController.swift in Sources */,
 				C77C166126A7C8610063E17A /* ServoService.swift in Sources */,
 				C7FBED4426BC0B56008028FE /* CustomViewController.swift in Sources */,
 				C77C166B26A7C8810063E17A /* SingleLegVM.swift in Sources */,
@@ -632,6 +668,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C7A1C5BA27942C5F006BD302 /* SettingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A1C5B927942C5F006BD302 /* Base */,
+				C7A1C5BD27942C65006BD302 /* en */,
+				C7A1C5BF27942C65006BD302 /* zh-Hans */,
+			);
+			name = SettingViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7A1C5C327942D55006BD302 /* DebugViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A1C5C727942E74006BD302 /* Base */,
+				C7A1C5CE279430BC006BD302 /* en */,
+				C7A1C5D0279430BD006BD302 /* zh-Hans */,
+			);
+			name = DebugViewController.xib;
+			sourceTree = "<group>";
+		};
 		C7ACF4A526940BA100D303FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

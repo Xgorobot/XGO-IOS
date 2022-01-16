@@ -38,3 +38,5 @@
 "连接失败" = "connect failed";
 "连接超时" = "connect timeout";
 "好的" = "OK";
+"标定模式" = "Calibration mode on";
+"标定模式结束" = "Calibrated";

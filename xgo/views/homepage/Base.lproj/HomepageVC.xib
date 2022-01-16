@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomepageVC" customModule="xgo" customModuleProvider="target">
             <connections>
+                <outlet property="DevSetting" destination="Vb9-74-a8W" id="LaT-vC-xI4"/>
                 <outlet property="_btn_ble" destination="MI4-pm-UhN" id="Zfk-mR-gLx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -30,24 +31,36 @@
                             <rect key="frame" x="52" y="8.5" width="37" height="37"/>
                             <state key="normal" image="lanya"/>
                         </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Ln-2Hb">
-                            <rect key="frame" x="807" y="8.5" width="37" height="37"/>
-                            <state key="normal" image="guanyu"/>
-                        </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9m-7am">
-                            <rect key="frame" x="746" y="8.5" width="37" height="37"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9m-7am">
+                            <rect key="frame" x="823" y="8.5" width="37" height="37"/>
                             <state key="normal" image="shezhi"/>
+                            <connections>
+                                <action selector="onSettingSelect:" destination="-1" eventType="touchUpInside" id="2k9-TK-WF8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb9-74-a8W">
+                            <rect key="frame" x="762" y="8.5" width="37" height="37"/>
+                            <state key="normal" image="main_debug"/>
+                            <connections>
+                                <action selector="onDebugConfig:" destination="-1" eventType="touchUpInside" id="1Ts-yG-d8g"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Ln-2Hb">
+                            <rect key="frame" x="701" y="8.5" width="37" height="37"/>
+                            <state key="normal" image="guanyu"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="MI4-pm-UhN" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="96f-NW-fj6"/>
+                        <constraint firstAttribute="trailing" secondItem="dkd-9m-7am" secondAttribute="trailing" constant="36" id="AZ6-i9-RnS"/>
                         <constraint firstItem="XlU-Ln-2Hb" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="CLg-ZJ-ZOO"/>
-                        <constraint firstAttribute="trailing" secondItem="XlU-Ln-2Hb" secondAttribute="trailing" constant="52" id="Xvd-yE-MmV"/>
+                        <constraint firstItem="Vb9-74-a8W" firstAttribute="leading" secondItem="XlU-Ln-2Hb" secondAttribute="trailing" constant="24" id="VL5-xL-DuT"/>
+                        <constraint firstItem="dkd-9m-7am" firstAttribute="leading" secondItem="Vb9-74-a8W" secondAttribute="trailing" constant="24" id="bgx-Ct-Gss"/>
                         <constraint firstItem="dkd-9m-7am" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="cRC-xu-c7X"/>
+                        <constraint firstItem="Vb9-74-a8W" firstAttribute="centerY" secondItem="TRC-6W-2bf" secondAttribute="centerY" id="eff-pE-kH7"/>
                         <constraint firstAttribute="height" constant="54" id="gcB-OI-Aes"/>
                         <constraint firstItem="MI4-pm-UhN" firstAttribute="leading" secondItem="TRC-6W-2bf" secondAttribute="leading" constant="52" id="qLD-YJ-HOb"/>
-                        <constraint firstItem="XlU-Ln-2Hb" firstAttribute="leading" secondItem="dkd-9m-7am" secondAttribute="trailing" constant="24" id="s2n-t8-vcv"/>
                     </constraints>
                 </view>
             </subviews>
@@ -69,6 +82,7 @@
         <image name="background" width="667" height="375"/>
         <image name="guanyu" width="37" height="37"/>
         <image name="lanya" width="37" height="37"/>
+        <image name="main_debug" width="37" height="37"/>
         <image name="shezhi" width="37" height="37"/>
     </resources>
 </document>

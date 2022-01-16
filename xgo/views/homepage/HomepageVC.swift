@@ -13,13 +13,13 @@ import RxDataSources
 class HomepageVC: UIViewController, UICollectionViewDelegate{
     
     @IBOutlet weak var _btn_ble: UIButton!
-    @IBOutlet weak var _et_test: UITextField!
     
     private var collectionView : UICollectionView!
     private var flowLayout : LeftRightItem = LeftRightItem()
     
     let _bag: DisposeBag = DisposeBag()
     
+    @IBOutlet weak var DevSetting: UIButton!
     var _vm: HomepageVM!
     
     let dataItem = [DataElement(itemTitle: NSLocalizedString("表演模式", comment: "表演模式"), vc: ShowModeVC(), itemImage: #imageLiteral(resourceName: "biaoyan-1")),
@@ -35,7 +35,6 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationBar.isHidden = true
         let items = Observable.just([SectionModel(model: "",
                                                   items: dataItem)])
@@ -107,6 +106,7 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
             let indexPath = IndexPath(row: 1, section: 0)
             collectionView.scrollToItem(at: indexPath , at: .centeredHorizontally, animated: false)
         }
+        DevSetting.isHidden = !DevOpen
     }
     
     
@@ -129,5 +129,13 @@ class HomepageVC: UIViewController, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.scrollToItem(at: indexPath , at: .centeredHorizontally, animated: true)
     }
+    @IBAction func onDebugConfig(_ sender: UIButton) {
+        self.navigationController?.pushViewController(DebugViewController(),animated:true)
+    }
+    
+    @IBAction func onSettingSelect(_ sender: Any) {
+        self.navigationController?.pushViewController(SettingViewController(),animated:true)
+    }
 }
 
+	

@@ -43,3 +43,6 @@ public func VIEW_HEIGHT(view:UIView)->CGFloat{
 
 var BLEMANAGER:FindBleManager?
 
+
+ var DevOpen = false
+
