@@ -1,18 +1,19 @@
 PODS:
-  - AEAlertView (2.2.3)
+  - AEAlertView (2.3.8)
   - Differentiator (5.0.0)
   - DownPicker (0.1.34)
-  - RxCocoa (6.2.0):
-    - RxRelay (= 6.2.0)
-    - RxSwift (= 6.2.0)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
   - RxDataSources (5.0.0):
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
-  - RxRelay (6.2.0):
-    - RxSwift (= 6.2.0)
-  - RxSwift (6.2.0)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
   - SnapKit (4.0.1)
+  - TactileSlider (3.0.0)
 
 DEPENDENCIES:
   - AEAlertView
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - SnapKit (~> 4.0.0)
+  - TactileSlider
 
 SPEC REPOS:
   trunk:
@@ -32,17 +34,19 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - TactileSlider
 
 SPEC CHECKSUMS:
-  AEAlertView: 2ac369948406e6e9f08b87690f85f9600ddb23a5
+  AEAlertView: b401263d79da0b608f00207d0a47ee9b18eb4c28
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   DownPicker: c00ea63f08ae82116cc93d0eba74e86bf3d4c68e
-  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
-  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
-  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  TactileSlider: 29d7ece49b13f921f1c8e0952ffba6c0b9c9d19d
 
-PODFILE CHECKSUM: c7f91c3f771589c664c8200293762375f4e65903
+PODFILE CHECKSUM: c625efc057ad8fb5c9a403ab09b21685af97b824
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

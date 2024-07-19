@@ -31,7 +31,7 @@ class RockerBarsView: UIView {
         
         backgroundImage = UIImageView.init(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
 //        let image = #imageLiteral(resourceName: "quan")
-        backgroundImage?.image = #imageLiteral(resourceName: "quan")
+        backgroundImage?.image = UIImage(named: "yuan-11")
         self.addSubview(backgroundImage!)
 //        UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
 //        image.draw(in:bounds)

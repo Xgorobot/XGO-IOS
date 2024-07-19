@@ -3,10 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F075A0B2C4A6B9E0017BF65 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */; };
+		8F075A0C2C4A6B9E0017BF65 /* NewActionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */; };
+		8F075A0D2C4A6B9E0017BF65 /* NewActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */; };
+		8F075A0E2C4A6B9E0017BF65 /* NewActionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759E72C4A6B9E0017BF65 /* NewActionVC.xib */; };
+		8F075A0F2C4A6B9E0017BF65 /* NewArmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */; };
+		8F075A102C4A6B9E0017BF65 /* NewArmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */; };
+		8F075A112C4A6B9E0017BF65 /* NewControlSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */; };
+		8F075A122C4A6B9E0017BF65 /* NewControlSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */; };
+		8F075A132C4A6B9E0017BF65 /* NewControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */; };
+		8F075A142C4A6B9E0017BF65 /* NewControlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */; };
+		8F075A152C4A6B9E0017BF65 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EF2C4A6B9E0017BF65 /* Appearance.swift */; };
+		8F075A162C4A6B9E0017BF65 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F02C4A6B9E0017BF65 /* Border.swift */; };
+		8F075A172C4A6B9E0017BF65 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F12C4A6B9E0017BF65 /* Gradient.swift */; };
+		8F075A182C4A6B9E0017BF65 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F22C4A6B9E0017BF65 /* GradientButton.swift */; };
+		8F075A192C4A6B9E0017BF65 /* GradientButtonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F32C4A6B9E0017BF65 /* GradientButtonLayer.swift */; };
+		8F075A1A2C4A6B9E0017BF65 /* HomeSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F52C4A6B9E0017BF65 /* HomeSetView.swift */; };
+		8F075A1B2C4A6B9E0017BF65 /* HomeSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759F62C4A6B9E0017BF65 /* HomeSetView.xib */; };
+		8F075A1C2C4A6B9E0017BF65 /* HomeUpSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F72C4A6B9E0017BF65 /* HomeUpSetView.swift */; };
+		8F075A1D2C4A6B9E0017BF65 /* HomeUpSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759F82C4A6B9E0017BF65 /* HomeUpSetView.xib */; };
+		8F075A1E2C4A6B9E0017BF65 /* NewHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F92C4A6B9E0017BF65 /* NewHomeVC.swift */; };
+		8F075A1F2C4A6B9E0017BF65 /* NewHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759FA2C4A6B9E0017BF65 /* NewHomeVC.xib */; };
+		8F075A202C4A6B9E0017BF65 /* NewSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759FC2C4A6B9E0017BF65 /* NewSearchListView.swift */; };
+		8F075A212C4A6B9E0017BF65 /* NewSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759FD2C4A6B9E0017BF65 /* NewSearchVC.swift */; };
+		8F075A222C4A6B9E0017BF65 /* NewSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759FE2C4A6B9E0017BF65 /* NewSearchVC.xib */; };
+		8F075A232C4A6B9E0017BF65 /* GradientProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A002C4A6B9E0017BF65 /* GradientProgress.swift */; };
+		8F075A242C4A6B9E0017BF65 /* NewAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A012C4A6B9E0017BF65 /* NewAboutVC.swift */; };
+		8F075A252C4A6B9E0017BF65 /* NewAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A022C4A6B9E0017BF65 /* NewAboutVC.xib */; };
+		8F075A262C4A6B9E0017BF65 /* NewSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A032C4A6B9E0017BF65 /* NewSetVC.swift */; };
+		8F075A272C4A6B9E0017BF65 /* NewSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A042C4A6B9E0017BF65 /* NewSetVC.xib */; };
+		8F075A282C4A6B9E0017BF65 /* NewTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A052C4A6B9E0017BF65 /* NewTestVC.swift */; };
+		8F075A292C4A6B9E0017BF65 /* NewTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */; };
+		8F075A2A2C4A6B9E0017BF65 /* NewUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */; };
+		8F075A2B2C4A6B9E0017BF65 /* NewUpgradeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */; };
 		C709BC4426D63E7F00518E69 /* BleMessageAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */; };
 		C709BC4726D64E3A00518E69 /* FindBleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4626D64E3A00518E69 /* FindBleHelper.swift */; };
 		C709BC4A26D779BF00518E69 /* FindControlUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4926D779BF00518E69 /* FindControlUtils.swift */; };
@@ -89,6 +122,39 @@
 
 /* Begin PBXFileReference section */
 		19FABECEAF7CED1BD67CA3E6 /* Pods_xgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActionMenuView.swift; sourceTree = "<group>"; };
+		8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActionVC.swift; sourceTree = "<group>"; };
+		8F0759E72C4A6B9E0017BF65 /* NewActionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewActionVC.xib; sourceTree = "<group>"; };
+		8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewArmVC.swift; sourceTree = "<group>"; };
+		8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewArmVC.xib; sourceTree = "<group>"; };
+		8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewControlSetView.swift; sourceTree = "<group>"; };
+		8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewControlSetView.xib; sourceTree = "<group>"; };
+		8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewControlVC.swift; sourceTree = "<group>"; };
+		8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewControlVC.xib; sourceTree = "<group>"; };
+		8F0759EF2C4A6B9E0017BF65 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		8F0759F02C4A6B9E0017BF65 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		8F0759F12C4A6B9E0017BF65 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		8F0759F22C4A6B9E0017BF65 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		8F0759F32C4A6B9E0017BF65 /* GradientButtonLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButtonLayer.swift; sourceTree = "<group>"; };
+		8F0759F52C4A6B9E0017BF65 /* HomeSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSetView.swift; sourceTree = "<group>"; };
+		8F0759F62C4A6B9E0017BF65 /* HomeSetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSetView.xib; sourceTree = "<group>"; };
+		8F0759F72C4A6B9E0017BF65 /* HomeUpSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUpSetView.swift; sourceTree = "<group>"; };
+		8F0759F82C4A6B9E0017BF65 /* HomeUpSetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeUpSetView.xib; sourceTree = "<group>"; };
+		8F0759F92C4A6B9E0017BF65 /* NewHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHomeVC.swift; sourceTree = "<group>"; };
+		8F0759FA2C4A6B9E0017BF65 /* NewHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewHomeVC.xib; sourceTree = "<group>"; };
+		8F0759FC2C4A6B9E0017BF65 /* NewSearchListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSearchListView.swift; sourceTree = "<group>"; };
+		8F0759FD2C4A6B9E0017BF65 /* NewSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSearchVC.swift; sourceTree = "<group>"; };
+		8F0759FE2C4A6B9E0017BF65 /* NewSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewSearchVC.xib; sourceTree = "<group>"; };
+		8F075A002C4A6B9E0017BF65 /* GradientProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgress.swift; sourceTree = "<group>"; };
+		8F075A012C4A6B9E0017BF65 /* NewAboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAboutVC.swift; sourceTree = "<group>"; };
+		8F075A022C4A6B9E0017BF65 /* NewAboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAboutVC.xib; sourceTree = "<group>"; };
+		8F075A032C4A6B9E0017BF65 /* NewSetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSetVC.swift; sourceTree = "<group>"; };
+		8F075A042C4A6B9E0017BF65 /* NewSetVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewSetVC.xib; sourceTree = "<group>"; };
+		8F075A052C4A6B9E0017BF65 /* NewTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTestVC.swift; sourceTree = "<group>"; };
+		8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTestVC.xib; sourceTree = "<group>"; };
+		8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpgradeVC.swift; sourceTree = "<group>"; };
+		8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpgradeVC.xib; sourceTree = "<group>"; };
 		9B2672688B791E03C9FA391A /* Pods-xgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.release.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.release.xcconfig"; sourceTree = "<group>"; };
 		C0B9AB087891C6A6BA81CE4E /* Pods-xgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.debug.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.debug.xcconfig"; sourceTree = "<group>"; };
 		C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleMessageAttributes.swift; sourceTree = "<group>"; };
@@ -226,6 +292,86 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8F0759EE2C4A6B9E0017BF65 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */,
+				8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */,
+				8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */,
+				8F0759E72C4A6B9E0017BF65 /* NewActionVC.xib */,
+				8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */,
+				8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */,
+				8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */,
+				8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */,
+				8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */,
+				8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		8F0759F42C4A6B9E0017BF65 /* GradientButton */ = {
+			isa = PBXGroup;
+			children = (
+				8F0759EF2C4A6B9E0017BF65 /* Appearance.swift */,
+				8F0759F02C4A6B9E0017BF65 /* Border.swift */,
+				8F0759F12C4A6B9E0017BF65 /* Gradient.swift */,
+				8F0759F22C4A6B9E0017BF65 /* GradientButton.swift */,
+				8F0759F32C4A6B9E0017BF65 /* GradientButtonLayer.swift */,
+			);
+			path = GradientButton;
+			sourceTree = "<group>";
+		};
+		8F0759FB2C4A6B9E0017BF65 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				8F0759F52C4A6B9E0017BF65 /* HomeSetView.swift */,
+				8F0759F62C4A6B9E0017BF65 /* HomeSetView.xib */,
+				8F0759F72C4A6B9E0017BF65 /* HomeUpSetView.swift */,
+				8F0759F82C4A6B9E0017BF65 /* HomeUpSetView.xib */,
+				8F0759F92C4A6B9E0017BF65 /* NewHomeVC.swift */,
+				8F0759FA2C4A6B9E0017BF65 /* NewHomeVC.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		8F0759FF2C4A6B9E0017BF65 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				8F0759FC2C4A6B9E0017BF65 /* NewSearchListView.swift */,
+				8F0759FD2C4A6B9E0017BF65 /* NewSearchVC.swift */,
+				8F0759FE2C4A6B9E0017BF65 /* NewSearchVC.xib */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		8F075A092C4A6B9E0017BF65 /* set */ = {
+			isa = PBXGroup;
+			children = (
+				8F075A002C4A6B9E0017BF65 /* GradientProgress.swift */,
+				8F075A012C4A6B9E0017BF65 /* NewAboutVC.swift */,
+				8F075A022C4A6B9E0017BF65 /* NewAboutVC.xib */,
+				8F075A032C4A6B9E0017BF65 /* NewSetVC.swift */,
+				8F075A042C4A6B9E0017BF65 /* NewSetVC.xib */,
+				8F075A052C4A6B9E0017BF65 /* NewTestVC.swift */,
+				8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */,
+				8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */,
+				8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */,
+			);
+			path = set;
+			sourceTree = "<group>";
+		};
+		8F075A0A2C4A6B9E0017BF65 /* NewViews */ = {
+			isa = PBXGroup;
+			children = (
+				8F0759EE2C4A6B9E0017BF65 /* control */,
+				8F0759F42C4A6B9E0017BF65 /* GradientButton */,
+				8F0759FB2C4A6B9E0017BF65 /* home */,
+				8F0759FF2C4A6B9E0017BF65 /* search */,
+				8F075A092C4A6B9E0017BF65 /* set */,
+			);
+			path = NewViews;
+			sourceTree = "<group>";
+		};
 		C732A5842789789C00DC0252 /* debugView */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +473,7 @@
 		C7ACF49926940BA000D303FD /* xgo */ = {
 			isa = PBXGroup;
 			children = (
+				8F075A0A2C4A6B9E0017BF65 /* NewViews */,
 				C7ACF4A826940BA100D303FD /* Info.plist */,
 				C7B6C5E126C7CE3D004661AF /* views */,
 				C7B6C5CA26C7CCB2004661AF /* entity */,
@@ -538,20 +685,32 @@
 				C7E9760F2749E952006F31D5 /* ShowModeVC.xib in Resources */,
 				C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */,
 				C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */,
+				8F075A0E2C4A6B9E0017BF65 /* NewActionVC.xib in Resources */,
+				8F075A122C4A6B9E0017BF65 /* NewControlSetView.xib in Resources */,
 				C7D1B651274A0B88003F3C2D /* InfoPlist.strings in Resources */,
+				8F075A272C4A6B9E0017BF65 /* NewSetVC.xib in Resources */,
+				8F075A1B2C4A6B9E0017BF65 /* HomeSetView.xib in Resources */,
 				C7A1C5C127942D55006BD302 /* DebugViewController.xib in Resources */,
 				C7E975D12749E2FD006F31D5 /* DeviceScanViewController.xib in Resources */,
+				8F075A222C4A6B9E0017BF65 /* NewSearchVC.xib in Resources */,
+				8F075A2B2C4A6B9E0017BF65 /* NewUpgradeVC.xib in Resources */,
 				C7B6C5ED26C7CE7F004661AF /* ScanTableCell.xib in Resources */,
+				8F075A252C4A6B9E0017BF65 /* NewAboutVC.xib in Resources */,
 				C7E975FB2749E531006F31D5 /* SingleLegVC.xib in Resources */,
 				C7EAB24C26B0F16600943B9E /* HomePageCollectionViewCell.xib in Resources */,
+				8F075A292C4A6B9E0017BF65 /* NewTestVC.xib in Resources */,
 				C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */,
 				C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */,
 				C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */,
+				8F075A142C4A6B9E0017BF65 /* NewControlVC.xib in Resources */,
 				C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */,
 				C7A1C5B827942C5F006BD302 /* SettingViewController.xib in Resources */,
+				8F075A1D2C4A6B9E0017BF65 /* HomeUpSetView.xib in Resources */,
 				C7EAB27726B2DAB100943B9E /* ShowModeCollectionViewCell.xib in Resources */,
 				C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */,
 				C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */,
+				8F075A1F2C4A6B9E0017BF65 /* NewHomeVC.xib in Resources */,
+				8F075A102C4A6B9E0017BF65 /* NewArmVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +764,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B6C5D226C7CD37004661AF /* DelayUtils.swift in Sources */,
+				8F075A162C4A6B9E0017BF65 /* Border.swift in Sources */,
 				C7EAB27626B2DAB100943B9E /* ShowModeCollectionViewCell.swift in Sources */,
+				8F075A202C4A6B9E0017BF65 /* NewSearchListView.swift in Sources */,
+				8F075A0C2C4A6B9E0017BF65 /* NewActionMenuView.swift in Sources */,
 				C7EAB24B26B0F16600943B9E /* HomePageCollectionViewCell.swift in Sources */,
 				C7BD52A3273E4A0200686FC8 /* ControlImageUtil.swift in Sources */,
 				C7EAB24226AFD60400943B9E /* LeftRightItem.swift in Sources */,
@@ -614,36 +776,54 @@
 				C7FBED2726BBC3EA008028FE /* BaseViewController.swift in Sources */,
 				C78599E926E07A1E0056F551 /* NormalService.swift in Sources */,
 				C7FBED1C26BBBBA7008028FE /* NormalVC.swift in Sources */,
+				8F075A172C4A6B9E0017BF65 /* Gradient.swift in Sources */,
+				8F075A192C4A6B9E0017BF65 /* GradientButtonLayer.swift in Sources */,
 				C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */,
 				C7B6C5C026C7B2DB004661AF /* RockerBarsView.swift in Sources */,
 				C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */,
 				C70C49D626F4719900DCE202 /* DateExtension.swift in Sources */,
 				C7B6C5E826C7CE76004661AF /* DeviceScanViewController.swift in Sources */,
+				8F075A1C2C4A6B9E0017BF65 /* HomeUpSetView.swift in Sources */,
 				C78599DA26DE59A30056F551 /* UIDeviceExtension.swift in Sources */,
+				8F075A132C4A6B9E0017BF65 /* NewControlVC.swift in Sources */,
 				C7B6C5BF26C7B2DB004661AF /* RockerBars.swift in Sources */,
 				C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
+				8F075A232C4A6B9E0017BF65 /* GradientProgress.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
+				8F075A0B2C4A6B9E0017BF65 /* GradientSlider.swift in Sources */,
 				C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */,
+				8F075A1A2C4A6B9E0017BF65 /* HomeSetView.swift in Sources */,
 				C77C164A26A7C7200063E17A /* IntegralModeVC.swift in Sources */,
 				C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */,
 				C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */,
+				8F075A262C4A6B9E0017BF65 /* NewSetVC.swift in Sources */,
 				C7EBE18326A2CFC9008280BB /* HomepageVC.swift in Sources */,
 				C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */,
+				8F075A152C4A6B9E0017BF65 /* Appearance.swift in Sources */,
+				8F075A212C4A6B9E0017BF65 /* NewSearchVC.swift in Sources */,
 				C77FF85126A2B66B00431230 /* Utils.swift in Sources */,
 				C7EBE19A26A2D194008280BB /* HomepageVM.swift in Sources */,
 				C7A1C5B22793C5FB006BD302 /* SettingViewController.swift in Sources */,
+				8F075A112C4A6B9E0017BF65 /* NewControlSetView.swift in Sources */,
+				8F075A0F2C4A6B9E0017BF65 /* NewArmVC.swift in Sources */,
 				C7B6C5CC26C7CCB8004661AF /* BleMessageEntity.swift in Sources */,
+				8F075A242C4A6B9E0017BF65 /* NewAboutVC.swift in Sources */,
 				C77C164326A7C5F80063E17A /* ShowModeService.swift in Sources */,
 				C7FDFEF726F19840001A472E /* ControlLRBarsView.swift in Sources */,
+				8F075A2A2C4A6B9E0017BF65 /* NewUpgradeVC.swift in Sources */,
 				C7ACF49B26940BA000D303FD /* AppDelegate.swift in Sources */,
 				C7B6C5F226C7D0EA004661AF /* AppValues.swift in Sources */,
+				8F075A282C4A6B9E0017BF65 /* NewTestVC.swift in Sources */,
+				8F075A1E2C4A6B9E0017BF65 /* NewHomeVC.swift in Sources */,
 				C7F5506926F2E1E800474075 /* IntExtension.swift in Sources */,
 				C78599D626DE596E0056F551 /* BleConnectViewController.swift in Sources */,
 				C77C166226A7C8610063E17A /* ServoVM.swift in Sources */,
 				C77FF84D26A2B66B00431230 /* Model.swift in Sources */,
 				C77C165026A7C7330063E17A /* SingleLegVC.swift in Sources */,
+				8F075A0D2C4A6B9E0017BF65 /* NewActionVC.swift in Sources */,
+				8F075A182C4A6B9E0017BF65 /* GradientButton.swift in Sources */,
 				C732A5812789789600DC0252 /* DebugViewController.swift in Sources */,
 				C77C166126A7C8610063E17A /* ServoService.swift in Sources */,
 				C7FBED4426BC0B56008028FE /* CustomViewController.swift in Sources */,
@@ -937,7 +1117,7 @@
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 224A4DARGK;
 				INFOPLIST_FILE = xgo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -962,7 +1142,7 @@
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 224A4DARGK;
 				INFOPLIST_FILE = xgo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

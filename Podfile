@@ -10,4 +10,5 @@ target 'xgo' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'AEAlertView'
+  pod 'TactileSlider'
 end

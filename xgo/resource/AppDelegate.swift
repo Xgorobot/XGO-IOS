@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow()
         self.window?.frame = UIScreen.main.bounds
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = UINavigationController.init(rootViewController: HomepageVC())
+        self.window?.rootViewController = UINavigationController.init(rootViewController: NewHomeVC())
         return true
     }
 

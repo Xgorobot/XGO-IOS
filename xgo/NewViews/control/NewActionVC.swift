@@ -1,0 +1,58 @@
+//
+//  NewActionVC.swift
+//  xgo
+//
+//  Created by Arther on 18.7.24.
+//
+
+import UIKit
+
+
+class NewActionVC: UIViewController {
+    
+    @IBOutlet weak var resetButton: GradientButton!
+    @IBOutlet weak var redValue: UILabel!
+    @IBOutlet weak var greenValue: UILabel!
+    @IBOutlet weak var blueValue: UILabel!
+    @IBOutlet weak var leftRockerView: RockerBarsView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        resetButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0C00F8), UIColor(hex: 0x00EAFF)]), for: .normal)
+        
+        leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        }
+        
+    }
+    
+    @IBAction func resetAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func redChange(_ sender: UISlider) {
+        sender.setValue(sender.value.rounded(), animated: true)
+        redValue.text = Int(sender.value).description
+    }
+    
+    @IBAction func greenChange(_ sender: UISlider) {
+        sender.setValue(sender.value.rounded(), animated: true)
+        greenValue.text = Int(sender.value).description
+    }
+    
+    @IBAction func blueChange(_ sender: UISlider) {
+        sender.setValue(sender.value.rounded(), animated: true)
+        blueValue.text = Int(sender.value).description
+    }
+    
+    @IBAction func rollChange(_ sender: Any) {
+    }
+    // 亮度设置
+    @IBAction func brightnessChange(_ sender: Any) {
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+}
