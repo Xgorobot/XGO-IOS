@@ -7,13 +7,11 @@
 
 import UIKit
 
-
 class NewHomeVC: UIViewController {
     
     @IBOutlet weak var bluetoothInfoView: UIView!
     @IBOutlet weak var bluetoothInfoLabel: UILabel!
     @IBOutlet weak var controlButton: UIButton!
-    
     var homeSetView: HomeSetView!
     var homeUpSetView: HomeUpSetView!
     

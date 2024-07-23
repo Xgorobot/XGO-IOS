@@ -14,8 +14,13 @@ class NewControlVC: UIViewController {
     var armVC = NewArmVC()
     var menuView: NewActionMenuView!
     var setView: NewControlSetView!
+    @IBOutlet weak var leftControlView: ControlBarsView!
+    @IBOutlet weak var rightControlView: ControlBarsView!
+    
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var rightRockerView: RockerBarsView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +51,27 @@ class NewControlVC: UIViewController {
             make.edges.equalTo(self.view)
         }
         
+
+        
+        leftControlView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        }
+        
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        }
+        
+        
+        rightControlView.updownEnable = false
+        rightControlView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
         
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
+        
+        
         
     }
     

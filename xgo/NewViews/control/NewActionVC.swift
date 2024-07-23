@@ -14,7 +14,10 @@ class NewActionVC: UIViewController {
     @IBOutlet weak var redValue: UILabel!
     @IBOutlet weak var greenValue: UILabel!
     @IBOutlet weak var blueValue: UILabel!
+    @IBOutlet weak var leftActionView: ActionBarsView!
     @IBOutlet weak var leftRockerView: RockerBarsView!
+    @IBOutlet weak var GradientSlider: GradientSlider!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,12 @@ class NewActionVC: UIViewController {
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
+        
+        leftActionView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+        }
+        
+        GradientSlider.thumbSize = 50
         
     }
     

@@ -13,7 +13,7 @@ class NewArmVC: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var armButton: GradientButton!
-    @IBOutlet weak var armRockerView: RockerBarsView!
+    @IBOutlet weak var armRockerView: ArmRockerView!
     @IBOutlet weak var segmented: UISegmentedControl!
     
     override func viewDidLoad() {

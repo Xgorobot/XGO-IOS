@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewArmVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="armButton" destination="bME-z6-ZVD" id="jWS-Ly-icZ"/>
-                <outlet property="armRockerView" destination="BE2-cx-TGS" id="1kn-No-Bmk"/>
+                <outlet property="armRockerView" destination="nB9-nG-C7f" id="Juu-G9-aXN"/>
                 <outlet property="progressLabel" destination="KBn-44-CpD" id="Fgj-8X-JD6"/>
                 <outlet property="progressSlider" destination="FDO-a4-ZGb" id="dJp-aK-doN"/>
                 <outlet property="segmented" destination="QrZ-w3-cG5" id="y32-qA-hsj"/>
@@ -73,23 +73,6 @@
                         <action selector="referAction:" destination="-1" eventType="valueChanged" id="KMU-Xe-ATj"/>
                     </connections>
                 </segmentedControl>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nB9-nG-C7f">
-                    <rect key="frame" x="112.66666666666669" y="124" width="213" height="213"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE2-cx-TGS" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="213" height="213"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="nB9-nG-C7f" secondAttribute="height" multiplier="1:1" id="JQf-al-l3d"/>
-                        <constraint firstAttribute="bottom" secondItem="BE2-cx-TGS" secondAttribute="bottom" id="XqF-hp-22D"/>
-                        <constraint firstItem="BE2-cx-TGS" firstAttribute="leading" secondItem="nB9-nG-C7f" secondAttribute="leading" id="h9x-d7-MRO"/>
-                        <constraint firstAttribute="trailing" secondItem="BE2-cx-TGS" secondAttribute="trailing" id="iBH-c5-w4Z"/>
-                        <constraint firstItem="BE2-cx-TGS" firstAttribute="top" secondItem="nB9-nG-C7f" secondAttribute="top" id="mrx-XR-QdG"/>
-                    </constraints>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWU-hU-yxO">
                     <rect key="frame" x="446" y="124" width="60" height="60"/>
                     <constraints>
@@ -164,6 +147,13 @@
                         <constraint firstItem="dWs-8A-PZT" firstAttribute="centerY" secondItem="H2m-hs-m4V" secondAttribute="centerY" id="udB-vv-iFw"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nB9-nG-C7f" customClass="ArmRockerView" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="112.66666666666669" y="124" width="213" height="213"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nB9-nG-C7f" secondAttribute="height" multiplier="1:1" id="JQf-al-l3d"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.17608174679999999" green="0.17133006449999999" blue="0.66670459510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -194,7 +184,7 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="40" height="40"/>
+        <image name="back" width="24" height="24"/>
         <image name="w-zhong" width="62" height="62"/>
     </resources>
 </document>

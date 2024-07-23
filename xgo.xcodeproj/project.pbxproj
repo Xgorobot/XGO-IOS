@@ -40,6 +40,12 @@
 		8F075A292C4A6B9E0017BF65 /* NewTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */; };
 		8F075A2A2C4A6B9E0017BF65 /* NewUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */; };
 		8F075A2B2C4A6B9E0017BF65 /* NewUpgradeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */; };
+		8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02492C4E48F500EB198C /* ActionBarsView.swift */; };
+		8FDC024C2C4E4BB200EB198C /* ArmRockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */; };
+		8FDC02512C4E5CFB00EB198C /* PRGRoundRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024D2C4E5CFB00EB198C /* PRGRoundRangeSlider.swift */; };
+		8FDC02522C4E5CFB00EB198C /* PRGRoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024E2C4E5CFB00EB198C /* PRGRoundSlider.swift */; };
+		8FDC02532C4E5CFB00EB198C /* SliderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024F2C4E5CFB00EB198C /* SliderKit.swift */; };
+		8FDC02572C4F3BBE00EB198C /* ArcSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */; };
 		C709BC4426D63E7F00518E69 /* BleMessageAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */; };
 		C709BC4726D64E3A00518E69 /* FindBleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4626D64E3A00518E69 /* FindBleHelper.swift */; };
 		C709BC4A26D779BF00518E69 /* FindControlUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4926D779BF00518E69 /* FindControlUtils.swift */; };
@@ -155,6 +161,12 @@
 		8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTestVC.xib; sourceTree = "<group>"; };
 		8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpgradeVC.swift; sourceTree = "<group>"; };
 		8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpgradeVC.xib; sourceTree = "<group>"; };
+		8FDC02492C4E48F500EB198C /* ActionBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarsView.swift; sourceTree = "<group>"; };
+		8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmRockerView.swift; sourceTree = "<group>"; };
+		8FDC024D2C4E5CFB00EB198C /* PRGRoundRangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundRangeSlider.swift; sourceTree = "<group>"; };
+		8FDC024E2C4E5CFB00EB198C /* PRGRoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundSlider.swift; sourceTree = "<group>"; };
+		8FDC024F2C4E5CFB00EB198C /* SliderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderKit.swift; sourceTree = "<group>"; };
+		8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSlider.swift; sourceTree = "<group>"; };
 		9B2672688B791E03C9FA391A /* Pods-xgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.release.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.release.xcconfig"; sourceTree = "<group>"; };
 		C0B9AB087891C6A6BA81CE4E /* Pods-xgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.debug.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.debug.xcconfig"; sourceTree = "<group>"; };
 		C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleMessageAttributes.swift; sourceTree = "<group>"; };
@@ -305,6 +317,9 @@
 				8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */,
 				8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */,
 				8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */,
+				8FDC02492C4E48F500EB198C /* ActionBarsView.swift */,
+				8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */,
+				8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -363,6 +378,7 @@
 		8F075A0A2C4A6B9E0017BF65 /* NewViews */ = {
 			isa = PBXGroup;
 			children = (
+				8FDC02502C4E5CFB00EB198C /* PRGRoundSlider */,
 				8F0759EE2C4A6B9E0017BF65 /* control */,
 				8F0759F42C4A6B9E0017BF65 /* GradientButton */,
 				8F0759FB2C4A6B9E0017BF65 /* home */,
@@ -370,6 +386,16 @@
 				8F075A092C4A6B9E0017BF65 /* set */,
 			);
 			path = NewViews;
+			sourceTree = "<group>";
+		};
+		8FDC02502C4E5CFB00EB198C /* PRGRoundSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8FDC024D2C4E5CFB00EB198C /* PRGRoundRangeSlider.swift */,
+				8FDC024E2C4E5CFB00EB198C /* PRGRoundSlider.swift */,
+				8FDC024F2C4E5CFB00EB198C /* SliderKit.swift */,
+			);
+			path = PRGRoundSlider;
 			sourceTree = "<group>";
 		};
 		C732A5842789789C00DC0252 /* debugView */ = {
@@ -779,8 +805,10 @@
 				8F075A172C4A6B9E0017BF65 /* Gradient.swift in Sources */,
 				8F075A192C4A6B9E0017BF65 /* GradientButtonLayer.swift in Sources */,
 				C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */,
+				8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */,
 				C7B6C5C026C7B2DB004661AF /* RockerBarsView.swift in Sources */,
 				C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */,
+				8FDC02512C4E5CFB00EB198C /* PRGRoundRangeSlider.swift in Sources */,
 				C70C49D626F4719900DCE202 /* DateExtension.swift in Sources */,
 				C7B6C5E826C7CE76004661AF /* DeviceScanViewController.swift in Sources */,
 				8F075A1C2C4A6B9E0017BF65 /* HomeUpSetView.swift in Sources */,
@@ -789,18 +817,22 @@
 				C7B6C5BF26C7B2DB004661AF /* RockerBars.swift in Sources */,
 				C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
+				8FDC02572C4F3BBE00EB198C /* ArcSlider.swift in Sources */,
 				8F075A232C4A6B9E0017BF65 /* GradientProgress.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
+				8FDC02522C4E5CFB00EB198C /* PRGRoundSlider.swift in Sources */,
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
 				8F075A0B2C4A6B9E0017BF65 /* GradientSlider.swift in Sources */,
 				C70C49DC26F471E600DCE202 /* UIColorExtension.swift in Sources */,
 				8F075A1A2C4A6B9E0017BF65 /* HomeSetView.swift in Sources */,
 				C77C164A26A7C7200063E17A /* IntegralModeVC.swift in Sources */,
 				C7BD52A1273D303100686FC8 /* XGOSlider.swift in Sources */,
+				8FDC02532C4E5CFB00EB198C /* SliderKit.swift in Sources */,
 				C70C49DF26F4721100DCE202 /* UIImageExtension.swift in Sources */,
 				8F075A262C4A6B9E0017BF65 /* NewSetVC.swift in Sources */,
 				C7EBE18326A2CFC9008280BB /* HomepageVC.swift in Sources */,
 				C77C166626A7C86A0063E17A /* IntegralModeVM.swift in Sources */,
+				8FDC024C2C4E4BB200EB198C /* ArmRockerView.swift in Sources */,
 				8F075A152C4A6B9E0017BF65 /* Appearance.swift in Sources */,
 				8F075A212C4A6B9E0017BF65 /* NewSearchVC.swift in Sources */,
 				C77FF85126A2B66B00431230 /* Utils.swift in Sources */,

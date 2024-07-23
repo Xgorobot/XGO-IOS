@@ -11,8 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewControlVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="controlButton" destination="gCB-cQ-iEy" id="jIF-zK-HpD"/>
-                <outlet property="leftRockerView" destination="TUn-nL-edn" id="NNL-iR-gts"/>
-                <outlet property="rightRockerView" destination="xkO-mS-bpV" id="ffu-dd-YTh"/>
+                <outlet property="leftControlView" destination="TUn-nL-edn" id="g92-tL-9wU"/>
+                <outlet property="leftRockerView" destination="wae-Nr-ISE" id="Kgf-Wl-qMK"/>
+                <outlet property="rightControlView" destination="xkO-mS-bpV" id="v9g-s7-XTr"/>
+                <outlet property="rightRockerView" destination="cFB-yO-Eg9" id="jw6-d4-VYh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="S9k-aD-Qnr"/>
             </connections>
         </placeholder>
@@ -111,10 +113,10 @@
                     <state key="normal" image="z-di"/>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYK-SB-hQL">
-                    <rect key="frame" x="296" y="322" width="260" height="50"/>
+                    <rect key="frame" x="276" y="322" width="300" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr1-jl-DaA">
-                            <rect key="frame" x="80" y="30" width="100" height="20"/>
+                            <rect key="frame" x="100" y="30" width="100" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="T9Q-16-RDo"/>
                                 <constraint firstAttribute="width" constant="100" id="ipN-sQ-mum"/>
@@ -125,53 +127,75 @@
                                 <action selector="menuAction:" destination="-1" eventType="touchUpInside" id="15f-91-2Ov"/>
                             </connections>
                         </button>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i4c-18-RP2">
-                            <rect key="frame" x="10" y="5" width="240" height="25"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i4c-18-RP2">
+                            <rect key="frame" x="10" y="5" width="280" height="25"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-M5-eWo">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="25"/>
                                     <color key="backgroundColor" red="0.1602444351" green="0.22693252559999999" blue="0.75298303369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="动作轮播"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMS-sz-7Hl">
-                                    <rect key="frame" x="80" y="0.0" width="80" height="25"/>
+                                    <rect key="frame" x="96.666666666666686" y="0.0" width="86.666666666666686" height="25"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="趴下"/>
+                                    <state key="normal" title="趴下" backgroundImage="weixuan8"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kie-JQ-bgf">
-                                    <rect key="frame" x="160" y="0.0" width="80" height="25"/>
+                                    <rect key="frame" x="193.33333333333331" y="0.0" width="86.666666666666686" height="25"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="蹲起"/>
+                                    <state key="normal" title="蹲起" backgroundImage="weixuan8"/>
                                 </button>
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.04750391096" green="0.091701187190000005" blue="0.40002390739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="i4c-18-RP2" secondAttribute="trailing" constant="10" id="8F8-fC-Ffa"/>
                         <constraint firstItem="i4c-18-RP2" firstAttribute="top" secondItem="tYK-SB-hQL" secondAttribute="top" constant="5" id="Asc-bL-6bR"/>
                         <constraint firstItem="i4c-18-RP2" firstAttribute="leading" secondItem="tYK-SB-hQL" secondAttribute="leading" constant="10" id="NO3-cy-cpm"/>
                         <constraint firstItem="tr1-jl-DaA" firstAttribute="top" secondItem="i4c-18-RP2" secondAttribute="bottom" id="dVf-KM-jkC"/>
                         <constraint firstItem="tr1-jl-DaA" firstAttribute="centerX" secondItem="tYK-SB-hQL" secondAttribute="centerX" id="lI6-mi-OvS"/>
-                        <constraint firstAttribute="width" constant="260" id="p7a-Ly-UIL"/>
+                        <constraint firstAttribute="width" constant="300" id="p7a-Ly-UIL"/>
                         <constraint firstAttribute="bottom" secondItem="tr1-jl-DaA" secondAttribute="bottom" id="tGc-8h-av0"/>
                         <constraint firstAttribute="height" constant="50" id="uSh-EX-tTY"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-nL-edn" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-nL-edn" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="78.999999999999986" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wae-Nr-ISE" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
+                            <rect key="frame" x="59.66666666666665" y="59.666666666666671" width="119.33333333333331" height="119.00000000000001"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerX" secondItem="TUn-nL-edn" secondAttribute="centerX" id="Dbh-qI-v0l"/>
                         <constraint firstAttribute="width" secondItem="TUn-nL-edn" secondAttribute="height" multiplier="1:1" id="fd9-n5-dAf"/>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="height" secondItem="TUn-nL-edn" secondAttribute="height" multiplier="0.5" id="fu9-GK-0uK"/>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerY" secondItem="TUn-nL-edn" secondAttribute="centerY" id="oku-cc-ust"/>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="width" secondItem="TUn-nL-edn" secondAttribute="width" multiplier="0.5" id="wBL-4s-EvN"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-mS-bpV" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-mS-bpV" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="534.33333333333337" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFB-yO-Eg9" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
+                            <rect key="frame" x="59.666666666666622" y="59.666666666666671" width="119.33333333333331" height="119.00000000000001"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="height" secondItem="xkO-mS-bpV" secondAttribute="height" multiplier="0.5" id="5G3-ra-JPx"/>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerY" secondItem="xkO-mS-bpV" secondAttribute="centerY" id="7pM-KH-5wm"/>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerX" secondItem="xkO-mS-bpV" secondAttribute="centerX" id="HLF-PI-LQI"/>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="width" secondItem="xkO-mS-bpV" secondAttribute="width" multiplier="0.5" id="KL6-SC-aqM"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -207,10 +231,11 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="40" height="40"/>
+        <image name="back" width="24" height="24"/>
         <image name="w-gao" width="62" height="62"/>
         <image name="w-shezhi" width="40" height="40"/>
         <image name="w-zhong" width="62" height="62"/>
+        <image name="weixuan8" width="100" height="31"/>
         <image name="x-pro" width="40" height="40"/>
         <image name="xiala" width="13" height="13"/>
         <image name="z-di" width="62" height="62"/>

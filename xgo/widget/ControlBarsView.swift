@@ -30,9 +30,9 @@ class ControlBarsView: UIView {
     }
     
     func setUp() {
-        var image = #imageLiteral(resourceName: "weianxia")
+        var image = #imageLiteral(resourceName: "pan1")
         if !updownEnable {
-            image = #imageLiteral(resourceName: "zuoyou")
+            image = #imageLiteral(resourceName: "pan2")
         }
         UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
         image.draw(in:bounds)
@@ -100,16 +100,16 @@ class ControlBarsView: UIView {
                 if(Int(touchPoint.x) > Int(self.center.x))
                 {
                     if updownEnable {
-                        setImage(image: #imageLiteral(resourceName: "y"))
+                        setImage(image: #imageLiteral(resourceName: "pan1-y"))
                     }else{
-                        setImage(image: #imageLiteral(resourceName: "you"))
+                        setImage(image: #imageLiteral(resourceName: "pan2-youzhuan"))
                     }
                     bDirection(OperationOrder.ORight,resultX,resultY,resultR)
                 }else{
                     if updownEnable {
-                        setImage(image: #imageLiteral(resourceName: "z"))
+                        setImage(image: #imageLiteral(resourceName: "pan1-z"))
                     }else{
-                        setImage(image: #imageLiteral(resourceName: "zuo"))
+                        setImage(image: #imageLiteral(resourceName: "pan2-zouzhuan"))
                     }
                     bDirection(OperationOrder.OLeft,resultX,resultY,resultR)
                 }
@@ -120,15 +120,29 @@ class ControlBarsView: UIView {
                 {
                     if(Int(touchPoint.y) > Int(self.center.y))
                     {
-                        setImage(image: #imageLiteral(resourceName: "x"))
+                        setImage(image: #imageLiteral(resourceName: "pan1-x"))
                         bDirection(OperationOrder.ODown,resultX,resultY,resultR)
                     }else{
-                        setImage(image: #imageLiteral(resourceName: "s"))
+                        setImage(image: #imageLiteral(resourceName: "pan1-s"))
                         bDirection(OperationOrder.OUp,resultX,resultY,resultR)
                         
                     }
                 }
             }
+//            else {
+//                if ((angle > 45 && angle <= 90) || (angle < -45 && angle >= -90))
+//                {
+//                    if(Int(touchPoint.y) > Int(self.center.y))
+//                    {
+//                        setImage(image: #imageLiteral(resourceName: "pan1-x"))
+//                        bDirection(OperationOrder.ODown,resultX,resultY,resultR)
+//                    }else{
+//                        setImage(image: #imageLiteral(resourceName: "pan3-x"))
+//                        bDirection(OperationOrder.OUp,resultX,resultY,resultR)
+//                        
+//                    }
+//                }
+//            }
             //
             //            UIView.animate(withDuration: 0.09999, animations: {
             //                self.center = touchPoint
@@ -140,9 +154,9 @@ class ControlBarsView: UIView {
     func onRelease() -> Void {
         
         if updownEnable {
-            setImage(image: #imageLiteral(resourceName: "weianxia"))
+            setImage(image: #imageLiteral(resourceName: "pan1"))
         }else{
-            setImage(image: #imageLiteral(resourceName: "zuoyou"))
+            setImage(image: #imageLiteral(resourceName: "pan2"))
         }
         bDirection(OperationOrder.OStop,0,0,0)
     }

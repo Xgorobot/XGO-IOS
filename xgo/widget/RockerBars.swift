@@ -30,7 +30,7 @@ class RockerBars: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let image = #imageLiteral(resourceName: "yuan")
+        let image = #imageLiteral(resourceName: "qiu")
         UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
         image.draw(in:bounds)
         let nimage = UIGraphicsGetImageFromCurrentImageContext()
