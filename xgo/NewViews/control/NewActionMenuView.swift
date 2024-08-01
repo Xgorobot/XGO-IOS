@@ -13,6 +13,8 @@ class NewActionMenuView: UIView {
     var resetButton: GradientButton!
     var closeButton: UIButton!
     var container: UIView!
+    var actionArray: [String]!
+    var isSelect: Int = -1
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +26,7 @@ class NewActionMenuView: UIView {
         self.addSubview(container)
         
         container.snp.makeConstraints { make in
-            make.bottom.equalTo(self)
+            make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
             make.centerX.equalTo(self)
             make.height.equalTo(self).multipliedBy(0.5)
             make.width.equalTo(self).multipliedBy(0.6)
@@ -86,8 +88,11 @@ class NewActionMenuView: UIView {
 
 extension NewActionMenuView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        isSelectIndex = indexPath.row
-//        RobotFunction.showMode(state: action[indexPath.row])
+        if indexPath.row == 0 { // 动作轮播
+            
+        } else {
+            isSelect = indexPath.row
+        }
         self.collectionView.reloadData()
     }
 }
@@ -95,11 +100,13 @@ extension NewActionMenuView: UICollectionViewDelegate {
 extension NewActionMenuView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return actionArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionMenuCell", for: indexPath) as? ActionMenuCell
+        cell?.name = actionArray[indexPath.row]
+        cell?.isSelect = isSelect == indexPath.row
         return cell ?? UICollectionViewCell()
     }
     
@@ -108,7 +115,7 @@ extension NewActionMenuView: UICollectionViewDataSource {
 extension NewActionMenuView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (SCREEN_WIDTH * 0.6 / 6), height: 25)
+        return CGSize(width: (SCREEN_WIDTH * 0.6 / 5) - 20, height: 25)
     }
     
 }
@@ -120,22 +127,30 @@ class ActionMenuCell: UICollectionViewCell {
     var icon: UIImageView!
     var isSelect: Bool! {
         didSet {
-            
-            if  isSelect {
-                titleLabel.textColor = UIColor(red: 0.21, green: 0.54, blue: 0.98,alpha:1)
-                icon.image = UIImage(named: "dian")
-            } else {
-                titleLabel.textColor = UIColor(red: 0.55, green: 0.64, blue: 0.78,alpha:1)
-                icon.image = UIImage(named: "wdian")
+            if name != "动作轮播" {
+                if  isSelect {
+                    icon.image = UIImage(named: "xuanzhong8")
+                } else {
+                    icon.image = UIImage(named: "weixuan8")
+                }
             }
-            
+        }
+    }
+    var name: String! {
+        didSet {
+            titleLabel.text = name
+            if name == "动作轮播" {
+                icon.image = UIImage(named: "bgitem")
+            } else {
+                icon.image = UIImage(named: "weixuan8")
+            }
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        icon = UIImageView(image: UIImage(named: "wdian"))
+        icon = UIImageView(image: UIImage(named: "weixuan8"))
         self.contentView.addSubview(icon)
         
         icon.snp.makeConstraints { make in
@@ -145,6 +160,7 @@ class ActionMenuCell: UICollectionViewCell {
         titleLabel = UILabel()
         titleLabel.text = "坐下"
         titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.systemFont(ofSize: 15)
         titleLabel.textColor = .white
         self.contentView.addSubview(titleLabel)
         

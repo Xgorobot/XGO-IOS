@@ -62,7 +62,7 @@ class ArmRockerView: UIView {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        actionBar?.onRelease(touches, with: event)
+        actionBar?.onMoved(touches, with: event)
     }
 }
 

@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haj-hd-OZk">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing" translatesAutoresizingMaskIntoConstraints="NO" id="haj-hd-OZk">
                     <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                     <color key="backgroundColor" red="0.22960481050000001" green="0.16874396799999999" blue="0.7059224248" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </imageView>
@@ -58,7 +58,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4x-fz-TOq">
-                    <rect key="frame" x="633" y="166.66666666666666" width="60" height="60"/>
+                    <rect key="frame" x="593" y="186.66666666666666" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="32o-hg-8NR"/>
                         <constraint firstAttribute="height" constant="60" id="opz-fN-zu2"/>
@@ -73,12 +73,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="K4x-fz-TOq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1se-tw-06K"/>
+                <constraint firstItem="K4x-fz-TOq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="20" id="1se-tw-06K"/>
                 <constraint firstItem="xFD-7A-0NB" firstAttribute="leading" secondItem="jHC-vs-JVQ" secondAttribute="trailing" constant="-10" id="5ai-Yg-DnC"/>
                 <constraint firstItem="haj-hd-OZk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Alk-Xi-qrL"/>
                 <constraint firstItem="jHC-vs-JVQ" firstAttribute="top" secondItem="haj-hd-OZk" secondAttribute="top" constant="20" id="TEt-PV-YYk"/>
                 <constraint firstItem="haj-hd-OZk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XzZ-vQ-XLO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K4x-fz-TOq" secondAttribute="trailing" constant="100" id="aFC-zg-DNM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K4x-fz-TOq" secondAttribute="trailing" constant="140" id="aFC-zg-DNM"/>
                 <constraint firstAttribute="trailing" secondItem="haj-hd-OZk" secondAttribute="trailing" id="gyP-4p-wd8"/>
                 <constraint firstItem="xFD-7A-0NB" firstAttribute="centerY" secondItem="jHC-vs-JVQ" secondAttribute="centerY" id="k2m-RX-4PY"/>
                 <constraint firstItem="jHC-vs-JVQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ksg-lx-zKn"/>
@@ -88,6 +88,7 @@
         </view>
     </objects>
     <resources>
+        <image name="beijing" width="1792" height="828"/>
         <image name="start" width="120" height="120"/>
         <image name="w-lanya" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">

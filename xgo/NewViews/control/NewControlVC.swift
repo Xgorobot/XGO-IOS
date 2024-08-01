@@ -20,7 +20,7 @@ class NewControlVC: UIViewController {
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var rightRockerView: RockerBarsView!
     
-    
+    var actionArray = ["动作轮播","趴下","蹲起"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class NewControlVC: UIViewController {
         armVC.view.isHidden = true
         
         menuView = NewActionMenuView()
+        menuView.actionArray = actionArray
         self.view.addSubview(menuView)
         
         menuView.isHidden = true

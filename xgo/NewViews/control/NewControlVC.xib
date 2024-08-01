@@ -135,7 +135,7 @@
                                     <color key="backgroundColor" red="0.1602444351" green="0.22693252559999999" blue="0.75298303369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="动作轮播"/>
+                                    <state key="normal" title="动作轮播" image="x-lunbo"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMS-sz-7Hl">
                                     <rect key="frame" x="96.666666666666686" y="0.0" width="86.666666666666686" height="25"/>
@@ -231,11 +231,12 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
         <image name="w-gao" width="62" height="62"/>
         <image name="w-shezhi" width="40" height="40"/>
         <image name="w-zhong" width="62" height="62"/>
         <image name="weixuan8" width="100" height="31"/>
+        <image name="x-lunbo" width="17" height="17"/>
         <image name="x-pro" width="40" height="40"/>
         <image name="xiala" width="13" height="13"/>
         <image name="z-di" width="62" height="62"/>

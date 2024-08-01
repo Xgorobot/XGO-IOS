@@ -7,112 +7,88 @@
 
 import UIKit
 
-class ArcSlider: UISlider {
-    // 圆形轨道的半径
-        private let trackRadius: CGFloat = 100.0
-        
-        // 滑块的半径
-        private let thumbRadius: CGFloat = 15.0
-        
-        // 圆形轨道的中心位置
-        private var trackCenter: CGPoint {
-            return CGPoint(x: bounds.midX, y: bounds.midY)
-        }
-        
-        override func awakeFromNib() {
-            super.awakeFromNib()
-            
-            // 设置 Slider 的轨道图片为空，使用自定义绘制的圆形轨道
-            self.setThumbImage(UIImage(), for: .normal)
-            
-            // 更新 Slider 的样式
-            updateSliderStyle()
-        }
-        
-        override func layoutSubviews() {
-            super.layoutSubviews()
-            
-            // 更新 Slider 的样式
-            updateSliderStyle()
-        }
-        
-        private func updateSliderStyle() {
-            // 绘制圆形轨道的 CAShapeLayer
-            let trackLayer = CAShapeLayer()
-            trackLayer.path = UIBezierPath(arcCenter: trackCenter, radius: trackRadius, startAngle: 0, endAngle: CGFloat(2 * Double.pi), clockwise: true).cgPath
-            trackLayer.strokeColor = tintColor.cgColor // 设置轨道的颜色
-            trackLayer.fillColor = UIColor.clear.cgColor // 设置填充色为空，只显示边框
-            trackLayer.lineWidth = 10.0 // 设置轨道的线宽
-            layer.addSublayer(trackLayer)
-            
-            // 计算滑块的位置
+class ArcSlider: UIControl {
+    private let trackLayer = CAShapeLayer()
+    private let thumbLayer = CAShapeLayer()
+    
+    private var startAngle: CGFloat = 0.0
+    private var endAngle: CGFloat = 0.0
+    
+    private var thumbRadius: CGFloat = 15.0
+    private var thumbTintColor: UIColor = .blue
+    
+    private var thumbPosition: CGFloat = 0.0 {
+        didSet {
             updateThumbPosition()
         }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupSlider()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupSlider()
+    }
+    
+    private func setupSlider() {
+        backgroundColor = .clear
         
-        private func updateThumbPosition() {
-            // 计算当前值对应的角度
-            let angle = CGFloat(value / maximumValue) * CGFloat(2 * Double.pi)
-            
-            // 计算滑块的位置
-            let thumbX = trackCenter.x + trackRadius * cos(angle)
-            let thumbY = trackCenter.y + trackRadius * sin(angle)
-            
-            // 设置滑块的位置
-            let thumbCenter = CGPoint(x: thumbX, y: thumbY)
-//            setThumbCenter(thumbCenter, animated: true)
-        }
+        startAngle = 0
+        endAngle = CGFloat.pi / 4
         
-        override func setValue(_ value: Float, animated: Bool) {
-            super.setValue(value, animated: animated)
-            
-            // 更新滑块的位置
-            updateThumbPosition()
-        }
+        trackLayer.lineWidth = 10.0
+        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.fillColor = UIColor.clear.cgColor
+        layer.addSublayer(trackLayer)
         
-        override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-            // 计算触摸点在轨道上的位置
-            let touchPoint = touch.location(in: self)
-            
-            // 计算触摸点相对于圆心的角度
-            let deltaX = touchPoint.x - trackCenter.x
-            let deltaY = touchPoint.y - trackCenter.y
-            var angle = atan2(deltaY, deltaX)
-            
-            // 调整角度范围为 0 到 2π
-            if angle < 0 {
-                angle += CGFloat(2 * Double.pi)
-            }
-            
-            // 计算当前值
-            let progress = angle / CGFloat(2 * Double.pi)
-            let newValue = Float(progress) * maximumValue
-            
-            // 更新 Slider 的值
-            setValue(newValue, animated: true)
-            
-            return true
-        }
+        thumbLayer.fillColor = thumbTintColor.cgColor
+        layer.addSublayer(thumbLayer)
         
-        override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-            // 更新滑块的位置
-            let touchPoint = touch.location(in: self)
-            let deltaX = touchPoint.x - trackCenter.x
-            let deltaY = touchPoint.y - trackCenter.y
-            var angle = atan2(deltaY, deltaX)
-            
-            // 调整角度范围为 0 到 2π
-            if angle < 0 {
-                angle += CGFloat(2 * Double.pi)
-            }
-            
-            // 计算当前值
-            let progress = angle / CGFloat(2 * Double.pi)
-            let newValue = Float(progress) * maximumValue
-            
-            // 更新 Slider 的值
-            setValue(newValue, animated: true)
-            
-            return true
-        }
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        addGestureRecognizer(panGesture)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        updateTrackLayerPath()
+        updateThumbPosition()
+    }
+    
+    private func updateTrackLayerPath() {
+        let center = CGPoint(x: bounds.midX, y: bounds.midY)
+        let radius = min(bounds.width, bounds.height) / 2 - thumbRadius
+        
+        let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        trackLayer.path = path.cgPath
+    }
+    
+    private func updateThumbPosition() {
+        let center = CGPoint(x: bounds.midX, y: bounds.midY)
+        let radius = min(bounds.width, bounds.height) / 2 - thumbRadius
+        
+        let angle = startAngle + (endAngle - startAngle) * thumbPosition
+        let x = center.x + radius * cos(angle)
+        let y = center.y + radius * sin(angle)
+        
+        thumbLayer.path = UIBezierPath(arcCenter: CGPoint(x: x, y: y), radius: thumbRadius, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true).cgPath
+    }
+    
+    @objc private func handlePan(_ gesture: UIPanGestureRecognizer) {
+        let center = CGPoint(x: bounds.midX, y: bounds.midY)
+        let radius = min(bounds.width, bounds.height) / 2 - thumbRadius
+        
+        let translation = gesture.translation(in: self)
+        let angle = atan2(translation.y, translation.x) + CGFloat.pi / 2
+        
+        var thumbPosition = (angle - startAngle) / (endAngle - startAngle)
+        thumbPosition = max(0.0, min(thumbPosition, 1.0))
+        
+        self.thumbPosition = thumbPosition
+        
+        sendActions(for: .valueChanged)
+    }
 }
-

@@ -54,7 +54,7 @@
                                     <color key="backgroundColor" red="0.038614023480000002" green="0.089439101519999994" blue="0.36472767589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="动作轮播">
+                                    <state key="normal" title="动作轮播" image="x-lunbo">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -284,7 +284,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="610" y="254" width="222" height="50"/>
+                    <rect key="frame" x="608" y="250" width="226" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -424,12 +424,18 @@
             <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
         </view>
     </objects>
+    <designables>
+        <designable name="6ZG-ng-iCN">
+            <size key="intrinsicContentSize" width="-1" height="28"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
         <image name="roll" width="60" height="60"/>
         <image name="roll-y" width="18" height="18"/>
         <image name="roll-z" width="18" height="18"/>
         <image name="weixuan8" width="100" height="31"/>
+        <image name="x-lunbo" width="17" height="17"/>
         <image name="xiala" width="13" height="13"/>
     </resources>
 </document>
