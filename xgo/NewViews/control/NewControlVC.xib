@@ -13,8 +13,14 @@
                 <outlet property="controlButton" destination="gCB-cQ-iEy" id="jIF-zK-HpD"/>
                 <outlet property="leftControlView" destination="TUn-nL-edn" id="g92-tL-9wU"/>
                 <outlet property="leftRockerView" destination="wae-Nr-ISE" id="Kgf-Wl-qMK"/>
+                <outlet property="leftTopCircularSlider" destination="MuU-yR-9MQ" id="bJP-p1-P9I"/>
+                <outlet property="rLeftBottomCircularSlider" destination="nz4-xt-9TA" id="pgR-Hh-pjT"/>
+                <outlet property="rLeftTopCircularSlider" destination="IhL-tm-SLJ" id="Yk2-U9-tMr"/>
+                <outlet property="rRightTopCircularSlider" destination="Je6-ad-wvv" id="FIx-Ge-TKp"/>
+                <outlet property="rightBottomCircularSlider" destination="6HF-qI-UgK" id="egf-Ej-9wF"/>
                 <outlet property="rightControlView" destination="xkO-mS-bpV" id="v9g-s7-XTr"/>
                 <outlet property="rightRockerView" destination="cFB-yO-Eg9" id="jw6-d4-VYh"/>
+                <outlet property="rightTopCircularSlider" destination="v5f-9M-qaS" id="mjV-aS-Q3B"/>
                 <outlet property="view" destination="iN0-l3-epB" id="S9k-aD-Qnr"/>
             </connections>
         </placeholder>
@@ -164,36 +170,87 @@
                         <constraint firstAttribute="height" constant="50" id="uSh-EX-tTY"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-nL-edn" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuU-yR-9MQ" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="78.999999999999986" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MuU-yR-9MQ" secondAttribute="height" multiplier="1:1" id="EB7-cY-nl7"/>
+                    </constraints>
+                    <connections>
+                        <action selector="leftTopSliderValue:" destination="-1" eventType="valueChanged" id="5xy-lJ-zek"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5f-9M-qaS" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="78.999999999999986" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="v5f-9M-qaS" secondAttribute="height" multiplier="1:1" id="QSt-VQ-QgO"/>
+                    </constraints>
+                    <connections>
+                        <action selector="rightTopSliderValue:" destination="-1" eventType="valueChanged" id="9xC-Ir-k6d"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-qI-UgK" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="78.999999999999986" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6HF-qI-UgK" secondAttribute="height" multiplier="1:1" id="78s-SK-tL4"/>
+                    </constraints>
+                    <connections>
+                        <action selector="rightBottomSliderValue:" destination="-1" eventType="valueChanged" id="TMZ-fU-Vab"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-nL-edn" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="113.00000000000001" y="111.33333333333333" width="170.33333333333337" height="170.33333333333337"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wae-Nr-ISE" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                            <rect key="frame" x="59.66666666666665" y="59.666666666666671" width="119.33333333333331" height="119.00000000000001"/>
+                            <rect key="frame" x="42.66666666666665" y="42.666666666666671" width="85.333333333333314" height="85"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerX" secondItem="TUn-nL-edn" secondAttribute="centerX" id="Dbh-qI-v0l"/>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerY" secondItem="TUn-nL-edn" secondAttribute="centerY" id="1Aw-Rz-YTN"/>
+                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerX" secondItem="TUn-nL-edn" secondAttribute="centerX" id="NvT-Aa-cMP"/>
                         <constraint firstAttribute="width" secondItem="TUn-nL-edn" secondAttribute="height" multiplier="1:1" id="fd9-n5-dAf"/>
                         <constraint firstItem="wae-Nr-ISE" firstAttribute="height" secondItem="TUn-nL-edn" secondAttribute="height" multiplier="0.5" id="fu9-GK-0uK"/>
-                        <constraint firstItem="wae-Nr-ISE" firstAttribute="centerY" secondItem="TUn-nL-edn" secondAttribute="centerY" id="oku-cc-ust"/>
                         <constraint firstItem="wae-Nr-ISE" firstAttribute="width" secondItem="TUn-nL-edn" secondAttribute="width" multiplier="0.5" id="wBL-4s-EvN"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-mS-bpV" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhL-tm-SLJ" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="534.33333333333337" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="rLeftTopSliderValue:" destination="-1" eventType="valueChanged" id="nN6-Uy-tIE"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-ad-wvv" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="534.33333333333337" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="rRightTopSliderValue:" destination="-1" eventType="valueChanged" id="QC3-yb-4mY"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz4-xt-9TA" customClass="MTCircularSlider" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="534.33333333333337" y="77.333333333333329" width="238.66666666666663" height="238.33333333333337"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="rLeftBottomSliderValue:" destination="-1" eventType="valueChanged" id="oLQ-aM-FJw"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-mS-bpV" customClass="ControlBarsView" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="568.66666666666663" y="111.33333333333333" width="170.33333333333337" height="170.33333333333337"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFB-yO-Eg9" customClass="RockerBarsView" customModule="xgo" customModuleProvider="target">
-                            <rect key="frame" x="59.666666666666622" y="59.666666666666671" width="119.33333333333331" height="119.00000000000001"/>
+                            <rect key="frame" x="42.333333333333364" y="42.666666666666671" width="85.333333333333314" height="85"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerY" secondItem="xkO-mS-bpV" secondAttribute="centerY" id="0Y3-ln-q8U"/>
+                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerX" secondItem="xkO-mS-bpV" secondAttribute="centerX" id="1EB-XW-cYi"/>
                         <constraint firstItem="cFB-yO-Eg9" firstAttribute="height" secondItem="xkO-mS-bpV" secondAttribute="height" multiplier="0.5" id="5G3-ra-JPx"/>
-                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerY" secondItem="xkO-mS-bpV" secondAttribute="centerY" id="7pM-KH-5wm"/>
-                        <constraint firstItem="cFB-yO-Eg9" firstAttribute="centerX" secondItem="xkO-mS-bpV" secondAttribute="centerX" id="HLF-PI-LQI"/>
                         <constraint firstItem="cFB-yO-Eg9" firstAttribute="width" secondItem="xkO-mS-bpV" secondAttribute="width" multiplier="0.5" id="KL6-SC-aqM"/>
                     </constraints>
                 </view>
@@ -201,27 +258,52 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.17608174679999999" green="0.17133006449999999" blue="0.66670459510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="v5f-9M-qaS" firstAttribute="trailing" secondItem="MuU-yR-9MQ" secondAttribute="trailing" id="0up-jX-N6a"/>
+                <constraint firstItem="TUn-nL-edn" firstAttribute="centerY" secondItem="MuU-yR-9MQ" secondAttribute="centerY" id="1cI-U5-n57"/>
+                <constraint firstItem="6HF-qI-UgK" firstAttribute="top" secondItem="v5f-9M-qaS" secondAttribute="top" id="1t8-AN-ZIQ"/>
                 <constraint firstItem="xkO-mS-bpV" firstAttribute="height" secondItem="TUn-nL-edn" secondAttribute="height" id="23j-XB-efY"/>
+                <constraint firstItem="TUn-nL-edn" firstAttribute="centerX" secondItem="MuU-yR-9MQ" secondAttribute="centerX" id="2Ag-IO-3wB"/>
                 <constraint firstItem="tYK-SB-hQL" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5nV-Fk-ZFL"/>
-                <constraint firstItem="TUn-nL-edn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.28" id="C7h-9g-yYK"/>
+                <constraint firstItem="nz4-xt-9TA" firstAttribute="bottom" secondItem="Je6-ad-wvv" secondAttribute="bottom" id="8JH-Iv-ybg"/>
+                <constraint firstItem="Je6-ad-wvv" firstAttribute="top" secondItem="IhL-tm-SLJ" secondAttribute="top" id="8gR-bg-BNo"/>
+                <constraint firstItem="MuU-yR-9MQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.28" id="9SO-Rw-LY1"/>
+                <constraint firstItem="IhL-tm-SLJ" firstAttribute="width" secondItem="MuU-yR-9MQ" secondAttribute="width" id="9uM-2D-0UW"/>
+                <constraint firstItem="TUn-nL-edn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="C7h-9g-yYK"/>
                 <constraint firstItem="59k-Lq-qP9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FWj-4L-IlN"/>
+                <constraint firstItem="6HF-qI-UgK" firstAttribute="width" secondItem="6HF-qI-UgK" secondAttribute="height" multiplier="1:1" id="G6S-yi-JY4"/>
+                <constraint firstItem="6HF-qI-UgK" firstAttribute="trailing" secondItem="v5f-9M-qaS" secondAttribute="trailing" id="H3z-ph-vkQ"/>
                 <constraint firstItem="qCs-Kb-Jt0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="HKO-Wk-GyO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xkO-mS-bpV" secondAttribute="trailing" constant="20" id="L1f-Nu-g3m"/>
-                <constraint firstItem="TUn-nL-edn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PTv-if-Iyx"/>
+                <constraint firstItem="IhL-tm-SLJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hfa-Ie-3VH"/>
+                <constraint firstItem="6HF-qI-UgK" firstAttribute="bottom" secondItem="v5f-9M-qaS" secondAttribute="bottom" id="ISu-yc-V26"/>
+                <constraint firstItem="v5f-9M-qaS" firstAttribute="bottom" secondItem="MuU-yR-9MQ" secondAttribute="bottom" id="Kpj-ua-A2q"/>
+                <constraint firstItem="nz4-xt-9TA" firstAttribute="trailing" secondItem="Je6-ad-wvv" secondAttribute="trailing" id="OKf-d6-bO1"/>
                 <constraint firstItem="xkO-mS-bpV" firstAttribute="width" secondItem="TUn-nL-edn" secondAttribute="width" id="Pcf-Pl-pWF"/>
+                <constraint firstItem="Je6-ad-wvv" firstAttribute="bottom" secondItem="IhL-tm-SLJ" secondAttribute="bottom" id="Q9y-jI-H9y"/>
+                <constraint firstItem="6HF-qI-UgK" firstAttribute="leading" secondItem="v5f-9M-qaS" secondAttribute="leading" id="Qcf-Jc-P4V"/>
+                <constraint firstItem="nz4-xt-9TA" firstAttribute="leading" secondItem="Je6-ad-wvv" secondAttribute="leading" id="SiI-Wu-6WN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IhL-tm-SLJ" secondAttribute="trailing" constant="20" id="Svl-1J-eOR"/>
                 <constraint firstItem="gCB-cQ-iEy" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-20" id="U1J-nY-lvq"/>
                 <constraint firstItem="59k-Lq-qP9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U9M-FJ-vHi"/>
-                <constraint firstItem="xkO-mS-bpV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VRi-CI-Zg0"/>
+                <constraint firstItem="MuU-yR-9MQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UNL-ek-KjZ"/>
+                <constraint firstItem="IhL-tm-SLJ" firstAttribute="height" secondItem="MuU-yR-9MQ" secondAttribute="height" id="Wju-I4-TJL"/>
+                <constraint firstItem="xkO-mS-bpV" firstAttribute="centerY" secondItem="IhL-tm-SLJ" secondAttribute="centerY" id="Xkn-Ip-HRz"/>
                 <constraint firstItem="qWj-Mv-w1g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y8l-Sb-YBm"/>
                 <constraint firstItem="tYK-SB-hQL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YaQ-zN-Q3t"/>
                 <constraint firstItem="fk4-kx-oPe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ZCd-DX-zln"/>
                 <constraint firstItem="fk4-kx-oPe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Zky-Ac-eCB"/>
-                <constraint firstItem="TUn-nL-edn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bdT-4q-0X5"/>
                 <constraint firstItem="59k-Lq-qP9" firstAttribute="top" secondItem="Km7-8X-Bjy" secondAttribute="bottom" constant="20" id="bqV-Qv-nqp"/>
+                <constraint firstItem="Je6-ad-wvv" firstAttribute="leading" secondItem="IhL-tm-SLJ" secondAttribute="leading" id="dNt-bc-WCr"/>
+                <constraint firstItem="v5f-9M-qaS" firstAttribute="leading" secondItem="MuU-yR-9MQ" secondAttribute="leading" id="gAy-Zx-j96"/>
+                <constraint firstItem="v5f-9M-qaS" firstAttribute="top" secondItem="MuU-yR-9MQ" secondAttribute="top" id="hEl-Cx-kEb"/>
                 <constraint firstItem="Wzy-ev-JC0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="20" id="hFD-Qo-lhS"/>
+                <constraint firstItem="v5f-9M-qaS" firstAttribute="width" secondItem="v5f-9M-qaS" secondAttribute="height" multiplier="1:1" id="k8f-tL-j13"/>
                 <constraint firstItem="gCB-cQ-iEy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nBN-ms-wvK"/>
+                <constraint firstItem="nz4-xt-9TA" firstAttribute="top" secondItem="Je6-ad-wvv" secondAttribute="top" id="ozm-JL-rkt"/>
                 <constraint firstItem="h37-WP-koC" firstAttribute="top" secondItem="qCs-Kb-Jt0" secondAttribute="top" id="qEF-sq-rBF"/>
+                <constraint firstItem="Je6-ad-wvv" firstAttribute="trailing" secondItem="IhL-tm-SLJ" secondAttribute="trailing" id="qHH-EI-K6T"/>
+                <constraint firstItem="MuU-yR-9MQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qRa-G6-2bp"/>
                 <constraint firstItem="qWj-Mv-w1g" firstAttribute="top" secondItem="59k-Lq-qP9" secondAttribute="bottom" constant="20" id="qiZ-I5-Of8"/>
+                <constraint firstItem="xkO-mS-bpV" firstAttribute="centerX" secondItem="IhL-tm-SLJ" secondAttribute="centerX" id="sE3-zG-LNX"/>
                 <constraint firstItem="Km7-8X-Bjy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uY6-1C-QBt"/>
                 <constraint firstItem="Wzy-ev-JC0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="voU-vY-zmc"/>
                 <constraint firstItem="qCs-Kb-Jt0" firstAttribute="leading" secondItem="h37-WP-koC" secondAttribute="trailing" constant="15" id="yWx-1R-nq6"/>

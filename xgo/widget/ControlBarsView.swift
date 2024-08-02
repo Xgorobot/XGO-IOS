@@ -183,4 +183,23 @@ class ControlBarsView: UIView {
         let angle = atan(y1 / x1)
         return angle
     }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        // 定义一个缩小角落区域的大小
+        let cornerReduction: CGFloat = 15.0
+        // 获取视图的四个角的区域
+        let topLeftCorner = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: cornerReduction, height: cornerReduction)
+        let topRightCorner = CGRect(x: bounds.maxX - cornerReduction, y: bounds.origin.y, width: cornerReduction, height: cornerReduction)
+        let bottomLeftCorner = CGRect(x: bounds.origin.x, y: bounds.maxY - cornerReduction, width: cornerReduction, height: cornerReduction)
+        let bottomRightCorner = CGRect(x: bounds.maxX - cornerReduction, y: bounds.maxY - cornerReduction, width: cornerReduction, height: cornerReduction)
+        
+        // 检查触摸点是否在任一角落区域内
+        if topLeftCorner.contains(point) || topRightCorner.contains(point) || bottomLeftCorner.contains(point) || bottomRightCorner.contains(point) {
+            return nil // 如果在角落区域内，则不响应触摸事件
+        }
+        
+        // 否则，返回 super 的 hitTest 结果
+        return super.hitTest(point, with: event)
+    }
+    
 }

@@ -20,6 +20,16 @@ class NewControlVC: UIViewController {
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var rightRockerView: RockerBarsView!
     
+    @IBOutlet weak var leftTopCircularSlider: MTCircularSlider!
+    @IBOutlet weak var rightTopCircularSlider: MTCircularSlider!
+    @IBOutlet weak var rightBottomCircularSlider: MTCircularSlider!
+    
+    
+    @IBOutlet weak var rLeftTopCircularSlider: MTCircularSlider!
+    @IBOutlet weak var rRightTopCircularSlider: MTCircularSlider!
+    @IBOutlet weak var rLeftBottomCircularSlider: MTCircularSlider!
+    
+    
     var actionArray = ["动作轮播","趴下","蹲起"]
     
     override func viewDidLoad() {
@@ -72,8 +82,173 @@ class NewControlVC: UIViewController {
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
         
+        leftTopCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(10),
+            Attributes.trackMaxAngle(80),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        leftTopCircularSlider.valueMinimum = 0
+        leftTopCircularSlider.valueMaximum = 100
+        leftTopCircularSlider.value = 50
+        leftTopCircularSlider.interactionDirection = .leftTop
+        
+        rightTopCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(100),
+            Attributes.trackMaxAngle(170),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        rightTopCircularSlider.valueMinimum = 0
+        rightTopCircularSlider.valueMaximum = 100
+        rightTopCircularSlider.value = 50
+        rightTopCircularSlider.interactionDirection = .rightTop
+        
+        rightBottomCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(190),
+            Attributes.trackMaxAngle(260),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        
+        rightBottomCircularSlider.valueMinimum = 0
+        rightBottomCircularSlider.valueMaximum = 100
+        rightBottomCircularSlider.value = 50
+        rightBottomCircularSlider.interactionDirection = .rightBottom
         
         
+        rLeftTopCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(10),
+            Attributes.trackMaxAngle(80),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        rLeftTopCircularSlider.valueMinimum = 0
+        rLeftTopCircularSlider.valueMaximum = 100
+        rLeftTopCircularSlider.value = 50
+        rLeftTopCircularSlider.interactionDirection = .leftTop
+        
+        rRightTopCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(100),
+            Attributes.trackMaxAngle(170),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        rRightTopCircularSlider.valueMinimum = 0
+        rRightTopCircularSlider.valueMaximum = 100
+        rRightTopCircularSlider.value = 50
+        rRightTopCircularSlider.interactionDirection = .rightTop
+        
+        
+        rLeftBottomCircularSlider.applyAttributes([
+            /* Track */
+            Attributes.minTrackTint(UIColor(hex: 0xF6BB00)),
+            Attributes.maxTrackTint(UIColor(hex: 0x011B80)),
+            Attributes.trackWidth(6),
+            Attributes.trackShadowRadius(0),
+            Attributes.trackShadowDepth(0),
+            Attributes.trackMinAngle(280),
+            Attributes.trackMaxAngle(350),
+            Attributes.areTrackCapsRound(true),
+            /* Thumb */
+            Attributes.hasThumb(true),
+            Attributes.thumbTint(.white),
+            Attributes.thumbRadius(8),
+            Attributes.thumbShadowRadius(0),
+            Attributes.thumbShadowDepth(0)
+        ])
+        rLeftBottomCircularSlider.valueMinimum = 0
+        rLeftBottomCircularSlider.valueMaximum = 100
+        rLeftBottomCircularSlider.value = 50
+        rLeftBottomCircularSlider.interactionDirection = .leftBottom
+        
+        
+//        view.bringSubviewToFront(leftControlView)
+//        view.bringSubviewToFront(leftRockerView)
+//        view.bringSubviewToFront(rightControlView)
+//        view.bringSubviewToFront(rightRockerView)
+//        view.bringSubviewToFront(setView)
+//        view.bringSubviewToFront(menuView)
+        
+    }
+    
+    @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func rightTopSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func rightBottomSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func rLeftTopSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func rRightTopSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func rLeftBottomSliderValue(_ sender: MTCircularSlider) {
+        print(sender.value)
     }
     
     @IBAction func menuAction(_ sender: Any) {

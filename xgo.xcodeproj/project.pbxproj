@@ -40,12 +40,12 @@
 		8F075A292C4A6B9E0017BF65 /* NewTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */; };
 		8F075A2A2C4A6B9E0017BF65 /* NewUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */; };
 		8F075A2B2C4A6B9E0017BF65 /* NewUpgradeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */; };
+		8F31F03C2C5C7F4F001F5054 /* MTCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */; };
 		8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02492C4E48F500EB198C /* ActionBarsView.swift */; };
 		8FDC024C2C4E4BB200EB198C /* ArmRockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */; };
 		8FDC02512C4E5CFB00EB198C /* PRGRoundRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024D2C4E5CFB00EB198C /* PRGRoundRangeSlider.swift */; };
 		8FDC02522C4E5CFB00EB198C /* PRGRoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024E2C4E5CFB00EB198C /* PRGRoundSlider.swift */; };
 		8FDC02532C4E5CFB00EB198C /* SliderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024F2C4E5CFB00EB198C /* SliderKit.swift */; };
-		8FDC02572C4F3BBE00EB198C /* ArcSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */; };
 		C709BC4426D63E7F00518E69 /* BleMessageAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */; };
 		C709BC4726D64E3A00518E69 /* FindBleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4626D64E3A00518E69 /* FindBleHelper.swift */; };
 		C709BC4A26D779BF00518E69 /* FindControlUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709BC4926D779BF00518E69 /* FindControlUtils.swift */; };
@@ -161,12 +161,12 @@
 		8F075A062C4A6B9E0017BF65 /* NewTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTestVC.xib; sourceTree = "<group>"; };
 		8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpgradeVC.swift; sourceTree = "<group>"; };
 		8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpgradeVC.xib; sourceTree = "<group>"; };
+		8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCircularSlider.swift; sourceTree = "<group>"; };
 		8FDC02492C4E48F500EB198C /* ActionBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarsView.swift; sourceTree = "<group>"; };
 		8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmRockerView.swift; sourceTree = "<group>"; };
 		8FDC024D2C4E5CFB00EB198C /* PRGRoundRangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundRangeSlider.swift; sourceTree = "<group>"; };
 		8FDC024E2C4E5CFB00EB198C /* PRGRoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRGRoundSlider.swift; sourceTree = "<group>"; };
 		8FDC024F2C4E5CFB00EB198C /* SliderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderKit.swift; sourceTree = "<group>"; };
-		8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcSlider.swift; sourceTree = "<group>"; };
 		9B2672688B791E03C9FA391A /* Pods-xgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.release.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.release.xcconfig"; sourceTree = "<group>"; };
 		C0B9AB087891C6A6BA81CE4E /* Pods-xgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xgo.debug.xcconfig"; path = "Target Support Files/Pods-xgo/Pods-xgo.debug.xcconfig"; sourceTree = "<group>"; };
 		C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleMessageAttributes.swift; sourceTree = "<group>"; };
@@ -307,6 +307,7 @@
 		8F0759EE2C4A6B9E0017BF65 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */,
 				8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */,
 				8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */,
 				8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */,
@@ -319,7 +320,6 @@
 				8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */,
 				8FDC02492C4E48F500EB198C /* ActionBarsView.swift */,
 				8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */,
-				8FDC02562C4F3BBE00EB198C /* ArcSlider.swift */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -817,7 +817,6 @@
 				C7B6C5BF26C7B2DB004661AF /* RockerBars.swift in Sources */,
 				C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
-				8FDC02572C4F3BBE00EB198C /* ArcSlider.swift in Sources */,
 				8F075A232C4A6B9E0017BF65 /* GradientProgress.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
 				8FDC02522C4E5CFB00EB198C /* PRGRoundSlider.swift in Sources */,
@@ -873,6 +872,7 @@
 				C7FDFEF326F0C71E001A472E /* ControlBarsView.swift in Sources */,
 				C7B6C5C826C7CC99004661AF /* FindBleManager.swift in Sources */,
 				C7FBED4026BC0AC8008028FE /* TopTabbarController.swift in Sources */,
+				8F31F03C2C5C7F4F001F5054 /* MTCircularSlider.swift in Sources */,
 				C709BC4A26D779BF00518E69 /* FindControlUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
