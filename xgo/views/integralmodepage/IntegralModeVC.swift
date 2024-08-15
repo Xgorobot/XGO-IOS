@@ -39,6 +39,7 @@ class IntegralModeVC: UIViewController,UITabBarDelegate {
     
     var showSettingView = true
 
+    //mark mengwei 这个页面是陀螺仪 自平衡 速度快慢等方法的页面 只看FindControlUtil的就行 其他的也一样
     //设置选项
     @IBOutlet weak var settingView: UIView!
      override func viewDidLoad() {

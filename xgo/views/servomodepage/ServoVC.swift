@@ -49,6 +49,7 @@ class ServoVC: UIViewController,UITabBarDelegate {
         
     }
 
+    //这个应该是舵机对应的指令方法
     @IBAction func onXValueChanged(_ sender: UISlider, forEvent event: UIEvent) {//[-31°,+31°]
         let showValue = Int(sender.value.rounded())
         let value = Int(((sender.value+31)/62*255).rounded())

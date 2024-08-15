@@ -24,6 +24,7 @@ class RockerVC: UIViewController {
         leftRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("遥控:CTRL + L:\(dir)  x:\(x) y:\(y) r:\(r)")
             let xValue = Int(((y+1)/2*255).rounded())
+            //MARK mengwei 移动X Y 轴 0-255范围
             FindControlUtil.moveX(speed: xValue.hw_toByte())
             let yValue = Int(((x+1)/2*255).rounded())
             FindControlUtil.moveY(speed: yValue.hw_toByte())
@@ -51,6 +52,7 @@ class RockerVC: UIViewController {
     }
     
     func initRPY(){
+        // mark mengwei  这是rpy  （好像）是摇杆旁边的三个滑动进度条控制 的方法 trunByX trunByY trunByZ
         leftRockerView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             let xValue = Int(((-x+1)/2*255).rounded())
             FindControlUtil.trunByX(angle: xValue.hw_toByte())

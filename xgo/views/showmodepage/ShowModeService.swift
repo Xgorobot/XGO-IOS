@@ -25,6 +25,7 @@ class ShowModeService {
     }
     static func setType(position:IndexPath) -> Observable<IndexPath>{
         let bytes = (position.row+1).hw_toByte()
+        //TODO mengwei 表演模式的按钮事件
         FindControlUtil.actionType(type: bytes)
         return Observable.create { (anyObserver) -> Disposable in
             anyObserver.onNext(position)

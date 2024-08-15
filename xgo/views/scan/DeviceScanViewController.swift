@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 class DeviceScanViewController: UIViewController,CBCentralManagerDelegate,UITableViewDelegate,UITableViewDataSource {
-   
+   //mark  mengwei 之前的蓝牙扫描页面
     typealias SaveCallback = (_ connectResult:String)->Void //声明一个回调
     var scanCallback:SaveCallback? //回调作为参数
 
@@ -154,9 +154,8 @@ class DeviceScanViewController: UIViewController,CBCentralManagerDelegate,UITabl
             BLEMANAGER = FindBleManager(centralManager: myCentralManager, peripheral: myPeripheralToMainView)
             BLEMANAGER?.start()
         }
-        
-        
     }
+    
     //自定义的连接函数，会弹出提示框
     func connectPeripheral(peripheral:CBPeripheral){
         myCentralManager.connect(peripheral, options: nil)

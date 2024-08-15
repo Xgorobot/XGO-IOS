@@ -88,8 +88,24 @@ class NewHomeVC: UIViewController {
     // 跳转控制页面
     @IBAction func controlAction(_ sender: Any) {
         
-        self.navigationController?.pushViewController(NewControlVC(), animated: true)
-        
+        if ((BLEMANAGER?.isConnect()) != nil){
+            FindControlUtil.readVersion { data in
+                if (data.count >= 2){
+                    switch data[0] {
+                        case 0x00:
+                            // mark todo mengwei  跳转到控制页面
+                            break
+                        case 0x01:
+                            // mark todo mengwei  跳转到控制页面
+                            break
+                        default:
+                            break
+                    }
+                }
+            }
+        } else {
+            //TODO mengwei toast 提示先连接
+        }
     }
     
     // 跳转蓝牙页面

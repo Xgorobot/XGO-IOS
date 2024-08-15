@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 
+//MARK mengwei 基本所有的控制指令都在这里，有一两个新增的我还没加
 final class FindControlUtil {
     
     typealias CallBack = (_ data : [UInt8]) -> Void

@@ -17,6 +17,7 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
         
     let _bag: DisposeBag = DisposeBag()
     
+    //TODO mengwei 表演列表如下 以及表演的控制方法
     let dataItem = ["趴下","站起","匍匐前进","转圈","原地踏步","蹲起","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
     
     var _vm:ShowModeVM!
@@ -58,10 +59,12 @@ class ShowModeVC: UIViewController,UICollectionViewDelegate{
         showBtnsCollectionView.rx.setDelegate(self).disposed(by: _bag)
     }
     @IBAction func turnShow(_ sender: UISwitch) {
+        // mark TODO mengwei 表演模式的 循环表演按钮事件
         FindControlUtil.showMode(needRepeat: sender.isOn)
     }
     
     @IBAction func onResetClick(_ sender: UIButton) {
+        // mark TODO mengwei 表演模式的 点击重置按钮的事件 恢复默认状态
         FindControlUtil.actionType(type: 0x02)
         FindControlUtil.heightSet(height:0x80)
         if (self.selectItem != nil) {
