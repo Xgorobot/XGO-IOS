@@ -94,9 +94,11 @@ class NewHomeVC: UIViewController {
                     switch data[0] {
                         case 0x00:
                             // mark todo mengwei  跳转到控制页面
+                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
                             break
                         case 0x01:
                             // mark todo mengwei  跳转到控制页面
+                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
                             break
                         default:
                             break
