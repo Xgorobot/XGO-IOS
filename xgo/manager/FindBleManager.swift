@@ -48,6 +48,7 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
     var messageList:[XgoBleMessageEntity] = []//数组 用于储存全部的消息
     var keyCode:Int8 = 0
     
+    var deviceType = -1 //设备类型
     
     let lock = NSLock.init()//线程锁
     // MARK:初始化

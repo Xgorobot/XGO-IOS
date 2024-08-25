@@ -87,21 +87,26 @@ class NewHomeVC: UIViewController {
     
     // 跳转控制页面
     @IBAction func controlAction(_ sender: Any) {
-        
         if ((BLEMANAGER?.isConnect()) != nil){
-            FindControlUtil.readVersion { data in
-                if (data.count >= 2){
-                    switch data[0] {
-                        case 0x00:
-                            // mark todo mengwei  跳转到控制页面
+            FindControlUtil.readVersionName { data in
+                if (data.count >= 10){
+                    if let string = String(bytes: data, encoding: .utf8) {
+                        switch string.prefix(1) {
+                        case "M":
+                            BLEMANAGER?.deviceType = 0
                             self.navigationController?.pushViewController(NewControlVC(), animated: true)
-                            break
-                        case 0x01:
-                            // mark todo mengwei  跳转到控制页面
+                        case "L":
+                            BLEMANAGER?.deviceType = 1
                             self.navigationController?.pushViewController(NewControlVC(), animated: true)
-                            break
+                        case "R":
+                            BLEMANAGER?.deviceType = 2
+                            //TODO @mengwei 修改此处，跳转到双足机器人页面
+                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
                         default:
-                            break
+                            BLEMANAGER?.deviceType = -1
+                        }
+                    } else {
+                        print("无法将字节数组转换为字符串")
                     }
                 }
             }

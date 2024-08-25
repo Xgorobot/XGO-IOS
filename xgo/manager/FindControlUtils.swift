@@ -40,6 +40,12 @@ final class FindControlUtil {
         let result:[UInt8] = [0x02,0x01];
         addReadMsg(data: result, delegate: delegate)
     }
+    
+    class func readVersionName(delegate:@escaping CallBack) {//XGO版本 0x00 MINI | 0x01 Lite | 0x02 PRO
+        let result:[UInt8] = [0x07];
+        addReadMsg(data: result, delegate: delegate)
+    }
+    
     class func showMode(needRepeat:Bool) {//表演模式 0x00正常控制模式 | 0x01循环做动作
         let result:[UInt8] = [0x03,needRepeat ? 0x01 : 0x00];
         addWriteMsg(data: result)
