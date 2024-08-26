@@ -34,7 +34,20 @@ class NewArmVC: UIViewController {
         
     }
     
+    @IBAction func actionUp() {
+        
+    }
     
+    @IBAction func actionMiddle() {
+        
+    }
+    
+    @IBAction func actionDown() {
+        
+    }
+    
+    
+    // 切换
     @IBAction func referAction(_ sender: Any) {
     }
     

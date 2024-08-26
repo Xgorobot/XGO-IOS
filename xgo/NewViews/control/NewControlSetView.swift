@@ -40,4 +40,11 @@ class NewControlSetView: UIView {
         self.isHidden = true
     }
     
+    @IBAction func gyroAction(_ sender: Any) {
+    }
+    
+    @IBAction func speedAction(_ sender: UISegmentedControl) {
+    }
+    
+    
 }

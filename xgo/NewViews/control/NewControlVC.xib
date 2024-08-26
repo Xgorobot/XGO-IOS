@@ -99,6 +99,9 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="w-zhong"/>
+                    <connections>
+                        <action selector="actionMiddle" destination="-1" eventType="touchUpInside" id="nzJ-tu-k1v"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-8X-Bjy">
                     <rect key="frame" x="396" y="86.666666666666671" width="60" height="60.000000000000014"/>
@@ -108,6 +111,9 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="w-gao"/>
+                    <connections>
+                        <action selector="actionUp" destination="-1" eventType="touchUpInside" id="JF0-An-1wO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWj-Mv-w1g">
                     <rect key="frame" x="396" y="246.66666666666663" width="60" height="60"/>
@@ -116,7 +122,10 @@
                         <constraint firstAttribute="width" constant="60" id="H3v-Fu-2eb"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="z-di"/>
+                    <state key="normal" image="w-di"/>
+                    <connections>
+                        <action selector="actionDown" destination="-1" eventType="touchUpInside" id="dnC-In-ggx"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYK-SB-hQL">
                     <rect key="frame" x="276" y="322" width="300" height="50"/>
@@ -142,18 +151,27 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="动作轮播" image="x-lunbo"/>
+                                    <connections>
+                                        <action selector="actionPlay:" destination="-1" eventType="touchUpInside" id="edO-tG-6Wx"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMS-sz-7Hl">
                                     <rect key="frame" x="96.666666666666686" y="0.0" width="86.666666666666686" height="25"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="趴下" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="getDown:" destination="-1" eventType="touchUpInside" id="HR7-rZ-ZwA"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kie-JQ-bgf">
                                     <rect key="frame" x="193.33333333333331" y="0.0" width="86.666666666666686" height="25"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="蹲起" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="squat:" destination="-1" eventType="touchUpInside" id="Uqd-9X-HSM"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -185,6 +203,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="v5f-9M-qaS" secondAttribute="height" multiplier="1:1" id="QSt-VQ-QgO"/>
+                        <constraint firstAttribute="width" secondItem="v5f-9M-qaS" secondAttribute="height" multiplier="1:1" id="k8f-tL-j13"/>
                     </constraints>
                     <connections>
                         <action selector="rightTopSliderValue:" destination="-1" eventType="valueChanged" id="9xC-Ir-k6d"/>
@@ -195,6 +214,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="6HF-qI-UgK" secondAttribute="height" multiplier="1:1" id="78s-SK-tL4"/>
+                        <constraint firstAttribute="width" secondItem="6HF-qI-UgK" secondAttribute="height" multiplier="1:1" id="G6S-yi-JY4"/>
                     </constraints>
                     <connections>
                         <action selector="rightBottomSliderValue:" destination="-1" eventType="valueChanged" id="TMZ-fU-Vab"/>
@@ -270,7 +290,6 @@
                 <constraint firstItem="IhL-tm-SLJ" firstAttribute="width" secondItem="MuU-yR-9MQ" secondAttribute="width" id="9uM-2D-0UW"/>
                 <constraint firstItem="TUn-nL-edn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="C7h-9g-yYK"/>
                 <constraint firstItem="59k-Lq-qP9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FWj-4L-IlN"/>
-                <constraint firstItem="6HF-qI-UgK" firstAttribute="width" secondItem="6HF-qI-UgK" secondAttribute="height" multiplier="1:1" id="G6S-yi-JY4"/>
                 <constraint firstItem="6HF-qI-UgK" firstAttribute="trailing" secondItem="v5f-9M-qaS" secondAttribute="trailing" id="H3z-ph-vkQ"/>
                 <constraint firstItem="qCs-Kb-Jt0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="HKO-Wk-GyO"/>
                 <constraint firstItem="IhL-tm-SLJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hfa-Ie-3VH"/>
@@ -296,7 +315,6 @@
                 <constraint firstItem="v5f-9M-qaS" firstAttribute="leading" secondItem="MuU-yR-9MQ" secondAttribute="leading" id="gAy-Zx-j96"/>
                 <constraint firstItem="v5f-9M-qaS" firstAttribute="top" secondItem="MuU-yR-9MQ" secondAttribute="top" id="hEl-Cx-kEb"/>
                 <constraint firstItem="Wzy-ev-JC0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="20" id="hFD-Qo-lhS"/>
-                <constraint firstItem="v5f-9M-qaS" firstAttribute="width" secondItem="v5f-9M-qaS" secondAttribute="height" multiplier="1:1" id="k8f-tL-j13"/>
                 <constraint firstItem="gCB-cQ-iEy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nBN-ms-wvK"/>
                 <constraint firstItem="nz4-xt-9TA" firstAttribute="top" secondItem="Je6-ad-wvv" secondAttribute="top" id="ozm-JL-rkt"/>
                 <constraint firstItem="h37-WP-koC" firstAttribute="top" secondItem="qCs-Kb-Jt0" secondAttribute="top" id="qEF-sq-rBF"/>
@@ -314,6 +332,7 @@
     </objects>
     <resources>
         <image name="back" width="40" height="40"/>
+        <image name="w-di" width="62" height="62"/>
         <image name="w-gao" width="62" height="62"/>
         <image name="w-shezhi" width="40" height="40"/>
         <image name="w-zhong" width="62" height="62"/>
@@ -321,6 +340,5 @@
         <image name="x-lunbo" width="17" height="17"/>
         <image name="x-pro" width="40" height="40"/>
         <image name="xiala" width="13" height="13"/>
-        <image name="z-di" width="62" height="62"/>
     </resources>
 </document>

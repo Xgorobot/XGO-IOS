@@ -281,5 +281,27 @@ class NewControlVC: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    // 动作轮播
+    @IBAction func actionPlay(_ sender: Any) {
+    }
+    // 趴下
+    @IBAction func getDown(_ sender: Any) {
+    }
+    // 蹲起
+    @IBAction func squat(_ sender: Any) {
+    }
+    
+    @IBAction func actionUp() {
+        
+    }
+    
+    @IBAction func actionMiddle() {
+        
+    }
+    
+    @IBAction func actionDown() {
+        
+    }
+    
     
 }

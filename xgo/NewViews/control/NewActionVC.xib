@@ -58,36 +58,54 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="actionPlay:" destination="-1" eventType="touchUpInside" id="UXH-eS-zD0"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-UZ-yfc">
                                     <rect key="frame" x="0.0" y="40" width="100" height="30.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="蹲起" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="actionOne:" destination="-1" eventType="touchUpInside" id="EOD-Sq-oZE"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMh-TX-tFU">
                                     <rect key="frame" x="0.0" y="80.333333333333343" width="100" height="30"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="蹲起" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="actionTwo:" destination="-1" eventType="touchUpInside" id="a9l-KL-aee"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-vw-Ucv">
                                     <rect key="frame" x="0.0" y="120.33333333333333" width="100" height="30.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="趴下" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="actionThree:" destination="-1" eventType="touchUpInside" id="u1c-rH-o54"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAj-Rg-bG9">
                                     <rect key="frame" x="0.0" y="160.66666666666666" width="100" height="30"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="蹲起" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="actionFour:" destination="-1" eventType="touchUpInside" id="Run-U3-3w6"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nx-By-Hik">
                                     <rect key="frame" x="0.0" y="200.66666666666669" width="100" height="30.333333333333343"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="趴下" backgroundImage="weixuan8"/>
+                                    <connections>
+                                        <action selector="actionFive:" destination="-1" eventType="touchUpInside" id="wBQ-bg-mcA"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onf-z0-dAN">
                                     <rect key="frame" x="0.0" y="241" width="100" height="30"/>
@@ -284,7 +302,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="610" y="254" width="222" height="50"/>
+                    <rect key="frame" x="608" y="250" width="226" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -424,8 +442,13 @@
             <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
         </view>
     </objects>
+    <designables>
+        <designable name="6ZG-ng-iCN">
+            <size key="intrinsicContentSize" width="-1" height="28"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
         <image name="roll" width="60" height="60"/>
         <image name="roll-y" width="18" height="18"/>
         <image name="roll-z" width="18" height="18"/>

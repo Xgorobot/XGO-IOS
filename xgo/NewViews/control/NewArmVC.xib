@@ -80,7 +80,10 @@
                         <constraint firstAttribute="width" constant="60" id="n4I-xa-Igf"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="w-zhong"/>
+                    <state key="normal" image="w-gao"/>
+                    <connections>
+                        <action selector="actionUp" destination="-1" eventType="touchUpInside" id="yVy-xg-2wf"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-kr-NxY">
                     <rect key="frame" x="556" y="124" width="60" height="60"/>
@@ -90,6 +93,9 @@
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="w-zhong"/>
+                    <connections>
+                        <action selector="actionMiddle" destination="-1" eventType="touchUpInside" id="IPg-RZ-JIz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azd-Qf-b6R">
                     <rect key="frame" x="666" y="124" width="60" height="60"/>
@@ -98,7 +104,10 @@
                         <constraint firstAttribute="width" constant="60" id="HeD-NM-JDg"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="w-zhong"/>
+                    <state key="normal" image="w-di"/>
+                    <connections>
+                        <action selector="actionDown" destination="-1" eventType="touchUpInside" id="6sF-rd-rUP"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gripper 夹爪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M30-Sp-7eK">
                     <rect key="frame" x="446" y="234" width="86.333333333333371" height="18"/>
@@ -184,7 +193,9 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
+        <image name="w-di" width="62" height="62"/>
+        <image name="w-gao" width="62" height="62"/>
         <image name="w-zhong" width="62" height="62"/>
     </resources>
 </document>

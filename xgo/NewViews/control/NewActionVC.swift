@@ -64,4 +64,19 @@ class NewActionVC: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBAction func actionPlay(_ sender: Any) {}
+    
+    @IBAction func actionOne(_ sender: Any) {}
+    
+    @IBAction func actionTwo(_ sender: Any) {}
+    
+    @IBAction func actionThree(_ sender: Any) {}
+    
+    @IBAction func actionFour(_ sender: Any) {}
+    
+    @IBAction func actionFive(_ sender: Any) {}
+    
+    
 }
