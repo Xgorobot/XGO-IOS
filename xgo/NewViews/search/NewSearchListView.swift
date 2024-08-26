@@ -6,10 +6,18 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class NewSearchListView: UIView {
     
     var tableView: UITableView!
+    
+    var myPeripherals: NSMutableArray = NSMutableArray() //初始化动态数组 用以储存字典
+    
+    
+    var objectChangedClosure: ((NSDictionary) -> Void)?
+
+    
     var hiddenAction: (() -> Void)?
     
     override init(frame: CGRect) {
@@ -57,13 +65,36 @@ class NewSearchListView: UIView {
 extension NewSearchListView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return myPeripherals.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewSearchListCell") as? NewSearchListCell
-        cell?.titleLabel.text = "adgauhinklmlk"
+        
+//        let cell:NewSearchListCell =
+        
+        let data:NSDictionary = myPeripherals[indexPath.row] as! NSDictionary
+        let peripheral:CBPeripheral = data.value(forKey: "peripheral") as! CBPeripheral
+        let name:String = data.value(forKey: "name") as! String
+        
+        cell?.titleLabel.text = name
+//        cell?.titleLabel.text? = "\(name)  "
+        
+        print("设备名:\(name)")
+
+        
         return cell ?? NewSearchListCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("停止搜索")
+        
+        let myPeriDict:NSDictionary = myPeripherals[indexPath.row] as! NSDictionary
+
+        objectChangedClosure?(myPeriDict)
+        
+       
+
     }
     
 }

@@ -39,6 +39,11 @@ class NewActionMenuView: UIView {
         resetButton.cornerRadius = 0
         container.addSubview(resetButton)
         
+        
+        resetButton.addTarget(self, action: #selector(resetButtonAction), for: .touchUpInside)
+
+        
+        
         resetButton.snp.makeConstraints { make in
             make.left.right.bottom.equalTo(container)
             make.height.equalTo(40)
@@ -79,6 +84,14 @@ class NewActionMenuView: UIView {
         self.isHidden = true
     }
     
+    @objc func resetButtonAction() {
+        print("reset!!!")
+        
+        FindControlUtil.actionType(type: 0x02)
+        FindControlUtil.heightSet(height:0x80)
+        self.isHidden = true
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -88,11 +101,15 @@ class NewActionMenuView: UIView {
 
 extension NewActionMenuView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 { // 动作轮播
-            
-        } else {
-            isSelect = indexPath.row
-        }
+        
+        
+        let bytes = (indexPath.row+1).hw_toByte()
+        
+        print(bytes)
+        //TODO mengwei 表演模式的按钮事件
+        FindControlUtil.actionType(type: bytes)
+        collectionView.deselectItem(at: indexPath, animated: false)
+        isSelect = indexPath.row
         self.collectionView.reloadData()
     }
 }

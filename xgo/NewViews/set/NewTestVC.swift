@@ -25,9 +25,15 @@ class NewTestVC: UIViewController {
     }
     
     @IBAction func startAction(_ sender: Any) {
+        FindControlUtil.setModeStart()
+        CBToast.showToast(message: NSLocalizedString("标定模式", comment: "标定模式") as NSString, aLocationStr: "bottom", aShowTime: 2)
+        
     }
     
     @IBAction func finishAction(_ sender: Any) {
+        
+        FindControlUtil.setModeClose()
+        CBToast.showToast(message: NSLocalizedString("标定模式结束", comment: "标定模式结束") as NSString, aLocationStr: "bottom", aShowTime: 2)
     }
     
 }

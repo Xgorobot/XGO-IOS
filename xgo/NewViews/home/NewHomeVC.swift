@@ -112,6 +112,7 @@ class NewHomeVC: UIViewController {
             }
         } else {
             //TODO mengwei toast 提示先连接
+            CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
         }
     }
     

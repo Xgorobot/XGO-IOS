@@ -39,6 +39,16 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
         searchView = NewSearchListView()
         self.view.addSubview(searchView)
         
+        
+        searchView.objectChangedClosure = { object in
+            print("从子控制器传递的对象：\(object)")
+            self.myCentralManager.stopScan()
+            self.flagScan = false
+            
+            self.myPeripheralToMainView = object.value(forKey:"peripheral") as? CBPeripheral
+            self.connectPeripheral(peripheral: self.myPeripheralToMainView)
+        }
+        
         searchView.isHidden = true
         
         searchView.hiddenAction = { [weak self] in
@@ -130,9 +140,10 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
                     r.setValue(name, forKey: "name")
                     myPeripherals.add(r)
                     NSLog("搜索到设备，Name=\(peripheral.name!) UUID=\(peripheral.identifier) 广播名:\(name)")
+                    searchView.myPeripherals = myPeripherals;
                     // MARK -- mengwei 刷新设备列表
-//                    self.myTableView.reloadData()
-//                    scanErrorAlert.isHidden = true
+                    searchView.tableView.reloadData()
+
                 }
             }else{
                 //重复搜索
@@ -141,12 +152,18 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
                         if let name:String = advertisementData["kCBAdvDataLocalName"] as? String {
                             dic.setValue(name, forKey: "name")
                             NSLog("更新设备名\(name)")
-//                            self.myTableView.reloadData()
+                            
+                            searchView.myPeripherals = myPeripherals;
+                            // MARK -- mengwei 刷新设备列表
+                            searchView.tableView.reloadData()
+                            
                         }
                     }
                 }
             }
         }
+        
+        searchView.myPeripherals = myPeripherals
     }
     
     //链接成功，相应函数
