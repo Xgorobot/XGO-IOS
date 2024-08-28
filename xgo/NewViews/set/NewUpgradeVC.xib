@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="downloadButton" destination="cyW-dP-ILs" id="WCo-bC-R1D"/>
                 <outlet property="progressBar" destination="C91-tf-bnP" id="pZu-xg-AFH"/>
+                <outlet property="versionName" destination="6gb-ab-BlY" id="UVy-Om-jRh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="9kI-G0-t25"/>
             </connections>
         </placeholder>
@@ -34,7 +35,7 @@
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="Wjl-sn-bvq"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固件升级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYj-QT-3u9">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固件版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYj-QT-3u9">
                     <rect key="frame" x="389.33333333333331" y="29.333333333333329" width="73.666666666666686" height="21.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,13 +54,13 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本为L-3.1.7建议升级至最新版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Are-Dg-TCV">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本为L-3.1.7建议升级至最新版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Are-Dg-TCV">
                     <rect key="frame" x="320.33333333333331" y="214" width="211.66666666666669" height="14.333333333333343"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyW-dP-ILs" customClass="GradientButton" customModule="xgo" customModuleProvider="target">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyW-dP-ILs" customClass="GradientButton" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="384.66666666666669" y="258.33333333333331" width="83" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="7Ex-eg-ukJ"/>
@@ -72,7 +73,7 @@
                         <action selector="download:" destination="-1" eventType="touchUpInside" id="6zM-S0-4gy"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-Vm-v8s">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-Vm-v8s">
                     <rect key="frame" x="384.66666666666669" y="307.33333333333331" width="83" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="MHL-h9-fBa"/>
@@ -85,7 +86,7 @@
                         <action selector="update:" destination="-1" eventType="touchUpInside" id="F3N-aw-OzW"/>
                     </connections>
                 </button>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="C91-tf-bnP" customClass="GradientProgressBar" customModule="xgo" customModuleProvider="target">
+                <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="C91-tf-bnP" customClass="GradientProgressBar" customModule="xgo" customModuleProvider="target">
                     <rect key="frame" x="497.66666666666674" y="258.33333333333331" width="83" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="axP-Rv-CEz"/>

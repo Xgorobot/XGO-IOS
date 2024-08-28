@@ -101,7 +101,7 @@ class NewHomeVC: UIViewController {
                         case "R":
                             BLEMANAGER?.deviceType = 2
                             //TODO @mengwei 修改此处，跳转到双足机器人页面
-                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
+                            self.navigationController?.pushViewController(NewActionVC(), animated: true)
                         default:
                             BLEMANAGER?.deviceType = -1
                         }
@@ -113,6 +113,9 @@ class NewHomeVC: UIViewController {
         } else {
             //TODO mengwei toast 提示先连接
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
+            
+            self.navigationController?.pushViewController(NewControlVC(), animated: true)
+
         }
     }
     
