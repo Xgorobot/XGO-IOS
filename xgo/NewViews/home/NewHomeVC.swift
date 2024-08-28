@@ -89,6 +89,7 @@ class NewHomeVC: UIViewController {
     @IBAction func controlAction(_ sender: Any) {
         if ((BLEMANAGER?.isConnect()) != nil){
             FindControlUtil.readVersionName { data in
+                //这个data是一个String 如果代码无效的话 打印看看data是什么
                 if (data.count >= 10){
                     if let string = String(bytes: data, encoding: .utf8) {
                         switch string.prefix(1) {
