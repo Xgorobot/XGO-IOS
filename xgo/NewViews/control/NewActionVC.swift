@@ -33,6 +33,7 @@ class NewActionVC: UIViewController {
         }
         
         GradientSlider.thumbSize = 50
+        GradientSlider.setValue(50)
         
     }
     
@@ -55,8 +56,15 @@ class NewActionVC: UIViewController {
         blueValue.text = Int(sender.value).description
     }
     
-    @IBAction func rollChange(_ sender: Any) {
+    @IBAction func rollChange(_ sender: GradientSlider) {
+        print(sender.value)
     }
+    
+    
+    @IBAction func rollChangeEnd(_ sender: GradientSlider) {
+        GradientSlider.setValue(50)
+    }
+    
     // 亮度设置
     @IBAction func brightnessChange(_ sender: Any) {
     }
