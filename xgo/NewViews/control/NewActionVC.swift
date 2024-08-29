@@ -35,6 +35,9 @@ class NewActionVC: UIViewController {
         GradientSlider.thumbSize = 50
         GradientSlider.setValue(50)
         
+        GradientSlider.addTarget(self, action: #selector(rollChangeEnd), for: .touchUpInside)
+        GradientSlider.addTarget(self, action: #selector(rollChangeEnd), for: .touchUpOutside)
+        
     }
     
     @IBAction func resetAction(_ sender: Any) {
@@ -61,7 +64,7 @@ class NewActionVC: UIViewController {
     }
     
     
-    @IBAction func rollChangeEnd(_ sender: GradientSlider) {
+    @objc func rollChangeEnd(_ sender: GradientSlider) {
         GradientSlider.setValue(50)
     }
     

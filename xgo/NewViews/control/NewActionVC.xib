@@ -330,7 +330,6 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="rollChange:" destination="-1" eventType="valueChanged" id="iwK-VS-6hw"/>
-                        <action selector="rollChangeEnd:" destination="-1" eventType="touchCancel" id="2Uu-ND-7Mc"/>
                     </connections>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮开启Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aru-HS-E5e">
