@@ -397,5 +397,25 @@ final class FindControlUtil {
         let result:[UInt8] = [0x90,enable ? 0x01:0x00];
         addWriteMsg(data: result)
     }
+    
+    class func setArmJaw(target:UInt8) {//机械臂右侧滑轨 0-0x255范围
+        let result:[UInt8] = [0x71,target];
+        addWriteMsg(data: result)
+    }
+    
+    class func setArmRef(target:UInt8) {//机械臂控制 参照地面0x01 参照底座0x00
+        let result:[UInt8] = [0x72,target];
+        addWriteMsg(data: result)
+    }
+    
+    class func setArmX(target:UInt8) {//机械臂控制 横向坐标 范围 0-240
+        let result:[UInt8] = [0x73,target];
+        addWriteMsg(data: result)
+    }
+    class func setArmZ(target:UInt8) {//机械臂控制 纵向坐标 范围 16-224
+        let result:[UInt8] = [0x74,target];
+        addWriteMsg(data: result)
+    }
+    
 }
 
