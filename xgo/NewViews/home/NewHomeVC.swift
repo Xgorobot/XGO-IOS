@@ -85,31 +85,65 @@ class NewHomeVC: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        FindControlUtil.readVersionName { data in
+            //这个data是一个String 如果代码无效的话 打印看看data是什么
+            if (data.count >= 10){
+                if let string = String(bytes: data.dropFirst(2), encoding: .utf8) {
+                    switch string.prefix(1) {
+                    case "M":
+                        BLEMANAGER?.deviceType = 0
+                    case "L":
+                        BLEMANAGER?.deviceType = 1
+                    case "R":
+                        BLEMANAGER?.deviceType = 2
+                        //TODO @mengwei 修改此处，跳转到双足机器人页面
+                    default:
+                        BLEMANAGER?.deviceType = -1
+                    }
+                } else {
+                    print("无法将字节数组转换为字符串")
+                }
+            }
+        }
+    }
+    
+    
     // 跳转控制页面
     @IBAction func controlAction(_ sender: Any) {
         if ((BLEMANAGER?.isConnect()) != nil){
-            FindControlUtil.readVersionName { data in
-                //这个data是一个String 如果代码无效的话 打印看看data是什么
-                if (data.count >= 10){
-                    if let string = String(bytes: data, encoding: .utf8) {
-                        switch string.prefix(1) {
-                        case "M":
-                            BLEMANAGER?.deviceType = 0
-                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
-                        case "L":
-                            BLEMANAGER?.deviceType = 1
-                            self.navigationController?.pushViewController(NewControlVC(), animated: true)
-                        case "R":
-                            BLEMANAGER?.deviceType = 2
-                            //TODO @mengwei 修改此处，跳转到双足机器人页面
-                            self.navigationController?.pushViewController(NewActionVC(), animated: true)
-                        default:
-                            BLEMANAGER?.deviceType = -1
+            switch BLEMANAGER?.deviceType{
+            case 0:
+                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+            case 1:
+                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+            case 2:
+                self.navigationController?.pushViewController(NewActionVC(), animated: true)
+            case -1:
+                FindControlUtil.readVersionName { data in
+                    //这个data是一个String 如果代码无效的话 打印看看data是什么
+                    if (data.count >= 10){
+                        if let string = String(bytes: data.dropFirst(2), encoding: .utf8) {
+                            switch string.prefix(1) {
+                            case "M":
+                                BLEMANAGER?.deviceType = 0
+                                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+                            case "L":
+                                BLEMANAGER?.deviceType = 1
+                                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+                            case "R":
+                                BLEMANAGER?.deviceType = 2
+                                self.navigationController?.pushViewController(NewActionVC(), animated: true)
+                            default:
+                                BLEMANAGER?.deviceType = -1
+                            }
+                        } else {
+                            print("无法将字节数组转换为字符串")
                         }
-                    } else {
-                        print("无法将字节数组转换为字符串")
                     }
                 }
+            default:
+                break
             }
         } else {
             //TODO mengwei toast 提示先连接
