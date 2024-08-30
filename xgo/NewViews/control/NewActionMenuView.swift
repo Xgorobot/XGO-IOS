@@ -15,6 +15,7 @@ class NewActionMenuView: UIView {
     var container: UIView!
     var actionArray: [String]!
     var isSelect: Int = -1
+    var closeAction: (() -> ())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -81,7 +82,7 @@ class NewActionMenuView: UIView {
     }
     
     @objc func closeButtonAction() {
-        self.isHidden = true
+        self.closeAction?()
     }
     
     @objc func resetButtonAction() {
@@ -89,7 +90,7 @@ class NewActionMenuView: UIView {
         
         FindControlUtil.actionType(type: 0x02)
         FindControlUtil.heightSet(height:0x80)
-        self.isHidden = true
+        self.closeAction?()
     }
     
     required init?(coder: NSCoder) {

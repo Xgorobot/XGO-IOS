@@ -24,11 +24,12 @@ class NewControlVC: UIViewController {
     @IBOutlet weak var rightTopCircularSlider: MTCircularSlider!
     @IBOutlet weak var rightBottomCircularSlider: MTCircularSlider!
     
-    
     @IBOutlet weak var rLeftTopCircularSlider: MTCircularSlider!
     @IBOutlet weak var rRightTopCircularSlider: MTCircularSlider!
     @IBOutlet weak var rLeftBottomCircularSlider: MTCircularSlider!
     
+    
+    var isHiddenViewArr: [UIView] = []
     
 //    var actionArray = ["动作轮播","趴下","蹲起"]
     
@@ -56,6 +57,13 @@ class NewControlVC: UIViewController {
         menuView = NewActionMenuView()
         menuView.actionArray = actionArray
         self.view.addSubview(menuView)
+        
+        menuView.closeAction = { [weak self] in
+            self?.isHiddenViewArr.forEach { item in
+                item.isHidden = false
+            }
+            self?.menuView.isHidden = true
+        }
         
         menuView.isHidden = true
         
@@ -236,6 +244,8 @@ class NewControlVC: UIViewController {
 //        view.bringSubviewToFront(setView)
 //        view.bringSubviewToFront(menuView)
         
+        isHiddenViewArr.append(contentsOf: [leftTopCircularSlider,rightTopCircularSlider,rightBottomCircularSlider,rLeftTopCircularSlider,rRightTopCircularSlider,rLeftBottomCircularSlider])
+        
     }
     
     @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
@@ -263,7 +273,7 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func menuAction(_ sender: Any) {
-        menuView.isHidden = false
+        
     }
     
     @IBAction func armAction(_ sender: Any) {
@@ -275,7 +285,11 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func proAction(_ sender: Any) {
-        self.navigationController?.pushViewController(NewActionVC(), animated: true)
+        isHiddenViewArr.forEach { item in
+            item.isHidden = true
+        }
+        menuView.isHidden = false
+//        self.navigationController?.pushViewController(NewActionVC(), animated: true)
     }
     
     @IBAction func back(_ sender: Any) {

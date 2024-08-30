@@ -32,7 +32,13 @@ class NewActionVC: UIViewController {
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
         
+        GradientSlider.minimumValue = 0
+        GradientSlider.maximumValue = 20
         GradientSlider.thumbSize = 50
+        GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
+        
+        GradientSlider.addTarget(self, action: #selector(rollChangeEnd), for: .touchUpInside)
+        GradientSlider.addTarget(self, action: #selector(rollChangeEnd), for: .touchUpOutside)
         
     }
     
@@ -55,8 +61,15 @@ class NewActionVC: UIViewController {
         blueValue.text = Int(sender.value).description
     }
     
-    @IBAction func rollChange(_ sender: Any) {
+    @IBAction func rollChange(_ sender: GradientSlider) {
+        print(sender.value)
     }
+    
+    
+    @objc func rollChangeEnd(_ sender: GradientSlider) {
+        GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
+    }
+    
     // 亮度设置
     @IBAction func brightnessChange(_ sender: Any) {
     }
