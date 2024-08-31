@@ -31,16 +31,10 @@ class NewControlVC: UIViewController {
     
     var isHiddenViewArr: [UIView] = []
     
-//    var actionArray = ["动作轮播","趴下","蹲起"]
     
-    var actionArray = ["趴下","蹲起","匍匐前进","转圈","原地踏步","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
     
-    //    let dataItem = ["趴下","站起","匍匐前进","转圈","原地踏步","蹲起","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
-        
-            /*运动模式 动作指令表，1-N为各个动作(0-N为十进制)
-             0为默认站姿，1趴下，2站起，3匍匐前进，4转圈，5原地踏步，6蹲起，7转动Roll，
-             8转动Pitch，9转动Yaw，10三轴转动，11撒尿，12坐下，13招手，14伸懒腰，15波浪，
-             16左右摇摆，17求食，18找食物，19握手*/
+    let actionArray = ["动作轮播","趴下","站起","匍匐前进","转圈","蹲起","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
+    
     
     
     
@@ -288,7 +282,7 @@ class NewControlVC: UIViewController {
         isHiddenViewArr.forEach { item in
             item.isHidden = true
         }
-        menuView.isHidden = false
+//
 //        self.navigationController?.pushViewController(NewActionVC(), animated: true)
     }
     
@@ -297,23 +291,30 @@ class NewControlVC: UIViewController {
     }
     // 动作轮播
     @IBAction func actionPlay(_ sender: Any) {
+        menuView.isHidden = false
     }
     // 趴下
     @IBAction func getDown(_ sender: Any) {
+        menuView.isHidden = false
     }
     // 蹲起
     @IBAction func squat(_ sender: Any) {
+        menuView.isHidden = false
     }
     
     @IBAction func actionUp() {
         
+        FindControlUtil.actionType(type: 0x80)
+
     }
     
     @IBAction func actionMiddle() {
-        
+        FindControlUtil.actionType(type: 0x81)
     }
     
     @IBAction func actionDown() {
+        FindControlUtil.actionType(type: 0x82)
+
         
     }
     

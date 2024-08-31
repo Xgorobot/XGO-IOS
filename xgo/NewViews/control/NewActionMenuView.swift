@@ -102,16 +102,35 @@ class NewActionMenuView: UIView {
 
 extension NewActionMenuView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
-        let bytes = (indexPath.row+1).hw_toByte()
-        
-        print(bytes)
         //TODO mengwei 表演模式的按钮事件
-        FindControlUtil.actionType(type: bytes)
-        collectionView.deselectItem(at: indexPath, animated: false)
+        /*运动模式 动作指令表，1-N为各个动作(0-N为十进制)
+        0为默认站姿，1趴下，2站起，3匍匐前进，4转圈，5原地踏步，6蹲起，7转动Roll，
+        8转动Pitch，9转动Yaw，10三轴转动，11撒尿，12坐下，13招手，14伸懒腰，15波浪，
+        16左右摇摆，17求食，18找食物，19握手*/
+        
+        
+        
+        if (indexPath.row == 0) {
+            
+            FindControlUtil.showMode(needRepeat: true)
+            
+        }else {
+            if(indexPath.row < 5) {
+                let bytes = (indexPath.row).hw_toByte()
+                FindControlUtil.actionType(type: bytes)
+            }else {
+                let bytes = (indexPath.row + 1).hw_toByte()
+                FindControlUtil.actionType(type: bytes)
+            }
+            
+            collectionView.deselectItem(at: indexPath, animated: false)
+            
+            self.collectionView.reloadData()
+
+            
+        }
         isSelect = indexPath.row
-        self.collectionView.reloadData()
+
     }
 }
 

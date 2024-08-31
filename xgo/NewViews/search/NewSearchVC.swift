@@ -42,11 +42,14 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
         
         searchView.objectChangedClosure = { object in
             print("从子控制器传递的对象：\(object)")
+            self.searchView.isHidden = true
             self.myCentralManager.stopScan()
             self.flagScan = false
             
             self.myPeripheralToMainView = object.value(forKey:"peripheral") as? CBPeripheral
             self.connectPeripheral(peripheral: self.myPeripheralToMainView)
+            
+            
         }
         
         searchView.isHidden = true
@@ -173,7 +176,7 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
         CBToast.showToast(message: NSLocalizedString("connect success", comment: "connect success") as NSString, aLocationStr: "bottom", aShowTime: 2)
         self.alertConnect.dismiss(animated: false) {
             self.dismiss(animated: true, completion: nil)
-//            self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
 
         if BLEMANAGER == nil {

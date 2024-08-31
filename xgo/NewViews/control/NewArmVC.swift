@@ -35,20 +35,22 @@ class NewArmVC: UIViewController {
     }
     
     @IBAction func actionUp() {
-        
+        FindControlUtil.actionType(type: 0x80)
     }
     
     @IBAction func actionMiddle() {
-        
+        FindControlUtil.actionType(type: 0x81)
     }
     
     @IBAction func actionDown() {
+        FindControlUtil.actionType(type: 0x82)
         
     }
     
     
     // 切换
     @IBAction func referAction(_ sender: Any) {
+        print("切换！！")
     }
     
     @IBAction func controlAction(_ sender: Any) {
@@ -58,6 +60,9 @@ class NewArmVC: UIViewController {
     @IBAction func sliderValueChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         progressLabel.text = Int(sender.value).description
+        
+        
+        
     }
     
     @IBAction func back(_ sender: Any) {
