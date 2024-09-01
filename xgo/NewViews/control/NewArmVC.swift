@@ -50,14 +50,12 @@ class NewArmVC: UIViewController {
     
     // 切换
     @IBAction func referAction(_ sender: Any) {
-        
         //机械臂控制 参照地面0x01 参照底座0x00
         if self.segmented.selectedSegmentIndex == 0 {
             FindControlUtil.actionType(type: 0x01)
         }else {
             FindControlUtil.actionType(type: 0x00)
         }
-        
     }
     
     @IBAction func controlAction(_ sender: Any) {
@@ -69,13 +67,13 @@ class NewArmVC: UIViewController {
         progressLabel.text = Int(sender.value).description
         
         
-        let value = Int((progressSlider.value*255).rounded())
+        if BLEMANAGER?.checkRepeat() ?? true {
+            
+            let value = Int((progressSlider.value*255/100).rounded())
 
-        // 夹爪
-        // todo yuanwenlin  不清楚调用函数
-        
-        
-//        FindControlUtil.heightSet(height: value.hw_toByte())
+            // 夹爪
+            FindControlUtil.setArmJaw(target: UInt8(value))
+        }
         
     }
     

@@ -35,18 +35,12 @@ class NewControlSetView: UIView {
     }
     
     @IBAction func heightReset(_ sender: Any) {
-        
-        
-       
-        
+        heightSlider.value = 60
         FindControlUtil.heightSet(height:0x80)
-        
     }
     
     @IBAction func walkReset(_ sender: Any) {
-        
-        // todo yuanwenlin 不太确定是调用哪个函数 
-        
+        walkSlider.value = 60
     }
     
     @IBAction func setButton(_ sender: Any) {
@@ -65,45 +59,12 @@ class NewControlSetView: UIView {
     @IBAction func speedAction(_ sender: UISegmentedControl) {
 
         if speedSegmented.selectedSegmentIndex == 0 {
-            FindControlUtil.servoSpeedSet(speed: 0x01)
-            FindControlUtil.heightSet(height:0x40)
-            
-//            _normalVC.slider?.value = 0.25
-//            _seniorVC.slider?.value = 0.25
-//            _xyzVC.slider?.value = 0.25
-//            _pryVC.slider?.value = 0.25
-
-
-        }else if speedSegmented.selectedSegmentIndex == 1 {
-            
-            // todo yuanwenlin 不太确定是调用哪个函数 
-            FindControlUtil.servoSpeedSet(speed: 0x00)
-            
             FindControlUtil.setSpeed(type: 0x01)
-
-            
-            
-            FindControlUtil.heightSet(height:0x80)
-//            
-//            _normalVC.slider?.value = 0.5
-//            _seniorVC.slider?.value = 0.5
-//            _xyzVC.slider?.value = 0.5
-//            _pryVC.slider?.value = 0.5
-
-
+        }else if speedSegmented.selectedSegmentIndex == 1 {
+            FindControlUtil.setSpeed(type: 0x00)
         }else {
-            FindControlUtil.servoSpeedSet(speed: 0x02)
-            FindControlUtil.heightSet(height:0xB0)
-            
-//            _normalVC.slider?.value = 0.75
-//            _seniorVC.slider?.value = 0.75
-//            _xyzVC.slider?.value = 0.75
-//            _pryVC.slider?.value = 0.75
-
-
+            FindControlUtil.setSpeed(type: 0x02)
         }
-        
-        
     }
     
     

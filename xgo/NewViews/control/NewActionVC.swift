@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TactileSlider
 
 
 class NewActionVC: UIViewController {
@@ -17,6 +18,9 @@ class NewActionVC: UIViewController {
     @IBOutlet weak var leftActionView: ActionBarsView!
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var GradientSlider: GradientSlider!
+    @IBOutlet weak var rSlider: UISlider!
+    @IBOutlet weak var gSlider: UISlider!
+    @IBOutlet weak var bSlider: UISlider!
     
     @IBOutlet weak var lunboButton: GradientButton!
     
@@ -96,38 +100,42 @@ class NewActionVC: UIViewController {
     @IBAction func redChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         redValue.text = Int(sender.value).description
-        // todo yuanwenlin 不太确定怎么传
-//        FindControlUtil.setLED(red: <#T##UInt8#>, green: <#T##UInt8#>, blue: <#T##UInt8#>)
+        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
     }
     
     @IBAction func greenChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         greenValue.text = Int(sender.value).description
+        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
     }
     
     @IBAction func blueChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         blueValue.text = Int(sender.value).description
+        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
     }
     
     // roll 那个slider
     @IBAction func rollChange(_ sender: GradientSlider) {
-        print(sender.value)
-        // todo yuanwenlin 不太确定调用函数
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let clampedValue = max(0, min(20, sender.value))
+            let mappedValue = (clampedValue / 20.0) * 255.0
+            FindControlUtil.trunByX(angle: UInt8(mappedValue))
+        }
     }
     
     
     @objc func rollChangeEnd(_ sender: GradientSlider) {
         GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
+        FindControlUtil.trunByX(angle: 0x80)
     }
     
-    // 亮度设置
-    @IBAction func brightnessChange(_ sender: Any) {
-        
-        // todo yuanwenlin 不太确定调用函数
-        
-        
-
+    @IBAction func heightSet(_ sender: TactileSlider) {
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let clampedValue = max(0, min(100, sender.value))
+            let mappedValue = (clampedValue / 100) * 255.0
+            FindControlUtil.heightSet(height: UInt8(mappedValue))
+        }
     }
     
     @IBAction func back(_ sender: Any) {
@@ -140,9 +148,6 @@ class NewActionVC: UIViewController {
     }
     
     @IBAction func actionOne(_ sender: Any) {
-        
-        // todo yuanwenlin  下面几个不太确定是否正确
-        
         FindControlUtil.actionType(type: 0x01)
     }
     

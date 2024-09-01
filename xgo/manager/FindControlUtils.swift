@@ -389,8 +389,8 @@ final class FindControlUtil {
     
     
     class func setLED(red:UInt8,green:UInt8,blue:UInt8) {//设置RGB灯
-            let result:[UInt8] = [0x69,red,green,blue];
-            addWriteMsg(data: result)
+        let result:[UInt8] = [0x69,red,green,blue];
+        addWriteMsg(data: result)
     }
     
     class func setFire(enable:Bool) {// 设置开火

@@ -119,14 +119,14 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CbT-wk-gJM">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CbT-wk-gJM">
                             <rect key="frame" x="113.66666666666664" y="107.66666666666666" width="143.33333333333337" height="31"/>
                             <color key="tintColor" red="0.21328851579999999" green="0.53735834360000001" blue="0.97597700359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="heightSliderChange:" destination="iN0-l3-epB" eventType="valueChanged" id="vHv-9b-fO4"/>
                             </connections>
                         </slider>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-hy-vZH">
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-hy-vZH">
                             <rect key="frame" x="113.66666666666664" y="154.66666666666666" width="143.33333333333337" height="31"/>
                             <color key="tintColor" red="0.21328851579999999" green="0.53735834360000001" blue="0.97597700359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>

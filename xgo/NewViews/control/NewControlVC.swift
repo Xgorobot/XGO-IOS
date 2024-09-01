@@ -42,8 +42,8 @@ class NewControlVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // todo yuanwenlin
-        proButton.setImage(UIImage(named: "x-pro"), for: .normal)
-        proButton.setImage(UIImage(named: "x-pro"), for: .selected)
+        proButton.setImage(UIImage(named: "btn_pro"), for: .normal)
+        proButton.setImage(UIImage(named: "btn_pro_pressed"), for: .selected)
         
         controlButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0040F8), UIColor(hex: 0x00EAFF)], endPoint: .init(x: 0, y: 1)), for: .normal)
         controlButton.cornerRadius = 3
@@ -318,41 +318,64 @@ class NewControlVC: UIViewController {
         isHiddenViewArr.forEach { item in
             item.isHidden = true
         }
-        
     }
     
     @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.trunkMoveX(position: UInt8(value))
+        }
     }
     
     @IBAction func rightTopSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.trunkMoveY(position: UInt8(value))
+        }
     }
     
     @IBAction func rightBottomSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.heightSet(height: UInt8(value))
+        }
     }
     
     @IBAction func rLeftTopSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.trunByY(angle: UInt8(value))
+        }
     }
     
     @IBAction func rRightTopSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.trunByX(angle: UInt8(value))
+        }
     }
     
     @IBAction func rLeftBottomSliderValue(_ sender: MTCircularSlider) {
-        print(sender.value)
-        // todo yuanwenlin
+//        print(sender.value)
+        if BLEMANAGER?.checkRepeat() ?? true {
+            let value = Int((sender.value*255/100).rounded())
+            // 夹爪
+            FindControlUtil.trunByZ(angle: UInt8(value))
+        }
     }
     
     @IBAction func menuAction(_ sender: Any) {
-        
+        armVC.view.isHidden = false
     }
     
     @IBAction func armAction(_ sender: Any) {

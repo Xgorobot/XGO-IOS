@@ -12,11 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewActionVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="GradientSlider" destination="6ZG-ng-iCN" id="xmV-h9-fWx"/>
+                <outlet property="bSlider" destination="YJ4-9p-wru" id="XgV-an-bMK"/>
                 <outlet property="blueValue" destination="wz2-WY-h7y" id="a8b-BF-sQd"/>
+                <outlet property="gSlider" destination="gUS-gP-E2x" id="Yzs-um-fI2"/>
                 <outlet property="greenValue" destination="UML-LT-SfP" id="w1k-IL-b5h"/>
                 <outlet property="leftActionView" destination="F89-oY-z34" id="3H6-2a-6n4"/>
                 <outlet property="leftRockerView" destination="P0P-kp-M6H" id="1zI-g8-F0u"/>
                 <outlet property="lunboButton" destination="czd-Pq-x9D" id="671-UN-WA4"/>
+                <outlet property="rSlider" destination="2zv-tb-Ugf" id="5Cy-QP-OVn"/>
                 <outlet property="redValue" destination="AOE-8J-fpf" id="gFB-b9-TIX"/>
                 <outlet property="resetButton" destination="C7h-gB-2KV" id="cAB-x4-ev4"/>
                 <outlet property="view" destination="iN0-l3-epB" id="nfF-QM-qfg"/>
@@ -311,7 +314,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="632" y="254" width="244" height="50"/>
+                    <rect key="frame" x="630" y="250" width="248" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -397,7 +400,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="brightnessChange:" destination="-1" eventType="valueChanged" id="Nfd-sj-TjC"/>
+                                <action selector="heightSet:" destination="-1" eventType="valueChanged" id="uZr-zz-qdt"/>
                             </connections>
                         </view>
                     </subviews>
@@ -451,6 +454,11 @@
             <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
         </view>
     </objects>
+    <designables>
+        <designable name="6ZG-ng-iCN">
+            <size key="intrinsicContentSize" width="-1" height="28"/>
+        </designable>
+    </designables>
     <resources>
         <image name="back" width="40" height="40"/>
         <image name="roll" width="60" height="60"/>
@@ -459,13 +467,13 @@
         <image name="weixuan8" width="100" height="31"/>
         <image name="x-lunbo" width="17" height="17"/>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
