@@ -18,18 +18,64 @@ class NewActionVC: UIViewController {
     @IBOutlet weak var leftRockerView: RockerBarsView!
     @IBOutlet weak var GradientSlider: GradientSlider!
     
+    @IBOutlet weak var lunboButton: GradientButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resetButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0C00F8), UIColor(hex: 0x00EAFF)]), for: .normal)
+        lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .normal)
+        lunboButton.cornerRadius = 2
+        lunboButton.layer.masksToBounds = true
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            switch dir {
+                case .OLeft:
+                    FindControlUtil.turnClockwise(speed:0xDA )
+                    break
+                case .ORight:
+                    FindControlUtil.turnClockwise(speed:0x25 )
+                    break
+                case .OUp:
+                    FindControlUtil.moveX(speed: 0xDA)
+                   break
+                case .ODown:
+                     FindControlUtil.moveX(speed: 0x25)
+                    break
+                case .OStop:
+                    FindControlUtil.turnClockwise(speed: 0x80)
+                    break
+                default:
+                    break
+            }
         }
         
         leftActionView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            print("顺时针旋转2dir:\(dir)")
+            switch dir {
+                case .OLeft:
+                    FindControlUtil.turnClockwise(speed:0xDA )
+                    break
+                case .ORight:
+                    FindControlUtil.turnClockwise(speed:0x25 )
+                    break
+                case .OUp:
+                    FindControlUtil.moveX(speed: 0xDA)
+                   break
+                case .ODown:
+                     FindControlUtil.moveX(speed: 0x25)
+                    break
+                case .OStop:
+                    FindControlUtil.turnClockwise(speed: 0x80)
+                    break
+                default:
+                    break
+            }
+            
         }
         
         GradientSlider.minimumValue = 0
@@ -43,7 +89,8 @@ class NewActionVC: UIViewController {
     }
     
     @IBAction func resetAction(_ sender: Any) {
-        
+        FindControlUtil.actionType(type: 0x02)
+        FindControlUtil.heightSet(height:0x80)
     }
     
     @IBAction func redChange(_ sender: UISlider) {
@@ -89,7 +136,7 @@ class NewActionVC: UIViewController {
     
     
     @IBAction func actionPlay(_ sender: Any) {
-        
+        FindControlUtil.showMode(needRepeat: true)
     }
     
     @IBAction func actionOne(_ sender: Any) {

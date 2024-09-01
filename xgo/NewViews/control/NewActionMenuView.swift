@@ -68,7 +68,8 @@ class NewActionMenuView: UIView {
         }
         
         closeButton = UIButton()
-        closeButton.setTitle("x", for: .normal)
+        // todo yuanwenlin
+        closeButton.setImage(UIImage(named: ""), for: .normal)
         self.addSubview(closeButton)
         
         closeButton.snp.makeConstraints { make in

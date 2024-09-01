@@ -41,7 +41,7 @@ class NewControlVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // todo yuanwenlin
         proButton.setImage(UIImage(named: "x-pro"), for: .normal)
         proButton.setImage(UIImage(named: "x-pro"), for: .selected)
         
@@ -111,7 +111,22 @@ class NewControlVC: UIViewController {
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             
-//            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            switch dir {
+                case .OUp:
+                    FindControlUtil.moveX(speed: 0xDA)
+                
+                case .ODown:
+                    FindControlUtil.moveX(speed: 0x25)
+                case .OLeft:
+                    FindControlUtil.moveY(speed: 0xDA)
+                case .ORight:
+                    FindControlUtil.moveY(speed: 0x25)
+                case .OStop:
+                    FindControlUtil.moveX(speed: 0x80)
+                    FindControlUtil.moveY(speed: 0x80)
+            }
         }
         
         
@@ -138,6 +153,20 @@ class NewControlVC: UIViewController {
         
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            switch dir {
+                case .OLeft:
+                    FindControlUtil.turnClockwise(speed:0xDA )
+                    break
+                case .ORight:
+                    FindControlUtil.turnClockwise(speed:0x25 )
+                    break
+                case .OStop:
+                    FindControlUtil.turnClockwise(speed: 0x80)
+                    break
+                default:
+                    break
+            }
             
 
         }
@@ -294,26 +323,32 @@ class NewControlVC: UIViewController {
     
     @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func rightTopSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func rightBottomSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func rLeftTopSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func rRightTopSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func rLeftBottomSliderValue(_ sender: MTCircularSlider) {
         print(sender.value)
+        // todo yuanwenlin
     }
     
     @IBAction func menuAction(_ sender: Any) {

@@ -16,6 +16,7 @@
                 <outlet property="greenValue" destination="UML-LT-SfP" id="w1k-IL-b5h"/>
                 <outlet property="leftActionView" destination="F89-oY-z34" id="3H6-2a-6n4"/>
                 <outlet property="leftRockerView" destination="P0P-kp-M6H" id="1zI-g8-F0u"/>
+                <outlet property="lunboButton" destination="czd-Pq-x9D" id="671-UN-WA4"/>
                 <outlet property="redValue" destination="AOE-8J-fpf" id="gFB-b9-TIX"/>
                 <outlet property="resetButton" destination="C7h-gB-2KV" id="cAB-x4-ev4"/>
                 <outlet property="view" destination="iN0-l3-epB" id="nfF-QM-qfg"/>
@@ -50,7 +51,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T6o-ab-lQW">
                             <rect key="frame" x="10" y="10" width="100" height="292"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czd-Pq-x9D">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czd-Pq-x9D" customClass="GradientButton" customModule="xgo" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="33"/>
                                     <color key="backgroundColor" red="0.038614023480000002" green="0.089439101519999994" blue="0.36472767589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -310,7 +311,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="630" y="250" width="248" height="58"/>
+                    <rect key="frame" x="632" y="254" width="244" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -450,11 +451,6 @@
             <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
         </view>
     </objects>
-    <designables>
-        <designable name="6ZG-ng-iCN">
-            <size key="intrinsicContentSize" width="-1" height="28"/>
-        </designable>
-    </designables>
     <resources>
         <image name="back" width="40" height="40"/>
         <image name="roll" width="60" height="60"/>

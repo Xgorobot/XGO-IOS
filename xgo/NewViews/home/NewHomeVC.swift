@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class NewHomeVC: UIViewController {
     
@@ -84,8 +85,18 @@ class NewHomeVC: UIViewController {
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (BLEMANAGER?.isConnect()) != nil {
+            bluetoothInfoLabel.text = BLEMANAGER?.PeripheralToConncet.name
+        }else {
+            bluetoothInfoLabel.text = "连接蓝牙"
+        }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+     
         FindControlUtil.readVersionName { data in
             //这个data是一个String 如果代码无效的话 打印看看data是什么
             if (data.count >= 10){
@@ -116,6 +127,8 @@ class NewHomeVC: UIViewController {
             case 0:
                 self.navigationController?.pushViewController(NewControlVC(), animated: true)
             case 1:
+                
+                // todo yuanwenlin 测试跳转 打包需要注释NewActionVC 打开NewControlVC
                 
                 self.navigationController?.pushViewController(NewActionVC(), animated: true)
 
@@ -153,7 +166,6 @@ class NewHomeVC: UIViewController {
             //TODO mengwei toast 提示先连接
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
             
-            self.navigationController?.pushViewController(NewActionVC(), animated: true)
 
             
 //            self.navigationController?.pushViewController(NewControlVC(), animated: true)
