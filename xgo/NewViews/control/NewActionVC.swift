@@ -49,6 +49,8 @@ class NewActionVC: UIViewController {
     @IBAction func redChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         redValue.text = Int(sender.value).description
+        // todo yuanwenlin 不太确定怎么传
+//        FindControlUtil.setLED(red: <#T##UInt8#>, green: <#T##UInt8#>, blue: <#T##UInt8#>)
     }
     
     @IBAction func greenChange(_ sender: UISlider) {
@@ -61,8 +63,10 @@ class NewActionVC: UIViewController {
         blueValue.text = Int(sender.value).description
     }
     
+    // roll 那个slider
     @IBAction func rollChange(_ sender: GradientSlider) {
         print(sender.value)
+        // todo yuanwenlin 不太确定调用函数
     }
     
     
@@ -73,7 +77,9 @@ class NewActionVC: UIViewController {
     // 亮度设置
     @IBAction func brightnessChange(_ sender: Any) {
         
-//        FindControlUtil.actionType(type: 3500)
+        // todo yuanwenlin 不太确定调用函数
+        
+        
 
     }
     
@@ -82,32 +88,36 @@ class NewActionVC: UIViewController {
     }
     
     
-    @IBAction func actionPlay(_ sender: Any) {}
+    @IBAction func actionPlay(_ sender: Any) {
+        
+    }
     
     @IBAction func actionOne(_ sender: Any) {
         
-        FindControlUtil.actionType(type: 01)
+        // todo yuanwenlin  下面几个不太确定是否正确
+        
+        FindControlUtil.actionType(type: 0x01)
     }
     
     @IBAction func actionTwo(_ sender: Any) {
-        FindControlUtil.actionType(type: 03)
+        FindControlUtil.actionType(type: 0x03)
     }
     
     @IBAction func actionThree(_ sender: Any) {
-        FindControlUtil.actionType(type: 02)
+        FindControlUtil.actionType(type: 0x02)
     }
     
     @IBAction func actionFour(_ sender: Any) {
-        FindControlUtil.actionType(type: 04)
+        FindControlUtil.actionType(type: 0x04)
     }
     
     @IBAction func actionFive(_ sender: Any) {
-        FindControlUtil.actionType(type: 05)
+        FindControlUtil.actionType(type: 0x05)
     }
     
     @IBAction func actionSix(_ sender: Any) {
         
-        FindControlUtil.actionType(type: 06)
+        FindControlUtil.actionType(type: 0x06)
     }
     
 }

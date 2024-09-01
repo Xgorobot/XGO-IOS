@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewAboutVC" customModule="xgo" customModuleProvider="target">
             <connections>
+                <outlet property="versionLabel" destination="UAe-mI-Kgh" id="JXx-6Y-7ye"/>
                 <outlet property="view" destination="iN0-l3-epB" id="vaF-Xu-MIp"/>
             </connections>
         </placeholder>
@@ -36,14 +37,50 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edn-Mg-vtC">
+                    <rect key="frame" x="399" y="141.66666666666666" width="54.333333333333314" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 3.1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-mI-Kgh">
+                    <rect key="frame" x="379" y="181.66666666666666" width="94.333333333333314" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陆吾智能 版权所有 All Rights Reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq4-Li-8Cq">
+                    <rect key="frame" x="276.66666666666663" y="341" width="298.66666666666663" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGb-I1-XcU">
+                    <rect key="frame" x="379.66666666666669" y="297" width="93" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="《隐私政策》">
+                        <color key="titleColor" red="0.31457734110000002" green="0.69357693200000003" blue="0.96866041420000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="zhengce:" destination="-1" eventType="touchUpInside" id="AP5-ze-guz"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.17608174679999999" green="0.17133006449999999" blue="0.66670459510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="oq4-Li-8Cq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="09n-wP-DAb"/>
+                <constraint firstItem="Edn-Mg-vtC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-40" id="8Zc-Jq-vB3"/>
                 <constraint firstItem="Eqx-6U-BVe" firstAttribute="centerY" secondItem="ke8-rX-Uh7" secondAttribute="centerY" id="Euf-jb-5jo"/>
+                <constraint firstItem="oq4-Li-8Cq" firstAttribute="top" secondItem="VGb-I1-XcU" secondAttribute="bottom" constant="10" id="N9o-6X-upH"/>
                 <constraint firstItem="Eqx-6U-BVe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RDU-g6-qoT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oq4-Li-8Cq" secondAttribute="bottom" constant="10" id="TQp-Ph-fzV"/>
                 <constraint firstItem="ke8-rX-Uh7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Zki-Vt-DDc"/>
+                <constraint firstItem="VGb-I1-XcU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dns-Mq-rY6"/>
+                <constraint firstItem="UAe-mI-Kgh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ixo-Bs-y2V"/>
+                <constraint firstItem="Edn-Mg-vtC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nxE-pH-556"/>
                 <constraint firstItem="ke8-rX-Uh7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="pAE-Nw-4Cg"/>
+                <constraint firstItem="UAe-mI-Kgh" firstAttribute="top" secondItem="Edn-Mg-vtC" secondAttribute="bottom" constant="10" id="sk7-1h-yc7"/>
             </constraints>
             <point key="canvasLocation" x="186" y="-40"/>
         </view>

@@ -9,7 +9,7 @@ import UIKit
 import CoreBluetooth
 
 
-class NewSearchVC: UIViewController,CBCentralManagerDelegate{
+class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate{
     
     typealias SaveCallback = (_ connectResult:String)->Void //声明一个回调
     var scanCallback:SaveCallback? //回调作为参数
@@ -97,9 +97,47 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate{
     }
     
     @IBAction func disconnect(_ sender: Any) {
+        
+        print("断开连接")
+        if BLEMANAGER != nil {
+            BLEMANAGER?.close()
+        }
+        CBToast.showToast(message: NSLocalizedString("disconnect", comment: "断开连接") as NSString, aLocationStr: "bottom", aShowTime: 2)
+        self.navigationController?.popViewController(animated: true)
+      
     }
     
     @IBAction func renameAction(_ sender: Any) {
+        //初始化UITextField
+        var inputText:UITextField = UITextField();
+        let msgAlertCtr = UIAlertController.init(title: NSLocalizedString("提示", comment: "提示"), message: NSLocalizedString("请输入设备名", comment: "请输入设备名"), preferredStyle: .alert)
+        
+        //添加textField输入框
+        msgAlertCtr.addTextField { (textField) in
+            //设置传入的textField为初始化UITextField
+            inputText = textField
+            inputText.placeholder = NSLocalizedString("输入数据", comment: "输入数据")
+            inputText.keyboardType = UIKeyboardType.namePhonePad;
+            inputText.delegate = self
+        }
+        let ok = UIAlertAction.init(title: NSLocalizedString("确定", comment: "确定"), style:.default) { (action:UIAlertAction) ->() in
+            if((inputText.text) != ""){
+                print("你输入的是：\(String(describing: inputText.text))")
+                let name = inputText.text!
+                //            FindControlUtil.setName(name: "123")
+//                    FindControlUtil.setName(name: name)
+            
+            
+            }
+        }
+        
+        let cancel = UIAlertAction.init(title: NSLocalizedString("取消", comment: "取消"), style:.cancel) { (action:UIAlertAction) -> ()in
+            print("取消输入")
+        }
+        msgAlertCtr.addAction(ok)
+        msgAlertCtr.addAction(cancel)
+        //设置到当前视图
+        self.present(msgAlertCtr, animated: true, completion: nil)
     }
     
     

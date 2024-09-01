@@ -87,21 +87,59 @@ class NewControlVC: UIViewController {
 
         
         leftControlView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
+            
+           
+           
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            
+            switch dir {
+                case .OUp:
+                    FindControlUtil.moveX(speed: 0xDA)
+                
+                case .ODown:
+                    FindControlUtil.moveX(speed: 0x25)
+                case .OLeft:
+                    FindControlUtil.moveY(speed: 0xDA)
+                case .ORight:
+                    FindControlUtil.moveY(speed: 0x25)
+                case .OStop:
+                    FindControlUtil.moveX(speed: 0x80)
+                    FindControlUtil.moveY(speed: 0x80)
+            }
         }
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+//            print("\(dir)  x:\(x) y:\(y) r:\(r)")
         }
         
         
         rightControlView.updownEnable = false
         rightControlView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+            print("顺时针旋转2dir:\(dir)")
+            switch dir {
+                case .OLeft:
+                    FindControlUtil.turnClockwise(speed:0xDA )
+                    break
+                case .ORight:
+                    FindControlUtil.turnClockwise(speed:0x25 )
+                    break
+                case .OStop:
+                    FindControlUtil.turnClockwise(speed: 0x80)
+                    break
+                default:
+                    break
+            }
+           
+
         }
         
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            
+
         }
         
         leftTopCircularSlider.applyAttributes([
