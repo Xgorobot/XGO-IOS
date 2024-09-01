@@ -30,6 +30,7 @@ class NewControlVC: UIViewController {
     
     
     var isHiddenViewArr: [UIView] = []
+    @IBOutlet weak var proButton: UIButton!
     
     
     
@@ -40,6 +41,9 @@ class NewControlVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        proButton.setImage(UIImage(named: "x-pro"), for: .normal)
+        proButton.setImage(UIImage(named: "x-pro"), for: .selected)
         
         controlButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0040F8), UIColor(hex: 0x00EAFF)], endPoint: .init(x: 0, y: 1)), for: .normal)
         controlButton.cornerRadius = 3
@@ -75,6 +79,11 @@ class NewControlVC: UIViewController {
             make.edges.equalTo(self.view)
         }
         
+        
+        // 设置指定状态下的文本属性
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        setView.speedSegmented.setTitleTextAttributes(attributes, for: .selected)
+        setView.speedSegmented.setTitleTextAttributes(attributes, for: .normal)
 
         
         leftControlView.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
@@ -239,6 +248,9 @@ class NewControlVC: UIViewController {
 //        view.bringSubviewToFront(menuView)
         
         isHiddenViewArr.append(contentsOf: [leftTopCircularSlider,rightTopCircularSlider,rightBottomCircularSlider,rLeftTopCircularSlider,rRightTopCircularSlider,rLeftBottomCircularSlider])
+        isHiddenViewArr.forEach { item in
+            item.isHidden = true
+        }
         
     }
     
@@ -279,9 +291,19 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func proAction(_ sender: Any) {
-        isHiddenViewArr.forEach { item in
-            item.isHidden = true
+        
+        proButton.isSelected = !proButton.isSelected
+        
+        if proButton.isSelected {
+            isHiddenViewArr.forEach { item in
+                item.isHidden = false
+            }
+        } else {
+            isHiddenViewArr.forEach { item in
+                item.isHidden = true
+            }
         }
+        
 //
 //        self.navigationController?.pushViewController(NewActionVC(), animated: true)
     }

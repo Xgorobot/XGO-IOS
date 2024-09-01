@@ -14,6 +14,7 @@
                 <outlet property="leftControlView" destination="TUn-nL-edn" id="g92-tL-9wU"/>
                 <outlet property="leftRockerView" destination="wae-Nr-ISE" id="Kgf-Wl-qMK"/>
                 <outlet property="leftTopCircularSlider" destination="MuU-yR-9MQ" id="bJP-p1-P9I"/>
+                <outlet property="proButton" destination="h37-WP-koC" id="0Mn-ur-ePg"/>
                 <outlet property="rLeftBottomCircularSlider" destination="nz4-xt-9TA" id="pgR-Hh-pjT"/>
                 <outlet property="rLeftTopCircularSlider" destination="IhL-tm-SLJ" id="Yk2-U9-tMr"/>
                 <outlet property="rRightTopCircularSlider" destination="Je6-ad-wvv" id="FIx-Ge-TKp"/>
@@ -281,7 +282,7 @@
                         <constraint firstAttribute="height" constant="60" id="V0y-sP-gUk"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="fire"/>
+                    <state key="normal" image="fire2"/>
                     <connections>
                         <action selector="actionMiddle" destination="-1" eventType="touchUpInside" id="uwf-kI-PJr"/>
                     </connections>
@@ -346,7 +347,7 @@
     </objects>
     <resources>
         <image name="back" width="24" height="24"/>
-        <image name="fire" width="60" height="60"/>
+        <image name="fire2" width="60" height="60"/>
         <image name="w-di" width="62" height="62"/>
         <image name="w-gao" width="62" height="62"/>
         <image name="w-shezhi" width="40" height="40"/>

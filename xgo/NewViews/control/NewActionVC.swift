@@ -72,6 +72,9 @@ class NewActionVC: UIViewController {
     
     // 亮度设置
     @IBAction func brightnessChange(_ sender: Any) {
+        
+//        FindControlUtil.actionType(type: 3500)
+
     }
     
     @IBAction func back(_ sender: Any) {
@@ -81,15 +84,30 @@ class NewActionVC: UIViewController {
     
     @IBAction func actionPlay(_ sender: Any) {}
     
-    @IBAction func actionOne(_ sender: Any) {}
+    @IBAction func actionOne(_ sender: Any) {
+        
+        FindControlUtil.actionType(type: 01)
+    }
     
-    @IBAction func actionTwo(_ sender: Any) {}
+    @IBAction func actionTwo(_ sender: Any) {
+        FindControlUtil.actionType(type: 03)
+    }
     
-    @IBAction func actionThree(_ sender: Any) {}
+    @IBAction func actionThree(_ sender: Any) {
+        FindControlUtil.actionType(type: 02)
+    }
     
-    @IBAction func actionFour(_ sender: Any) {}
+    @IBAction func actionFour(_ sender: Any) {
+        FindControlUtil.actionType(type: 04)
+    }
     
-    @IBAction func actionFive(_ sender: Any) {}
+    @IBAction func actionFive(_ sender: Any) {
+        FindControlUtil.actionType(type: 05)
+    }
     
+    @IBAction func actionSix(_ sender: Any) {
+        
+        FindControlUtil.actionType(type: 06)
+    }
     
 }
