@@ -161,7 +161,7 @@ class NewHomeVC: UIViewController {
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
             
             
-                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+//                self.navigationController?.pushViewController(NewControlVC(), animated: true)
             
 //            self.navigationController?.pushViewController(NewControlVC(), animated: true)
 
