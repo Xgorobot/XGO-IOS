@@ -15,6 +15,7 @@ class NewHomeVC: UIViewController {
     @IBOutlet weak var controlButton: UIButton!
     var homeSetView: HomeSetView!
     var homeUpSetView: HomeUpSetView!
+    @IBOutlet weak var textContainerWidth: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,19 @@ class NewHomeVC: UIViewController {
         initView()
         bluetooth()
         
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
+    }
+    
+    @objc func appMovedToForeground() {
+              
+        startPulsingAnimation()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     
@@ -96,8 +110,10 @@ class NewHomeVC: UIViewController {
         if (BLEMANAGER?.isConnect()) == true {
             bluetoothInfoLabel.text = BLEMANAGER?.PeripheralToConncet.name
         }else {
-            bluetoothInfoLabel.text = "连接蓝牙"
+            bluetoothInfoLabel.text = "请连接蓝牙"
         }
+        textContainerWidth.constant = bluetoothInfoLabel.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)).width + 30
+        
         bluetooth()
         // 按钮动画方法
         startPulsingAnimation()
@@ -145,8 +161,6 @@ class NewHomeVC: UIViewController {
     
     // 跳转控制页面
     @IBAction func controlAction(_ sender: Any) {
-        
-        
         
         if ((BLEMANAGER?.isConnect()) == true){
             switch BLEMANAGER?.deviceType{

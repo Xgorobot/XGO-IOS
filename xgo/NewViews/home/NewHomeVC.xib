@@ -14,6 +14,7 @@
                 <outlet property="bluetoothInfoLabel" destination="AEA-OH-GN2" id="xjp-WI-tQX"/>
                 <outlet property="bluetoothInfoView" destination="xFD-7A-0NB" id="yqw-1o-rng"/>
                 <outlet property="controlButton" destination="K4x-fz-TOq" id="HYm-ld-5l1"/>
+                <outlet property="textContainerWidth" destination="ZjK-8Y-SYt" id="XWL-e0-SGx"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Ifg-7N-O9x"/>
             </connections>
         </placeholder>
