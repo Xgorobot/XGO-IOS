@@ -27,8 +27,8 @@ class NewActionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resetButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0C00F8), UIColor(hex: 0x00EAFF)]), for: .normal)
-        lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .normal)
+        resetButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0C00F8), UIColor(hex: 0x00EAFF)]), for: .highlighted)
+        lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .selected)
         lunboButton.cornerRadius = 2
         lunboButton.layer.masksToBounds = true
         
@@ -143,7 +143,8 @@ class NewActionVC: UIViewController {
     }
     
     
-    @IBAction func actionPlay(_ sender: Any) {
+    @IBAction func actionPlay(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
         FindControlUtil.showMode(needRepeat: true)
     }
     

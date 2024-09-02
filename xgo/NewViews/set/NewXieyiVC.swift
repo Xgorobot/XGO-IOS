@@ -257,11 +257,16 @@ class NewXieyiVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 中文
-//        webView.loadHTMLString(HTML_TEXT_TITLE + chinaText, baseURL: nil)
-        // 英文
-        webView.loadHTMLString(HTML_TEXT_TITLE_EN + enText, baseURL: nil)
-    }
+        
+        let locale = Locale.current
+        let languageCode = locale.languageCode
+        
+        if languageCode == "zh" {
+            self.webView.loadHTMLString(self.HTML_TEXT_TITLE + self.chinaText, baseURL: nil)
+        }else {
+            self.webView.loadHTMLString(self.HTML_TEXT_TITLE_EN + self.enText, baseURL: nil)
+        }
+}
     
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

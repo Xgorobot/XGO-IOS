@@ -21,6 +21,7 @@ class NewHomeVC: UIViewController {
         
         initView()
         bluetooth()
+        
     }
     
     private func initView() {
@@ -41,12 +42,16 @@ class NewHomeVC: UIViewController {
         homeSetView.snp.makeConstraints { make in
             make.bottom.equalTo(self.view).inset(20)
             make.left.equalTo(bluetoothInfoView)
-            make.size.equalTo(CGSize(width: 86, height: 98))
+            make.size.equalTo(CGSize(width: 161, height: 98))
         }
         
         // 关于方法调用
         homeSetView.about = {[weak self] in
             self?.navigationController?.pushViewController(NewAboutVC(), animated: true)
+        }
+        
+        homeSetView.set = {[weak self] in
+            self?.navigationController?.pushViewController(NewSetVC(), animated: true)
         }
         
         
@@ -92,7 +97,23 @@ class NewHomeVC: UIViewController {
         }else {
             bluetoothInfoLabel.text = "连接蓝牙"
         }
+        // 按钮动画方法
+        startPulsingAnimation()
     }
+    
+    func startPulsingAnimation() {
+        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 2 // 动画持续时间
+        pulseAnimation.fromValue = 1.0 // 起始的缩放比例
+        pulseAnimation.toValue = 1.2   // 结束的缩放比例
+        pulseAnimation.autoreverses = true // 动画结束后自动反转
+        pulseAnimation.repeatCount = .greatestFiniteMagnitude // 无限循环
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        
+        // 将动画添加到按钮的图层
+        controlButton.layer.add(pulseAnimation, forKey: "pulse")
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -161,7 +182,7 @@ class NewHomeVC: UIViewController {
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
             
             
-//                self.navigationController?.pushViewController(NewControlVC(), animated: true)
+                self.navigationController?.pushViewController(NewActionVC(), animated: true)
             
 //            self.navigationController?.pushViewController(NewControlVC(), animated: true)
 
