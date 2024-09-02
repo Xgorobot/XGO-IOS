@@ -24,6 +24,7 @@ class NewHomeVC: UIViewController {
         
     }
     
+    
     private func initView() {
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -92,18 +93,19 @@ class NewHomeVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if (BLEMANAGER?.isConnect()) != nil {
+        if (BLEMANAGER?.isConnect()) == true {
             bluetoothInfoLabel.text = BLEMANAGER?.PeripheralToConncet.name
         }else {
             bluetoothInfoLabel.text = "连接蓝牙"
         }
+        bluetooth()
         // 按钮动画方法
         startPulsingAnimation()
     }
     
     func startPulsingAnimation() {
         let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
-        pulseAnimation.duration = 2 // 动画持续时间
+        pulseAnimation.duration = 1 // 动画持续时间
         pulseAnimation.fromValue = 1.0 // 起始的缩放比例
         pulseAnimation.toValue = 1.2   // 结束的缩放比例
         pulseAnimation.autoreverses = true // 动画结束后自动反转
@@ -143,7 +145,10 @@ class NewHomeVC: UIViewController {
     
     // 跳转控制页面
     @IBAction func controlAction(_ sender: Any) {
-        if ((BLEMANAGER?.isConnect()) != nil){
+        
+        
+        
+        if ((BLEMANAGER?.isConnect()) == true){
             switch BLEMANAGER?.deviceType{
             case 0:
                 self.navigationController?.pushViewController(NewControlVC(), animated: true)
@@ -178,13 +183,12 @@ class NewHomeVC: UIViewController {
                 break
             }
         } else {
-            //TODO mengwei toast 提示先连接
+            
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
             
             
-                self.navigationController?.pushViewController(NewActionVC(), animated: true)
+//                self.navigationController?.pushViewController(NewActionVC(), animated: true)
             
-//            self.navigationController?.pushViewController(NewControlVC(), animated: true)
 
         }
     }
@@ -199,14 +203,18 @@ class NewHomeVC: UIViewController {
     // 蓝牙连接页面布局切换
     func bluetooth() {
         
-        if homeSetView.isHidden {
-            homeUpSetView.isHidden = true
-            controlButton.isHidden = true
-            homeSetView.isHidden = false
-        } else {
+        if ((BLEMANAGER?.isConnect()) == true) {
+            
             controlButton.isHidden = false
             homeUpSetView.isHidden = false
             homeSetView.isHidden = true
+            
+        } else {
+           
+            
+            homeUpSetView.isHidden = true
+            controlButton.isHidden = true
+            homeSetView.isHidden = false
         }
         
         
