@@ -77,7 +77,7 @@ class ArmRockerBars: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        // todo yuanwenlin
         let image = #imageLiteral(resourceName: "qiu2")
         UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
         image.draw(in:bounds)

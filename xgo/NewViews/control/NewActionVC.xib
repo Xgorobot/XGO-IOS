@@ -12,16 +12,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewActionVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="GradientSlider" destination="6ZG-ng-iCN" id="xmV-h9-fWx"/>
+                <outlet property="actionContainer" destination="prS-Jx-xXS" id="zSw-tX-gNa"/>
                 <outlet property="bSlider" destination="YJ4-9p-wru" id="XgV-an-bMK"/>
                 <outlet property="blueValue" destination="wz2-WY-h7y" id="a8b-BF-sQd"/>
                 <outlet property="gSlider" destination="gUS-gP-E2x" id="Yzs-um-fI2"/>
                 <outlet property="greenValue" destination="UML-LT-SfP" id="w1k-IL-b5h"/>
                 <outlet property="leftActionView" destination="F89-oY-z34" id="3H6-2a-6n4"/>
                 <outlet property="leftRockerView" destination="P0P-kp-M6H" id="1zI-g8-F0u"/>
+                <outlet property="lightContainer" destination="Kpt-fR-MO2" id="u4H-Op-g21"/>
                 <outlet property="lunboButton" destination="czd-Pq-x9D" id="671-UN-WA4"/>
                 <outlet property="rSlider" destination="2zv-tb-Ugf" id="5Cy-QP-OVn"/>
                 <outlet property="redValue" destination="AOE-8J-fpf" id="gFB-b9-TIX"/>
                 <outlet property="resetButton" destination="C7h-gB-2KV" id="cAB-x4-ev4"/>
+                <outlet property="sliderContainer" destination="ZXg-Gm-slY" id="Hpd-aN-lqd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="nfF-QM-qfg"/>
             </connections>
         </placeholder>
@@ -52,10 +55,10 @@
                     <rect key="frame" x="388" y="71" width="120" height="302"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T6o-ab-lQW">
-                            <rect key="frame" x="10" y="10" width="100" height="292"/>
+                            <rect key="frame" x="10" y="10" width="100" height="282"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czd-Pq-x9D" customClass="GradientButton" customModule="xgo" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="31.5"/>
                                     <color key="backgroundColor" red="0.039215686274509803" green="0.090196078431372548" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -69,7 +72,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-UZ-yfc">
-                                    <rect key="frame" x="0.0" y="43" width="100" height="33"/>
+                                    <rect key="frame" x="0.0" y="41.5" width="100" height="32"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="左右摇摆" backgroundImage="weixuan8"/>
@@ -79,7 +82,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMh-TX-tFU">
-                                    <rect key="frame" x="0.0" y="86" width="100" height="33.5"/>
+                                    <rect key="frame" x="0.0" y="83.5" width="100" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="前进后退" backgroundImage="weixuan8"/>
@@ -89,7 +92,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGC-vw-Ucv">
-                                    <rect key="frame" x="0.0" y="129.5" width="100" height="33"/>
+                                    <rect key="frame" x="0.0" y="125" width="100" height="32"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="高低起伏" backgroundImage="weixuan8"/>
@@ -99,7 +102,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAj-Rg-bG9">
-                                    <rect key="frame" x="0.0" y="172.5" width="100" height="33"/>
+                                    <rect key="frame" x="0.0" y="167" width="100" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="四方蛇形" backgroundImage="weixuan8"/>
@@ -109,7 +112,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nx-By-Hik">
-                                    <rect key="frame" x="0.0" y="215.5" width="100" height="33.5"/>
+                                    <rect key="frame" x="0.0" y="208.5" width="100" height="32"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="升降旋转" backgroundImage="weixuan8"/>
@@ -119,7 +122,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onf-z0-dAN">
-                                    <rect key="frame" x="0.0" y="259" width="100" height="33"/>
+                                    <rect key="frame" x="0.0" y="250.5" width="100" height="31.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="关节交替" backgroundImage="weixuan8"/>
@@ -131,10 +134,10 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" red="0.053208045660000002" green="0.1062926427" blue="0.62356632950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.10588235294117647" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="EMB-gA-syK"/>
-                        <constraint firstAttribute="bottom" secondItem="T6o-ab-lQW" secondAttribute="bottom" id="LNo-wv-IIG"/>
+                        <constraint firstAttribute="bottom" secondItem="T6o-ab-lQW" secondAttribute="bottom" constant="10" id="LNo-wv-IIG"/>
                         <constraint firstItem="T6o-ab-lQW" firstAttribute="top" secondItem="prS-Jx-xXS" secondAttribute="top" constant="10" id="fR2-Ti-byE"/>
                         <constraint firstItem="T6o-ab-lQW" firstAttribute="leading" secondItem="prS-Jx-xXS" secondAttribute="leading" constant="10" id="gAl-5Q-BOH"/>
                         <constraint firstAttribute="trailing" secondItem="T6o-ab-lQW" secondAttribute="trailing" constant="10" id="kJC-FR-gVq"/>
@@ -158,10 +161,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXg-Gm-slY">
-                    <rect key="frame" x="632" y="71" width="244" height="120"/>
+                    <rect key="frame" x="632" y="71" width="244" height="140"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-hM-hXu">
-                            <rect key="frame" x="0.0" y="0.0" width="244" height="120"/>
+                            <rect key="frame" x="0.0" y="10" width="244" height="120"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rX1-b3-JB0">
                                     <rect key="frame" x="0.0" y="0.0" width="244" height="40"/>
@@ -181,6 +184,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="JUN-GF-bk3"/>
                                             </constraints>
+                                            <color key="thumbTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="redChange:" destination="-1" eventType="valueChanged" id="B8I-lX-mvM"/>
                                             </connections>
@@ -304,23 +308,23 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
                     <constraints>
-                        <constraint firstItem="0GQ-hM-hXu" firstAttribute="top" secondItem="ZXg-Gm-slY" secondAttribute="top" id="4D9-kp-zi2"/>
-                        <constraint firstAttribute="height" constant="120" id="4w7-M1-wuk"/>
-                        <constraint firstAttribute="bottom" secondItem="0GQ-hM-hXu" secondAttribute="bottom" id="9oC-mA-kCn"/>
+                        <constraint firstItem="0GQ-hM-hXu" firstAttribute="top" secondItem="ZXg-Gm-slY" secondAttribute="top" constant="10" id="4D9-kp-zi2"/>
+                        <constraint firstAttribute="height" constant="140" id="4w7-M1-wuk"/>
+                        <constraint firstAttribute="bottom" secondItem="0GQ-hM-hXu" secondAttribute="bottom" constant="10" id="9oC-mA-kCn"/>
                         <constraint firstItem="0GQ-hM-hXu" firstAttribute="leading" secondItem="ZXg-Gm-slY" secondAttribute="leading" id="Luq-q4-i87"/>
                         <constraint firstAttribute="trailing" secondItem="0GQ-hM-hXu" secondAttribute="trailing" id="qhf-vi-tFX"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMA-JV-pra">
-                    <rect key="frame" x="741.5" y="221" width="25.5" height="18"/>
+                    <rect key="frame" x="741.5" y="241" width="25.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="632" y="254" width="244" height="50"/>
+                    <rect key="frame" x="632" y="274" width="244" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -351,20 +355,20 @@
                     </connections>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮开启Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aru-HS-E5e">
-                    <rect key="frame" x="710" y="314" width="88.5" height="13.5"/>
+                    <rect key="frame" x="710" y="334" width="88.5" height="13.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roll-z" translatesAutoresizingMaskIntoConstraints="NO" id="i0y-tS-bSs">
-                    <rect key="frame" x="642" y="264" width="30" height="30"/>
+                    <rect key="frame" x="642" y="284" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="x1y-08-SS0"/>
                         <constraint firstAttribute="width" constant="30" id="yhc-uG-RPL"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roll-y" translatesAutoresizingMaskIntoConstraints="NO" id="xb8-lX-Dx7">
-                    <rect key="frame" x="836" y="264" width="30" height="30"/>
+                    <rect key="frame" x="836" y="284" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="FWu-Et-Mor"/>
                     </constraints>

@@ -24,6 +24,10 @@ class NewActionVC: UIViewController {
     
     @IBOutlet weak var lunboButton: GradientButton!
     
+    @IBOutlet weak var actionContainer: UIView!
+    @IBOutlet weak var sliderContainer: UIView!
+    @IBOutlet weak var lightContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +35,29 @@ class NewActionVC: UIViewController {
         lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .selected)
         lunboButton.cornerRadius = 2
         lunboButton.layer.masksToBounds = true
+        
+        actionContainer.layer.shadowColor = UIColor.black.cgColor
+        actionContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
+        actionContainer.layer.shadowOpacity = 0.28
+        actionContainer.layer.shadowRadius = 5
+        actionContainer.layer.cornerRadius = 10.5
+        
+        sliderContainer.backgroundColor = UIColor(hex: 0x3130B8)
+        sliderContainer.layer.shadowColor = UIColor(hex: 0x03B3FD).cgColor
+        sliderContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
+        sliderContainer.layer.shadowOpacity = 0.28
+        sliderContainer.layer.shadowRadius = 5
+        sliderContainer.layer.cornerRadius = 5
+        
+        lightContainer.backgroundColor = UIColor(hex: 0x3130B8)
+        lightContainer.layer.shadowColor = UIColor(hex: 0x03B3FD).cgColor
+        lightContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
+        lightContainer.layer.shadowOpacity = 0.28
+        lightContainer.layer.shadowRadius = 5
+        lightContainer.layer.cornerRadius = 5
+        
+        
+        rSlider.setThumbImage(UIImage(named: ""), for: .normal)
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             print("\(dir)  x:\(x) y:\(y) r:\(r)")
