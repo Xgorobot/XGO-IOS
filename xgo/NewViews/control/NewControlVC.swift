@@ -90,7 +90,7 @@ class NewControlVC: UIViewController {
             
            
            
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("test1 dir \(dir)  x:\(x) y:\(y) r:\(r)")
             
             
             switch dir {
@@ -111,7 +111,7 @@ class NewControlVC: UIViewController {
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("test2 \(dir)  x:\(x) y:\(y) r:\(r)")
             
             switch dir {
                 case .OUp:
@@ -152,7 +152,7 @@ class NewControlVC: UIViewController {
         }
         
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("右侧摇杆 \(dir)  x:\(x) y:\(y) r:\(r)")
             
             switch dir {
                 case .OLeft:
@@ -423,7 +423,6 @@ class NewControlVC: UIViewController {
     @IBAction func actionUp() {
         
         FindControlUtil.actionType(type: 0x80)
-
     }
     
     @IBAction func actionMiddle() {
@@ -432,9 +431,19 @@ class NewControlVC: UIViewController {
     
     @IBAction func actionDown() {
         FindControlUtil.actionType(type: 0x82)
-
         
     }
     
-    
+    @IBAction func Press(_ sender: Any) {
+        FindControlUtil.setFire(enable: true)
+    }
+    @IBAction func upInside(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
+    @IBAction func upOutside(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
+    @IBAction func touchCancel(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
 }
