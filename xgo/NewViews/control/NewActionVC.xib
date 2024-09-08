@@ -17,6 +17,7 @@
                 <outlet property="blueValue" destination="wz2-WY-h7y" id="a8b-BF-sQd"/>
                 <outlet property="gSlider" destination="gUS-gP-E2x" id="Yzs-um-fI2"/>
                 <outlet property="greenValue" destination="UML-LT-SfP" id="w1k-IL-b5h"/>
+                <outlet property="hightSlider" destination="U82-sW-TMx" id="Woz-z4-0bo"/>
                 <outlet property="leftActionView" destination="F89-oY-z34" id="3H6-2a-6n4"/>
                 <outlet property="leftRockerView" destination="P0P-kp-M6H" id="1zI-g8-F0u"/>
                 <outlet property="lightContainer" destination="Kpt-fR-MO2" id="u4H-Op-g21"/>
@@ -411,6 +412,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
+                                <action selector="heiSlider:" destination="-1" eventType="valueChanged" id="sgC-3k-tT5"/>
                                 <action selector="heightSet:" destination="-1" eventType="valueChanged" id="uZr-zz-qdt"/>
                             </connections>
                         </view>

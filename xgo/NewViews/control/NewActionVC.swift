@@ -119,7 +119,10 @@ class NewActionVC: UIViewController {
         
     }
     
+    @IBOutlet weak var hightSlider: TactileSlider!
+    
     @IBAction func resetAction(_ sender: Any) {
+        hightSlider.setValue(50, animated: false)
         FindControlUtil.actionType(type: 0x02)
         FindControlUtil.heightSet(height:0x80)
     }
@@ -127,26 +130,34 @@ class NewActionVC: UIViewController {
     @IBAction func redChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         redValue.text = Int(sender.value).description
-        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        if BLEMANAGER?.checkRepeat() ?? true {
+            FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        }
     }
     
     @IBAction func greenChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         greenValue.text = Int(sender.value).description
-        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        if BLEMANAGER?.checkRepeat() ?? true {
+            FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        }
     }
     
     @IBAction func blueChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         blueValue.text = Int(sender.value).description
-        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        if BLEMANAGER?.checkRepeat() ?? true {
+            FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
+        }
     }
     
     // roll 那个slider
     @IBAction func rollChange(_ sender: GradientSlider) {
+        
+        print("rollChange \(sender.value)")
         if BLEMANAGER?.checkRepeat() ?? true {
             let clampedValue = max(0, min(20, sender.value))
-            let mappedValue = (clampedValue / 20.0) * 255.0
+            let mappedValue = (clampedValue / 20.0) * 160.0 + 47.5
             FindControlUtil.trunByX(angle: UInt8(mappedValue))
         }
     }
