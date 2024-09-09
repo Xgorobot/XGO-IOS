@@ -38,7 +38,7 @@ class NewControlVC: UIViewController {
     
     
     
-    
+    let initTime = Date().timeIntervalSince1970
     override func viewDidLoad() {
         super.viewDidLoad()
         // todo yuanwenlin
@@ -321,7 +321,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("leftTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -330,7 +333,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rightTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rightTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -339,7 +345,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rightBottomSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rightBottomSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -348,7 +357,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rLeftTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rLeftTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -357,7 +369,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rRightTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rRightTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -366,7 +381,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rLeftBottomSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rLeftBottomSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
