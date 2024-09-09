@@ -325,7 +325,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-ng-iCN" customClass="GradientSlider" customModule="xgo" customModuleProvider="target">
-                    <rect key="frame" x="632" y="274" width="244" height="50"/>
+                    <rect key="frame" x="630" y="270" width="248" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HtZ-QW-DzM"/>
@@ -412,7 +412,6 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="heiSlider:" destination="-1" eventType="valueChanged" id="sgC-3k-tT5"/>
                                 <action selector="heightSet:" destination="-1" eventType="valueChanged" id="uZr-zz-qdt"/>
                             </connections>
                         </view>
@@ -467,6 +466,11 @@
             <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
         </view>
     </objects>
+    <designables>
+        <designable name="6ZG-ng-iCN">
+            <size key="intrinsicContentSize" width="-1" height="28"/>
+        </designable>
+    </designables>
     <resources>
         <image name="back" width="40" height="40"/>
         <image name="roll" width="60" height="60"/>

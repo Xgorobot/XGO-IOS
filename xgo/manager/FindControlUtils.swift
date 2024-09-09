@@ -15,6 +15,8 @@ final class FindControlUtil {
     
     typealias CallBack = (_ data : [UInt8]) -> Void
     
+    var stepLength = false
+    
     //MARK:写指令-通用
     class func addWriteMsg(data:[UInt8]){
         let message = XgoBleMessageEntity(keyCode: 0, data: [BLE_ORDER_WRITE]+data, timeoutReSend: false, timeout: 100, callBack: false)
@@ -123,6 +125,7 @@ final class FindControlUtil {
     }
     
     class func trunByX(angle:UInt8) {//身体绕X旋转角度 def:0x80
+        print("trun By X 0x36: angel:\(angle)")
         let result:[UInt8] = [0x36,angle];
         addWriteMsg(data: result)
     }
@@ -393,6 +396,7 @@ final class FindControlUtil {
         let result2:[UInt8] = [0x6A,red,green,blue];
         let result3:[UInt8] = [0x6B,red,green,blue];
         let result4:[UInt8] = [0x6C,red,green,blue];
+        print("setLED:\(red) ~ \(green) ~ \(blue)")
         addWriteMsg(data: result)
         addWriteMsg(data: result2)
         addWriteMsg(data: result3)
