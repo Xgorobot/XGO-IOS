@@ -38,7 +38,7 @@ class NewControlVC: UIViewController {
     
     
     
-    
+    let initTime = Date().timeIntervalSince1970
     override func viewDidLoad() {
         super.viewDidLoad()
         // todo yuanwenlin
@@ -57,9 +57,6 @@ class NewControlVC: UIViewController {
         self.view.addSubview(menuView)
         
         menuView.closeAction = { [weak self] in
-            self?.isHiddenViewArr.forEach { item in
-                item.isHidden = false
-            }
             self?.menuView.isHidden = true
         }
         
@@ -90,7 +87,7 @@ class NewControlVC: UIViewController {
             
            
            
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("test1 dir \(dir)  x:\(x) y:\(y) r:\(r)")
             
             
             switch dir {
@@ -111,7 +108,7 @@ class NewControlVC: UIViewController {
         
         leftRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
             
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("test2 \(dir)  x:\(x) y:\(y) r:\(r)")
             
             switch dir {
                 case .OUp:
@@ -152,7 +149,7 @@ class NewControlVC: UIViewController {
         }
         
         rightRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("右侧摇杆 \(dir)  x:\(x) y:\(y) r:\(r)")
             
             switch dir {
                 case .OLeft:
@@ -321,7 +318,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func leftTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("leftTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -330,7 +330,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rightTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rightTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -339,7 +342,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rightBottomSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rightBottomSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -348,7 +354,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rLeftTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rLeftTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -357,7 +366,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rRightTopSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rRightTopSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -366,7 +378,10 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func rLeftBottomSliderValue(_ sender: MTCircularSlider) {
-//        print(sender.value)
+        if Date().timeIntervalSince1970 - initTime < 1 {
+            return
+        }
+        print("rLeftBottomSliderValue")
         if BLEMANAGER?.checkRepeat() ?? true {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
@@ -375,7 +390,8 @@ class NewControlVC: UIViewController {
     }
     
     @IBAction func menuAction(_ sender: Any) {
-        armVC.view.isHidden = false
+//        armVC.view.isHidden = false
+        menuView.isHidden = false
     }
     
     @IBAction func armAction(_ sender: Any) {
@@ -423,7 +439,6 @@ class NewControlVC: UIViewController {
     @IBAction func actionUp() {
         
         FindControlUtil.actionType(type: 0x80)
-
     }
     
     @IBAction func actionMiddle() {
@@ -432,9 +447,19 @@ class NewControlVC: UIViewController {
     
     @IBAction func actionDown() {
         FindControlUtil.actionType(type: 0x82)
-
         
     }
     
-    
+    @IBAction func Press(_ sender: Any) {
+        FindControlUtil.setFire(enable: true)
+    }
+    @IBAction func upInside(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
+    @IBAction func upOutside(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
+    @IBAction func touchCancel(_ sender: Any) {
+        FindControlUtil.setFire(enable: false)
+    }
 }

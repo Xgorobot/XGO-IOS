@@ -41,6 +41,8 @@
 		8F075A2A2C4A6B9E0017BF65 /* NewUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */; };
 		8F075A2B2C4A6B9E0017BF65 /* NewUpgradeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */; };
 		8F31F03C2C5C7F4F001F5054 /* MTCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */; };
+		8F4BB5762C8FECF100E8E712 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB5742C8FECF100E8E712 /* LanguageManager.swift */; };
+		8F4BB5772C8FECF100E8E712 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB5752C8FECF100E8E712 /* UserDefaultsManager.swift */; };
 		8FACBA962C848C4000CA6779 /* NewXieyiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FACBA952C848C4000CA6779 /* NewXieyiVC.swift */; };
 		8FACBA982C848DC500CA6779 /* NewXieyiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FACBA972C848DC500CA6779 /* NewXieyiVC.xib */; };
 		8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02492C4E48F500EB198C /* ActionBarsView.swift */; };
@@ -164,6 +166,8 @@
 		8F075A072C4A6B9E0017BF65 /* NewUpgradeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUpgradeVC.swift; sourceTree = "<group>"; };
 		8F075A082C4A6B9E0017BF65 /* NewUpgradeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewUpgradeVC.xib; sourceTree = "<group>"; };
 		8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCircularSlider.swift; sourceTree = "<group>"; };
+		8F4BB5742C8FECF100E8E712 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		8F4BB5752C8FECF100E8E712 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		8FACBA952C848C4000CA6779 /* NewXieyiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewXieyiVC.swift; sourceTree = "<group>"; };
 		8FACBA972C848DC500CA6779 /* NewXieyiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewXieyiVC.xib; sourceTree = "<group>"; };
 		8FDC02492C4E48F500EB198C /* ActionBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarsView.swift; sourceTree = "<group>"; };
@@ -522,6 +526,8 @@
 		C7B6C5C626C7CC8C004661AF /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				8F4BB5742C8FECF100E8E712 /* LanguageManager.swift */,
+				8F4BB5752C8FECF100E8E712 /* UserDefaultsManager.swift */,
 				C7B6C5C726C7CC99004661AF /* FindBleManager.swift */,
 				C709BC4926D779BF00518E69 /* FindControlUtils.swift */,
 				C709BC4326D63E7F00518E69 /* BleMessageAttributes.swift */,
@@ -826,6 +832,7 @@
 				C71147BE26FDD9EA00313D69 /* IntegralTopBarItem.swift in Sources */,
 				C77C163B26A7C5D40063E17A /* ShowModeVC.swift in Sources */,
 				8F075A232C4A6B9E0017BF65 /* GradientProgress.swift in Sources */,
+				8F4BB5762C8FECF100E8E712 /* LanguageManager.swift in Sources */,
 				C77C166726A7C86A0063E17A /* IntegralModeService.swift in Sources */,
 				8FDC02522C4E5CFB00EB198C /* PRGRoundSlider.swift in Sources */,
 				C77C165C26A7C7CB0063E17A /* ServoVC.swift in Sources */,
@@ -865,6 +872,7 @@
 				8F075A182C4A6B9E0017BF65 /* GradientButton.swift in Sources */,
 				C732A5812789789600DC0252 /* DebugViewController.swift in Sources */,
 				C77C166126A7C8610063E17A /* ServoService.swift in Sources */,
+				8F4BB5772C8FECF100E8E712 /* UserDefaultsManager.swift in Sources */,
 				C7FBED4426BC0B56008028FE /* CustomViewController.swift in Sources */,
 				C77C166B26A7C8810063E17A /* SingleLegVM.swift in Sources */,
 				C70A584126D9D271008328BA /* XgoBleMessageEntity.swift in Sources */,

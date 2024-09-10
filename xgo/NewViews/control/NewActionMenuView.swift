@@ -15,12 +15,24 @@ class NewActionMenuView: UIView {
     var container: UIView!
     var actionArray: [String]!
     var isSelect: Int = -1
+    var tapped : Bool! = false
     var closeAction: (() -> ())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        
+        let button = UIButton()
+        button.backgroundColor = .clear
+        self.addSubview(button)
+        
+        button.addTarget(self, action: #selector(closeButtonAction), for: .touchUpInside)
+        
+        button.snp.makeConstraints { make in
+            make.edges.equalTo(self)
+        }
+        
         
         container = UIView()
         container.backgroundColor = UIColor(hex: 0x011359)
@@ -91,6 +103,9 @@ class NewActionMenuView: UIView {
         
         FindControlUtil.actionType(type: 0x02)
         FindControlUtil.heightSet(height:0x80)
+        
+        FindControlUtil.showMode(needRepeat: false)
+        
         self.closeAction?()
     }
     
@@ -113,7 +128,8 @@ extension NewActionMenuView: UICollectionViewDelegate {
         
         if (indexPath.row == 0) {
             
-            FindControlUtil.showMode(needRepeat: true)
+            tapped = !tapped
+            FindControlUtil.showMode(needRepeat: tapped)
             
         }else {
             if(indexPath.row < 5) {

@@ -30,6 +30,7 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
     var myPeripherals: NSMutableArray = NSMutableArray() //初始化动态数组 用以储存字典
     //服务和UUID  可用于过滤器限定（限定条件：1.设备UUID 2.服务UUID）
     
+    @IBOutlet weak var renameButton: UIButton!
     @IBOutlet weak var disconnectButton: GradientButton!
     var searchView: NewSearchListView!
     
@@ -78,6 +79,19 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
         //添加CBPeripheral管理器的委托
         self.myCentralManager = CBCentralManager(delegate: self , queue: nil)
     
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (BLEMANAGER?.isConnect()) == true {
+            self.disconnectButton.isHidden = false
+            self.renameButton.isHidden = false
+//            self.searchView.isHidden = true
+        }else {
+            self.disconnectButton.isHidden = true
+            self.renameButton.isHidden = true
+//            self.searchView.isHidden = false
+        }
+   
     }
     
     override func viewDidDisappear(_ animated: Bool) {

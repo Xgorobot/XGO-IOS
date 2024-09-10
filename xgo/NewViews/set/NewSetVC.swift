@@ -64,6 +64,15 @@ class NewSetVC: UIViewController {
                 item.isSelected = false
             }
         }
+//        if serder.currentTitle == "中文".localized {
+//            LanguageManager.shared.switchLanguage("Chinese")
+//        } else if serder.currentTitle == "English".localized {
+//            LanguageManager.shared.switchLanguage("English")
+//        } else if serder.currentTitle == "日本".localized {
+//            LanguageManager.shared.switchLanguage("Japanese")
+//        } else {
+//            LanguageManager.shared.switchLanguage("Auto")
+//        }
     }
     
     @IBAction func developButtonClick(serder: UIButton) {
@@ -73,6 +82,11 @@ class NewSetVC: UIViewController {
             } else {
                 item.isSelected = false
             }
+        }
+        if serder == yesButton{
+            UserDefaultsManager.shared.developMode = true
+        }else{
+            UserDefaultsManager.shared.developMode = false
         }
     }
     

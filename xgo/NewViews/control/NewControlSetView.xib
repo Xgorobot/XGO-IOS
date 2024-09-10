@@ -15,6 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-fR-mWm">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="setButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FS8-hh-DrR"/>
+                    </connections>
+                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cba-qO-7Q8">
                     <rect key="frame" x="442" y="60" width="341" height="198"/>
                     <subviews>
@@ -189,8 +196,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="ctv-fR-mWm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3NJ-kD-PRl"/>
+                <constraint firstAttribute="bottom" secondItem="ctv-fR-mWm" secondAttribute="bottom" id="FuV-9Q-1BY"/>
                 <constraint firstItem="Don-jl-ets" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Iqz-rp-tiu"/>
+                <constraint firstAttribute="trailing" secondItem="ctv-fR-mWm" secondAttribute="trailing" id="UO6-6P-tLA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cba-qO-7Q8" secondAttribute="trailing" constant="10" id="WmL-bG-oFr"/>
+                <constraint firstItem="ctv-fR-mWm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fpt-CL-E7A"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Don-jl-ets" secondAttribute="trailing" constant="10" id="qZX-hg-4p0"/>
                 <constraint firstItem="Cba-qO-7Q8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="v1s-zr-sSR"/>
             </constraints>
