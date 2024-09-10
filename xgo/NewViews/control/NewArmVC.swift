@@ -29,9 +29,12 @@ class NewArmVC: UIViewController {
         segmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
         
         armRockerView.actionBar?.bDirection = {(dir:OperationOrder , x:CGFloat , y:CGFloat , r:CGFloat) in
-            print("\(dir)  x:\(x) y:\(y) r:\(r)")
+            print("机械臂控制摇杆：\(dir)  x:\(x) y:\(y) r:\(r)")
+            var xValue = (1-x)/2*255
+            var yValue = (1+x)/2*255
+            FindControlUtil.setArmX(target: UInt8(xValue))
+            FindControlUtil.setArmZ(target: UInt8(yValue))
         }
-        
     }
     
     @IBAction func actionUp() {
@@ -52,9 +55,9 @@ class NewArmVC: UIViewController {
     @IBAction func referAction(_ sender: Any) {
         //机械臂控制 参照地面0x01 参照底座0x00
         if self.segmented.selectedSegmentIndex == 0 {
-            FindControlUtil.actionType(type: 0x01)
+            FindControlUtil.setArmRef(target: 0x01)
         }else {
-            FindControlUtil.actionType(type: 0x00)
+            FindControlUtil.setArmRef(target: 0x00)
         }
     }
     

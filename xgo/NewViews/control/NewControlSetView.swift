@@ -35,7 +35,9 @@ class NewControlSetView: UIView {
     }
     
     @IBAction func heightReset(_ sender: Any) {
+        heightLabel.text = "60"
         heightSlider.value = 60
+        FindControlUtil.actionType(type: 0x02)
         FindControlUtil.heightSet(height:0x80)
     }
     

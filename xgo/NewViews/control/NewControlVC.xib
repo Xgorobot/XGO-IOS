@@ -284,7 +284,10 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="fire2"/>
                     <connections>
-                        <action selector="actionMiddle" destination="-1" eventType="touchUpInside" id="uwf-kI-PJr"/>
+                        <action selector="Press:" destination="-1" eventType="touchDown" id="kjJ-OP-su0"/>
+                        <action selector="touchCancel:" destination="-1" eventType="touchCancel" id="EMN-ry-Nft"/>
+                        <action selector="upInside:" destination="-1" eventType="touchUpInside" id="JnU-NY-ssP"/>
+                        <action selector="upOutside:" destination="-1" eventType="touchUpOutside" id="Zys-e6-RCX"/>
                     </connections>
                 </button>
             </subviews>
@@ -346,7 +349,7 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
         <image name="fire2" width="60" height="60"/>
         <image name="w-di" width="62" height="62"/>
         <image name="w-gao" width="62" height="62"/>
