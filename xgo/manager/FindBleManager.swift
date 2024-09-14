@@ -343,7 +343,7 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
     
     func checkRepeat() -> Bool {
         let nowTime = Int(Date().timeIntervalSince1970)
-        if nowTime - currentTimestamp > 50 {
+        if nowTime - currentTimestamp > 200 {
             currentTimestamp = nowTime
             return true
         }
