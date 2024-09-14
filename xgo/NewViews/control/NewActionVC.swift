@@ -101,6 +101,7 @@ class NewActionVC: UIViewController {
                      FindControlUtil.moveX(speed: 0x25)
                     break
                 case .OStop:
+                    FindControlUtil.stopX()
                     FindControlUtil.turnClockwise(speed: 0x80)
                     break
                 default:
