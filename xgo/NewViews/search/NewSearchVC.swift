@@ -139,9 +139,7 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
                 print("你输入的是：\(String(describing: inputText.text))")
                 let name = inputText.text!
                 //            FindControlUtil.setName(name: "123")
-//                    FindControlUtil.setName(name: name)
-            
-            
+                FindControlUtil.setName(bleName: name)
             }
         }
         
