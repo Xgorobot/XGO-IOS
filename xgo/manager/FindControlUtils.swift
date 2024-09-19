@@ -428,6 +428,7 @@ final class FindControlUtil {
     }
     
     class func setName(bleName:String){
+
 //        let bleNameBytes = [UInt8](bleName.utf8);
         if let bleNameData = bleName.data(using: .ascii) {
             let bleNameBytes = [UInt8](bleNameData)

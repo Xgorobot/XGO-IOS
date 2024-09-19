@@ -148,9 +148,7 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     self.disconnect(UIButton())
                 }
-                
-               
-                
+
             }
         }
         
