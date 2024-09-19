@@ -101,6 +101,7 @@ class NewActionVC: UIViewController {
                      FindControlUtil.moveX(speed: 0x25)
                     break
                 case .OStop:
+                    FindControlUtil.stopX()
                     FindControlUtil.turnClockwise(speed: 0x80)
                     break
                 default:
@@ -130,7 +131,7 @@ class NewActionVC: UIViewController {
     @IBAction func redChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         redValue.text = Int(sender.value).description
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
         }
     }
@@ -138,7 +139,7 @@ class NewActionVC: UIViewController {
     @IBAction func greenChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         greenValue.text = Int(sender.value).description
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
         }
     }
@@ -146,7 +147,7 @@ class NewActionVC: UIViewController {
     @IBAction func blueChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         blueValue.text = Int(sender.value).description
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
         }
     }
@@ -155,7 +156,7 @@ class NewActionVC: UIViewController {
     @IBAction func rollChange(_ sender: GradientSlider) {
         
         print("rollChange \(sender.value)")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let clampedValue = max(0, min(20, sender.value))
             let mappedValue = (clampedValue / 20.0) * 160.0 + 47.5
             FindControlUtil.trunByX(angle: UInt8(mappedValue))
@@ -169,7 +170,7 @@ class NewActionVC: UIViewController {
     }
     
     @IBAction func heightSet(_ sender: TactileSlider) {
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let clampedValue = max(0, min(100, sender.value))
             let mappedValue = (clampedValue / 100) * 255.0
             FindControlUtil.heightSet(height: UInt8(mappedValue))

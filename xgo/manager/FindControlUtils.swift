@@ -427,5 +427,15 @@ final class FindControlUtil {
         addWriteMsg(data: result)
     }
     
+    class func setName(bleName:String){
+//        let bleNameBytes = [UInt8](bleName.utf8);
+        if let bleNameData = bleName.data(using: .ascii) {
+            let bleNameBytes = [UInt8](bleNameData)
+            var bleNameBytesAll = [UInt8](repeating: 0, count: bleNameBytes.count + 1)
+            bleNameBytesAll[0] = 0x13 // Command type
+            bleNameBytesAll[1...] = bleNameBytes[0...]
+            addWriteMsg(data: bleNameBytesAll)
+        }
+    }
 }
 

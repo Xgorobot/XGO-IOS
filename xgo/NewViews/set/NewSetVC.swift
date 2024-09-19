@@ -27,6 +27,28 @@ class NewSetVC: UIViewController {
         languageButtonArray = []
         developButtonArray = []
         initSetButtonStyle()
+        
+        if(UserDefaults.standard.bool(forKey: "developMode")) {
+            if let buttonToSelect = developButtonArray.first(where: { $0.title(for: .normal) == "是" }) {
+                buttonToSelect.isSelected = true
+            }
+
+            if let anotherButton = developButtonArray.first(where: { $0.title(for: .normal) != "是" }) {
+                anotherButton.isSelected = false
+            }
+        } else {
+            if let buttonToSelect = developButtonArray.first(where: { $0.title(for: .normal) == "是" }) {
+                buttonToSelect.isSelected = false
+            }
+
+            if let anotherButton = developButtonArray.first(where: { $0.title(for: .normal) != "是" }) {
+                anotherButton.isSelected = true
+            }
+        }
+        
+  
+        
+       
     }
     
     

@@ -130,7 +130,7 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
         msgAlertCtr.addTextField { (textField) in
             //设置传入的textField为初始化UITextField
             inputText = textField
-            inputText.placeholder = NSLocalizedString("输入数据", comment: "输入数据")
+            inputText.placeholder = NSLocalizedString("支持最多20个英文或数字字符", comment: "支持最多20个英文或数字字符")
             inputText.keyboardType = UIKeyboardType.namePhonePad;
             inputText.delegate = self
         }
@@ -138,10 +138,19 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
             if((inputText.text) != ""){
                 print("你输入的是：\(String(describing: inputText.text))")
                 let name = inputText.text!
-                //            FindControlUtil.setName(name: "123")
-//                    FindControlUtil.setName(name: name)
-            
-            
+                
+                FindControlUtil.setName(bleName: name)
+                
+                
+                CBToast.showToast(message: NSLocalizedString("Bluetooth has been renamed, please restart the robot dog", comment: "蓝牙已被重命命名，请重启机器狗") as NSString, aLocationStr: "bottom", aShowTime: 2)
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    self.disconnect(UIButton())
+                }
+                
+               
+                
             }
         }
         

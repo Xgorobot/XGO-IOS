@@ -24,9 +24,10 @@ class NewControlSetView: UIView {
         sender.setValue(sender.value.rounded(), animated: true)
         heightLabel.text = Int(sender.value).description
         
-        let value = Int((sender.value*255).rounded())
-        FindControlUtil.heightSet(height: value.hw_toByte())
-        
+        BLEMANAGER?.checkRepeat {
+            let value = Int((sender.value*255).rounded())
+            FindControlUtil.heightSet(height: value.hw_toByte())
+        }
     }
     
     @IBAction func walkSliderChange(_ sender: UISlider) {

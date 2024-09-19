@@ -322,7 +322,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("leftTopSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.trunkMoveX(position: UInt8(value))
@@ -334,7 +334,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("rightTopSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.trunkMoveY(position: UInt8(value))
@@ -346,7 +346,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("rightBottomSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.heightSet(height: UInt8(value))
@@ -358,7 +358,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("rLeftTopSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.trunByY(angle: UInt8(value))
@@ -370,7 +370,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("rRightTopSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.trunByX(angle: UInt8(value))
@@ -382,7 +382,7 @@ class NewControlVC: UIViewController {
             return
         }
         print("rLeftBottomSliderValue")
-        if BLEMANAGER?.checkRepeat() ?? true {
+        BLEMANAGER?.checkRepeat {
             let value = Int((sender.value*255/100).rounded())
             // 夹爪
             FindControlUtil.trunByZ(angle: UInt8(value))

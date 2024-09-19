@@ -10,6 +10,7 @@ import CoreBluetooth
 
 class NewHomeVC: UIViewController {
     
+    @IBOutlet weak var bluetoothImage: UIButton!
     @IBOutlet weak var bluetoothInfoView: UIView!
     @IBOutlet weak var bluetoothInfoLabel: UILabel!
     @IBOutlet weak var controlButton: UIButton!
@@ -109,8 +110,12 @@ class NewHomeVC: UIViewController {
         super.viewWillAppear(animated)
         if (BLEMANAGER?.isConnect()) == true {
             bluetoothInfoLabel.text = BLEMANAGER?.PeripheralToConncet.name
+
+            bluetoothImage.setImage(UIImage(named: "w-lanya-sel"), for: .normal)
         }else {
             bluetoothInfoLabel.text = "请连接蓝牙"
+            bluetoothImage.setImage(UIImage(named: "w-lanya"), for: .normal)
+
         }
         textContainerWidth.constant = bluetoothInfoLabel.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)).width + 30
         
@@ -217,18 +222,31 @@ class NewHomeVC: UIViewController {
     // 蓝牙连接页面布局切换
     func bluetooth() {
         
-        if ((BLEMANAGER?.isConnect()) == true) {
-            
+        
+        if (UserDefaults.standard.bool(forKey: "developMode")) {
             controlButton.isHidden = false
             homeUpSetView.isHidden = false
             homeSetView.isHidden = true
-            
-        } else {
-           
-            
+        }else {
             homeUpSetView.isHidden = true
             controlButton.isHidden = true
             homeSetView.isHidden = false
+        }
+        
+        if ((BLEMANAGER?.isConnect()) == true) {
+            
+            controlButton.isHidden = false
+//            homeUpSetView.isHidden = false
+//            homeSetView.isHidden = true
+            
+           
+            
+        } else {
+           
+//            homeSetView.isHidden = false
+//            homeUpSetView.isHidden = true
+            controlButton.isHidden = true
+            
         }
         
         

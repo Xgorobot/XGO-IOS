@@ -122,14 +122,14 @@ class NewSearchListCell: UITableViewCell {
             make.left.equalTo(self.contentView).offset(10)
         }
         
-        iconImage = UIImageView(image: UIImage(named: "xuanze"))
-        self.contentView.addSubview(iconImage)
+//        iconImage = UIImageView(image: UIImage(named: "xuanze"))
+//        self.contentView.addSubview(iconImage)
         
-        iconImage.snp.makeConstraints { make in
-            make.size.equalTo(CGSize(width: 17, height: 17))
-            make.right.equalTo(self.contentView).offset(-20)
-            make.centerY.equalTo(self.contentView)
-        }
+//        iconImage.snp.makeConstraints { make in
+//            make.size.equalTo(CGSize(width: 17, height: 17))
+//            make.right.equalTo(self.contentView).offset(-20)
+//            make.centerY.equalTo(self.contentView)
+//        }
         
         let line = UIView()
         line.backgroundColor = .white

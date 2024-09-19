@@ -69,14 +69,16 @@ class NewArmVC: UIViewController {
         sender.setValue(sender.value.rounded(), animated: true)
         progressLabel.text = Int(sender.value).description
         
-        
-        if BLEMANAGER?.checkRepeat() ?? true {
-            
-            let value = Int((progressSlider.value*255/100).rounded())
 
-            // 夹爪
+        
+        BLEMANAGER?.checkRepeat {
+            let value = Int((sender.value * 255 / 100).rounded())
+               // 夹爪
             FindControlUtil.setArmJaw(target: UInt8(value))
         }
+        
+        
+
         
     }
     

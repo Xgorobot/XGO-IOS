@@ -47,7 +47,6 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
     
     var messageList:[XgoBleMessageEntity] = []//数组 用于储存全部的消息
     var keyCode:Int8 = 0
-    var currentTimestamp = 0
 
     var deviceType = -1 //设备类型
     
@@ -341,13 +340,26 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
         return PeripheralToConncet.state == CBPeripheralState.connected
     }
     
-    func checkRepeat() -> Bool {
+//    func checkRepeat() -> Bool {
+//        let nowTime = Int(Date().timeIntervalSince1970)
+//        if nowTime - currentTimestamp > 200 {
+//            currentTimestamp = nowTime
+//            return true
+//        }
+//        return false
+//    }
+    
+    func checkRepeat(action: () -> Void) {
+        
+        var currentTimestamp = 0
+
         let nowTime = Int(Date().timeIntervalSince1970)
-        if nowTime - currentTimestamp > 50 {
+        if nowTime - currentTimestamp > 200 {
+            action()
             currentTimestamp = nowTime
-            return true
         }
-        return false
+        
     }
+    
 }
 

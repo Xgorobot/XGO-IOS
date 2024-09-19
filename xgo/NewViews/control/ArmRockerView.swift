@@ -112,20 +112,50 @@ class ArmRockerBars: UIView {
         tw = (self.superview?.frame.size.width)! / 2
         th = (self.superview?.frame.size.height)! / 2
         if(touch != nil){
+//            let lastTouch = touch!.location(in: self.superview)
+//
+//            var touchPoint = CGPoint(x: lastTouch.x, y: lastTouch.y)
+//
+//            var angle = angleJudge(cpoint: CGPoint(x: touchPoint.x, y: touchPoint.y))
+//
+//            let opoint = CGPoint(x: (self.superview?.frame.size.width)! / 2,
+//                                 y: (self.superview?.frame.size.height)! / 2)
+//            let xP = opoint.x - touchPoint.x
+//            let yP = opoint.y - touchPoint.y
+//
+//            let radius = sqrt(pow(xP, 2) + pow(yP, 2))
+//            let frameRadius = (self.superview?.frame.width)! / 2
+//            var resultR = radius / frameRadius
+            
+            
             let lastTouch = touch!.location(in: self.superview)
-
             var touchPoint = CGPoint(x: lastTouch.x, y: lastTouch.y)
             
-            var angle = angleJudge(cpoint: CGPoint(x: touchPoint.x, y: touchPoint.y))
-            
+            // 中心点
             let opoint = CGPoint(x: (self.superview?.frame.size.width)! / 2,
                                  y: (self.superview?.frame.size.height)! / 2)
             let xP = opoint.x - touchPoint.x
             let yP = opoint.y - touchPoint.y
             
+            // 当前触摸点到中心的距离（半径）
             let radius = sqrt(pow(xP, 2) + pow(yP, 2))
             let frameRadius = (self.superview?.frame.width)! / 2
+            
+            // 设置最大允许的触摸半径
+            let maxRadius: CGFloat = frameRadius * 0.71  // 将触摸范围限制在 80% 的区域内
+            
+            // 如果当前半径大于最大半径，则调整触摸点的位置
+            if radius > maxRadius {
+                // 将触摸点限制在最大半径的范围内
+                let scale = maxRadius / radius
+                touchPoint.x = opoint.x - xP * scale
+                touchPoint.y = opoint.y - yP * scale
+            }
+            
+            // 继续执行后续代码逻辑
+            var angle = angleJudge(cpoint: CGPoint(x: touchPoint.x, y: touchPoint.y))
             var resultR = radius / frameRadius
+            
             resultR = max(0, resultR)
             resultR = min(1, resultR)
             var resultX = xP/frameRadius
@@ -194,5 +224,6 @@ class ArmRockerBars: UIView {
     }
     
 }
+
 
 
