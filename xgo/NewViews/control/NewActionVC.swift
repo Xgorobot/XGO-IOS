@@ -133,7 +133,8 @@ class NewActionVC: UIViewController {
        
         
         BLEMANAGER?.checkRepeat {
-            FindControlUtil.heightSet(height:0x80)
+//            FindControlUtil.heightSet(height:0x80)
+            FindControlUtil.actionType(type: 0xFF)
         }
         
     }

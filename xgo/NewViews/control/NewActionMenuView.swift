@@ -101,8 +101,9 @@ class NewActionMenuView: UIView {
     @objc func resetButtonAction() {
         print("reset!!!")
         
-        FindControlUtil.actionType(type: 0x02)
-        FindControlUtil.heightSet(height:0x80)
+//        FindControlUtil.actionType(type: 0x02)
+//        FindControlUtil.heightSet(height:0x80)
+        FindControlUtil.actionType(type: 0xFF)
         
         FindControlUtil.showMode(needRepeat: false)
         
