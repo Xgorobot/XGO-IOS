@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "A7u-xQ-euk.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Name\"; ObjectID = \"A7u-xQ-euk\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "rub-sB-fUm.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Label\"; ObjectID = \"rub-sB-fUm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Label"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

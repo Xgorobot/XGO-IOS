@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "38g-Yc-O1C.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"设置\"; ObjectID = \"38g-Yc-O1C\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "SxS-DV-tmc.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"关于\"; ObjectID = \"SxS-DV-tmc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "关于"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

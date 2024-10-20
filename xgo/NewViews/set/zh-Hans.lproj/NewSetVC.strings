@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "基础设置"; ObjectID = "6yN-hn-DvO"; */
+"6yN-hn-DvO.text" = "基础设置";
+
+/* Class = "UIButton"; normalTitle = "跟随系统"; ObjectID = "GAP-dx-Ipt"; */
+"GAP-dx-Ipt.normalTitle" = "跟随系统";
+
+/* Class = "UIButton"; normalTitle = "否"; ObjectID = "HX4-Rz-RW7"; */
+"HX4-Rz-RW7.normalTitle" = "否";
+
+/* Class = "UIButton"; normalTitle = "是"; ObjectID = "mac-sL-4Gg"; */
+"mac-sL-4Gg.normalTitle" = "是";
+
+/* Class = "UILabel"; text = "以开发者身份运行此项目"; ObjectID = "mz6-Om-epb"; */
+"mz6-Om-epb.text" = "以开发者身份运行此项目";
+
+/* Class = "UIButton"; normalTitle = "中文"; ObjectID = "qfS-HR-KF9"; */
+"qfS-HR-KF9.normalTitle" = "中文";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "r9a-eU-PkU"; */
+"r9a-eU-PkU.normalTitle" = "English";
+
+/* Class = "UILabel"; text = "语言选择"; ObjectID = "s7d-ug-T6k"; */
+"s7d-ug-T6k.text" = "语言选择";
+
+/* Class = "UILabel"; text = "开发选项"; ObjectID = "wkT-uh-Z3A"; */
+"wkT-uh-Z3A.text" = "开发选项";

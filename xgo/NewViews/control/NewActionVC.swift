@@ -124,8 +124,12 @@ class NewActionVC: UIViewController {
     
     @IBAction func resetAction(_ sender: Any) {
         hightSlider.setValue(50, animated: false)
-        FindControlUtil.actionType(type: 0x02)
-        FindControlUtil.heightSet(height:0x80)
+       
+        
+        BLEMANAGER?.checkRepeat {
+            FindControlUtil.heightSet(height:0x80)
+        }
+        
     }
     
     @IBAction func redChange(_ sender: UISlider) {
@@ -150,6 +154,8 @@ class NewActionVC: UIViewController {
         BLEMANAGER?.checkRepeat {
             FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
         }
+        
+//        FindControlUtil.setLED(red: UInt8(rSlider.value), green: UInt8(gSlider.value), blue: UInt8(bSlider.value))
     }
     
     // roll 那个slider
@@ -165,8 +171,11 @@ class NewActionVC: UIViewController {
     
     
     @objc func rollChangeEnd(_ sender: GradientSlider) {
-        GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
-        FindControlUtil.trunByX(angle: 0x80)
+        BLEMANAGER?.checkRepeat {
+            GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
+            FindControlUtil.trunByX(angle: 0x80)
+        }
+       
     }
     
     @IBAction func heightSet(_ sender: TactileSlider) {

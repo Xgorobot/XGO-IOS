@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; normalTitle = "升降旋转"; ObjectID = "3nx-By-Hik"; */
+"3nx-By-Hik.normalTitle" = "升降旋转";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "AOE-8J-fpf"; */
+"AOE-8J-fpf.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "前进后退"; ObjectID = "BMh-TX-tFU"; */
+"BMh-TX-tFU.normalTitle" = "前进后退";
+
+/* Class = "UIButton"; normalTitle = "重置"; ObjectID = "C7h-gB-2KV"; */
+"C7h-gB-2KV.normalTitle" = "重置";
+
+/* Class = "UILabel"; text = "255"; ObjectID = "I0f-rc-YXO"; */
+"I0f-rc-YXO.text" = "255";
+
+/* Class = "UILabel"; text = "B"; ObjectID = "K35-C2-Gp7"; */
+"K35-C2-Gp7.text" = "B";
+
+/* Class = "UIButton"; normalTitle = "左右摇摆"; ObjectID = "L6i-UZ-yfc"; */
+"L6i-UZ-yfc.normalTitle" = "左右摇摆";
+
+/* Class = "UIButton"; normalTitle = "关节交替"; ObjectID = "Onf-z0-dAN"; */
+"Onf-z0-dAN.normalTitle" = "关节交替";
+
+/* Class = "UILabel"; text = "标定初始位置"; ObjectID = "S9B-wS-PTF"; */
+"S9B-wS-PTF.text" = "标定初始位置";
+
+/* Class = "UILabel"; text = "Roll"; ObjectID = "SMA-JV-pra"; */
+"SMA-JV-pra.text" = "Roll";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "UML-LT-SfP"; */
+"UML-LT-SfP.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "四方蛇形"; ObjectID = "ZAj-Rg-bG9"; */
+"ZAj-Rg-bG9.normalTitle" = "四方蛇形";
+
+/* Class = "UILabel"; text = "点击按钮开启Roll"; ObjectID = "aru-HS-E5e"; */
+"aru-HS-E5e.text" = "点击按钮开启Roll";
+
+/* Class = "UILabel"; text = "255"; ObjectID = "cvu-jv-efq"; */
+"cvu-jv-efq.text" = "255";
+
+/* Class = "UIButton"; normalTitle = "动作轮播"; ObjectID = "czd-Pq-x9D"; */
+"czd-Pq-x9D.normalTitle" = "动作轮播";
+
+/* Class = "UILabel"; text = "G"; ObjectID = "kGK-Bz-8GV"; */
+"kGK-Bz-8GV.text" = "G";
+
+/* Class = "UILabel"; text = "高度调节"; ObjectID = "oWG-XK-hbp"; */
+"oWG-XK-hbp.text" = "高度调节";
+
+/* Class = "UILabel"; text = "255"; ObjectID = "pBB-Gb-krP"; */
+"pBB-Gb-krP.text" = "255";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "wz2-WY-h7y"; */
+"wz2-WY-h7y.text" = "0";
+
+/* Class = "UILabel"; text = "R"; ObjectID = "xST-xt-QQY"; */
+"xST-xt-QQY.text" = "R";
+
+/* Class = "UIButton"; normalTitle = "高低起伏"; ObjectID = "zGC-vw-Ucv"; */
+"zGC-vw-Ucv.normalTitle" = "高低起伏";

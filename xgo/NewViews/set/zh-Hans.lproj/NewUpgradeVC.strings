@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "固件版本：L-3.1.7"; ObjectID = "6gb-ab-BlY"; */
+"6gb-ab-BlY.text" = "固件版本：L-3.1.7";
+
+/* Class = "UILabel"; text = "当前版本为L-3.1.7建议升级至最新版本"; ObjectID = "Are-Dg-TCV"; */
+"Are-Dg-TCV.text" = "当前版本为L-3.1.7建议升级至最新版本";
+
+/* Class = "UILabel"; text = "固件版本"; ObjectID = "PYj-QT-3u9"; */
+"PYj-QT-3u9.text" = "固件版本";
+
+/* Class = "UIButton"; normalTitle = "升级"; ObjectID = "VqH-Vm-v8s"; */
+"VqH-Vm-v8s.normalTitle" = "升级";
+
+/* Class = "UIButton"; normalTitle = "下载"; ObjectID = "cyW-dP-ILs"; */
+"cyW-dP-ILs.normalTitle" = "下载";

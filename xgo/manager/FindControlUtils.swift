@@ -435,6 +435,7 @@ final class FindControlUtil {
             var bleNameBytesAll = [UInt8](repeating: 0, count: bleNameBytes.count + 1)
             bleNameBytesAll[0] = 0x13 // Command type
             bleNameBytesAll[1...] = bleNameBytes[0...]
+            print("\(bleNameBytesAll)")
             addWriteMsg(data: bleNameBytesAll)
         }
     }

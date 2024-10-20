@@ -1,0 +1,258 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3nx-By-Hik.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"升降旋转\"; ObjectID = \"3nx-By-Hik\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "升降旋转"
+          }
+        }
+      }
+    },
+    "AOE-8J-fpf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"0\"; ObjectID = \"AOE-8J-fpf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0"
+          }
+        }
+      }
+    },
+    "aru-HS-E5e.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"点击按钮开启Roll\"; ObjectID = \"aru-HS-E5e\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "点击按钮开启Roll"
+          }
+        }
+      }
+    },
+    "BMh-TX-tFU.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"前进后退\"; ObjectID = \"BMh-TX-tFU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "前进后退"
+          }
+        }
+      }
+    },
+    "C7h-gB-2KV.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"重置\"; ObjectID = \"C7h-gB-2KV\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "重置"
+          }
+        }
+      }
+    },
+    "cvu-jv-efq.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"255\"; ObjectID = \"cvu-jv-efq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "255"
+          }
+        }
+      }
+    },
+    "czd-Pq-x9D.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"动作轮播\"; ObjectID = \"czd-Pq-x9D\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "动作轮播"
+          }
+        }
+      }
+    },
+    "I0f-rc-YXO.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"255\"; ObjectID = \"I0f-rc-YXO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "255"
+          }
+        }
+      }
+    },
+    "K35-C2-Gp7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"B\"; ObjectID = \"K35-C2-Gp7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "B"
+          }
+        }
+      }
+    },
+    "kGK-Bz-8GV.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"G\"; ObjectID = \"kGK-Bz-8GV\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "G"
+          }
+        }
+      }
+    },
+    "L6i-UZ-yfc.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"左右摇摆\"; ObjectID = \"L6i-UZ-yfc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "左右摇摆"
+          }
+        }
+      }
+    },
+    "Onf-z0-dAN.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"关节交替\"; ObjectID = \"Onf-z0-dAN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "关节交替"
+          }
+        }
+      }
+    },
+    "oWG-XK-hbp.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"高度调节\"; ObjectID = \"oWG-XK-hbp\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "高度调节"
+          }
+        }
+      }
+    },
+    "pBB-Gb-krP.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"255\"; ObjectID = \"pBB-Gb-krP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "255"
+          }
+        }
+      }
+    },
+    "S9B-wS-PTF.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"标定初始位置\"; ObjectID = \"S9B-wS-PTF\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "标定初始位置"
+          }
+        }
+      }
+    },
+    "SMA-JV-pra.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Roll\"; ObjectID = \"SMA-JV-pra\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Roll"
+          }
+        }
+      }
+    },
+    "UML-LT-SfP.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"0\"; ObjectID = \"UML-LT-SfP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0"
+          }
+        }
+      }
+    },
+    "wz2-WY-h7y.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"0\"; ObjectID = \"wz2-WY-h7y\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0"
+          }
+        }
+      }
+    },
+    "xST-xt-QQY.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"R\"; ObjectID = \"xST-xt-QQY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "R"
+          }
+        }
+      }
+    },
+    "ZAj-Rg-bG9.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"四方蛇形\"; ObjectID = \"ZAj-Rg-bG9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "四方蛇形"
+          }
+        }
+      }
+    },
+    "zGC-vw-Ucv.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"高低起伏\"; ObjectID = \"zGC-vw-Ucv\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "高低起伏"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

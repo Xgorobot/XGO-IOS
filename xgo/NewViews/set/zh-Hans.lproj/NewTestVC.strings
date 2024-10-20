@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "完成标定"; ObjectID = "2mV-6y-h3f"; */
+"2mV-6y-h3f.normalTitle" = "完成标定";
+
+/* Class = "UIButton"; normalTitle = "进入标定模式"; ObjectID = "VcS-zQ-EC7"; */
+"VcS-zQ-EC7.normalTitle" = "进入标定模式";
+
+/* Class = "UILabel"; text = "标定初始位置"; ObjectID = "W83-uO-3m9"; */
+"W83-uO-3m9.text" = "标定初始位置";
