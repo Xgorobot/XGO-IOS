@@ -44,7 +44,7 @@ class NewControlVC: UIViewController {
         // todo yuanwenlin
         proButton.setImage(UIImage(named: "btn_pro"), for: .normal)
         proButton.setImage(UIImage(named: "btn_pro_pressed"), for: .selected)
-        
+        BLEMANAGER?.stepSpeed = 70
         controlButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0040F8), UIColor(hex: 0x00EAFF)], endPoint: .init(x: 0, y: 1)), for: .normal)
         controlButton.cornerRadius = 3
         
@@ -92,14 +92,13 @@ class NewControlVC: UIViewController {
             
             switch dir {
                 case .OUp:
-                    FindControlUtil.moveX(speed: 0xDA)
-                
+                    FindControlUtil.moveX(speed: UInt8(0x80 + (BLEMANAGER?.stepSpeed ?? 70)))
                 case .ODown:
-                    FindControlUtil.moveX(speed: 0x25)
+                    FindControlUtil.moveX(speed: UInt8(0x80 - (BLEMANAGER?.stepSpeed ?? 70)))
                 case .OLeft:
-                    FindControlUtil.moveY(speed: 0xDA)
+                    FindControlUtil.moveY(speed: UInt8(0x80 + (BLEMANAGER?.stepSpeed ?? 70)))
                 case .ORight:
-                    FindControlUtil.moveY(speed: 0x25)
+                    FindControlUtil.moveY(speed: UInt8(0x80 - (BLEMANAGER?.stepSpeed ?? 70)))
                 case .OStop:
                     FindControlUtil.moveX(speed: 0x80)
                     FindControlUtil.moveY(speed: 0x80)
@@ -112,14 +111,13 @@ class NewControlVC: UIViewController {
             
             switch dir {
                 case .OUp:
-                    FindControlUtil.moveX(speed: 0xDA)
-                
+                    FindControlUtil.moveX(speed: UInt8(0x80 + (BLEMANAGER?.stepSpeed ?? 70)))
                 case .ODown:
-                    FindControlUtil.moveX(speed: 0x25)
+                    FindControlUtil.moveX(speed: UInt8(0x80 - (BLEMANAGER?.stepSpeed ?? 70)))
                 case .OLeft:
-                    FindControlUtil.moveY(speed: 0xDA)
+                    FindControlUtil.moveY(speed: UInt8(0x80 + (BLEMANAGER?.stepSpeed ?? 70)))
                 case .ORight:
-                    FindControlUtil.moveY(speed: 0x25)
+                    FindControlUtil.moveY(speed: UInt8(0x80 - (BLEMANAGER?.stepSpeed ?? 70)))
                 case .OStop:
                     FindControlUtil.moveX(speed: 0x80)
                     FindControlUtil.moveY(speed: 0x80)
@@ -133,10 +131,10 @@ class NewControlVC: UIViewController {
             print("顺时针旋转2dir:\(dir)")
             switch dir {
                 case .OLeft:
-                    FindControlUtil.turnClockwise(speed:0xDA )
+                    FindControlUtil.turnClockwise(speed:UInt8(0x80 + (BLEMANAGER?.stepSpeed ?? 70)) )
                     break
                 case .ORight:
-                    FindControlUtil.turnClockwise(speed:0x25 )
+                    FindControlUtil.turnClockwise(speed:UInt8(0x80 - (BLEMANAGER?.stepSpeed ?? 70)) )
                     break
                 case .OStop:
                     FindControlUtil.turnClockwise(speed: 0x80)

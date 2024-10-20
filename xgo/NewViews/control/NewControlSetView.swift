@@ -33,6 +33,8 @@ class NewControlSetView: UIView {
     @IBAction func walkSliderChange(_ sender: UISlider) {
         sender.setValue(sender.value.rounded(), animated: true)
         walkLabel.text = Int(sender.value).description
+        BLEMANAGER?.stepSpeed = Int(sender.value.rounded())
+        print("step set :\(Int(sender.value.rounded()))")
     }
     
     @IBAction func heightReset(_ sender: Any) {
@@ -44,6 +46,7 @@ class NewControlSetView: UIView {
     
     @IBAction func walkReset(_ sender: Any) {
         walkSlider.value = 60
+        BLEMANAGER?.stepSpeed = Int(walkSlider.value.rounded())
     }
     
     @IBAction func setButton(_ sender: Any) {

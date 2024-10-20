@@ -349,6 +349,7 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
 //        return false
 //    }
     private static var lastTimestamp: Int = 0
+    public var stepSpeed: Int = 70
 
     func checkRepeat(action: () -> Void) {
         
