@@ -199,7 +199,8 @@ class NewActionVC: UIViewController {
     
     @IBAction func actionPlay(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-        FindControlUtil.showMode(needRepeat: true)
+        print("sender.isSelected\(sender.isSelected)")
+        FindControlUtil.showMode(needRepeat: sender.isSelected)
     }
     
     @IBAction func actionOne(_ sender: Any) {
