@@ -348,15 +348,14 @@ class FindBleManager:NSObject,CBCentralManagerDelegate, CBPeripheralDelegate{
 //        }
 //        return false
 //    }
-    
+    private static var lastTimestamp: Int = 0
+
     func checkRepeat(action: () -> Void) {
         
-        var currentTimestamp = 0
-
-        let nowTime = Int(Date().timeIntervalSince1970)
-        if nowTime - currentTimestamp > 200 {
+        let nowTime = Int(Date().timeIntervalSince1970 * 1000) // 使用毫秒
+        if nowTime - FindBleManager.lastTimestamp > 200 {
             action()
-            currentTimestamp = nowTime
+            FindBleManager.lastTimestamp = nowTime
         }
         
     }

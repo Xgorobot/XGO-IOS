@@ -206,7 +206,7 @@ class NewHomeVC: UIViewController {
             CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
             
             
-//                self.navigationController?.pushViewController(NewActionVC(), animated: true)
+                self.navigationController?.pushViewController(NewControlVC(), animated: true)
             
 
         }
@@ -226,10 +226,10 @@ class NewHomeVC: UIViewController {
         if (UserDefaults.standard.bool(forKey: "developMode")) {
             controlButton.isHidden = false
             homeUpSetView.isHidden = false
-            homeSetView.isHidden = true
+            homeSetView.isHidden = false
         }else {
-            homeUpSetView.isHidden = true
-            controlButton.isHidden = true
+            homeUpSetView.isHidden = false
+            controlButton.isHidden = false
             homeSetView.isHidden = false
         }
         
@@ -245,7 +245,7 @@ class NewHomeVC: UIViewController {
            
 //            homeSetView.isHidden = false
 //            homeUpSetView.isHidden = true
-            controlButton.isHidden = true
+            controlButton.isHidden = false
             
         }
         
