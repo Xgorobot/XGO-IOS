@@ -132,8 +132,6 @@
 
 /* Begin PBXFileReference section */
 		0EF14D5B2CC4F3490089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewActionVC.xib; sourceTree = "<group>"; };
-		0EF14D602CC4F3790089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewActionVC.strings; sourceTree = "<group>"; };
-		0EF14D622CC4F37A0089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewActionVC.strings"; sourceTree = "<group>"; };
 		0EF14D632CC4F4FE0089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ScanTableCell.xib; sourceTree = "<group>"; };
 		0EF14D682CC4F5020089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ScanTableCell.strings; sourceTree = "<group>"; };
 		0EF14D6A2CC4F5030089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ScanTableCell.strings"; sourceTree = "<group>"; };
@@ -173,6 +171,8 @@
 		0EF14DB92CC515EF0089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewControlVC.xib; sourceTree = "<group>"; };
 		0EF14DBD2CC515F00089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewControlVC.strings; sourceTree = "<group>"; };
 		0EF14DBF2CC515F00089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewControlVC.strings"; sourceTree = "<group>"; };
+		0EF14DC12CC538FC0089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewActionVC.strings; sourceTree = "<group>"; };
+		0EF14DC32CC538FE0089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewActionVC.strings"; sourceTree = "<group>"; };
 		19FABECEAF7CED1BD67CA3E6 /* Pods_xgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
 		8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActionMenuView.swift; sourceTree = "<group>"; };
@@ -928,8 +928,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0EF14D5B2CC4F3490089F7FC /* Base */,
-				0EF14D602CC4F3790089F7FC /* en */,
-				0EF14D622CC4F37A0089F7FC /* zh-Hans */,
+				0EF14DC12CC538FC0089F7FC /* en */,
+				0EF14DC32CC538FE0089F7FC /* zh-Hans */,
 			);
 			name = NewActionVC.xib;
 			sourceTree = "<group>";

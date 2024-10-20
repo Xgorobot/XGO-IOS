@@ -53,6 +53,9 @@
 /* Class = "UILabel"; text = "255"; ObjectID = "pBB-Gb-krP"; */
 "pBB-Gb-krP.text" = "255";
 
+/* Class = "UIButton"; normalTitle = "动态平衡"; ObjectID = "rMg-dG-NLh"; */
+"rMg-dG-NLh.normalTitle" = "动态平衡";
+
 /* Class = "UILabel"; text = "0"; ObjectID = "wz2-WY-h7y"; */
 "wz2-WY-h7y.text" = "0";
 

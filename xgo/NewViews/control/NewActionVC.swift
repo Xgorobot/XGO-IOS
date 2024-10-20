@@ -23,6 +23,7 @@ class NewActionVC: UIViewController {
     @IBOutlet weak var bSlider: UISlider!
     
     @IBOutlet weak var lunboButton: GradientButton!
+    @IBOutlet weak var balanceBtn: GradientButton!
     
     @IBOutlet weak var actionContainer: UIView!
     @IBOutlet weak var sliderContainer: UIView!
@@ -35,6 +36,11 @@ class NewActionVC: UIViewController {
         lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .selected)
         lunboButton.cornerRadius = 2
         lunboButton.layer.masksToBounds = true
+        
+        
+        balanceBtn.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .selected)
+        balanceBtn.cornerRadius = 2
+        balanceBtn.layer.masksToBounds = true
         
         actionContainer.layer.shadowColor = UIColor.black.cgColor
         actionContainer.layer.shadowOffset = CGSize(width: 1, height: 1)
@@ -202,6 +208,10 @@ class NewActionVC: UIViewController {
     
     @IBAction func actionTwo(_ sender: Any) {
         FindControlUtil.actionType(type: 0x03)
+    }
+    @IBAction func balanceSet(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        FindControlUtil.enableIMU(enable: sender.isSelected)
     }
     
     @IBAction func actionThree(_ sender: Any) {

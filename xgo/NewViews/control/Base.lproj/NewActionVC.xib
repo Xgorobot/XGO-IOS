@@ -14,6 +14,7 @@
                 <outlet property="GradientSlider" destination="6ZG-ng-iCN" id="xmV-h9-fWx"/>
                 <outlet property="actionContainer" destination="prS-Jx-xXS" id="zSw-tX-gNa"/>
                 <outlet property="bSlider" destination="YJ4-9p-wru" id="XgV-an-bMK"/>
+                <outlet property="balanceBtn" destination="rMg-dG-NLh" id="IOZ-G5-aPf"/>
                 <outlet property="blueValue" destination="wz2-WY-h7y" id="a8b-BF-sQd"/>
                 <outlet property="gSlider" destination="gUS-gP-E2x" id="Yzs-um-fI2"/>
                 <outlet property="greenValue" destination="UML-LT-SfP" id="w1k-IL-b5h"/>
@@ -429,6 +430,18 @@
                         <constraint firstItem="C7h-gB-2KV" firstAttribute="top" secondItem="U82-sW-TMx" secondAttribute="bottom" constant="20" id="uY9-Lh-CYT"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rMg-dG-NLh" customClass="GradientButton" customModule="xgo" customModuleProvider="target">
+                    <rect key="frame" x="728" y="20" width="100" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="动态平衡" backgroundImage="weixuan8">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="balanceSet:" destination="-1" eventType="touchUpInside" id="ULA-QN-hzg"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.1495052576" green="0.17712041740000001" blue="0.6431737542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -442,8 +455,10 @@
                 <constraint firstItem="xb8-lX-Dx7" firstAttribute="top" secondItem="6ZG-ng-iCN" secondAttribute="top" constant="10" id="LkU-us-hCx"/>
                 <constraint firstItem="6ZG-ng-iCN" firstAttribute="trailing" secondItem="ZXg-Gm-slY" secondAttribute="trailing" id="NE7-hs-jbF"/>
                 <constraint firstItem="Kpt-fR-MO2" firstAttribute="top" secondItem="prS-Jx-xXS" secondAttribute="top" id="Nly-dv-1lT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="rMg-dG-NLh" secondAttribute="bottom" constant="-51" id="Np4-r3-NpH"/>
                 <constraint firstItem="S9B-wS-PTF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ogv-KB-0ca"/>
                 <constraint firstItem="ZXg-Gm-slY" firstAttribute="top" secondItem="Kpt-fR-MO2" secondAttribute="top" id="PGI-aU-cZd"/>
+                <constraint firstItem="rMg-dG-NLh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="Vig-n7-RMh" userLabel="动态平衡.leading = Safe Area.right"/>
                 <constraint firstItem="S9B-wS-PTF" firstAttribute="centerY" secondItem="YIL-gt-Gtn" secondAttribute="centerY" id="Xbx-SA-prz"/>
                 <constraint firstItem="6ZG-ng-iCN" firstAttribute="top" secondItem="SMA-JV-pra" secondAttribute="bottom" constant="15" id="cbN-5L-wtu"/>
                 <constraint firstItem="i0y-tS-bSs" firstAttribute="leading" secondItem="6ZG-ng-iCN" secondAttribute="leading" constant="10" id="cma-Ik-HZx"/>
@@ -463,7 +478,7 @@
                 <constraint firstItem="SMA-JV-pra" firstAttribute="top" secondItem="ZXg-Gm-slY" secondAttribute="bottom" constant="30" id="yqW-XE-OvV"/>
                 <constraint firstItem="i0y-tS-bSs" firstAttribute="bottom" secondItem="6ZG-ng-iCN" secondAttribute="bottom" constant="-10" id="z7s-it-q0f"/>
             </constraints>
-            <point key="canvasLocation" x="285.91549295774649" y="122.90076335877862"/>
+            <point key="canvasLocation" x="285.26785714285711" y="121.73913043478262"/>
         </view>
     </objects>
     <resources>
