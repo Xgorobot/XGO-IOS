@@ -39,11 +39,12 @@ class ArmRockerView: UIView {
 //        UIGraphicsEndImageContext()
 //        backgroundColor = UIColor(patternImage: nimage!)
 
-        actionBar = ArmRockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 8,
-                                                  y: frame.size.height / 2 - frame.size.width / 8,
-                                                  width: frame.size.width / 4,
-                                                  height: frame.size.height / 4))
+        actionBar = ArmRockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 12,
+                                                  y: frame.size.height / 2 - frame.size.width / 12,
+                                                  width: frame.size.width / 6,
+                                                  height: frame.size.height / 6))
         actionBar?.layer.cornerRadius = (actionBar?.frame.width)! / 2
+        actionBar?.backgroundColor = UIColor.red
         actionBar?.clipsToBounds = true;
         actionBar?.bDirection = bDirection
         addSubview(actionBar!)

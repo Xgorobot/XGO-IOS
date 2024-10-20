@@ -18,15 +18,15 @@
 		0EF14D982CC4F5620089F7FC /* NewTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14D972CC4F5620089F7FC /* NewTestVC.xib */; };
 		0EF14D9F2CC4F56A0089F7FC /* NewUpgradeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14D9E2CC4F56A0089F7FC /* NewUpgradeVC.xib */; };
 		0EF14DA62CC4F5710089F7FC /* NewXieyiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14DA52CC4F5710089F7FC /* NewXieyiVC.xib */; };
+		0EF14DAD2CC515DC0089F7FC /* NewArmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14DAC2CC515DC0089F7FC /* NewArmVC.xib */; };
+		0EF14DB02CC515E20089F7FC /* NewControlSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14DAF2CC515E20089F7FC /* NewControlSetView.xib */; };
+		0EF14DBB2CC515EF0089F7FC /* NewControlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF14DBA2CC515EF0089F7FC /* NewControlVC.xib */; };
 		8F075A0B2C4A6B9E0017BF65 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */; };
 		8F075A0C2C4A6B9E0017BF65 /* NewActionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */; };
 		8F075A0D2C4A6B9E0017BF65 /* NewActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */; };
 		8F075A0F2C4A6B9E0017BF65 /* NewArmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */; };
-		8F075A102C4A6B9E0017BF65 /* NewArmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */; };
 		8F075A112C4A6B9E0017BF65 /* NewControlSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */; };
-		8F075A122C4A6B9E0017BF65 /* NewControlSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */; };
 		8F075A132C4A6B9E0017BF65 /* NewControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */; };
-		8F075A142C4A6B9E0017BF65 /* NewControlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */; };
 		8F075A152C4A6B9E0017BF65 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759EF2C4A6B9E0017BF65 /* Appearance.swift */; };
 		8F075A162C4A6B9E0017BF65 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F02C4A6B9E0017BF65 /* Border.swift */; };
 		8F075A172C4A6B9E0017BF65 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0759F12C4A6B9E0017BF65 /* Gradient.swift */; };
@@ -164,16 +164,22 @@
 		0EF14DA42CC4F5710089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewXieyiVC.xib; sourceTree = "<group>"; };
 		0EF14DA82CC4F5720089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewXieyiVC.strings"; sourceTree = "<group>"; };
 		0EF14DAA2CC4F5730089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewXieyiVC.strings; sourceTree = "<group>"; };
+		0EF14DAB2CC515DC0089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewArmVC.xib; sourceTree = "<group>"; };
+		0EF14DAE2CC515E20089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewControlSetView.xib; sourceTree = "<group>"; };
+		0EF14DB22CC515E60089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewControlSetView.strings"; sourceTree = "<group>"; };
+		0EF14DB42CC515E60089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewControlSetView.strings; sourceTree = "<group>"; };
+		0EF14DB62CC515E90089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewArmVC.strings; sourceTree = "<group>"; };
+		0EF14DB82CC515E90089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewArmVC.strings"; sourceTree = "<group>"; };
+		0EF14DB92CC515EF0089F7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewControlVC.xib; sourceTree = "<group>"; };
+		0EF14DBD2CC515F00089F7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewControlVC.strings; sourceTree = "<group>"; };
+		0EF14DBF2CC515F00089F7FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/NewControlVC.strings"; sourceTree = "<group>"; };
 		19FABECEAF7CED1BD67CA3E6 /* Pods_xgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
 		8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActionMenuView.swift; sourceTree = "<group>"; };
 		8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActionVC.swift; sourceTree = "<group>"; };
 		8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewArmVC.swift; sourceTree = "<group>"; };
-		8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewArmVC.xib; sourceTree = "<group>"; };
 		8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewControlSetView.swift; sourceTree = "<group>"; };
-		8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewControlSetView.xib; sourceTree = "<group>"; };
 		8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewControlVC.swift; sourceTree = "<group>"; };
-		8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewControlVC.xib; sourceTree = "<group>"; };
 		8F0759EF2C4A6B9E0017BF65 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		8F0759F02C4A6B9E0017BF65 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 		8F0759F12C4A6B9E0017BF65 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -343,11 +349,11 @@
 				8F0759E62C4A6B9E0017BF65 /* NewActionVC.swift */,
 				0EF14D5C2CC4F3490089F7FC /* NewActionVC.xib */,
 				8F0759E82C4A6B9E0017BF65 /* NewArmVC.swift */,
-				8F0759E92C4A6B9E0017BF65 /* NewArmVC.xib */,
+				0EF14DAC2CC515DC0089F7FC /* NewArmVC.xib */,
 				8F0759EA2C4A6B9E0017BF65 /* NewControlSetView.swift */,
-				8F0759EB2C4A6B9E0017BF65 /* NewControlSetView.xib */,
+				0EF14DAF2CC515E20089F7FC /* NewControlSetView.xib */,
 				8F0759EC2C4A6B9E0017BF65 /* NewControlVC.swift */,
-				8F0759ED2C4A6B9E0017BF65 /* NewControlVC.xib */,
+				0EF14DBA2CC515EF0089F7FC /* NewControlVC.xib */,
 				8FDC02492C4E48F500EB198C /* ActionBarsView.swift */,
 				8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */,
 			);
@@ -746,7 +752,7 @@
 				C7E975F42749E494006F31D5 /* IntegralModeVC.xib in Resources */,
 				C7E976022749E5FE006F31D5 /* ServoVC.xib in Resources */,
 				0EF14D5D2CC4F3490089F7FC /* NewActionVC.xib in Resources */,
-				8F075A122C4A6B9E0017BF65 /* NewControlSetView.xib in Resources */,
+				0EF14DB02CC515E20089F7FC /* NewControlSetView.xib in Resources */,
 				C7D1B651274A0B88003F3C2D /* InfoPlist.strings in Resources */,
 				0EF14D912CC4F55C0089F7FC /* NewSetVC.xib in Resources */,
 				0EF14D6D2CC4F51C0089F7FC /* HomeSetView.xib in Resources */,
@@ -763,7 +769,7 @@
 				C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */,
 				C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */,
 				C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */,
-				8F075A142C4A6B9E0017BF65 /* NewControlVC.xib in Resources */,
+				0EF14DBB2CC515EF0089F7FC /* NewControlVC.xib in Resources */,
 				C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */,
 				C7A1C5B827942C5F006BD302 /* SettingViewController.xib in Resources */,
 				0EF14D752CC4F5270089F7FC /* HomeUpSetView.xib in Resources */,
@@ -771,7 +777,7 @@
 				C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */,
 				C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */,
 				0EF14D7C2CC4F5320089F7FC /* NewHomeVC.xib in Resources */,
-				8F075A102C4A6B9E0017BF65 /* NewArmVC.xib in Resources */,
+				0EF14DAD2CC515DC0089F7FC /* NewArmVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,6 +1032,36 @@
 				0EF14DAA2CC4F5730089F7FC /* en */,
 			);
 			name = NewXieyiVC.xib;
+			sourceTree = "<group>";
+		};
+		0EF14DAC2CC515DC0089F7FC /* NewArmVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF14DAB2CC515DC0089F7FC /* Base */,
+				0EF14DB62CC515E90089F7FC /* en */,
+				0EF14DB82CC515E90089F7FC /* zh-Hans */,
+			);
+			name = NewArmVC.xib;
+			sourceTree = "<group>";
+		};
+		0EF14DAF2CC515E20089F7FC /* NewControlSetView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF14DAE2CC515E20089F7FC /* Base */,
+				0EF14DB22CC515E60089F7FC /* zh-Hans */,
+				0EF14DB42CC515E60089F7FC /* en */,
+			);
+			name = NewControlSetView.xib;
+			sourceTree = "<group>";
+		};
+		0EF14DBA2CC515EF0089F7FC /* NewControlVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF14DB92CC515EF0089F7FC /* Base */,
+				0EF14DBD2CC515F00089F7FC /* en */,
+				0EF14DBF2CC515F00089F7FC /* zh-Hans */,
+			);
+			name = NewControlVC.xib;
 			sourceTree = "<group>";
 		};
 		C7A1C5BA27942C5F006BD302 /* SettingViewController.xib */ = {

@@ -40,10 +40,10 @@ class RockerBarsView: UIView {
 //        UIGraphicsEndImageContext()
 //        backgroundColor = UIColor(patternImage: nimage!)
 
-        actionBar = RockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 8,
-                                                  y: frame.size.height / 2 - frame.size.width / 8,
-                                                  width: frame.size.width / 4,
-                                                  height: frame.size.height / 4))
+        actionBar = RockerBars.init(frame: CGRect(x: frame.size.width / 2 - frame.size.width / 4,
+                                                  y: frame.size.height / 2 - frame.size.width / 4,
+                                                  width: frame.size.width / 2,
+                                                  height: frame.size.height / 2))
         actionBar?.layer.cornerRadius = (actionBar?.frame.width)! / 2
         actionBar?.clipsToBounds = true;
         actionBar?.bDirection = bDirection

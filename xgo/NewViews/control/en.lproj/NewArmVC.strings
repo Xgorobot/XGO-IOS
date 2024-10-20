@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "动作控制"; ObjectID = "3jQ-FH-Hrq"; */
+"3jQ-FH-Hrq.normalTitle" = "动作控制";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "KBn-44-CpD"; */
+"KBn-44-CpD.text" = "0";
+
+/* Class = "UILabel"; text = "Gripper 夹爪"; ObjectID = "M30-Sp-7eK"; */
+"M30-Sp-7eK.text" = "Gripper 夹爪";
+
+/* Class = "UISegmentedControl"; QrZ-w3-cG5.segmentTitles[0] = "参照地面"; ObjectID = "QrZ-w3-cG5"; */
+"QrZ-w3-cG5.segmentTitles[0]" = "参照地面";
+
+/* Class = "UISegmentedControl"; QrZ-w3-cG5.segmentTitles[1] = "参照底座"; ObjectID = "QrZ-w3-cG5"; */
+"QrZ-w3-cG5.segmentTitles[1]" = "参照底座";
+
+/* Class = "UIButton"; normalTitle = "机械臂控制"; ObjectID = "bME-z6-ZVD"; */
+"bME-z6-ZVD.normalTitle" = "机械臂控制";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "dWs-8A-PZT"; */
+"dWs-8A-PZT.text" = "100";

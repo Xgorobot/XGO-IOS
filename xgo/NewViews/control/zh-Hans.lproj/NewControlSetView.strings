@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "陀螺仪"; ObjectID = "149-kx-GKi"; */
+"149-kx-GKi.text" = "陀螺仪";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "23p-uZ-KFl"; */
+"23p-uZ-KFl.text" = "0";
+
+/* Class = "UILabel"; text = "步      幅"; ObjectID = "E0d-Z9-ic1"; */
+"E0d-Z9-ic1.text" = "步      幅";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "HWj-aD-s9p"; */
+"HWj-aD-s9p.text" = "100";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "J6G-vk-Rrs"; */
+"J6G-vk-Rrs.text" = "0";
+
+/* Class = "UILabel"; text = "整机速度"; ObjectID = "gI9-JJ-lMs"; */
+"gI9-JJ-lMs.text" = "整机速度";
+
+/* Class = "UILabel"; text = "整机高度"; ObjectID = "pGP-SG-qTd"; */
+"pGP-SG-qTd.text" = "整机高度";
+
+/* Class = "UISegmentedControl"; pnc-Va-8jo.segmentTitles[0] = "低速"; ObjectID = "pnc-Va-8jo"; */
+"pnc-Va-8jo.segmentTitles[0]" = "低速";
+
+/* Class = "UISegmentedControl"; pnc-Va-8jo.segmentTitles[1] = "普通"; ObjectID = "pnc-Va-8jo"; */
+"pnc-Va-8jo.segmentTitles[1]" = "普通";
+
+/* Class = "UISegmentedControl"; pnc-Va-8jo.segmentTitles[2] = "高速"; ObjectID = "pnc-Va-8jo"; */
+"pnc-Va-8jo.segmentTitles[2]" = "高速";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "vbp-gx-bUO"; */
+"vbp-gx-bUO.text" = "100";
