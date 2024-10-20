@@ -20,8 +20,8 @@
 /* Class = "UIButton"; normalTitle = "左右摇摆"; ObjectID = "L6i-UZ-yfc"; */
 "L6i-UZ-yfc.normalTitle" = "左右摇摆";
 
-/* Class = "UIButton"; normalTitle = "关节交替"; ObjectID = "Onf-z0-dAN"; */
-"Onf-z0-dAN.normalTitle" = "关节交替";
+/* Class = "UIButton"; normalTitle = "圆周晃动"; ObjectID = "Onf-z0-dAN"; */
+"Onf-z0-dAN.normalTitle" = "圆周晃动";
 
 /* Class = "UILabel"; text = "标定初始位置"; ObjectID = "S9B-wS-PTF"; */
 "S9B-wS-PTF.text" = "标定初始位置";
