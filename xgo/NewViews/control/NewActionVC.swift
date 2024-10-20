@@ -171,10 +171,10 @@ class NewActionVC: UIViewController {
     
     
     @objc func rollChangeEnd(_ sender: GradientSlider) {
-        BLEMANAGER?.checkRepeat {
-            GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
-            FindControlUtil.trunByX(angle: 0x80)
-        }
+        print("rollChangeEnd \(sender.value)")
+
+        GradientSlider.setValue((GradientSlider.maximumValue - GradientSlider.minimumValue) * 0.5)
+        FindControlUtil.trunByX(angle: 0x80)
        
     }
     
