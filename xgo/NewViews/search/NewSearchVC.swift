@@ -44,16 +44,24 @@ class NewSearchVC: NewsBaseViewController,CBCentralManagerDelegate,UITextFieldDe
         disconnectButton.setTitle("断开连接".localized, for: .normal)
         
         
-        searchView.objectChangedClosure = { object in
-            print("从子控制器传递的对象：\(object)")
+//        searchView.objectChangedClosure = { object in
+//            print("从子控制器传递的对象：\(object)")
+//            self.searchView.isHidden = true
+//            self.myCentralManager.stopScan()
+//            self.flagScan = false
+//
+//            self.myPeripheralToMainView = object.value(forKey:"peripheral") as? CBPeripheral
+//            self.connectPeripheral(peripheral: self.myPeripheralToMainView)
+//
+//        }
+        
+        searchView.objectChangedClosure = { [weak self] object in
+            guard let self = self else { return }
             self.searchView.isHidden = true
             self.myCentralManager.stopScan()
             self.flagScan = false
-            
             self.myPeripheralToMainView = object.value(forKey:"peripheral") as? CBPeripheral
             self.connectPeripheral(peripheral: self.myPeripheralToMainView)
-            
-            
         }
         
         searchView.isHidden = true
@@ -71,9 +79,20 @@ class NewSearchVC: NewsBaseViewController,CBCentralManagerDelegate,UITextFieldDe
         
         
         //添加提示框
+//        let cancelAction = UIAlertAction(title: NSLocalizedString("取消连接", comment: "取消链接"), style: .default, handler: {
+//            action in self.myCentralManager.cancelPeripheralConnection(self.myPeripheralToMainView)
+//        })
+        
         let cancelAction = UIAlertAction(title: NSLocalizedString("取消连接", comment: "取消链接"), style: .default, handler: {
-            action in self.myCentralManager.cancelPeripheralConnection(self.myPeripheralToMainView)
+            
+            [weak self] action in
+                        guard let self = self else { return }
+            if let peripheral = self.myPeripheralToMainView {
+                            self.myCentralManager.cancelPeripheralConnection(peripheral)
+                        }
+            
         })
+        
         alertConnect.addAction(cancelAction)
         let okAction = UIAlertAction(title: NSLocalizedString("好的", comment: "好的"), style: .cancel, handler: nil)
         alertError.addAction(okAction)
