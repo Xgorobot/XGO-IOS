@@ -182,7 +182,7 @@ class ActionMenuCell: UICollectionViewCell {
     var icon: UIImageView!
     var isSelect: Bool! {
         didSet {
-            if name != "动作轮播" {
+            if name != "动作轮播".localized {
                 if  isSelect {
                     icon.image = UIImage(named: "xuanzhong8")
                 } else {
@@ -194,7 +194,7 @@ class ActionMenuCell: UICollectionViewCell {
     var name: String! {
         didSet {
             titleLabel.text = name
-            if name == "动作轮播" {
+            if name == "动作轮播".localized {
                 icon.image = UIImage(named: "bgitem")
             } else {
                 icon.image = UIImage(named: "weixuan8")
@@ -213,7 +213,7 @@ class ActionMenuCell: UICollectionViewCell {
         }
         
         titleLabel = UILabel()
-        titleLabel.text = "坐下"
+        titleLabel.text = "坐下".localized
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.systemFont(ofSize: 15)
         titleLabel.textColor = .white

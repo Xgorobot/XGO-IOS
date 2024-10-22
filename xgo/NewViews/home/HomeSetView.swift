@@ -9,6 +9,8 @@ import UIKit
 
 class HomeSetView: UIView {
     
+    @IBOutlet weak var setLabel: UILabel!
+    @IBOutlet weak var aboutLabel: UILabel!
     var about: (() -> ())?
     var set: (() -> ())?
     

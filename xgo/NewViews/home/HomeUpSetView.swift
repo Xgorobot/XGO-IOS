@@ -9,6 +9,10 @@ import UIKit
 
 class HomeUpSetView: UIView {
     
+    @IBOutlet weak var gujianLabel: UILabel!
+    @IBOutlet weak var biaodingLabel: UILabel!
+    @IBOutlet weak var setLabel: UILabel!
+    @IBOutlet weak var aboutLabel: UILabel!
     var gujian: (() -> ())?
     var biaoding: (() -> ())?
     var shezhi: (() -> ())?

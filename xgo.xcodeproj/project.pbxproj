@@ -45,6 +45,9 @@
 		8F31F03C2C5C7F4F001F5054 /* MTCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */; };
 		8F4BB5762C8FECF100E8E712 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB5742C8FECF100E8E712 /* LanguageManager.swift */; };
 		8F4BB5772C8FECF100E8E712 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB5752C8FECF100E8E712 /* UserDefaultsManager.swift */; };
+		8F97C4A92CC73ED500008B10 /* Chinese.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F97C4A82CC73ED300008B10 /* Chinese.strings */; };
+		8F97C4AB2CC73EE300008B10 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F97C4AA2CC73EE300008B10 /* English.strings */; };
+		8F97C4AD2CC742C100008B10 /* NewsBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F97C4AC2CC742B800008B10 /* NewsBaseViewController.swift */; };
 		8FACBA962C848C4000CA6779 /* NewXieyiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FACBA952C848C4000CA6779 /* NewXieyiVC.swift */; };
 		8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC02492C4E48F500EB198C /* ActionBarsView.swift */; };
 		8FDC024C2C4E4BB200EB198C /* ArmRockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */; };
@@ -198,6 +201,9 @@
 		8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCircularSlider.swift; sourceTree = "<group>"; };
 		8F4BB5742C8FECF100E8E712 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		8F4BB5752C8FECF100E8E712 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		8F97C4A82CC73ED300008B10 /* Chinese.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Chinese.strings; sourceTree = "<group>"; };
+		8F97C4AA2CC73EE300008B10 /* English.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
+		8F97C4AC2CC742B800008B10 /* NewsBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBaseViewController.swift; sourceTree = "<group>"; };
 		8FACBA952C848C4000CA6779 /* NewXieyiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewXieyiVC.swift; sourceTree = "<group>"; };
 		8FDC02492C4E48F500EB198C /* ActionBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarsView.swift; sourceTree = "<group>"; };
 		8FDC024B2C4E4BB200EB198C /* ArmRockerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmRockerView.swift; sourceTree = "<group>"; };
@@ -343,6 +349,7 @@
 		8F0759EE2C4A6B9E0017BF65 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				8F97C4AC2CC742B800008B10 /* NewsBaseViewController.swift */,
 				8F31F03B2C5C7F4F001F5054 /* MTCircularSlider.swift */,
 				8F0759E42C4A6B9E0017BF65 /* GradientSlider.swift */,
 				8F0759E52C4A6B9E0017BF65 /* NewActionMenuView.swift */,
@@ -602,6 +609,8 @@
 		C7B6C5F026C7D0CA004661AF /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				8F97C4AA2CC73EE300008B10 /* English.strings */,
+				8F97C4A82CC73ED300008B10 /* Chinese.strings */,
 				C7ACF49A26940BA000D303FD /* AppDelegate.swift */,
 				C7ACF4A326940BA100D303FD /* Assets.xcassets */,
 				C7ACF4A526940BA100D303FD /* LaunchScreen.storyboard */,
@@ -768,11 +777,13 @@
 				0EF14D982CC4F5620089F7FC /* NewTestVC.xib in Resources */,
 				C7E975D82749E328006F31D5 /* BleConnectViewController.xib in Resources */,
 				C7E975DF2749E366006F31D5 /* HomepageVC.xib in Resources */,
+				8F97C4AB2CC73EE300008B10 /* English.strings in Resources */,
 				C7E975E62749E3FE006F31D5 /* RockerVC.xib in Resources */,
 				0EF14DBB2CC515EF0089F7FC /* NewControlVC.xib in Resources */,
 				C7E975ED2749E415006F31D5 /* NormalVC.xib in Resources */,
 				C7A1C5B827942C5F006BD302 /* SettingViewController.xib in Resources */,
 				0EF14D752CC4F5270089F7FC /* HomeUpSetView.xib in Resources */,
+				8F97C4A92CC73ED500008B10 /* Chinese.strings in Resources */,
 				C7EAB27726B2DAB100943B9E /* ShowModeCollectionViewCell.xib in Resources */,
 				C7FBED4126BC0AC8008028FE /* TopTabbarController.xib in Resources */,
 				C7ACF4A426940BA100D303FD /* Assets.xcassets in Resources */,
@@ -848,6 +859,7 @@
 				8F075A192C4A6B9E0017BF65 /* GradientButtonLayer.swift in Sources */,
 				C70C49D926F471CF00DCE202 /* UInt8Extension.swift in Sources */,
 				8FDC024A2C4E48F500EB198C /* ActionBarsView.swift in Sources */,
+				8F97C4AD2CC742C100008B10 /* NewsBaseViewController.swift in Sources */,
 				C7B6C5C026C7B2DB004661AF /* RockerBarsView.swift in Sources */,
 				C78599E626E07A0F0056F551 /* NormalVM.swift in Sources */,
 				8FDC02512C4E5CFB00EB198C /* PRGRoundRangeSlider.swift in Sources */,

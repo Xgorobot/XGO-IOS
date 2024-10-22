@@ -16,6 +16,11 @@ class NewControlSetView: UIView {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var walkSlider: UISlider!
     
+    @IBOutlet weak var tuoLuoYiLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var heightTitleLabel: UILabel!
+    @IBOutlet weak var walkTitleLabel: UILabel!
+    
     override class func awakeFromNib() {
         super.awakeFromNib()
     }

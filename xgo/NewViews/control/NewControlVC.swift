@@ -8,9 +8,11 @@
 import UIKit
 
 
-class NewControlVC: UIViewController {
+class NewControlVC: NewsBaseViewController {
     
     @IBOutlet weak var controlButton: GradientButton!
+    @IBOutlet weak var armButton: UIButton!
+    
     var armVC = NewArmVC()
     var menuView: NewActionMenuView!
     var setView: NewControlSetView!
@@ -32,15 +34,24 @@ class NewControlVC: UIViewController {
     var isHiddenViewArr: [UIView] = []
     @IBOutlet weak var proButton: UIButton!
     
+    @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var paxiaButton: UIButton!
+    @IBOutlet weak var dunqiLabel: UIButton!
     
-    
-    let actionArray = ["动作轮播","趴下","站起","匍匐前进","转圈","蹲起","转动ROLL","转动PITCH","转动YAW","三轴联动","撒尿","坐下","招手","伸懒腰","波浪","摇摆","求食","找食物","握手"]
+    let actionArray = ["动作轮播".localized,"趴下".localized,"站起".localized,"匍匐前进".localized,"转圈".localized,"蹲起".localized,"转动ROLL".localized,"转动PITCH".localized,"转动YAW".localized,"三轴联动".localized,"撒尿".localized,"坐下".localized,"招手".localized,"伸懒腰".localized,"波浪".localized,"摇摆".localized,"求食".localized,"找食物".localized,"握手".localized]
     
     
     
     let initTime = Date().timeIntervalSince1970
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        controlButton.setTitle("动作控制".localized, for: .normal)
+        armButton.setTitle("机械臂控制".localized, for: .normal)
+        actionButton.setTitle("动作轮播".localized, for: .normal)
+        paxiaButton.setTitle("趴下".localized, for: .normal)
+        dunqiLabel.setTitle("蹲起".localized, for: .normal)
+        
         // todo yuanwenlin
         proButton.setImage(UIImage(named: "btn_pro"), for: .normal)
         proButton.setImage(UIImage(named: "btn_pro_pressed"), for: .selected)
@@ -75,6 +86,14 @@ class NewControlVC: UIViewController {
         setView.snp.makeConstraints { make in
             make.edges.equalTo(self.view)
         }
+        
+        setView.tuoLuoYiLabel.text = "陀螺仪".localized
+        setView.speedLabel.text = "整机速度".localized
+        setView.heightTitleLabel.text = "整机高度".localized
+        setView.walkTitleLabel.text = "步      幅".localized
+        setView.speedSegmented.setTitle("低速".localized, forSegmentAt: 0)
+        setView.speedSegmented.setTitle("普通".localized, forSegmentAt: 1)
+        setView.speedSegmented.setTitle("高速".localized, forSegmentAt: 2)
         
         
         // 设置指定状态下的文本属性

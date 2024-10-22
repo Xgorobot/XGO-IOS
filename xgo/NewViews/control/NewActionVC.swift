@@ -9,7 +9,7 @@ import UIKit
 import TactileSlider
 
 
-class NewActionVC: UIViewController {
+class NewActionVC: NewsBaseViewController {
     
     @IBOutlet weak var resetButton: GradientButton!
     @IBOutlet weak var redValue: UILabel!
@@ -29,8 +29,36 @@ class NewActionVC: UIViewController {
     @IBOutlet weak var sliderContainer: UIView!
     @IBOutlet weak var lightContainer: UIView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var heightTitleLabel: UILabel!
+    
+    @IBOutlet weak var rollLabel: UILabel!
+    @IBOutlet weak var rollDescLabel: UILabel!
+    
+    @IBOutlet weak var yaobaiButton: UIButton!
+    @IBOutlet weak var qianjinButton: UIButton!
+    @IBOutlet weak var gaodiButton: UIButton!
+    @IBOutlet weak var sifangButton: UIButton!
+    @IBOutlet weak var shengjiangButton: UIButton!
+    @IBOutlet weak var yuanButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = "标定初始位置".localized
+        resetButton.setTitle("重置".localized, for: .normal)
+        lunboButton.setTitle("动作轮播".localized, for: .normal)
+        balanceBtn.setTitle("动态平衡".localized, for: .normal)
+        heightTitleLabel.text = "高度调节".localized
+        rollLabel.text = "Roll".localized
+        rollDescLabel.text = "点击按钮开启Roll".localized
+        yaobaiButton.setTitle("左右摇摆".localized, for: .normal)
+        qianjinButton.setTitle("前进后退".localized, for: .normal)
+        gaodiButton.setTitle("高低起伏".localized, for: .normal)
+        sifangButton.setTitle("四方蛇形".localized, for: .normal)
+        shengjiangButton.setTitle("升降旋转".localized, for: .normal)
+        yuanButton.setTitle("圆周晃动".localized, for: .normal)
+        
         
         resetButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0C00F8), UIColor(hex: 0x00EAFF)]), for: .highlighted)
         lunboButton.setGradient(GradientButton.Gradient(colors: [UIColor(hex: 0x0802FF), UIColor(hex: 0xC600FF)], startPoint: CGPoint(x: 1, y: 1), endPoint: CGPoint(x: 1, y: 0)), for: .selected)

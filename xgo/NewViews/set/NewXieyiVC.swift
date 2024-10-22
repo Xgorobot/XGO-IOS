@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class NewXieyiVC: UIViewController{
+class NewXieyiVC: NewsBaseViewController{
     
     @IBOutlet weak var webView: WKWebView!
     let HTML_TEXT_TITLE = "<h1 align=\"center\">隐私政策</h1>";

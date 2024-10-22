@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewTestVC" customModule="xgo" customModuleProvider="target">
             <connections>
                 <outlet property="biaodingButton" destination="VcS-zQ-EC7" id="QfJ-kW-kjG"/>
+                <outlet property="finishButton" destination="2mV-6y-h3f" id="G3k-yF-g0h"/>
+                <outlet property="titleLabel" destination="W83-uO-3m9" id="eM8-pR-RYd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ekB-Fh-EHB"/>
             </connections>
         </placeholder>
@@ -34,7 +36,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标定初始位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W83-uO-3m9">
-                    <rect key="frame" x="370.66666666666669" y="29" width="111" height="22"/>
+                    <rect key="frame" x="372.33333333333331" y="29" width="107.33333333333331" height="22"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -93,7 +95,7 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="24" height="24"/>
+        <image name="back" width="40" height="40"/>
         <image name="lanya-1" width="230" height="230"/>
         <image name="weixuan8" width="100" height="31"/>
     </resources>

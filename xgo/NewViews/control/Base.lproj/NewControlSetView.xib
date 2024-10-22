@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +26,7 @@
                     <rect key="frame" x="442" y="60" width="341" height="198"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陀螺仪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="149-kx-GKi">
-                            <rect key="frame" x="20" y="20" width="43" height="17"/>
+                            <rect key="frame" x="20" y="20" width="42" height="17"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.54663020370000004" green="0.64249151950000005" blue="0.77889400720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,14 +39,14 @@
                             </connections>
                         </switch>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="整机速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-JJ-lMs">
-                            <rect key="frame" x="19.999999999999996" y="67" width="57.666666666666657" height="17"/>
+                            <rect key="frame" x="19.999999999999996" y="67" width="55.666666666666657" height="17"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.54663020370000004" green="0.64249151950000005" blue="0.77889400720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="整机高度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGP-SG-qTd">
-                            <rect key="frame" x="19.999999999999996" y="114" width="57.666666666666657" height="17"/>
+                            <rect key="frame" x="19.999999999999996" y="114" width="55.666666666666657" height="17"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.54663020370000004" green="0.64249151950000005" blue="0.77889400720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +60,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="pnc-Va-8jo">
-                            <rect key="frame" x="97.666666666666643" y="60" width="223.33333333333337" height="32"/>
+                            <rect key="frame" x="95.666666666666643" y="60" width="225.33333333333337" height="32"/>
                             <segments>
                                 <segment title="低速"/>
                                 <segment title="普通"/>
@@ -106,13 +106,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23p-uZ-KFl">
-                            <rect key="frame" x="97.666666666666629" y="115.66666666666666" width="8" height="14"/>
+                            <rect key="frame" x="95.666666666666629" y="115.66666666666666" width="8" height="14"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" red="0.96447318790000003" green="0.97231715919999995" blue="0.99212485549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6G-vk-Rrs">
-                            <rect key="frame" x="97.666666666666629" y="162" width="8" height="15"/>
+                            <rect key="frame" x="95.666666666666629" y="162" width="8" height="15"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" red="0.96447318790000003" green="0.97231715919999995" blue="0.99212485549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
@@ -127,14 +127,14 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CbT-wk-gJM">
-                            <rect key="frame" x="113.66666666666664" y="107.66666666666666" width="143.33333333333337" height="31"/>
+                            <rect key="frame" x="111.66666666666664" y="107.66666666666666" width="145.33333333333337" height="31"/>
                             <color key="tintColor" red="0.21328851579999999" green="0.53735834360000001" blue="0.97597700359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="heightSliderChange:" destination="iN0-l3-epB" eventType="valueChanged" id="vHv-9b-fO4"/>
                             </connections>
                         </slider>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-hy-vZH">
-                            <rect key="frame" x="113.66666666666664" y="154.66666666666666" width="143.33333333333337" height="31"/>
+                            <rect key="frame" x="111.66666666666664" y="154.66666666666666" width="145.33333333333337" height="31"/>
                             <color key="tintColor" red="0.21328851579999999" green="0.53735834360000001" blue="0.97597700359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="walkSliderChange:" destination="iN0-l3-epB" eventType="valueChanged" id="wd8-PM-efp"/>
@@ -209,9 +209,13 @@
                 <outlet property="gyroSwitch" destination="wWo-qd-SkY" id="nof-yt-npZ"/>
                 <outlet property="heightLabel" destination="23p-uZ-KFl" id="06O-6Z-0gD"/>
                 <outlet property="heightSlider" destination="CbT-wk-gJM" id="DIn-I4-KTj"/>
+                <outlet property="heightTitleLabel" destination="pGP-SG-qTd" id="BpQ-2w-gRR"/>
+                <outlet property="speedLabel" destination="gI9-JJ-lMs" id="8b8-bb-46k"/>
                 <outlet property="speedSegmented" destination="pnc-Va-8jo" id="3qT-W2-lZR"/>
-                <outlet property="walkLabel" destination="J6G-vk-Rrs" id="mtM-oh-aTl"/>
+                <outlet property="tuoLuoYiLabel" destination="149-kx-GKi" id="zqv-G4-Uh9"/>
+                <outlet property="walkLabel" destination="J6G-vk-Rrs" id="dSH-Tn-Onp"/>
                 <outlet property="walkSlider" destination="wFB-hy-vZH" id="3b1-5I-LX6"/>
+                <outlet property="walkTitleLabel" destination="E0d-Z9-ic1" id="a8M-DQ-Mo9"/>
             </connections>
             <point key="canvasLocation" x="132" y="-11"/>
         </view>

@@ -8,7 +8,7 @@
 import UIKit
 import CoreBluetooth
 
-class NewHomeVC: UIViewController {
+class NewHomeVC: NewsBaseViewController {
     
     @IBOutlet weak var bluetoothImage: UIButton!
     @IBOutlet weak var bluetoothInfoView: UIView!
@@ -70,6 +70,9 @@ class NewHomeVC: UIViewController {
             self?.navigationController?.pushViewController(NewSetVC(), animated: true)
         }
         
+        homeSetView.aboutLabel.text = "关于".localized
+        homeSetView.setLabel.text = "设置".localized
+        
         
         homeUpSetView = Bundle.main.loadNibNamed("HomeUpSetView", owner: nil)?.first as? HomeUpSetView
         self.view.addSubview(homeUpSetView)
@@ -102,6 +105,11 @@ class NewHomeVC: UIViewController {
             self?.navigationController?.pushViewController(NewSetVC(), animated: true)
         }
         
+        homeUpSetView.aboutLabel.text = "关于".localized
+        homeUpSetView.setLabel.text = "设置".localized
+        homeUpSetView.gujianLabel.text = "固件".localized
+        homeUpSetView.biaodingLabel.text = "标定".localized
+        
         controlButton.isHidden = true
         
         
@@ -113,7 +121,7 @@ class NewHomeVC: UIViewController {
 
             bluetoothImage.setImage(UIImage(named: "w-lanya-sel"), for: .normal)
         }else {
-            bluetoothInfoLabel.text = "请连接蓝牙"
+            bluetoothInfoLabel.text = "请连接蓝牙".localized
             bluetoothImage.setImage(UIImage(named: "w-lanya"), for: .normal)
 
         }

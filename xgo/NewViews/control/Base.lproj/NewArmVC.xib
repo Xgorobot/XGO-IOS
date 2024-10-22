@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewArmVC" customModule="xgo" customModuleProvider="target">
             <connections>
+                <outlet property="actionTitleLable" destination="3jQ-FH-Hrq" id="nU7-QC-cIV"/>
                 <outlet property="armButton" destination="bME-z6-ZVD" id="jWS-Ly-icZ"/>
                 <outlet property="armRockerView" destination="nB9-nG-C7f" id="Juu-G9-aXN"/>
+                <outlet property="gripperLabel" destination="M30-Sp-7eK" id="yfb-VV-yHf"/>
                 <outlet property="progressLabel" destination="KBn-44-CpD" id="Fgj-8X-JD6"/>
                 <outlet property="progressSlider" destination="FDO-a4-ZGb" id="dJp-aK-doN"/>
                 <outlet property="segmented" destination="QrZ-w3-cG5" id="y32-qA-hsj"/>
@@ -110,7 +112,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gripper 夹爪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M30-Sp-7eK">
-                    <rect key="frame" x="446" y="234" width="86.333333333333371" height="18"/>
+                    <rect key="frame" x="446" y="234" width="85.333333333333371" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>

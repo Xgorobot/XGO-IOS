@@ -112,6 +112,14 @@ final class StringUtils {
 
 
 extension String {
+    /// 国际化扩展
+    var localized: String {
+        return NSLocalizedString(self, tableName: LanguageManager.shared.languageFileName , value: self, comment: self)
+    }
+    
+    static var languages: [String] {
+        return ["cn","en"]
+    }
     /*
      *去掉首尾空格
      */

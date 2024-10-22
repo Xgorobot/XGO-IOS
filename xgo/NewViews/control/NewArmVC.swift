@@ -8,16 +8,25 @@
 import UIKit
 
 
-class NewArmVC: UIViewController {
+class NewArmVC: NewsBaseViewController {
     
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var armButton: GradientButton!
     @IBOutlet weak var armRockerView: ArmRockerView!
     @IBOutlet weak var segmented: UISegmentedControl!
+    @IBOutlet weak var actionTitleLable: UIButton!
+    @IBOutlet weak var gripperLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        armButton.setTitle("机械臂控制".localized, for: .normal)
+        actionTitleLable.setTitle("动作控制".localized, for: .normal)
+        segmented.setTitle("参照地面".localized, forSegmentAt: 0)
+        segmented.setTitle("参照底座".localized, forSegmentAt: 1)
+        gripperLabel.text = "Gripper 夹爪".localized
         
         progressSlider.minimumValue = 0
         progressSlider.maximumValue = 100

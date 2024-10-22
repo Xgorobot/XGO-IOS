@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewControlVC" customModule="xgo" customModuleProvider="target">
             <connections>
+                <outlet property="actionButton" destination="wYd-M5-eWo" id="ejF-0z-myD"/>
+                <outlet property="armButton" destination="Wzy-ev-JC0" id="X6c-lX-umV"/>
                 <outlet property="controlButton" destination="gCB-cQ-iEy" id="jIF-zK-HpD"/>
+                <outlet property="dunqiLabel" destination="kie-JQ-bgf" id="Lux-Hf-Y1d"/>
                 <outlet property="leftControlView" destination="TUn-nL-edn" id="g92-tL-9wU"/>
                 <outlet property="leftRockerView" destination="wae-Nr-ISE" id="Kgf-Wl-qMK"/>
                 <outlet property="leftTopCircularSlider" destination="MuU-yR-9MQ" id="bJP-p1-P9I"/>
+                <outlet property="paxiaButton" destination="VMS-sz-7Hl" id="0z2-2n-P7G"/>
                 <outlet property="proButton" destination="h37-WP-koC" id="0Mn-ur-ePg"/>
                 <outlet property="rLeftBottomCircularSlider" destination="nz4-xt-9TA" id="pgR-Hh-pjT"/>
                 <outlet property="rLeftTopCircularSlider" destination="IhL-tm-SLJ" id="Yk2-U9-tMr"/>

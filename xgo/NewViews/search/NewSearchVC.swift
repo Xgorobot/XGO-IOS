@@ -9,7 +9,7 @@ import UIKit
 import CoreBluetooth
 
 
-class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate{
+class NewSearchVC: NewsBaseViewController,CBCentralManagerDelegate,UITextFieldDelegate{
     
     typealias SaveCallback = (_ connectResult:String)->Void //声明一个回调
     var scanCallback:SaveCallback? //回调作为参数
@@ -39,6 +39,9 @@ class NewSearchVC: UIViewController,CBCentralManagerDelegate,UITextFieldDelegate
         
         searchView = NewSearchListView()
         self.view.addSubview(searchView)
+        
+        renameButton.setTitle("重命名".localized, for: .normal)
+        disconnectButton.setTitle("断开连接".localized, for: .normal)
         
         
         searchView.objectChangedClosure = { object in
