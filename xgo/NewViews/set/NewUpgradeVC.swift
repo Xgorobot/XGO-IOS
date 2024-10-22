@@ -22,17 +22,24 @@ class NewUpgradeVC: NewsBaseViewController {
         super.viewDidLoad()
         
         titleLabel.text = "固件版本".localized
-    
-        //todo mengwei 升级下载等文字都隐藏不要了，这里改一下其他label位置居中
-        FindControlUtil.readVersionName { data in
-            if (data.count >= 10){
-                if let string = String(bytes: data, encoding: .utf8) {
-                    self.versionName.text = "固件版本".localized + "：" + string
-                } else {
-                    print("无法将字节数组转换为字符串")
+        if ((BLEMANAGER?.isConnect()) == true) {
+            FindControlUtil.readVersionName { data in
+                if (data.count >= 10){
+                    if let string = String(bytes: data, encoding: .utf8) {
+                        
+                        self.versionName.text = "固件版本".localized + "：" + string
+                    } else {
+                        print("无法将字节数组转换为字符串")
+                    }
                 }
             }
+            
+           
+        } else {
+            self.versionName.text = "固件版本".localized + "："
         }
+        
+       
     }
     
     @IBAction func back(_ sender: Any) {
