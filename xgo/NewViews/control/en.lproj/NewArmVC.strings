@@ -6,7 +6,7 @@
 "KBn-44-CpD.text" = "0";
 
 /* Class = "UILabel"; text = "Gripper 夹爪"; ObjectID = "M30-Sp-7eK"; */
-"M30-Sp-7eK.text" = "Gripper 夹爪";
+"M30-Sp-7eK.text" = "夹爪";
 
 /* Class = "UISegmentedControl"; QrZ-w3-cG5.segmentTitles[0] = "参照地面"; ObjectID = "QrZ-w3-cG5"; */
 "QrZ-w3-cG5.segmentTitles[0]" = "参照地面";

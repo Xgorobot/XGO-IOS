@@ -42,7 +42,7 @@ class NewActionMenuView: UIView {
             make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
             make.centerX.equalTo(self)
             make.height.equalTo(self).multipliedBy(0.5)
-            make.width.equalTo(self).multipliedBy(0.6)
+            make.width.equalTo(self).multipliedBy(0.7)
         }
         
         resetButton = GradientButton()
@@ -170,7 +170,7 @@ extension NewActionMenuView: UICollectionViewDataSource {
 extension NewActionMenuView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (SCREEN_WIDTH * 0.6 / 5) - 20, height: 25)
+        return CGSize(width: (SCREEN_WIDTH * 0.7 / 5) - 12, height: 25)
     }
     
 }

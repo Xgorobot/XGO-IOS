@@ -211,10 +211,10 @@ class NewHomeVC: NewsBaseViewController {
             }
         } else {
             
-            CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
+//            CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
+//            
             
-            
-//                self.navigationController?.pushViewController(NewActionVC(), animated: true)
+                self.navigationController?.pushViewController(NewControlVC(), animated: true)
             
 
         }
@@ -253,7 +253,7 @@ class NewHomeVC: NewsBaseViewController {
            
 //            homeSetView.isHidden = false
 //            homeUpSetView.isHidden = true
-            controlButton.isHidden = true
+            controlButton.isHidden = false
             
         }
         

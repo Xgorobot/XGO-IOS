@@ -45,13 +45,14 @@ class NewActionVC: NewsBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = "标定初始位置".localized
+        titleLabel.text = "动作控制".localized
         resetButton.setTitle("重置".localized, for: .normal)
         lunboButton.setTitle("动作轮播".localized, for: .normal)
         balanceBtn.setTitle("动态平衡".localized, for: .normal)
         heightTitleLabel.text = "高度调节".localized
         rollLabel.text = "Roll".localized
         rollDescLabel.text = "点击按钮开启Roll".localized
+        rollLabel.isHidden = true
         yaobaiButton.setTitle("左右摇摆".localized, for: .normal)
         qianjinButton.setTitle("前进后退".localized, for: .normal)
         gaodiButton.setTitle("高低起伏".localized, for: .normal)

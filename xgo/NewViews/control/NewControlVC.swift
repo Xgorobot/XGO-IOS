@@ -38,7 +38,7 @@ class NewControlVC: NewsBaseViewController {
     @IBOutlet weak var paxiaButton: UIButton!
     @IBOutlet weak var dunqiLabel: UIButton!
     
-    let actionArray = ["动作轮播".localized,"趴下".localized,"站起".localized,"匍匐前进".localized,"转圈".localized,"蹲起".localized,"转动ROLL".localized,"转动PITCH".localized,"转动YAW".localized,"三轴联动".localized,"撒尿".localized,"坐下".localized,"招手".localized,"伸懒腰".localized,"波浪".localized,"摇摆".localized,"求食".localized,"找食物".localized,"握手".localized]
+    let actionArray = ["动作轮播".localized,"趴下".localized,"站起".localized,"匍匐前进".localized,"转圈".localized,"蹲起".localized,"转动 ROLL".localized,"转动 PITCH".localized,"转动 YAW".localized,"三轴联动".localized,"撒尿".localized,"坐下".localized,"招手".localized,"伸懒腰".localized,"波浪".localized,"摇摆".localized,"求食".localized,"找食物".localized,"握手".localized]
     
     
     

@@ -26,7 +26,7 @@ class NewArmVC: NewsBaseViewController {
         actionTitleLable.setTitle("动作控制".localized, for: .normal)
         segmented.setTitle("参照地面".localized, forSegmentAt: 0)
         segmented.setTitle("参照底座".localized, forSegmentAt: 1)
-        gripperLabel.text = "Gripper 夹爪".localized
+        gripperLabel.text = "夹爪".localized
         
         progressSlider.minimumValue = 0
         progressSlider.maximumValue = 100
