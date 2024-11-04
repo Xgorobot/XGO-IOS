@@ -5,5 +5,5 @@
   Created by 袁文麟 on 2021/11/21.
   
 */
-"NSBluetoothAlwaysUsageDescription" = "Is bluetooth allowed for this App?";
-"NSBluetoothPeripheralUsageDescription" = "Is bluetooth allowed for this App?";
+"NSBluetoothAlwaysUsageDescription" = "The app requires Bluetooth access solely to search for and connect to compatible Bluetooth devices to enhance the user experience.";
+"NSBluetoothPeripheralUsageDescription" = "The app requires Bluetooth access solely to search for and connect to compatible Bluetooth devices to enhance the user experience.";

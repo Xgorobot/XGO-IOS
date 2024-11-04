@@ -5,5 +5,5 @@
   Created by 袁文麟 on 2021/11/21.
   
 */
-"NSBluetoothAlwaysUsageDescription" = "是否允许此App使用蓝牙";
-"NSBluetoothPeripheralUsageDescription" = "是否允许此App使用蓝牙";
+"NSBluetoothAlwaysUsageDescription" = "应用程序需要使用蓝牙功能，仅用于搜索并连接配套的蓝牙设备，提供更好的用户体验。";
+"NSBluetoothPeripheralUsageDescription" = "应用程序需要使用蓝牙功能，仅用于搜索并连接配套的蓝牙设备，提供更好的用户体验。";

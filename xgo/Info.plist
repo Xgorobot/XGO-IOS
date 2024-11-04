@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>是否允许此App使用蓝牙</string>
+	<string>应用程序需要使用蓝牙功能，仅用于搜索并连接配套的蓝牙设备，提供更好的用户体验。</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>是否允许此App使用蓝牙</string>
+	<string>应用程序需要使用蓝牙功能，仅用于搜索并连接配套的蓝牙设备，提供更好的用户体验。</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
