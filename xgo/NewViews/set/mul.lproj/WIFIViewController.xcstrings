@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "BLX-7Q-lqf.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"请输入密码\"; ObjectID = \"BLX-7Q-lqf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "请输入密码"
+          }
+        }
+      }
+    },
+    "sQ9-uf-FbN.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"请输入WiFi名称和密码\"; ObjectID = \"sQ9-uf-FbN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "请输入WiFi名称和密码"
+          }
+        }
+      }
+    },
+    "Vxq-VK-geA.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"请输入WiFi\"; ObjectID = \"Vxq-VK-geA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "请输入WiFi"
+          }
+        }
+      }
+    },
+    "zCP-2i-Cx2.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"机器人配网\"; ObjectID = \"zCP-2i-Cx2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "机器人配网"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

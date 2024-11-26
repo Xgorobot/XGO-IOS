@@ -184,7 +184,20 @@ class NewHomeVC: NewsBaseViewController {
             case 2:
                 self.navigationController?.pushViewController(NewActionVC(), animated: true)
             case -1:
+                // 创建一个调度组来管理超时和回调
+                let dispatchGroup = DispatchGroup()
+                // 进入调度组，表示任务开始
+                dispatchGroup.enter()
+                // 启动定时器，3秒后检查是否超时
+                DispatchQueue.global().asyncAfter(deadline: .now() + 3.0) {
+                    if dispatchGroup.wait(timeout: .now()) == .timedOut {
+                        print("超时")
+                        self.navigationController?.pushViewController(NewControlVC(), animated: true)
+                    }
+                }
+
                 FindControlUtil.readVersionName { data in
+                    dispatchGroup.leave()
                     //这个data是一个String 如果代码无效的话 打印看看data是什么
                     if (data.count >= 10){
                         if let string = String(bytes: data.dropFirst(2), encoding: .utf8) {
@@ -218,6 +231,9 @@ class NewHomeVC: NewsBaseViewController {
             
 
         }
+    }
+    @IBAction func onWifiSetClick(_ sender: UIButton) {
+        self.navigationController?.pushViewController(QRCodeVC(), animated: true)
     }
     
     // 跳转蓝牙页面
