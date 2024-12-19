@@ -50,7 +50,7 @@
                     <color key="textColor" red="0.96447318790000003" green="0.97231715919999995" blue="0.99212485549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuang" translatesAutoresizingMaskIntoConstraints="NO" id="us3-9f-UDE">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuang" translatesAutoresizingMaskIntoConstraints="NO" id="us3-9f-UDE">
                     <rect key="frame" x="481" y="65.666666666666686" width="262" height="262"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="us3-9f-UDE" secondAttribute="height" multiplier="1:1" id="Pav-wB-OyD"/>

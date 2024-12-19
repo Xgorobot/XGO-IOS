@@ -220,16 +220,11 @@ class NewHomeVC: NewsBaseViewController {
                     }
                 }
             default:
+                self.navigationController?.pushViewController(NewControlVC(), animated: true)
                 break
             }
         } else {
-            
-//            CBToast.showToast(message: NSLocalizedString("请先连接蓝牙", comment: "请先连接蓝牙") as NSString, aLocationStr: "bottom", aShowTime: 2)
-//            
-            
-                self.navigationController?.pushViewController(NewControlVC(), animated: true)
-            
-
+            self.navigationController?.pushViewController(NewControlVC(), animated: true)
         }
     }
     @IBAction func onWifiSetClick(_ sender: UIButton) {
@@ -238,20 +233,16 @@ class NewHomeVC: NewsBaseViewController {
     
     // 跳转蓝牙页面
     @IBAction func bluetoothAction(_ sender: Any) {
-        
         self.navigationController?.pushViewController(NewSearchVC(), animated: true)
-        
     }
     
     // 蓝牙连接页面布局切换
     func bluetooth() {
-        
-        
         if (UserDefaults.standard.bool(forKey: "developMode")) {
             controlButton.isHidden = false
             homeUpSetView.isHidden = false
             homeSetView.isHidden = true
-        }else {
+        } else {
             homeUpSetView.isHidden = true
             controlButton.isHidden = true
             homeSetView.isHidden = false
