@@ -84,7 +84,7 @@
                         <constraint firstAttribute="height" constant="40" id="xzb-AJ-a0a"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="peiwang"/>
+                    <state key="normal" image="erweima"/>
                     <connections>
                         <action selector="onWifiSetClick:" destination="-1" eventType="touchUpInside" id="Bi8-7m-WFR"/>
                     </connections>
@@ -116,7 +116,7 @@
     </objects>
     <resources>
         <image name="beijing" width="1792" height="828"/>
-        <image name="peiwang" width="35" height="35"/>
+        <image name="erweima" width="39" height="39"/>
         <image name="start" width="120" height="120"/>
         <image name="w-lanya" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">
